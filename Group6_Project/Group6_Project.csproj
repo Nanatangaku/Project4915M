@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Group6_Project</RootNamespace>
+    <AssemblyName>Group6_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.GraphModel, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountingClerkHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountingClerkHomePage.Designer.cs">
+      <DependentUpon>AccountingClerkHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingManagerHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountingManagerHomePage.Designer.cs">
+      <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompletedInstructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompletedInstructions.Designer.cs">
+      <DependentUpon>CompletedInstructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompletePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompletePayment.Designer.cs">
+      <DependentUpon>CompletePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCategory.Designer.cs">
+      <DependentUpon>CreateCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDepartment.Designer.cs">
+      <DependentUpon>CreateDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePurchaseOrder.Designer.cs">
+      <DependentUpon>CreatePurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateRequest.Designer.cs">
+      <DependentUpon>CreateRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateRole.Designer.cs">
+      <DependentUpon>CreateRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateScheule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateScheule.Designer.cs">
+      <DependentUpon>CreateScheule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateShop.Designer.cs">
+      <DependentUpon>CreateShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateStock.Designer.cs">
+      <DependentUpon>CreateStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateSupplier.Designer.cs">
+      <DependentUpon>CreateSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUserInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUserInformation.Designer.cs">
+      <DependentUpon>CreateUserInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateWarehouse.Designer.cs">
+      <DependentUpon>CreateWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateWarehouseStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateWarehouseStock.Designer.cs">
+      <DependentUpon>CreateWarehouseStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderPage.Designer.cs">
+      <DependentUpon>PurchaseOrderPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivedItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceivedItem.Designer.cs">
+      <DependentUpon>ReceivedItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestPage.Designer.cs">
+      <DependentUpon>RequestPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheulePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheulePage.Designer.cs">
+      <DependentUpon>ScheulePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchCategory.Designer.cs">
+      <DependentUpon>SearchCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDepartment.Designer.cs">
+      <DependentUpon>SearchDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPurchaseOrder.Designer.cs">
+      <DependentUpon>SearchPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchRequest.Designer.cs">
+      <DependentUpon>SearchRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchRole.Designer.cs">
+      <DependentUpon>SearchRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchScheule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchScheule.Designer.cs">
+      <DependentUpon>SearchScheule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchShop.Designer.cs">
+      <DependentUpon>SearchShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchStock.Designer.cs">
+      <DependentUpon>SearchStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchSupplier.Designer.cs">
+      <DependentUpon>SearchSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchUserInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchUserInformation.Designer.cs">
+      <DependentUpon>SearchUserInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchWarehouse.Designer.cs">
+      <DependentUpon>SearchWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchWarehouseStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchWarehouseStock.Designer.cs">
+      <DependentUpon>SearchWarehouseStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetRule.Designer.cs">
+      <DependentUpon>SetRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockPage.Designer.cs">
+      <DependentUpon>StockPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInformationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInformationPage.Designer.cs">
+      <DependentUpon>UserInformationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseClerkrHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehouseClerkrHomePage.Designer.cs">
+      <DependentUpon>WarehouseClerkrHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseManagerHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehouseManagerHomePage.Designer.cs">
+      <DependentUpon>WarehouseManagerHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseClerkHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseClerkHomePage.Designer.cs">
+      <DependentUpon>PurchaseClerkHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseManagerHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseManagerHomePage.Designer.cs">
+      <DependentUpon>PurchaseManagerHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryManagerHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryManagerHomePage.Designer.cs">
+      <DependentUpon>DeliveryManagerHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopManagerHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopManagerHomePage.Designer.cs">
+      <DependentUpon>ShopManagerHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HRHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HRHomePage.Designer.cs">
+      <DependentUpon>HRHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryPage.Designer.cs">
+      <DependentUpon>CategoryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DepartmentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentPage.Designer.cs">
+      <DependentUpon>DepartmentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicsExtension.cs" />
+    <Compile Include="loginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginPage.Designer.cs">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\RoundPannel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\RoundPannel.Designer.cs">
+      <DependentUpon>RoundPannel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\RoundTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\RoundTextBox.Designer.cs">
+      <DependentUpon>RoundTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RolePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RolePage.Designer.cs">
+      <DependentUpon>RolePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierPage.Designer.cs">
+      <DependentUpon>SupplierPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopPage.Designer.cs">
+      <DependentUpon>ShopPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehousePage.Designer.cs">
+      <DependentUpon>WarehousePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryManagerHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryManagerHomePage.Designer.cs">
+      <DependentUpon>CategoryManagerHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccountingClerkHomePage.resx">
+      <DependentUpon>AccountingClerkHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountingManagerHomePage.resx">
+      <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompletedInstructions.resx">
+      <DependentUpon>CompletedInstructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompletePayment.resx">
+      <DependentUpon>CompletePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCategory.resx">
+      <DependentUpon>CreateCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateDepartment.resx">
+      <DependentUpon>CreateDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePurchaseOrder.resx">
+      <DependentUpon>CreatePurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateRequest.resx">
+      <DependentUpon>CreateRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateRole.resx">
+      <DependentUpon>CreateRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateScheule.resx">
+      <DependentUpon>CreateScheule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateShop.resx">
+      <DependentUpon>CreateShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateStock.resx">
+      <DependentUpon>CreateStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateSupplier.resx">
+      <DependentUpon>CreateSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUserInformation.resx">
+      <DependentUpon>CreateUserInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateWarehouse.resx">
+      <DependentUpon>CreateWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateWarehouseStock.resx">
+      <DependentUpon>CreateWarehouseStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseOrderPage.resx">
+      <DependentUpon>PurchaseOrderPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceivedItem.resx">
+      <DependentUpon>ReceivedItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestPage.resx">
+      <DependentUpon>RequestPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheulePage.resx">
+      <DependentUpon>ScheulePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCategory.resx">
+      <DependentUpon>SearchCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDepartment.resx">
+      <DependentUpon>SearchDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPurchaseOrder.resx">
+      <DependentUpon>SearchPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchRequest.resx">
+      <DependentUpon>SearchRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchRole.resx">
+      <DependentUpon>SearchRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchScheule.resx">
+      <DependentUpon>SearchScheule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchShop.resx">
+      <DependentUpon>SearchShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchStock.resx">
+      <DependentUpon>SearchStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchSupplier.resx">
+      <DependentUpon>SearchSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchUserInformation.resx">
+      <DependentUpon>SearchUserInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchWarehouse.resx">
+      <DependentUpon>SearchWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchWarehouseStock.resx">
+      <DependentUpon>SearchWarehouseStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetRule.resx">
+      <DependentUpon>SetRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockPage.resx">
+      <DependentUpon>StockPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInformationPage.resx">
+      <DependentUpon>UserInformationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseClerkrHomePage.resx">
+      <DependentUpon>WarehouseClerkrHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseManagerHomePage.resx">
+      <DependentUpon>WarehouseManagerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseClerkHomePage.resx">
+      <DependentUpon>PurchaseClerkHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseManagerHomePage.resx">
+      <DependentUpon>PurchaseManagerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryManagerHomePage.resx">
+      <DependentUpon>DeliveryManagerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopManagerHomePage.resx">
+      <DependentUpon>ShopManagerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HRHomePage.resx">
+      <DependentUpon>HRHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryPage.resx">
+      <DependentUpon>CategoryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentPage.resx">
+      <DependentUpon>DepartmentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginPage.resx">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\RoundPannel.resx">
+      <DependentUpon>RoundPannel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\RoundTextBox.resx">
+      <DependentUpon>RoundTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RolePage.resx">
+      <DependentUpon>RolePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierPage.resx">
+      <DependentUpon>SupplierPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopPage.resx">
+      <DependentUpon>ShopPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehousePage.resx">
+      <DependentUpon>WarehousePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryManagerHomePage.resx">
+      <DependentUpon>CategoryManagerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photo\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photo\home %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photo\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photo\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photo\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photo\truck-side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photo\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photo\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photo\car-circle-bolt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photo\category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photo\general invoice.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -44,10 +44,12 @@ namespace Group6_Project
             //get the roundtestbox text
             string username = roundTextBox1.Texts;
             string password = roundTextBox2.Texts;
-            string connstring = "select * from user where account_name = \"" + username + "\" and password = \"" + password + "\"";
 
-            MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=4915mdb");
-            MySqlCommand cmd = new MySqlCommand(connstring, conn);
+            username = "\"" + username + "\"";
+            password = "\"" + password + "\"";
+            string sql = "select * from user inner join role on user.role_id = role.role_id where user_name = " + username +" and password = "  + password ;
+            MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
 
             MySqlDataReader reader = cmd.ExecuteReader();
@@ -55,73 +57,59 @@ namespace Group6_Project
             if (reader.Read())
             {
                 MessageBox.Show("Login Successful");
-                string role = (string)reader["role"];
-                if (role == "AccountManager")
-                {
-                    this.Hide();
-                    new AccountingManagerHomePage().ShowDialog();
-                    this.Close();
-                }
-                else if (role == "AccountClerk")
-                {
-                    this.Hide();
-                    new AccountingClerkHomePage().ShowDialog();
-                    this.Close();
-                }
-                else if (role == "CategoryManager")
-                {
-                    this.Hide();
-                    new CategoryManagerHomePage().ShowDialog();
-                    this.Close();
-                }
-                else if (role == "Delivery_manager")
-                {
-                    this.Hide();
-                    new DeliveryManagerHomePage().ShowDialog();
-                    this.Close();
-                }
-                else if (role == "HR")
+                string role = (string)reader["role_name"];
+                if (role == "HR")
                 {
                     this.Hide();
                     new HRHomePage().ShowDialog();
                     this.Close();
                 }
-                else if (role == "PurchaseManager")
+                else if (role == "Category Manager")
+                {
+                    this.Hide();
+                    new CategoryManagerHomePage().ShowDialog();
+                    this.Close();
+                }
+                else if (role == "Warehouse Manager")
+                {
+                    this.Hide();
+                    new WarehouseManagerHomePage().ShowDialog();
+                    this.Close();
+                }
+                else if (role == "Delivery Manager")
+                {
+                    this.Hide();
+                    new DeliveryManagerHomePage().ShowDialog();
+                    this.Close();
+                }
+  
+                else if (role == "Purchase Manager")
                 {
                     this.Hide();
                     new PurchaseManagerHomePage().ShowDialog();
                     this.Close();
-                }else if(role == "PurchaseClerk")
-                {
-                    this.Hide();
-                    new PurchaseClerkHomePage().ShowDialog();
-                    this.Close();
-                }else if(role == "ShopManager")
+                }
+
+                else if (role == "Shop Manager")
                 {
                     this.Hide();
                     new ShopManagerHomePage().ShowDialog();
                     this.Close();
 
-                }else if(role == "WarehouseManager")
-                {
-                    this.Hide();
-                    new WarehouseManagerHomePage().ShowDialog();
-                    this.Close();
-
-
                 }
-                else if (role == "WarehouseClerk")
+                else if (role == "Account Manager")
                 {
                     this.Hide();
-                    new WarehouseClerkHomePage().ShowDialog();
+                    new AccountingManagerHomePage().ShowDialog();
                     this.Close();
+
+
                 }
             }
             else
             {
-                MessageBox.Show("Login Failed");
+                MessageBox.Show("Invalid username or password");
             }
-
         }
 
         private void roundTextBox1__TextChanged_1(object sender, EventArgs e)

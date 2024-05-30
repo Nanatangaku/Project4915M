@@ -56,16 +56,18 @@ namespace Group6_Project
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(277, 878);
+            this.panelMenu.Size = new System.Drawing.Size(416, 1463);
             this.panelMenu.TabIndex = 3;
             // 
             // panNav
             // 
             this.panNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(120)))), ((int)(((byte)(252)))));
-            this.panNav.Location = new System.Drawing.Point(0, 130);
+            this.panNav.Location = new System.Drawing.Point(0, 217);
+            this.panNav.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panNav.Name = "panNav";
-            this.panNav.Size = new System.Drawing.Size(7, 77);
+            this.panNav.Size = new System.Drawing.Size(10, 128);
             this.panNav.TabIndex = 2;
             // 
             // btnCategoryManager
@@ -78,9 +80,10 @@ namespace Group6_Project
             this.btnCategoryManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategoryManager.ForeColor = System.Drawing.Color.White;
             this.btnCategoryManager.Image = global::Group6_Project.Properties.Resources.user__1_;
-            this.btnCategoryManager.Location = new System.Drawing.Point(0, 801);
+            this.btnCategoryManager.Location = new System.Drawing.Point(0, 1335);
+            this.btnCategoryManager.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCategoryManager.Name = "btnCategoryManager";
-            this.btnCategoryManager.Size = new System.Drawing.Size(277, 77);
+            this.btnCategoryManager.Size = new System.Drawing.Size(416, 128);
             this.btnCategoryManager.TabIndex = 7;
             this.btnCategoryManager.Text = "    Accounting \r\n   Manager";
             this.btnCategoryManager.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -98,9 +101,10 @@ namespace Group6_Project
             this.btnSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupplier.ForeColor = System.Drawing.Color.White;
             this.btnSupplier.Image = global::Group6_Project.Properties.Resources.shopping_cart;
-            this.btnSupplier.Location = new System.Drawing.Point(0, 207);
+            this.btnSupplier.Location = new System.Drawing.Point(0, 345);
+            this.btnSupplier.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSupplier.Name = "btnSupplier";
-            this.btnSupplier.Size = new System.Drawing.Size(277, 77);
+            this.btnSupplier.Size = new System.Drawing.Size(416, 128);
             this.btnSupplier.TabIndex = 4;
             this.btnSupplier.Text = "   Complete payment";
             this.btnSupplier.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -118,9 +122,10 @@ namespace Group6_Project
             this.btnWarehouse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWarehouse.ForeColor = System.Drawing.Color.White;
             this.btnWarehouse.Image = global::Group6_Project.Properties.Resources.box;
-            this.btnWarehouse.Location = new System.Drawing.Point(0, 130);
+            this.btnWarehouse.Location = new System.Drawing.Point(0, 217);
+            this.btnWarehouse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnWarehouse.Name = "btnWarehouse";
-            this.btnWarehouse.Size = new System.Drawing.Size(277, 77);
+            this.btnWarehouse.Size = new System.Drawing.Size(416, 128);
             this.btnWarehouse.TabIndex = 3;
             this.btnWarehouse.Text = "   Invoice";
             this.btnWarehouse.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -135,8 +140,9 @@ namespace Group6_Project
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(277, 130);
+            this.panel2.Size = new System.Drawing.Size(416, 217);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -144,18 +150,20 @@ namespace Group6_Project
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(65, 84);
+            this.label1.Location = new System.Drawing.Point(98, 140);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 24);
+            this.label1.Size = new System.Drawing.Size(206, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "OPSR System";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Group6_Project.Properties.Resources.car_circle_bolt;
-            this.pictureBox1.Location = new System.Drawing.Point(105, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(158, 50);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 42);
+            this.pictureBox1.Size = new System.Drawing.Size(94, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -166,9 +174,10 @@ namespace Group6_Project
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1272, 0);
+            this.btnClose.Location = new System.Drawing.Point(1908, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(45, 40);
+            this.btnClose.Size = new System.Drawing.Size(68, 67);
             this.btnClose.TabIndex = 0;
             this.btnClose.Text = "x";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -180,29 +189,33 @@ namespace Group6_Project
             this.panel5.Controls.Add(this.panFormLoad);
             this.panel5.Controls.Add(this.btnClose);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(277, 0);
+            this.panel5.Location = new System.Drawing.Point(416, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1317, 878);
+            this.panel5.Size = new System.Drawing.Size(1975, 1463);
             this.panel5.TabIndex = 5;
             // 
             // panFormLoad
             // 
             this.panFormLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panFormLoad.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panFormLoad.Location = new System.Drawing.Point(0, 130);
+            this.panFormLoad.Location = new System.Drawing.Point(0, 216);
+            this.panFormLoad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panFormLoad.Name = "panFormLoad";
-            this.panFormLoad.Size = new System.Drawing.Size(1317, 748);
+            this.panFormLoad.Size = new System.Drawing.Size(1975, 1247);
             this.panFormLoad.TabIndex = 1;
+            this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
             // 
             // AccountingManagerHomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1594, 878);
+            this.ClientSize = new System.Drawing.Size(2391, 1463);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AccountingManagerHomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "userHomePage";

@@ -56,12 +56,18 @@ namespace Group6_Project
             {
                 MessageBox.Show("Login Successful");
                 string role = (string)reader["role"];
-               if(role == "Admin")
+               if(role == "AccountManager")
                 {
                     this.Hide();
                     new AccountingManagerHomePage().ShowDialog();
                     this.Close();
+                }else if(role == "AccountClerk")
+                {
+                    this.Hide();
+                    new AccountingClerkHomePage().ShowDialog();
+                    this.Close();
                 }
+
             }
             else
             {

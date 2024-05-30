@@ -56,18 +56,66 @@ namespace Group6_Project
             {
                 MessageBox.Show("Login Successful");
                 string role = (string)reader["role"];
-               if(role == "AccountManager")
+                if (role == "AccountManager")
                 {
                     this.Hide();
                     new AccountingManagerHomePage().ShowDialog();
                     this.Close();
-                }else if(role == "AccountClerk")
+                }
+                else if (role == "AccountClerk")
                 {
                     this.Hide();
                     new AccountingClerkHomePage().ShowDialog();
                     this.Close();
                 }
+                else if (role == "CategoryManager")
+                {
+                    this.Hide();
+                    new CategoryManagerHomePage().ShowDialog();
+                    this.Close();
+                }
+                else if (role == "Delivery_manager")
+                {
+                    this.Hide();
+                    new DeliveryManagerHomePage().ShowDialog();
+                    this.Close();
+                }
+                else if (role == "HR")
+                {
+                    this.Hide();
+                    new HRHomePage().ShowDialog();
+                    this.Close();
+                }
+                else if (role == "PurchaseManager")
+                {
+                    this.Hide();
+                    new PurchaseManagerHomePage().ShowDialog();
+                    this.Close();
+                }else if(role == "PurchaseClerk")
+                {
+                    this.Hide();
+                    new PurchaseClerkHomePage().ShowDialog();
+                    this.Close();
+                }else if(role == "ShopManager")
+                {
+                    this.Hide();
+                    new ShopManagerHomePage().ShowDialog();
+                    this.Close();
 
+                }else if(role == "WarehouseManager")
+                {
+                    this.Hide();
+                    new WarehouseManagerHomePage().ShowDialog();
+                    this.Close();
+
+
+                }
+                else if (role == "WarehouseClerk")
+                {
+                    this.Hide();
+                    new WarehouseClerkHomePage().ShowDialog();
+                    this.Close();
+                }
             }
             else
             {

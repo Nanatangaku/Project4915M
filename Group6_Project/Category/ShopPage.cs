@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Group6_Project
 {
-    public partial class CompletedInstructions : Form
+    public partial class ShopPage : Form
     {
-        public CompletedInstructions()
+        public ShopPage()
         {
             InitializeComponent();
+        }
+
+        private void roundButton2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

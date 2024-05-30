@@ -78,6 +78,7 @@ namespace Group6_Project
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CompletedInstructions";
             this.Text = "CompletedIntructions";
+            this.Load += new System.EventHandler(this.CompletedInstructions_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

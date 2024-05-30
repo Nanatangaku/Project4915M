@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Group6_Project
 {
-    public partial class ShopPage : Form
+    public partial class CompletedInstructions : Form
     {
-        public ShopPage()
+        public CompletedInstructions()
         {
             InitializeComponent();
+        }
+
+        private void CompletedInstructions_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

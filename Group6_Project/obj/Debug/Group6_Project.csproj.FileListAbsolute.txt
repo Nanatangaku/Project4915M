@@ -201,7 +201,6 @@ C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\bin\Debug\Group6_
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\bin\Debug\Group6_Project.pdb
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\bin\Debug\Microsoft.VisualStudio.GraphModel.xml
-C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\bin\Debug\zh-Hant\Microsoft.VisualStudio.GraphModel.resources.dll
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.csproj.AssemblyReference.cache
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.AccountingClerkHomePage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.AccountingManagerHomePage.resources

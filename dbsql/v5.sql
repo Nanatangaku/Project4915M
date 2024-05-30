@@ -303,8 +303,7 @@ CREATE TABLE `shop` (
   `manager_ID` varchar(10) NOT NULL,
   PRIMARY KEY (`Shop_ID`),
   KEY `manager_ID` (`manager_ID`),
-  CONSTRAINT `shop_ibfk_1` FOREIGN KEY (`manager_ID`) REFERENCES `user` (`user_ID`),
-  CONSTRAINT `shopphone_check` CHECK (((`phone` >= 100000000000) and (`phone` <= 19999999999999)))
+  CONSTRAINT `shop_ibfk_1` FOREIGN KEY (`manager_ID`) REFERENCES `user` (`user_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -314,6 +313,7 @@ CREATE TABLE `shop` (
 
 LOCK TABLES `shop` WRITE;
 /*!40000 ALTER TABLE `shop` DISABLE KEYS */;
+INSERT INTO `shop` VALUES ('s001','Shang Hai Shop','Shang Hai',54946051,'009');
 /*!40000 ALTER TABLE `shop` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -356,13 +356,11 @@ CREATE TABLE `user` (
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `password` varchar(100) NOT NULL,
-  `phone` int NOT NULL,
   `email` varchar(50) NOT NULL,
   `address` varchar(50) NOT NULL,
-  `acconut_name` varchar(20) NOT NULL,
+  `account_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `role` varchar(20) NOT NULL,
-  PRIMARY KEY (`user_ID`),
-  CONSTRAINT `Phone_Check` CHECK (((`phone` >= 100000000000) and (`phone` <= 19999999999999)))
+  PRIMARY KEY (`user_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -372,6 +370,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES ('001','king yuet','lau','123','kenlau@gmail.com','Chai Wan','user001','Admin'),('002','ken','account_manager','123','ken_account_manager@gmail.com','Wan Chai','ken_account_manager','AccountManager'),('003','ken','account_clerk','123','ken_account_clerk@gmail.com','Wan Chai','ken_account_clerk','AccountClerk'),('004','ken','Category_Manager','123','ken_Category_Manager@gmail.com','Wan Chai','ken_Category_Manager','CategoryManager'),('005','ken','Delivery_manager','123','ken_Delivery_manager@gmail.com','Wan Chai','ken_Delivery_manager','Delivery_manager'),('006','ken','HR','123','ken_HR@gmail.com','Hong KOng','ken_HR','HR'),('007','ken','Purchase_Manager','123','ken_Purchase_Manager@gmail.com','Hong KOng','ken_Purchase_Manager','PurchaseManager'),('008','ken','Purchase_clerk','123','ken_Purchase_clerk@gmail.com','Hong KOng','ken_Purchase_clerk','PurchaseClerk'),('009','ken','Shop_Manager','123','ken_ShopManager@gmail.com','Hong KOng','ken_Shop_Manager','ShopManager'),('010','ken','WarehouseManager','123','ken_Warehouse_Manager@gmail.com','Hong Kong','ken_Warehouse_Manager','WarehouseManager'),('011','ken','WarehouseClerk','123','ken_Warehouse_Clerk@gmail.com','Hong Kong','ken_Warehouse_Clerk','WarehouseClerk');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -443,4 +442,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-14 19:26:56
+-- Dump completed on 2024-05-30 15:50:27

@@ -168,10 +168,10 @@
     <Compile Include="Category\CreateShop.Designer.cs">
       <DependentUpon>CreateShop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Warehouse\CreateStock.cs">
+    <Compile Include="Shop\CreateStock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Warehouse\CreateStock.Designer.cs">
+    <Compile Include="Shop\CreateStock.Designer.cs">
       <DependentUpon>CreateStock.cs</DependentUpon>
     </Compile>
     <Compile Include="Category\CreateSupplier.cs">
@@ -270,10 +270,10 @@
     <Compile Include="Category\SearchShop.Designer.cs">
       <DependentUpon>SearchShop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Warehouse\SearchStock.cs">
+    <Compile Include="Shop\SearchStock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Warehouse\SearchStock.Designer.cs">
+    <Compile Include="Shop\SearchStock.Designer.cs">
       <DependentUpon>SearchStock.cs</DependentUpon>
     </Compile>
     <Compile Include="Category\SearchSupplier.cs">
@@ -306,10 +306,10 @@
     <Compile Include="General\SetRule.Designer.cs">
       <DependentUpon>SetRule.cs</DependentUpon>
     </Compile>
-    <Compile Include="Warehouse\StockPage.cs">
+    <Compile Include="Shop\StockPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Warehouse\StockPage.Designer.cs">
+    <Compile Include="Shop\StockPage.Designer.cs">
       <DependentUpon>StockPage.cs</DependentUpon>
     </Compile>
     <Compile Include="HR\UserInformationPage.cs">
@@ -459,7 +459,7 @@
     <EmbeddedResource Include="Category\CreateShop.resx">
       <DependentUpon>CreateShop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Warehouse\CreateStock.resx">
+    <EmbeddedResource Include="Shop\CreateStock.resx">
       <DependentUpon>CreateStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Category\CreateSupplier.resx">
@@ -510,7 +510,7 @@
     <EmbeddedResource Include="Category\SearchShop.resx">
       <DependentUpon>SearchShop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Warehouse\SearchStock.resx">
+    <EmbeddedResource Include="Shop\SearchStock.resx">
       <DependentUpon>SearchStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Category\SearchSupplier.resx">
@@ -528,7 +528,7 @@
     <EmbeddedResource Include="General\SetRule.resx">
       <DependentUpon>SetRule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Warehouse\StockPage.resx">
+    <EmbeddedResource Include="Shop\StockPage.resx">
       <DependentUpon>StockPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HR\UserInformationPage.resx">

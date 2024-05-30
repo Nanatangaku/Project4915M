@@ -44,13 +44,14 @@ namespace Group6_Project
         [Category("Event")]
         private void btnShop_Click(object sender, EventArgs e)
         {
+            // 控制navbar的位置 紫色
             panNav.Height = btnShop.Height;
             panNav.Top = btnShop.Top;
             panNav.Left = btnShop.Left;
             btnShop.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            CreateDepartment shop = new CreateDepartment() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            ShopPage shop = new ShopPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             shop.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(shop);
             shop.Show();
@@ -178,6 +179,16 @@ namespace Group6_Project
         private void btnCategoryManager_Leave(object sender, EventArgs e)
         {
             btnCategoryManager.BackColor = Color.FromArgb(51, 51, 100);
+        }
+
+        private void panFormLoad_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panNav_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

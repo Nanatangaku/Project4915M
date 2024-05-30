@@ -31,11 +31,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.roundTextBox1 = new Group6_Project.RoundTextBox();
+            this.rtxtbox_newname = new Group6_Project.RoundTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.roundTextBox3 = new Group6_Project.RoundTextBox();
+            this.rtxtbox_newaddress = new Group6_Project.RoundTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.roundTextBox2 = new Group6_Project.RoundTextBox();
+            this.rtxtbox_newshopnum = new Group6_Project.RoundTextBox();
+            this.lblnewshopphone = new System.Windows.Forms.Label();
+            this.rtxtbox_newphone = new Group6_Project.RoundTextBox();
+            this.lblnewmanagerid = new System.Windows.Forms.Label();
+            this.rtxtbox_newmanagerid = new Group6_Project.RoundTextBox();
             this.SuspendLayout();
             // 
             // label2
@@ -43,7 +47,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(517, 428);
+            this.label2.Location = new System.Drawing.Point(462, 497);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(267, 24);
             this.label2.TabIndex = 23;
@@ -59,127 +63,199 @@
             this.roundButton1.FlatAppearance.BorderSize = 0;
             this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(916, 271);
+            this.roundButton1.Location = new System.Drawing.Point(490, 398);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(72, 31);
+            this.roundButton1.Size = new System.Drawing.Size(250, 29);
             this.roundButton1.TabIndex = 22;
             this.roundButton1.Text = "Add";
             this.roundButton1.TextColor = System.Drawing.Color.Black;
             this.roundButton1.UseVisualStyleBackColor = false;
+            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(321, 272);
+            this.label1.Location = new System.Drawing.Point(326, 109);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 24);
             this.label1.TabIndex = 21;
             this.label1.Text = "New Shop Name: ";
             // 
-            // roundTextBox1
+            // rtxtbox_newname
             // 
-            this.roundTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.roundTextBox1.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.roundTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.roundTextBox1.BorderRadius = 16;
-            this.roundTextBox1.BorderSize = 2;
-            this.roundTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox1.Location = new System.Drawing.Point(521, 271);
-            this.roundTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.roundTextBox1.Multiline = false;
-            this.roundTextBox1.Name = "roundTextBox1";
-            this.roundTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.roundTextBox1.PasswordChar = false;
-            this.roundTextBox1.PlaceholderColor = System.Drawing.Color.Red;
-            this.roundTextBox1.PlaceholderText = "";
-            this.roundTextBox1.Size = new System.Drawing.Size(388, 31);
-            this.roundTextBox1.TabIndex = 20;
-            this.roundTextBox1.Texts = "";
-            this.roundTextBox1.UnderlinedStyle = true;
+            this.rtxtbox_newname.BackColor = System.Drawing.SystemColors.Window;
+            this.rtxtbox_newname.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.rtxtbox_newname.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.rtxtbox_newname.BorderRadius = 16;
+            this.rtxtbox_newname.BorderSize = 2;
+            this.rtxtbox_newname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtbox_newname.ForeColor = System.Drawing.Color.DimGray;
+            this.rtxtbox_newname.Location = new System.Drawing.Point(526, 108);
+            this.rtxtbox_newname.Margin = new System.Windows.Forms.Padding(4);
+            this.rtxtbox_newname.Multiline = false;
+            this.rtxtbox_newname.Name = "rtxtbox_newname";
+            this.rtxtbox_newname.Padding = new System.Windows.Forms.Padding(10, 6, 10, 6);
+            this.rtxtbox_newname.PasswordChar = false;
+            this.rtxtbox_newname.PlaceholderColor = System.Drawing.Color.Red;
+            this.rtxtbox_newname.PlaceholderText = "";
+            this.rtxtbox_newname.Size = new System.Drawing.Size(388, 29);
+            this.rtxtbox_newname.TabIndex = 20;
+            this.rtxtbox_newname.Texts = "";
+            this.rtxtbox_newname.UnderlinedStyle = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(303, 375);
+            this.label3.Location = new System.Drawing.Point(308, 204);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(184, 24);
             this.label3.TabIndex = 27;
             this.label3.Text = "New Shop Address: ";
             // 
-            // roundTextBox3
+            // rtxtbox_newaddress
             // 
-            this.roundTextBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.roundTextBox3.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.roundTextBox3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.roundTextBox3.BorderRadius = 16;
-            this.roundTextBox3.BorderSize = 2;
-            this.roundTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundTextBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox3.Location = new System.Drawing.Point(521, 368);
-            this.roundTextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.roundTextBox3.Multiline = false;
-            this.roundTextBox3.Name = "roundTextBox3";
-            this.roundTextBox3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.roundTextBox3.PasswordChar = false;
-            this.roundTextBox3.PlaceholderColor = System.Drawing.Color.Red;
-            this.roundTextBox3.PlaceholderText = "";
-            this.roundTextBox3.Size = new System.Drawing.Size(388, 31);
-            this.roundTextBox3.TabIndex = 26;
-            this.roundTextBox3.Texts = "";
-            this.roundTextBox3.UnderlinedStyle = true;
+            this.rtxtbox_newaddress.BackColor = System.Drawing.SystemColors.Window;
+            this.rtxtbox_newaddress.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.rtxtbox_newaddress.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.rtxtbox_newaddress.BorderRadius = 16;
+            this.rtxtbox_newaddress.BorderSize = 2;
+            this.rtxtbox_newaddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtbox_newaddress.ForeColor = System.Drawing.Color.DimGray;
+            this.rtxtbox_newaddress.Location = new System.Drawing.Point(526, 199);
+            this.rtxtbox_newaddress.Margin = new System.Windows.Forms.Padding(4);
+            this.rtxtbox_newaddress.Multiline = false;
+            this.rtxtbox_newaddress.Name = "rtxtbox_newaddress";
+            this.rtxtbox_newaddress.Padding = new System.Windows.Forms.Padding(10, 6, 10, 6);
+            this.rtxtbox_newaddress.PasswordChar = false;
+            this.rtxtbox_newaddress.PlaceholderColor = System.Drawing.Color.Red;
+            this.rtxtbox_newaddress.PlaceholderText = "";
+            this.rtxtbox_newaddress.Size = new System.Drawing.Size(388, 29);
+            this.rtxtbox_newaddress.TabIndex = 26;
+            this.rtxtbox_newaddress.Texts = "";
+            this.rtxtbox_newaddress.UnderlinedStyle = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(303, 327);
+            this.label4.Location = new System.Drawing.Point(308, 160);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(183, 24);
             this.label4.TabIndex = 25;
             this.label4.Text = "New Shop Number: ";
             // 
-            // roundTextBox2
+            // rtxtbox_newshopnum
             // 
-            this.roundTextBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.roundTextBox2.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.roundTextBox2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.roundTextBox2.BorderRadius = 16;
-            this.roundTextBox2.BorderSize = 2;
-            this.roundTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox2.Location = new System.Drawing.Point(521, 320);
-            this.roundTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.roundTextBox2.Multiline = false;
-            this.roundTextBox2.Name = "roundTextBox2";
-            this.roundTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.roundTextBox2.PasswordChar = false;
-            this.roundTextBox2.PlaceholderColor = System.Drawing.Color.Red;
-            this.roundTextBox2.PlaceholderText = "";
-            this.roundTextBox2.Size = new System.Drawing.Size(388, 31);
-            this.roundTextBox2.TabIndex = 24;
-            this.roundTextBox2.Texts = "";
-            this.roundTextBox2.UnderlinedStyle = true;
+            this.rtxtbox_newshopnum.BackColor = System.Drawing.SystemColors.Window;
+            this.rtxtbox_newshopnum.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.rtxtbox_newshopnum.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.rtxtbox_newshopnum.BorderRadius = 16;
+            this.rtxtbox_newshopnum.BorderSize = 2;
+            this.rtxtbox_newshopnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtbox_newshopnum.ForeColor = System.Drawing.Color.DimGray;
+            this.rtxtbox_newshopnum.Location = new System.Drawing.Point(526, 153);
+            this.rtxtbox_newshopnum.Margin = new System.Windows.Forms.Padding(4);
+            this.rtxtbox_newshopnum.Multiline = false;
+            this.rtxtbox_newshopnum.Name = "rtxtbox_newshopnum";
+            this.rtxtbox_newshopnum.Padding = new System.Windows.Forms.Padding(10, 6, 10, 6);
+            this.rtxtbox_newshopnum.PasswordChar = false;
+            this.rtxtbox_newshopnum.PlaceholderColor = System.Drawing.Color.Red;
+            this.rtxtbox_newshopnum.PlaceholderText = "";
+            this.rtxtbox_newshopnum.Size = new System.Drawing.Size(388, 29);
+            this.rtxtbox_newshopnum.TabIndex = 24;
+            this.rtxtbox_newshopnum.Texts = "";
+            this.rtxtbox_newshopnum.UnderlinedStyle = true;
+            // 
+            // lblnewshopphone
+            // 
+            this.lblnewshopphone.AutoSize = true;
+            this.lblnewshopphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblnewshopphone.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblnewshopphone.Location = new System.Drawing.Point(326, 254);
+            this.lblnewshopphone.Name = "lblnewshopphone";
+            this.lblnewshopphone.Size = new System.Drawing.Size(165, 24);
+            this.lblnewshopphone.TabIndex = 28;
+            this.lblnewshopphone.Text = "New Shop Phone:";
+            this.lblnewshopphone.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // rtxtbox_newphone
+            // 
+            this.rtxtbox_newphone.BackColor = System.Drawing.SystemColors.Window;
+            this.rtxtbox_newphone.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.rtxtbox_newphone.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.rtxtbox_newphone.BorderRadius = 16;
+            this.rtxtbox_newphone.BorderSize = 2;
+            this.rtxtbox_newphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtbox_newphone.ForeColor = System.Drawing.Color.DimGray;
+            this.rtxtbox_newphone.Location = new System.Drawing.Point(526, 247);
+            this.rtxtbox_newphone.Margin = new System.Windows.Forms.Padding(4);
+            this.rtxtbox_newphone.Multiline = false;
+            this.rtxtbox_newphone.Name = "rtxtbox_newphone";
+            this.rtxtbox_newphone.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rtxtbox_newphone.PasswordChar = false;
+            this.rtxtbox_newphone.PlaceholderColor = System.Drawing.Color.Red;
+            this.rtxtbox_newphone.PlaceholderText = "";
+            this.rtxtbox_newphone.Size = new System.Drawing.Size(388, 31);
+            this.rtxtbox_newphone.TabIndex = 29;
+            this.rtxtbox_newphone.Texts = "";
+            this.rtxtbox_newphone.UnderlinedStyle = false;
+            // 
+            // lblnewmanagerid
+            // 
+            this.lblnewmanagerid.AutoSize = true;
+            this.lblnewmanagerid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblnewmanagerid.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblnewmanagerid.Location = new System.Drawing.Point(335, 319);
+            this.lblnewmanagerid.Name = "lblnewmanagerid";
+            this.lblnewmanagerid.Size = new System.Drawing.Size(156, 24);
+            this.lblnewmanagerid.TabIndex = 30;
+            this.lblnewmanagerid.Text = "New Manager ID:";
+            // 
+            // rtxtbox_newmanagerid
+            // 
+            this.rtxtbox_newmanagerid.BackColor = System.Drawing.SystemColors.Window;
+            this.rtxtbox_newmanagerid.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.rtxtbox_newmanagerid.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.rtxtbox_newmanagerid.BorderRadius = 16;
+            this.rtxtbox_newmanagerid.BorderSize = 2;
+            this.rtxtbox_newmanagerid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtbox_newmanagerid.ForeColor = System.Drawing.Color.DimGray;
+            this.rtxtbox_newmanagerid.Location = new System.Drawing.Point(526, 312);
+            this.rtxtbox_newmanagerid.Margin = new System.Windows.Forms.Padding(4);
+            this.rtxtbox_newmanagerid.Multiline = false;
+            this.rtxtbox_newmanagerid.Name = "rtxtbox_newmanagerid";
+            this.rtxtbox_newmanagerid.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rtxtbox_newmanagerid.PasswordChar = false;
+            this.rtxtbox_newmanagerid.PlaceholderColor = System.Drawing.Color.Red;
+            this.rtxtbox_newmanagerid.PlaceholderText = "";
+            this.rtxtbox_newmanagerid.Size = new System.Drawing.Size(388, 31);
+            this.rtxtbox_newmanagerid.TabIndex = 31;
+            this.rtxtbox_newmanagerid.Texts = "";
+            this.rtxtbox_newmanagerid.UnderlinedStyle = false;
             // 
             // CreateShop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1317, 810);
+            this.ClientSize = new System.Drawing.Size(1317, 748);
+            this.Controls.Add(this.rtxtbox_newmanagerid);
+            this.Controls.Add(this.lblnewmanagerid);
+            this.Controls.Add(this.rtxtbox_newphone);
+            this.Controls.Add(this.lblnewshopphone);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.roundTextBox3);
+            this.Controls.Add(this.rtxtbox_newaddress);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.roundTextBox2);
+            this.Controls.Add(this.rtxtbox_newshopnum);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.roundTextBox1);
+            this.Controls.Add(this.rtxtbox_newname);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CreateShop";
             this.Text = "CreateShop";
@@ -193,10 +269,14 @@
         private System.Windows.Forms.Label label2;
         private CustomControls.RoundButton roundButton1;
         private System.Windows.Forms.Label label1;
-        private RoundTextBox roundTextBox1;
+        private RoundTextBox rtxtbox_newname;
         private System.Windows.Forms.Label label3;
-        private RoundTextBox roundTextBox3;
+        private RoundTextBox rtxtbox_newaddress;
         private System.Windows.Forms.Label label4;
-        private RoundTextBox roundTextBox2;
+        private RoundTextBox rtxtbox_newshopnum;
+        private System.Windows.Forms.Label lblnewshopphone;
+        private RoundTextBox rtxtbox_newphone;
+        private System.Windows.Forms.Label lblnewmanagerid;
+        private RoundTextBox rtxtbox_newmanagerid;
     }
 }

@@ -55,7 +55,13 @@ namespace Group6_Project
             if (reader.Read())
             {
                 MessageBox.Show("Login Successful");
-
+                string role = (string)reader["role"];
+               if(role == "Admin")
+                {
+                    this.Hide();
+                    new AccountingManagerHomePage().ShowDialog();
+                    this.Close();
+                }
             }
             else
             {

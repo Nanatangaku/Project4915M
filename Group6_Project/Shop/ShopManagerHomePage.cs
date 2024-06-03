@@ -13,6 +13,7 @@ using System.Runtime.InteropServices;
 namespace Group6_Project
 {
     public partial class ShopManagerHomePage : Form
+    
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -25,12 +26,16 @@ namespace Group6_Project
             int nWidthEllipse,
             int nHeightEllipse
             );
+        private int user_id;
 
-        public ShopManagerHomePage()
+        public ShopManagerHomePage(int user_id)
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            this.user_id = user_id;
         }
+
+
 
         //Event
         [Category("Event")]
@@ -48,10 +53,10 @@ namespace Group6_Project
             btnWarehouse.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            CreateStock warehouse = new CreateStock() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            warehouse.FormBorderStyle = FormBorderStyle.None;
-            panFormLoad.Controls.Add(warehouse);
-            warehouse.Show();
+            CreateRequest createrequest = new CreateRequest(user_id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            createrequest.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(createrequest);
+            createrequest.Show();
         }
         [Category("Event")]
         private void btnWarehouse_Leave(object sender, EventArgs e)

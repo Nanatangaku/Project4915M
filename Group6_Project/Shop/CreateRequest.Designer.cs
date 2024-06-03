@@ -28,97 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.roundTextBox1 = new Group6_Project.RoundTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblselectitem = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.lblCart = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
-            // roundTextBox1
+            // dataGridView1
             // 
-            this.roundTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.roundTextBox1.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.roundTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.roundTextBox1.BorderRadius = 16;
-            this.roundTextBox1.BorderSize = 2;
-            this.roundTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox1.Location = new System.Drawing.Point(516, 367);
-            this.roundTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.roundTextBox1.Multiline = false;
-            this.roundTextBox1.Name = "roundTextBox1";
-            this.roundTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.roundTextBox1.PasswordChar = false;
-            this.roundTextBox1.PlaceholderColor = System.Drawing.Color.Red;
-            this.roundTextBox1.PlaceholderText = "";
-            this.roundTextBox1.Size = new System.Drawing.Size(388, 31);
-            this.roundTextBox1.TabIndex = 36;
-            this.roundTextBox1.Texts = "";
-            this.roundTextBox1.UnderlinedStyle = true;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(81, 75);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(884, 276);
+            this.dataGridView1.TabIndex = 40;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // label1
+            // lblselectitem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(333, 368);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 24);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "New Request: ";
+            this.lblselectitem.AutoSize = true;
+            this.lblselectitem.Font = new System.Drawing.Font("PMingLiU", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblselectitem.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblselectitem.Location = new System.Drawing.Point(48, 24);
+            this.lblselectitem.Name = "lblselectitem";
+            this.lblselectitem.Size = new System.Drawing.Size(226, 48);
+            this.lblselectitem.TabIndex = 41;
+            this.lblselectitem.Text = "Select Item";
             // 
-            // roundButton1
+            // textBox1
             // 
-            this.roundButton1.BackColor = System.Drawing.Color.White;
-            this.roundButton1.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.roundButton1.BorderRadius = 22;
-            this.roundButton1.BorderSize = 2;
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(911, 367);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(72, 31);
-            this.roundButton1.TabIndex = 38;
-            this.roundButton1.Text = "Add";
-            this.roundButton1.TextColor = System.Drawing.Color.Black;
-            this.roundButton1.UseVisualStyleBackColor = false;
+            this.textBox1.Location = new System.Drawing.Point(293, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(438, 22);
+            this.textBox1.TabIndex = 43;
+            this.textBox1.TextChanged += new System.EventHandler(this.searchtxtbox__TextChanged);
             // 
-            // label2
+            // dataGridView2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(512, 420);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(292, 24);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Sucessed to create new Request.";
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(81, 430);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(884, 276);
+            this.dataGridView2.TabIndex = 44;
+            // 
+            // lblCart
+            // 
+            this.lblCart.AutoSize = true;
+            this.lblCart.Font = new System.Drawing.Font("PMingLiU", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblCart.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblCart.Location = new System.Drawing.Point(160, 366);
+            this.lblCart.Name = "lblCart";
+            this.lblCart.Size = new System.Drawing.Size(98, 48);
+            this.lblCart.TabIndex = 45;
+            this.lblCart.Text = "Cart";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(293, 382);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(438, 22);
+            this.textBox2.TabIndex = 46;
             // 
             // CreateRequest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1317, 810);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.roundButton1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.roundTextBox1);
+            this.ClientSize = new System.Drawing.Size(1317, 748);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lblCart);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblselectitem);
+            this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CreateRequest";
             this.Text = "CreateRequest";
+            this.Load += new System.EventHandler(this.CreateRequest_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private RoundTextBox roundTextBox1;
-        private System.Windows.Forms.Label label1;
-        private CustomControls.RoundButton roundButton1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblselectitem;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label lblCart;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

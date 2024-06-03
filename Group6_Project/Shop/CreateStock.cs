@@ -16,5 +16,10 @@ namespace Group6_Project
         {
             InitializeComponent();
         }
+
+        private void CreateStock_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

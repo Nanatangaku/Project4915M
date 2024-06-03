@@ -38,10 +38,13 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(324, 181);
+            this.dataGridView1.Location = new System.Drawing.Point(432, 209);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(849, 448);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1132, 517);
             this.dataGridView1.TabIndex = 27;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // roundButton1
             // 
@@ -53,9 +56,10 @@
             this.roundButton1.FlatAppearance.BorderSize = 0;
             this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(744, 104);
+            this.roundButton1.Location = new System.Drawing.Point(992, 120);
+            this.roundButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(72, 31);
+            this.roundButton1.Size = new System.Drawing.Size(96, 36);
             this.roundButton1.TabIndex = 26;
             this.roundButton1.Text = "Search";
             this.roundButton1.TextColor = System.Drawing.Color.Black;
@@ -66,9 +70,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(143, 111);
+            this.label1.Location = new System.Drawing.Point(191, 128);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 24);
+            this.label1.Size = new System.Drawing.Size(186, 29);
             this.label1.TabIndex = 25;
             this.label1.Text = "Request Name: ";
             // 
@@ -81,30 +86,31 @@
             this.roundTextBox1.BorderSize = 2;
             this.roundTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox1.Location = new System.Drawing.Point(324, 104);
-            this.roundTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.roundTextBox1.Location = new System.Drawing.Point(432, 120);
+            this.roundTextBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.roundTextBox1.Multiline = false;
             this.roundTextBox1.Name = "roundTextBox1";
-            this.roundTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.roundTextBox1.Padding = new System.Windows.Forms.Padding(13, 8, 13, 8);
             this.roundTextBox1.PasswordChar = false;
             this.roundTextBox1.PlaceholderColor = System.Drawing.Color.Red;
             this.roundTextBox1.PlaceholderText = "";
-            this.roundTextBox1.Size = new System.Drawing.Size(388, 31);
+            this.roundTextBox1.Size = new System.Drawing.Size(517, 37);
             this.roundTextBox1.TabIndex = 24;
             this.roundTextBox1.Texts = "";
             this.roundTextBox1.UnderlinedStyle = true;
             // 
             // SearchRequest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1317, 810);
+            this.ClientSize = new System.Drawing.Size(1756, 935);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.roundTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "SearchRequest";
             this.Text = "SearchRequest";
             this.Load += new System.EventHandler(this.SearchRequest_Load);

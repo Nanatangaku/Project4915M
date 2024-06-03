@@ -114,6 +114,12 @@
     <Compile Include="Accounting\AccountingManagerHomePage.Designer.cs">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shop\OrderRequestInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shop\OrderRequestInfo.Designer.cs">
+      <DependentUpon>OrderRequestInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Warehouse\CompletedInstructions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -431,6 +437,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Accounting\AccountingManagerHomePage.resx">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop\OrderRequestInfo.resx">
+      <DependentUpon>OrderRequestInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\CompletedInstructions.resx">
       <DependentUpon>CompletedInstructions.cs</DependentUpon>

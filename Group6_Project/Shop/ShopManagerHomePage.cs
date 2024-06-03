@@ -98,5 +98,10 @@ namespace Group6_Project
         {
             btnCategoryManager.BackColor = Color.FromArgb(51, 51, 100);
         }
+
+        private void panFormLoad_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

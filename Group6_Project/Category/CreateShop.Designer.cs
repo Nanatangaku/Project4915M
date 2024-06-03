@@ -259,6 +259,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CreateShop";
             this.Text = "CreateShop";
+            this.Load += new System.EventHandler(this.CreateShop_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

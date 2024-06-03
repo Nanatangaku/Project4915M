@@ -65,26 +65,7 @@ namespace Group6_Project
         }
         
         [Category("Event")]
-        private void btnDepartment_Click(object sender, EventArgs e)
-        {
-            panNav.Height = btnDepartment.Height;
-            panNav.Top = btnDepartment.Top;
-            panNav.Left = btnDepartment.Left;
-            btnDepartment.BackColor = Color.FromArgb(46, 51, 73);
-
-            this.panFormLoad.Controls.Clear();
-            DepartmentPage department = new DepartmentPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            department.FormBorderStyle = FormBorderStyle.None;
-            panFormLoad.Controls.Add(department);
-            department.Show();
-        }
-        [Category("Event")]
-        private void btnDepartment_Leave(object sender, EventArgs e)
-        {
-            btnDepartment.BackColor = Color.FromArgb(51, 51, 76);
-        }
-        
-        [Category("Event")]
+     
         private void btnCategoryManager_Click(object sender, EventArgs e)
         {
             panNav.Height = btnCategoryManager.Height;
@@ -107,6 +88,41 @@ namespace Group6_Project
         private void panFormLoad_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            panNav.Height = btnCheckout.Height;
+            panNav.Top = btnCheckout.Top;
+            panNav.Left = btnCheckout.Left;
+            btnCheckout.BackColor = Color.FromArgb(46, 51, 73);
+
+            this.panFormLoad.Controls.Clear();
+            CheckOut checkout = new CheckOut(user_id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            checkout.FormBorderStyle = FormBorderStyle.None;
+            this.panFormLoad.Controls.Add(checkout);
+            checkout.Show();
+        }
+
+        private void btnvieworder_Click(object sender, EventArgs e)
+        {
+            panNav.Height = btnvieworder.Height;
+            panNav.Top = btnvieworder.Top;
+            panNav.Left = btnvieworder.Left;
+            btnvieworder.BackColor = Color.FromArgb(46, 51, 73);
+
+            this.panFormLoad.Controls.Clear();
+            // load the CheckOut form
+            //ViewOrderPage vieworder = new ViewOrderPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            //vieworder.FormBorderStyle = FormBorderStyle.None;
+            //this.panFormLoad.Controls.Add(vieworder);
+            //vieworder.Show();
         }
     }
 }

@@ -16,5 +16,15 @@ namespace Group6_Project
         {
             InitializeComponent();
         }
+
+        private void roundButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RequestPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

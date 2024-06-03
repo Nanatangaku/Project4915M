@@ -26,5 +26,10 @@ namespace Group6_Project
         {
 
         }
+
+        private void WarehousePage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

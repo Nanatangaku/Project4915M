@@ -59,5 +59,10 @@ namespace Group6_Project
 
             }
         }
+
+        private void CreateShop_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

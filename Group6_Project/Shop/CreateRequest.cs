@@ -33,26 +33,18 @@ namespace Group6_Project
             btn.Name = "btnaddtocart";
             btn.UseColumnTextForButtonValue = true;
 
+            // add a column allow user enter the quantity and default value is 1
+            DataGridViewTextBoxColumn txt = new DataGridViewTextBoxColumn();
+            dataGridView1.Columns.Add(txt);
+            txt.HeaderText = "Quantity";
+            txt.Name = "txtquantity";
+            // default value is 0
+            txt.ValueType = typeof(int);
+
+
+
+
             filldvg();
-
-            dataGridView2.ColumnCount = 6;
-            //write a btn in columns[0]
-            DataGridViewButtonColumn btn2 = new DataGridViewButtonColumn();
-            dataGridView2.Columns.Add(btn2);
-            btn2.HeaderText = "Delete";
-            btn2.Text = "Delete";
-            btn2.Name = "btndelete";
-            btn2.UseColumnTextForButtonValue = true;
-
-           
-
-            dataGridView2.Columns[1].Name = "Item id";
-            dataGridView2.Columns[2].Name = "Name";
-            dataGridView2.Columns[3].Name = "Price";
-            dataGridView2.Columns[4].Name = "Category";
-            dataGridView2.Columns[5].Name = "Quantity";
-
-
 
 
         }
@@ -72,7 +64,7 @@ namespace Group6_Project
 
         private void filldvg()
         {
-            string sql = "select item.item_id,item.item_name,item.price,item_Category,warehouse_item.quantity from warehouse_item,item where item.item_id = warehouse_item.item_id";
+            string sql = "select item.item_id,item.item_name,item.price,item_Category from warehouse_item,item where item.item_id = warehouse_item.item_id";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
             //use adapter to fill the data in the datatable
@@ -92,7 +84,7 @@ namespace Group6_Project
 
         private void filldvg(string valueToSearch)
         {
-            string sql = "select item.item_name,item.price,item_Category,warehouse_item.quantity from warehouse_item,item where item.item_id = warehouse_item.item_id and item_name like '%" + valueToSearch + "%'";
+            string sql = "select item.item_id, item.item_name,item.price,item_Category from warehouse_item,item where item.item_id = warehouse_item.item_id and item_name like '%" + valueToSearch + "%'";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
             //use adapter to fill the data in the datatable
@@ -114,17 +106,45 @@ namespace Group6_Project
         {
             if (e.ColumnIndex == 0)
             {
-                //add select data to datagridview2
+               
                 int index = e.RowIndex;
                 DataGridViewRow selectedRow = dataGridView1.Rows[index];
-                string item_name = selectedRow.Cells[1].Value.ToString();
-                string price = selectedRow.Cells[2].Value.ToString();
-                string category = selectedRow.Cells[3].Value.ToString();
-                string quantity = selectedRow.Cells[4].Value.ToString();
-                string[] row = { item_name, price, category, quantity };
-                dataGridView2.Rows.Add(row);
-                // remove the select data from datagridveiw 1
-                dataGridView1.Rows.RemoveAt(index);
+                var inputquantity = 0;
+     
+     
+                    try
+                    {
+                        inputquantity = Convert.ToInt32(selectedRow.Cells[1].Value);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Quantity cant be 0 or negative");
+                    return;
+                    }
+
+                if (inputquantity <= 0)
+                {
+                    MessageBox.Show("Quantity cant be 0 or negative");
+                    return;
+                }
+      
+             
+                var item_id = selectedRow.Cells[2].Value.ToString();
+                var sql = "insert into cart(user_id,item_id,quantity)Value(" + user_id + "," + item_id + "," + inputquantity + ");";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                conn.Open();
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Item added to cart");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
+
             }
             
         }

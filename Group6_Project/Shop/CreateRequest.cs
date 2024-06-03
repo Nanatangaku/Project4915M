@@ -36,13 +36,21 @@ namespace Group6_Project
             filldvg();
 
             dataGridView2.ColumnCount = 6;
-            dataGridView2.Columns.Add(btn);
-            btn.HeaderText = "Shoppping Cart";
-            btn.Text = "Remove";
-            btn.Name = "btnremovefrom cart";
-            btn.UseColumnTextForButtonValue = true;
+            //write a btn in columns[0]
+            DataGridViewButtonColumn btn2 = new DataGridViewButtonColumn();
+            dataGridView2.Columns.Add(btn2);
+            btn2.HeaderText = "Delete";
+            btn2.Text = "Delete";
+            btn2.Name = "btndelete";
+            btn2.UseColumnTextForButtonValue = true;
+
+           
+
             dataGridView2.Columns[1].Name = "Item id";
             dataGridView2.Columns[2].Name = "Name";
+            dataGridView2.Columns[3].Name = "Price";
+            dataGridView2.Columns[4].Name = "Category";
+            dataGridView2.Columns[5].Name = "Quantity";
 
 
 

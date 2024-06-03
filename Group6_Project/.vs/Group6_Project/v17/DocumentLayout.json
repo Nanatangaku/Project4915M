@@ -43,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|solutionrelative:shop\\searchrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|c:\\users\\ku123\\desktop\\github file\\project4915m\\group6_project\\shop\\orderrequestinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\shop\\orderrequestinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|solutionrelative:shop\\orderrequestinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -51,7 +51,7 @@
       "RelativeMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|solutionrelative:shop\\createstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|c:\\users\\ku123\\desktop\\github file\\project4915m\\group6_project\\shop\\createstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\shop\\createstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|solutionrelative:shop\\createstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -271,7 +271,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -290,6 +290,10 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "SearchStock.cs [Design]",
@@ -298,8 +302,7 @@
               "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\SearchStock.cs [Design]",
               "RelativeToolTip": "Shop\\SearchStock.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T08:55:51.527Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-30T08:55:51.527Z"
             },
             {
               "$type": "Document",
@@ -310,8 +313,7 @@
               "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\RequestPage.cs [Design]",
               "RelativeToolTip": "Shop\\RequestPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T08:55:32.187Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-30T08:55:32.187Z"
             },
             {
               "$type": "Document",
@@ -323,8 +325,7 @@
               "RelativeToolTip": "Shop\\ShopManagerHomePage.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAxwCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T08:56:20.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T08:56:20.278Z"
             },
             {
               "$type": "Document",
@@ -346,7 +347,7 @@
               "RelativeDocumentMoniker": "Shop\\CreateRequest.cs",
               "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\CreateRequest.cs",
               "RelativeToolTip": "Shop\\CreateRequest.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAIwCwAAAAzAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAwwC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T11:42:04.995Z",
               "EditorCaption": ""
@@ -361,8 +362,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T14:12:42.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T14:12:42.686Z"
             },
             {
               "$type": "Document",
@@ -373,8 +373,7 @@
               "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\General\\loginPage.cs [Design]",
               "RelativeToolTip": "General\\loginPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T11:42:37.153Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-29T11:42:37.153Z"
             },
             {
               "$type": "Document",
@@ -386,12 +385,7 @@
               "RelativeToolTip": "General\\loginPage.cs",
               "ViewState": "AQIAAG8AAAAAAAAAAAAmwCwAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T11:42:40.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
+              "WhenOpened": "2024-05-29T11:42:40.847Z"
             },
             {
               "$type": "Document",
@@ -402,8 +396,7 @@
               "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\ShopManagerHomePage.cs [Design]",
               "RelativeToolTip": "Shop\\ShopManagerHomePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T08:55:28.754Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-30T08:55:28.754Z"
             },
             {
               "$type": "Document",
@@ -414,8 +407,7 @@
               "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\SearchRequest.cs [Design]",
               "RelativeToolTip": "Shop\\SearchRequest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T08:55:33.358Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-30T08:55:33.358Z"
             },
             {
               "$type": "Document",
@@ -426,8 +418,7 @@
               "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\OrderRequestInfo.cs [Design]",
               "RelativeToolTip": "Shop\\OrderRequestInfo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T07:44:11.277Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-03T07:44:11.277Z"
             },
             {
               "$type": "Document",
@@ -438,8 +429,7 @@
               "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\CreateStock.cs [Design]",
               "RelativeToolTip": "Shop\\CreateStock.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T14:12:42.731Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-28T14:12:42.731Z"
             },
             {
               "$type": "Document",
@@ -451,8 +441,7 @@
               "RelativeToolTip": "Shop\\CreateStock.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:31:14.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:31:14.852Z"
             },
             {
               "$type": "Document",
@@ -475,8 +464,7 @@
               "RelativeToolTip": "Shop\\SearchRequest.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAgwBkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T07:27:13.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T07:27:13.394Z"
             },
             {
               "$type": "Document",

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Group6_Project",
+    "\\Group6_Project\\Shop"
   ],
-  "SelectedNode": "\\Group6_Project.sln",
+  "SelectedNode": "\\Group6_Project\\Shop\\ShopManagerHomePage.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -2,9 +2,9 @@ CREATE DATABASE  IF NOT EXISTS `project4915mdb` /*!40100 DEFAULT CHARACTER SET u
 USE `project4915mdb`;
 -- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
 --
--- Host: localhost    Database: project4915mdb
+-- Host: 127.0.0.1    Database: project4915mdb
 -- ------------------------------------------------------
--- Server version	8.2.0
+-- Server version	8.0.37
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -16,6 +16,36 @@ USE `project4915mdb`;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `cart`
+--
+
+DROP TABLE IF EXISTS `cart`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cart` (
+  `cart_id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
+  `item_id` int NOT NULL,
+  `quantity` int NOT NULL,
+  PRIMARY KEY (`cart_id`),
+  KEY `item_id` (`item_id`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`item_id`) REFERENCES `item` (`item_id`),
+  CONSTRAINT `cart_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cart`
+--
+
+LOCK TABLES `cart` WRITE;
+/*!40000 ALTER TABLE `cart` DISABLE KEYS */;
+INSERT INTO `cart` VALUES (24,5,1,150);
+/*!40000 ALTER TABLE `cart` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `delivery_request`
@@ -108,7 +138,6 @@ CREATE TABLE `order_item` (
   `order_id` int NOT NULL,
   `item_id` int NOT NULL,
   `quantity` int NOT NULL,
-  `total_price` decimal(20,2) NOT NULL,
   PRIMARY KEY (`order_id`,`item_id`),
   KEY `item_id` (`item_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -120,7 +149,7 @@ CREATE TABLE `order_item` (
 
 LOCK TABLES `order_item` WRITE;
 /*!40000 ALTER TABLE `order_item` DISABLE KEYS */;
-INSERT INTO `order_item` VALUES (3,1,1,99.00),(3,2,1,88.00);
+INSERT INTO `order_item` VALUES (3,1,1),(3,2,1),(5,1,150),(6,1,150);
 /*!40000 ALTER TABLE `order_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -135,12 +164,12 @@ CREATE TABLE `order_request` (
   `order_id` int NOT NULL AUTO_INCREMENT,
   `user_id` int NOT NULL,
   `payment` decimal(20,2) NOT NULL,
-  `payment_type` varchar(255) NOT NULL,
   `order_status_id` int NOT NULL,
+  `address` varchar(255) NOT NULL,
   PRIMARY KEY (`order_id`),
   KEY `order_status_id` (`order_status_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -149,7 +178,7 @@ CREATE TABLE `order_request` (
 
 LOCK TABLES `order_request` WRITE;
 /*!40000 ALTER TABLE `order_request` DISABLE KEYS */;
-INSERT INTO `order_request` VALUES (3,8,187.00,'Credit Card',1);
+INSERT INTO `order_request` VALUES (3,8,187.00,1,'Chai Wan,Chai Wan Estate'),(4,5,250.00,1,'chai wan '),(5,5,14850.00,1,'Chai Wan'),(6,5,14850.00,1,'Chai Wan');
 /*!40000 ALTER TABLE `order_request` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -201,6 +230,37 @@ LOCK TABLES `role` WRITE;
 /*!40000 ALTER TABLE `role` DISABLE KEYS */;
 INSERT INTO `role` VALUES (1,'HR',NULL),(2,'Category Manager',NULL),(3,'Warehouse Manager',NULL),(4,'Purchase Manager',NULL),(5,'Shop Manager',NULL),(6,'Delivery Manager',NULL),(7,'Account Manager',NULL),(8,'Dealer',NULL);
 /*!40000 ALTER TABLE `role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `shop`
+--
+
+DROP TABLE IF EXISTS `shop`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `shop` (
+  `shop_id` int NOT NULL AUTO_INCREMENT,
+  `warehouse_id` int NOT NULL,
+  `user_id` int NOT NULL,
+  `remarks` varchar(255) NOT NULL,
+  `shopname` varchar(255) NOT NULL,
+  PRIMARY KEY (`shop_id`),
+  KEY `warehouse_id` (`warehouse_id`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `shop_ibfk_1` FOREIGN KEY (`warehouse_id`) REFERENCES `warehouse` (`warehouse_id`),
+  CONSTRAINT `shop_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `shop`
+--
+
+LOCK TABLES `shop` WRITE;
+/*!40000 ALTER TABLE `shop` DISABLE KEYS */;
+INSERT INTO `shop` VALUES (3,1,5,'','Shop Shen Zhen');
+/*!40000 ALTER TABLE `shop` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -310,6 +370,34 @@ INSERT INTO `warehouse` VALUES (1,'shen zhen',12313212);
 UNLOCK TABLES;
 
 --
+-- Table structure for table `warehouse_item`
+--
+
+DROP TABLE IF EXISTS `warehouse_item`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `warehouse_item` (
+  `item_id` int NOT NULL,
+  `warehouse_id` int NOT NULL,
+  `quantity` int NOT NULL,
+  PRIMARY KEY (`item_id`,`warehouse_id`),
+  KEY `warehouse_id` (`warehouse_id`),
+  CONSTRAINT `warehouse_item_ibfk_1` FOREIGN KEY (`item_id`) REFERENCES `item` (`item_id`),
+  CONSTRAINT `warehouse_item_ibfk_2` FOREIGN KEY (`warehouse_id`) REFERENCES `warehouse` (`warehouse_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `warehouse_item`
+--
+
+LOCK TABLES `warehouse_item` WRITE;
+/*!40000 ALTER TABLE `warehouse_item` DISABLE KEYS */;
+INSERT INTO `warehouse_item` VALUES (1,1,1000),(2,1,2500),(3,1,1500),(4,1,600),(5,1,2000),(7,1,2500),(8,1,3000);
+/*!40000 ALTER TABLE `warehouse_item` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping events for database 'project4915mdb'
 --
 
@@ -326,4 +414,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-03 15:51:09
+-- Dump completed on 2024-06-04 23:57:41

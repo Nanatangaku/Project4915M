@@ -9,11 +9,12 @@ using System.ComponentModel;
 using System.Data;
 using Plasmoid.Extensions;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 
 namespace Group6_Project
 {
     public partial class ShopManagerHomePage : Form
-    
+
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -28,13 +29,25 @@ namespace Group6_Project
             );
         private int user_id;
 
-        public ShopManagerHomePage(int user_id)
+        public ShopManagerHomePage(int user_id, Panel panformLoad)
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             this.user_id = user_id;
+            this.panFormLoad = panformLoad;
         }
+        public ShopManagerHomePage(int user_id)
+        {
+            InitializeComponent();
+            this.user_id = user_id;
 
+
+        }
+        public ShopManagerHomePage()
+        {
+            InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+        }
 
 
         //Event
@@ -45,23 +58,11 @@ namespace Group6_Project
         }
         
         [Category("Event")]
-        private void btnWarehouse_Click(object sender, EventArgs e)
-        {
-            panNav.Height = btnWarehouse.Height;
-            panNav.Top = btnWarehouse.Top;
-            panNav.Left = btnWarehouse.Left;
-            btnWarehouse.BackColor = Color.FromArgb(46, 51, 73);
-
-            this.panFormLoad.Controls.Clear();
-            CreateRequest createrequest = new CreateRequest(user_id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            createrequest.FormBorderStyle = FormBorderStyle.None;
-            panFormLoad.Controls.Add(createrequest);
-            createrequest.Show();
-        }
-        [Category("Event")]
+       
+     
         private void btnWarehouse_Leave(object sender, EventArgs e)
         {
-            btnWarehouse.BackColor = Color.FromArgb(51, 51, 76);
+            btnOrder.BackColor = Color.FromArgb(51, 51, 76);
         }
         
         [Category("Event")]
@@ -104,7 +105,7 @@ namespace Group6_Project
             btnCheckout.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            CheckOut checkout = new CheckOut(user_id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            CheckOut checkout = new CheckOut(user_id,panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             checkout.FormBorderStyle = FormBorderStyle.None;
             this.panFormLoad.Controls.Add(checkout);
             checkout.Show();
@@ -118,11 +119,45 @@ namespace Group6_Project
             btnvieworder.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            // load the CheckOut form
-            //ViewOrderPage vieworder = new ViewOrderPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            //vieworder.FormBorderStyle = FormBorderStyle.None;
-            //this.panFormLoad.Controls.Add(vieworder);
-            //vieworder.Show();
+            //load the CheckOut form
+            
+        }
+       
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            panNav.Height = btnOrder.Height;
+            panNav.Top = btnOrder.Top;
+            panNav.Left = btnOrder.Left;
+            btnOrder.BackColor = Color.FromArgb(46, 51, 73);
+
+            this.panFormLoad.Controls.Clear();
+            CreateRequest createrequest = new CreateRequest(user_id,panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            createrequest.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(createrequest);
+            createrequest.Show();
+        }
+
+        private void btnOrder_Leave(object sender, EventArgs e)
+        {
+            btnOrder.BackColor = Color.FromArgb(51, 51, 76);
+        }
+
+        private void btnCheckout_Leave(object sender, EventArgs e)
+        {
+            btnOrder.BackColor = Color.FromArgb(51, 51, 76);
+        }
+
+        private void btnvieworder_Leave(object sender, EventArgs e)
+        {
+            btnOrder.BackColor = Color.FromArgb(51, 51, 76);
         }
     }
-}
+
+    }
+

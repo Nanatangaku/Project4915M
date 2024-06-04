@@ -17,11 +17,15 @@ namespace Group6_Project
     {
         MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
         int user_id;
-
-        public CreateRequest(int user_id)
+        Panel panformload;
+        public CreateRequest(int user_id,Panel panformLoad)
         {
             InitializeComponent();
+
+         
+
             this.user_id = 5;
+            this.panformload = panformLoad;
         }
 
         private void CreateRequest_Load(object sender, EventArgs e)
@@ -78,7 +82,8 @@ namespace Group6_Project
 
             //make the data fit the datagridview1
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            //make the data fit the datagridview1 weight   
+            //loop all the row if the item_id is already exist in cart table remomve it from the datagridvew1
+
             conn.Close();
         }
 
@@ -98,7 +103,8 @@ namespace Group6_Project
 
             //make the data fit the datagridview1
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            //make the data fit the datagridview1 weight   
+            //if the item_id is exist in cart remove it
+          
             conn.Close();
         }
 
@@ -111,7 +117,6 @@ namespace Group6_Project
                 DataGridViewRow selectedRow = dataGridView1.Rows[index];
                 var inputquantity = 0;
      
-     
                     try
                     {
                         inputquantity = Convert.ToInt32(selectedRow.Cells[1].Value);
@@ -119,6 +124,7 @@ namespace Group6_Project
                     catch (Exception ex)
                     {
                         MessageBox.Show("Quantity cant be 0 or negative");
+                        MessageBox.Show(ex.Message);
                     return;
                     }
 
@@ -137,12 +143,14 @@ namespace Group6_Project
                 {
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Item added to cart");
+                    //remove the row from the datagridview
+                    dataGridView1.Rows.RemoveAt(index);
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-
+                conn.Close();
 
 
             }
@@ -152,6 +160,15 @@ namespace Group6_Project
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.panformload.Controls.Clear();
+            CheckOut checkOut = new CheckOut(user_id, panformload) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            checkOut.FormBorderStyle = FormBorderStyle.None;
+            this.panformload.Controls.Add(checkOut);
+            checkOut.Show();
         }
     }
 }

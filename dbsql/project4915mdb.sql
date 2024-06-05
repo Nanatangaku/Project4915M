@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1:3306
--- 產生時間： 2024-06-05 02:40:32
+-- 產生時間： 2024-06-05 11:30:38
 -- 伺服器版本： 8.0.37
 -- PHP 版本： 8.2.13
 
@@ -38,20 +38,13 @@ CREATE TABLE IF NOT EXISTS `cart` (
   PRIMARY KEY (`cart_id`),
   KEY `item_id` (`item_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `cart`
 --
 
 TRUNCATE TABLE `cart`;
---
--- 傾印資料表的資料 `cart`
---
-
-INSERT INTO `cart` (`cart_id`, `user_id`, `item_id`, `quantity`) VALUES
-(24, 5, 1, 150);
-
 -- --------------------------------------------------------
 
 --
@@ -63,17 +56,25 @@ CREATE TABLE IF NOT EXISTS `delivery` (
   `delivery_id` int NOT NULL AUTO_INCREMENT,
   `order_id` int NOT NULL,
   `user_id` int NOT NULL,
-  `expected_delivery_day` date NOT NULL,
-  `despatch_day` date NOT NULL,
-  `recive` date DEFAULT NULL,
+  `create_date` date NOT NULL,
+  `expected_delivery_date` date NOT NULL,
+  `despatch_date` date DEFAULT NULL,
+  `recive_date` date DEFAULT NULL,
   PRIMARY KEY (`delivery_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `delivery`
 --
 
 TRUNCATE TABLE `delivery`;
+--
+-- 傾印資料表的資料 `delivery`
+--
+
+INSERT INTO `delivery` (`delivery_id`, `order_id`, `user_id`, `create_date`, `expected_delivery_date`, `despatch_date`, `recive_date`) VALUES
+(2, 25, 5, '2024-06-05', '2024-06-12', NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -167,7 +168,14 @@ TRUNCATE TABLE `order_item`;
 --
 
 INSERT INTO `order_item` (`order_id`, `item_id`, `quantity`) VALUES
-(1, 2, 10);
+(22, 1, 200),
+(21, 1, 200),
+(20, 1, 200),
+(19, 1, 200),
+(0, 1, 200),
+(23, 1, 200),
+(24, 1, 200),
+(25, 1, 200);
 
 -- --------------------------------------------------------
 
@@ -187,7 +195,7 @@ CREATE TABLE IF NOT EXISTS `order_request` (
   KEY `order_status_id` (`order_status_id`),
   KEY `user_id` (`user_id`),
   KEY `delivery_id` (`delivery_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `order_request`
@@ -199,7 +207,15 @@ TRUNCATE TABLE `order_request`;
 --
 
 INSERT INTO `order_request` (`order_id`, `user_id`, `payment`, `order_status_id`, `address`, `delivery_id`) VALUES
-(1, 5, 888.00, 1, 'Chai Wan', 1);
+(21, 5, 19800.00, 1, '1', NULL),
+(22, 5, 19800.00, 1, '1', NULL),
+(20, 5, 19800.00, 1, '1', NULL),
+(19, 5, 19800.00, 1, '1', NULL),
+(18, 5, 19800.00, 1, '1', NULL),
+(17, 5, 19800.00, 1, '1', NULL),
+(23, 5, 19800.00, 1, '1', NULL),
+(24, 5, 19800.00, 1, '1', NULL),
+(25, 5, 19800.00, 1, '1', NULL);
 
 -- --------------------------------------------------------
 
@@ -282,13 +298,20 @@ CREATE TABLE IF NOT EXISTS `shop` (
   PRIMARY KEY (`shop_id`),
   KEY `warehouse_id` (`warehouse_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `shop`
 --
 
 TRUNCATE TABLE `shop`;
+--
+-- 傾印資料表的資料 `shop`
+--
+
+INSERT INTO `shop` (`shop_id`, `warehouse_id`, `user_id`, `remarks`, `shopname`) VALUES
+(1, 1, 5, '', 'Shen Zhen Shop');
+
 -- --------------------------------------------------------
 
 --
@@ -393,7 +416,7 @@ CREATE TABLE IF NOT EXISTS `warehouse` (
   `warehouse_name` varchar(255) NOT NULL,
   `phone` int NOT NULL,
   PRIMARY KEY (`warehouse_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `warehouse`
@@ -432,7 +455,7 @@ TRUNCATE TABLE `warehouse_item`;
 --
 
 INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
-(1, 1, 1000),
+(1, 1, 800),
 (2, 1, 2500),
 (3, 1, 1500),
 (4, 1, 600),
@@ -445,30 +468,10 @@ INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
 --
 
 --
--- 資料表的限制式 `cart`
---
-ALTER TABLE `cart`
-  ADD CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`item_id`) REFERENCES `item` (`item_id`),
-  ADD CONSTRAINT `cart_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`);
-
---
 -- 資料表的限制式 `item`
 --
 ALTER TABLE `item`
   ADD CONSTRAINT `item_ibfk_1` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`supplier_id`);
-
---
--- 資料表的限制式 `shop`
---
-ALTER TABLE `shop`
-  ADD CONSTRAINT `shop_ibfk_1` FOREIGN KEY (`warehouse_id`) REFERENCES `warehouse` (`warehouse_id`),
-  ADD CONSTRAINT `shop_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`);
-
---
--- 資料表的限制式 `user`
---
-ALTER TABLE `user`
-  ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role` (`role_id`);
 
 --
 -- 資料表的限制式 `warehouse_item`

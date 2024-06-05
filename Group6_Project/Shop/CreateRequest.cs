@@ -68,7 +68,7 @@ namespace Group6_Project
 
         private void filldvg()
         {
-            string sql = "select item.item_id,item.item_name,item.price,item_Category from warehouse_item,item where item.item_id = warehouse_item.item_id";
+            string sql = "select item.item_id,item.item_name,item.price,item_Category,warehouse_item.quantity from warehouse_item,item where item.item_id = warehouse_item.item_id";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
             //use adapter to fill the data in the datatable
@@ -89,7 +89,7 @@ namespace Group6_Project
 
         private void filldvg(string valueToSearch)
         {
-            string sql = "select item.item_id, item.item_name,item.price,item_Category from warehouse_item,item where item.item_id = warehouse_item.item_id and item_name like '%" + valueToSearch + "%'";
+            string sql = "select item.item_id, item.item_name,item.price,item_Category,warehouse_item.quantity from warehouse_item,item where item.item_id = warehouse_item.item_id and item_name like '%" + valueToSearch + "%'";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
             //use adapter to fill the data in the datatable
@@ -169,6 +169,11 @@ namespace Group6_Project
             checkOut.FormBorderStyle = FormBorderStyle.None;
             this.panformload.Controls.Add(checkOut);
             checkOut.Show();
+        }
+
+        private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+           
         }
     }
 }

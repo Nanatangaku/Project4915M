@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.gbgeneral = new System.Windows.Forms.GroupBox();
+            this.btnConfirm = new System.Windows.Forms.Button();
+            this.txtboxtotalprice = new System.Windows.Forms.TextBox();
+            this.lbltotalprice = new System.Windows.Forms.Label();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.txtboxshopname = new System.Windows.Forms.TextBox();
             this.txtboxcreatedate = new System.Windows.Forms.TextBox();
@@ -45,9 +48,7 @@
             this.lblcreaterid = new System.Windows.Forms.Label();
             this.gbItem = new System.Windows.Forms.GroupBox();
             this.dvgcart = new System.Windows.Forms.DataGridView();
-            this.btnConfirm = new System.Windows.Forms.Button();
-            this.lbltotalprice = new System.Windows.Forms.Label();
-            this.txtboxtotalprice = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbgeneral.SuspendLayout();
             this.gbItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgcart)).BeginInit();
@@ -55,6 +56,7 @@
             // 
             // gbgeneral
             // 
+            this.gbgeneral.Controls.Add(this.button1);
             this.gbgeneral.Controls.Add(this.btnConfirm);
             this.gbgeneral.Controls.Add(this.txtboxtotalprice);
             this.gbgeneral.Controls.Add(this.lbltotalprice);
@@ -74,91 +76,116 @@
             this.gbgeneral.Controls.Add(this.lblcreaterid);
             this.gbgeneral.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.gbgeneral.ForeColor = System.Drawing.Color.White;
-            this.gbgeneral.Location = new System.Drawing.Point(13, 37);
-            this.gbgeneral.Margin = new System.Windows.Forms.Padding(4);
+            this.gbgeneral.Location = new System.Drawing.Point(9, 25);
             this.gbgeneral.Name = "gbgeneral";
-            this.gbgeneral.Padding = new System.Windows.Forms.Padding(4);
-            this.gbgeneral.Size = new System.Drawing.Size(1208, 465);
+            this.gbgeneral.Size = new System.Drawing.Size(805, 310);
             this.gbgeneral.TabIndex = 0;
             this.gbgeneral.TabStop = false;
             this.gbgeneral.Text = "General";
             // 
+            // btnConfirm
+            // 
+            this.btnConfirm.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnConfirm.ForeColor = System.Drawing.Color.Black;
+            this.btnConfirm.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnConfirm.Location = new System.Drawing.Point(582, 263);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(141, 30);
+            this.btnConfirm.TabIndex = 15;
+            this.btnConfirm.Text = "Confirm";
+            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            // 
+            // txtboxtotalprice
+            // 
+            this.txtboxtotalprice.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtboxtotalprice.Location = new System.Drawing.Point(141, 259);
+            this.txtboxtotalprice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxtotalprice.Name = "txtboxtotalprice";
+            this.txtboxtotalprice.ReadOnly = true;
+            this.txtboxtotalprice.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtboxtotalprice.Size = new System.Drawing.Size(188, 36);
+            this.txtboxtotalprice.TabIndex = 16;
+            this.txtboxtotalprice.TextChanged += new System.EventHandler(this.txtboxtotalprice_TextChanged);
+            // 
+            // lbltotalprice
+            // 
+            this.lbltotalprice.AutoSize = true;
+            this.lbltotalprice.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lbltotalprice.Location = new System.Drawing.Point(21, 259);
+            this.lbltotalprice.Name = "lbltotalprice";
+            this.lbltotalprice.Size = new System.Drawing.Size(116, 24);
+            this.lbltotalprice.TabIndex = 15;
+            this.lbltotalprice.Text = "Total Price:";
+            // 
             // dateTimePicker
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(820, 188);
-            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker.Location = new System.Drawing.Point(547, 125);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(356, 51);
+            this.dateTimePicker.Size = new System.Drawing.Size(239, 36);
             this.dateTimePicker.TabIndex = 14;
             this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // txtboxshopname
             // 
             this.txtboxshopname.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxshopname.Location = new System.Drawing.Point(821, 120);
-            this.txtboxshopname.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxshopname.Location = new System.Drawing.Point(547, 80);
             this.txtboxshopname.Name = "txtboxshopname";
             this.txtboxshopname.ReadOnly = true;
-            this.txtboxshopname.Size = new System.Drawing.Size(356, 51);
+            this.txtboxshopname.Size = new System.Drawing.Size(239, 36);
             this.txtboxshopname.TabIndex = 13;
             // 
             // txtboxcreatedate
             // 
             this.txtboxcreatedate.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxcreatedate.Location = new System.Drawing.Point(214, 194);
-            this.txtboxcreatedate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxcreatedate.Location = new System.Drawing.Point(143, 129);
             this.txtboxcreatedate.Name = "txtboxcreatedate";
             this.txtboxcreatedate.ReadOnly = true;
-            this.txtboxcreatedate.Size = new System.Drawing.Size(356, 51);
+            this.txtboxcreatedate.Size = new System.Drawing.Size(239, 36);
             this.txtboxcreatedate.TabIndex = 12;
             // 
             // txtboxshopid
             // 
             this.txtboxshopid.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxshopid.Location = new System.Drawing.Point(214, 117);
-            this.txtboxshopid.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxshopid.Location = new System.Drawing.Point(143, 78);
             this.txtboxshopid.Name = "txtboxshopid";
             this.txtboxshopid.ReadOnly = true;
-            this.txtboxshopid.Size = new System.Drawing.Size(356, 51);
+            this.txtboxshopid.Size = new System.Drawing.Size(239, 36);
             this.txtboxshopid.TabIndex = 11;
             // 
             // txtboxname
             // 
             this.txtboxname.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxname.Location = new System.Drawing.Point(820, 46);
-            this.txtboxname.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxname.Location = new System.Drawing.Point(547, 31);
             this.txtboxname.Name = "txtboxname";
             this.txtboxname.ReadOnly = true;
-            this.txtboxname.Size = new System.Drawing.Size(356, 51);
+            this.txtboxname.Size = new System.Drawing.Size(239, 36);
             this.txtboxname.TabIndex = 10;
             // 
             // txtboxcreateid
             // 
             this.txtboxcreateid.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxcreateid.Location = new System.Drawing.Point(212, 46);
-            this.txtboxcreateid.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxcreateid.Location = new System.Drawing.Point(141, 31);
             this.txtboxcreateid.Name = "txtboxcreateid";
             this.txtboxcreateid.ReadOnly = true;
-            this.txtboxcreateid.Size = new System.Drawing.Size(356, 51);
+            this.txtboxcreateid.Size = new System.Drawing.Size(239, 36);
             this.txtboxcreateid.TabIndex = 9;
             // 
             // txtboxaddress
             // 
-            this.txtboxaddress.Location = new System.Drawing.Point(214, 278);
-            this.txtboxaddress.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxaddress.Location = new System.Drawing.Point(143, 185);
             this.txtboxaddress.Multiline = true;
             this.txtboxaddress.Name = "txtboxaddress";
-            this.txtboxaddress.Size = new System.Drawing.Size(974, 88);
+            this.txtboxaddress.Size = new System.Drawing.Size(651, 60);
             this.txtboxaddress.TabIndex = 8;
             // 
             // lbladdress
             // 
             this.lbladdress.AutoSize = true;
             this.lbladdress.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lbladdress.Location = new System.Drawing.Point(72, 281);
-            this.lbladdress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbladdress.Location = new System.Drawing.Point(48, 187);
             this.lbladdress.Name = "lbladdress";
-            this.lbladdress.Size = new System.Drawing.Size(134, 36);
+            this.lbladdress.Size = new System.Drawing.Size(90, 24);
             this.lbladdress.TabIndex = 7;
             this.lbladdress.Text = "Address:";
             // 
@@ -166,10 +193,9 @@
             // 
             this.lblshopname.AutoSize = true;
             this.lblshopname.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblshopname.Location = new System.Drawing.Point(630, 120);
-            this.lblshopname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblshopname.Location = new System.Drawing.Point(420, 80);
             this.lblshopname.Name = "lblshopname";
-            this.lblshopname.Size = new System.Drawing.Size(183, 36);
+            this.lblshopname.Size = new System.Drawing.Size(122, 24);
             this.lblshopname.TabIndex = 6;
             this.lblshopname.Text = "Shop Name:";
             // 
@@ -177,10 +203,9 @@
             // 
             this.lblexpectdate.AutoSize = true;
             this.lblexpectdate.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblexpectdate.Location = new System.Drawing.Point(624, 194);
-            this.lblexpectdate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblexpectdate.Location = new System.Drawing.Point(416, 129);
             this.lblexpectdate.Name = "lblexpectdate";
-            this.lblexpectdate.Size = new System.Drawing.Size(190, 36);
+            this.lblexpectdate.Size = new System.Drawing.Size(126, 24);
             this.lblexpectdate.TabIndex = 5;
             this.lblexpectdate.Text = "Expect Date:";
             // 
@@ -188,10 +213,9 @@
             // 
             this.lblshopid.AutoSize = true;
             this.lblshopid.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblshopid.Location = new System.Drawing.Point(68, 120);
-            this.lblshopid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblshopid.Location = new System.Drawing.Point(45, 80);
             this.lblshopid.Name = "lblshopid";
-            this.lblshopid.Size = new System.Drawing.Size(138, 36);
+            this.lblshopid.Size = new System.Drawing.Size(92, 24);
             this.lblshopid.TabIndex = 4;
             this.lblshopid.Text = "Shop ID:";
             // 
@@ -199,10 +223,9 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblName.Location = new System.Drawing.Point(708, 51);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(472, 34);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(104, 36);
+            this.lblName.Size = new System.Drawing.Size(70, 24);
             this.lblName.TabIndex = 3;
             this.lblName.Text = "Name:";
             // 
@@ -210,10 +233,9 @@
             // 
             this.lblcreatedate.AutoSize = true;
             this.lblcreatedate.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblcreatedate.Location = new System.Drawing.Point(21, 194);
-            this.lblcreatedate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblcreatedate.Location = new System.Drawing.Point(14, 129);
             this.lblcreatedate.Name = "lblcreatedate";
-            this.lblcreatedate.Size = new System.Drawing.Size(184, 36);
+            this.lblcreatedate.Size = new System.Drawing.Size(123, 24);
             this.lblcreatedate.TabIndex = 2;
             this.lblcreatedate.Text = "Create Date:";
             // 
@@ -221,10 +243,9 @@
             // 
             this.lblcreaterid.AutoSize = true;
             this.lblcreaterid.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblcreaterid.Location = new System.Drawing.Point(48, 51);
-            this.lblcreaterid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblcreaterid.Location = new System.Drawing.Point(32, 34);
             this.lblcreaterid.Name = "lblcreaterid";
-            this.lblcreaterid.Size = new System.Drawing.Size(156, 36);
+            this.lblcreaterid.Size = new System.Drawing.Size(105, 24);
             this.lblcreaterid.TabIndex = 0;
             this.lblcreaterid.Text = "Create ID:";
             // 
@@ -233,11 +254,9 @@
             this.gbItem.Controls.Add(this.dvgcart);
             this.gbItem.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.gbItem.ForeColor = System.Drawing.Color.White;
-            this.gbItem.Location = new System.Drawing.Point(13, 519);
-            this.gbItem.Margin = new System.Windows.Forms.Padding(4);
+            this.gbItem.Location = new System.Drawing.Point(9, 346);
             this.gbItem.Name = "gbItem";
-            this.gbItem.Padding = new System.Windows.Forms.Padding(4);
-            this.gbItem.Size = new System.Drawing.Size(1208, 532);
+            this.gbItem.Size = new System.Drawing.Size(805, 355);
             this.gbItem.TabIndex = 1;
             this.gbItem.TabStop = false;
             this.gbItem.Text = "Item";
@@ -246,61 +265,33 @@
             // 
             this.dvgcart.AllowUserToAddRows = false;
             this.dvgcart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgcart.Location = new System.Drawing.Point(52, 54);
-            this.dvgcart.Margin = new System.Windows.Forms.Padding(4);
+            this.dvgcart.Location = new System.Drawing.Point(35, 36);
             this.dvgcart.Name = "dvgcart";
             this.dvgcart.RowHeadersWidth = 62;
             this.dvgcart.RowTemplate.Height = 24;
-            this.dvgcart.Size = new System.Drawing.Size(1080, 454);
+            this.dvgcart.Size = new System.Drawing.Size(720, 303);
             this.dvgcart.TabIndex = 0;
             this.dvgcart.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgcart_CellClick);
             this.dvgcart.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgcart_CellContentClick);
             // 
-            // btnConfirm
+            // button1
             // 
-            this.btnConfirm.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnConfirm.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirm.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnConfirm.Location = new System.Drawing.Point(873, 394);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(4);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(211, 45);
-            this.btnConfirm.TabIndex = 15;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
-            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
-            // 
-            // lbltotalprice
-            // 
-            this.lbltotalprice.AutoSize = true;
-            this.lbltotalprice.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lbltotalprice.Location = new System.Drawing.Point(31, 388);
-            this.lbltotalprice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbltotalprice.Name = "lbltotalprice";
-            this.lbltotalprice.Size = new System.Drawing.Size(173, 36);
-            this.lbltotalprice.TabIndex = 15;
-            this.lbltotalprice.Text = "Total Price:";
-            // 
-            // txtboxtotalprice
-            // 
-            this.txtboxtotalprice.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxtotalprice.Location = new System.Drawing.Point(211, 388);
-            this.txtboxtotalprice.Name = "txtboxtotalprice";
-            this.txtboxtotalprice.ReadOnly = true;
-            this.txtboxtotalprice.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtboxtotalprice.Size = new System.Drawing.Size(280, 51);
-            this.txtboxtotalprice.TabIndex = 16;
-            this.txtboxtotalprice.TextChanged += new System.EventHandler(this.txtboxtotalprice_TextChanged);
+            this.button1.Location = new System.Drawing.Point(462, 263);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CheckOut
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1952, 1064);
+            this.ClientSize = new System.Drawing.Size(1301, 709);
             this.Controls.Add(this.gbItem);
             this.Controls.Add(this.gbgeneral);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CheckOut";
             this.Text = "CheckOut";
             this.Load += new System.EventHandler(this.CheckOut_Load);
@@ -334,5 +325,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.TextBox txtboxtotalprice;
         private System.Windows.Forms.Label lbltotalprice;
+        private System.Windows.Forms.Button button1;
     }
 }

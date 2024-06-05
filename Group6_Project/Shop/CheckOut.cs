@@ -69,7 +69,6 @@ namespace Group6_Project
             string sql = "select item.item_id,item.item_Name,item.item_Category, item.price  ,cart.quantity from cart,item where item.item_id = cart.item_id ";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
-            //use adapter to fill the data in the datatable
             MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             adp.Fill(dt);
@@ -120,56 +119,7 @@ namespace Group6_Project
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            if(txtboxaddress == null || txtboxaddress.Text == "")
-            {
-                MessageBox.Show("Please enter address");
-                return;
-            }else if(dvgcart.Rows.Count == 0)
-            {
-                MessageBox.Show("Please add item to cart");
-                return;
-            }
-            else
-            {
-                long id = 0;
-                Double total_price = Convert.ToDouble(count_total_price());
-                string address = txtboxaddress.Text;
-                string sql = "insert into order_request(user_id ,payment,order_status_id,address)values("+ user_id + "," +total_price + "," + 1 + "," + "\""+ address + "\"" +");";
-                MySqlCommand cmd = new MySqlCommand(sql, conn);
-                conn.Open();
-                if (cmd.ExecuteNonQuery() >= 1)
-                {
-                    MessageBox.Show("Order Request Created");
-                   id = cmd.LastInsertedId;
-                    foreach (DataGridViewRow row in dvgcart.Rows)
-                    {
-                        int item_id = Convert.ToInt32(row.Cells[1].Value);
-                        int quantity = Convert.ToInt32(row.Cells[5].Value);
-                        string sql2 = "insert into order_item(order_id,item_id,quantity)values(" + id + "," + item_id + "," + quantity + ");";
-                        MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
-                        conn.Open();
-                        cmd2.ExecuteNonQuery();
-                        conn.Close();
-                    }
-                    //clear dvgcart
-                    dvgcart.Rows.Clear();
-                    //clear form new to shopmanagerhomepage
-                    panformload.Controls.Clear();
-                    ShopManagerHomePage shopManagerHomePage = new ShopManagerHomePage(user_id, panformload) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-                    shopManagerHomePage.FormBorderStyle = FormBorderStyle.None;
-                    panformload.Controls.Add(shopManagerHomePage);
-                    shopManagerHomePage.Show();
-
-
-                }
-                else {
-                    MessageBox.Show("Create Order failed");
-                }
-
-            
-                conn.Close();
-               
-            }
+            check_out();
 
 
 
@@ -190,6 +140,192 @@ namespace Group6_Project
                 total_price += priceofeachgood;
             }
             return total_price;
+        }
+
+        public void check_out()
+        {
+            if (txtboxaddress == null || txtboxaddress.Text == "")
+            {
+                MessageBox.Show("Please enter address");
+                return;
+            }
+            else if (dvgcart.Rows.Count == 0)
+            {
+                MessageBox.Show("Please add item to cart");
+                return;
+            }
+            else if (check_enought_quantity() == false)
+            {
+
+                return;
+            }
+            else
+            {
+                insert_order_table();
+
+            }
+        }
+        public void insert_order_table()
+        {
+            long id = 0;
+            Double total_price = Convert.ToDouble(count_total_price());
+            string address = txtboxaddress.Text;
+            string sql = "insert into order_request(user_id ,payment,order_status_id,address)values(" + user_id + "," + total_price + "," + 1 + "," + "\"" + address + "\"" + ");";
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            conn.Open();
+            if(cmd.ExecuteNonQuery() >= 1)
+            {
+                id = cmd.LastInsertedId;
+                MessageBox.Show("id is " + id.ToString());
+                conn.Close();
+                MessageBox.Show("Order Request Created");
+                insert_order_item_table(id);
+                insert_delivery_table(id);
+                delete_warehouse_quantity();
+                delete_cart_table();
+            }else
+                {
+                conn.Close();
+                MessageBox.Show("Create Order failed");
+            }
+       
+        }
+
+        public void insert_order_item_table(long id)
+        {
+            DataTable dt = get_from_cart_table();
+            //loop the datatable and insert the data to order_item table
+            conn.Open();
+            foreach (DataRow row in dt.Rows)
+            {
+                int item_id = Convert.ToInt32(row["item_id"]);
+                int quantity = Convert.ToInt32(row["quantity"]);
+                string sql2 = "insert into order_item(order_id,item_id,quantity)values(" + id + "," + item_id + "," + quantity + ");";
+                MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
+            
+                if(cmd2.ExecuteNonQuery() >= 1)
+                {
+                    
+
+                }
+                else
+                {
+                    //
+                    MessageBox.Show("create order_item table failed");
+                }
+               
+            }
+            conn.Close();
+        }
+        public void insert_delivery_table(long id)
+        {
+           long order_id = id;
+            String date = "\"" + txtboxcreatedate.Text + "\"" ;
+            String delivery_date = "\"" + dateTimePicker.Value.ToString("yyyy-MM-dd") + "\"" ;
+        
+            string nullvalue = "null";
+            string sql = "insert into delivery(order_id,user_id,create_date,expected_delivery_date,despatch_date,recive_date)VALUES(" + id + "," + this.user_id + "," + date + "," + delivery_date + "," +nullvalue+  "," + nullvalue + ");";
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            conn.Open();
+            if(cmd.ExecuteNonQuery() >= 1)
+            {
+               
+            }
+            else
+            {
+                MessageBox.Show("insert delivery table failed");
+            }
+            conn.Close();
+           
+        }
+        public void delete_warehouse_quantity()
+        {
+            DataTable dt = get_from_cart_table();
+            conn.Open();
+            foreach (DataRow row in dt.Rows)
+            {
+                int item_id = Convert.ToInt32(row["item_id"]);
+                int quantity = Convert.ToInt32(row["quantity"]);
+                string sql = "update warehouse_item set quantity = quantity - " + quantity + " where item_id = " + item_id + ";";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+              
+                if(cmd.ExecuteNonQuery() >= 1)
+                {
+                    
+                }
+                else
+                {
+                    MessageBox.Show("update warehouse_item table failed");
+                }
+             
+            }
+            conn.Close();
+        }
+
+        public void delete_cart_table()
+        {
+            string sql = "delete from cart where user_id = " + user_id + ";";
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            conn.Open();
+            if(cmd.ExecuteNonQuery() >= 1)
+            {
+                
+            }
+            else
+            {
+                MessageBox.Show("delete cart table failed");
+            }
+            conn.Close();
+        }
+       
+        public DataTable get_from_cart_table()
+        {
+            string sql = "select item.item_id,cart.quantity from cart,item where item.item_id = cart.item_id and user_id =  " + user_id+ ";" ;
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            conn.Open();
+            MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            //return datatable 
+            conn.Close();
+            return dt;
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public Boolean check_enought_quantity()
+        {
+            DataTable dt = get_from_cart_table();
+            conn.Open();
+            foreach (DataRow row in dt.Rows)
+            {
+                int item_id = Convert.ToInt32(row["item_id"]);
+                int quantity = Convert.ToInt32(row["quantity"]);
+                string sql = "select quantity from warehouse_item where item_id = " + item_id + ";";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+              
+                MySqlDataReader reader = cmd.ExecuteReader();
+             //if not engouht return false
+                 if (reader.Read())
+                {
+                    int quantity_in_warehouse = Convert.ToInt32(reader["quantity"]);
+                    MessageBox.Show("warehouse quantity" +quantity_in_warehouse.ToString());
+                    MessageBox.Show("ur quantity" + quantity.ToString());
+                    if (quantity_in_warehouse < quantity)
+                    {
+                        MessageBox.Show("Not enough quantity in warehouse");
+                        conn.Close();
+                        return false;
+                    }
+                }
+               
+            }
+            conn.Close();
+            return true;
         }
     }
 }

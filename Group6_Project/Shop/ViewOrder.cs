@@ -48,5 +48,27 @@ namespace Group6_Project
 
             dvgvieworder_request.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
+        private void dvgvieworder_request_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+       
+            if (e.ColumnIndex == 0)
+            {
+
+                int index = e.RowIndex;
+                DataGridViewRow selectedRow = dvgvieworder_request.Rows[index];
+                int order_id = Convert.ToInt32(selectedRow.Cells["order_id"].Value);
+
+                this.panformload.Controls.Clear();
+                OrderDetail orderDetail = new OrderDetail(order_id,this.panformload,this.user_id);
+                orderDetail.TopLevel = false;
+                this.panformload.Controls.Add(orderDetail);
+                orderDetail.Show();
+
+            }
+           
+        }
+
+  
     }
 }

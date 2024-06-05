@@ -57,11 +57,11 @@
             this.lblselectitem.AutoSize = true;
             this.lblselectitem.Font = new System.Drawing.Font("PMingLiU", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblselectitem.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblselectitem.Location = new System.Drawing.Point(51, 73);
+            this.lblselectitem.Location = new System.Drawing.Point(39, 70);
             this.lblselectitem.Name = "lblselectitem";
-            this.lblselectitem.Size = new System.Drawing.Size(226, 48);
+            this.lblselectitem.Size = new System.Drawing.Size(238, 48);
             this.lblselectitem.TabIndex = 41;
-            this.lblselectitem.Text = "Select Item";
+            this.lblselectitem.Text = "Search Item";
             // 
             // textBox1
             // 
@@ -74,7 +74,7 @@
             // btncontinue
             // 
             this.btncontinue.Location = new System.Drawing.Point(759, 88);
-            this.btncontinue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btncontinue.Margin = new System.Windows.Forms.Padding(2);
             this.btncontinue.Name = "btncontinue";
             this.btncontinue.Size = new System.Drawing.Size(77, 27);
             this.btncontinue.TabIndex = 44;

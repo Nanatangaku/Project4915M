@@ -43,12 +43,14 @@
             // 
             // dvgvieworder_request
             // 
+            this.dvgvieworder_request.AllowUserToAddRows = false;
             this.dvgvieworder_request.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgvieworder_request.Location = new System.Drawing.Point(80, 107);
             this.dvgvieworder_request.Name = "dvgvieworder_request";
             this.dvgvieworder_request.RowTemplate.Height = 24;
             this.dvgvieworder_request.Size = new System.Drawing.Size(400, 267);
             this.dvgvieworder_request.TabIndex = 1;
+            this.dvgvieworder_request.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgvieworder_request_CellContentClick);
             // 
             // txtfilter
             // 

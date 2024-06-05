@@ -25,11 +25,12 @@ namespace Group6_Project
             int nWidthEllipse,
             int nHeightEllipse
             );
-
-        public CategoryManagerHomePage()
+        int user_id;
+        public CategoryManagerHomePage(int user_id)
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            this.user_id = user_id;
         }
 
         //Event

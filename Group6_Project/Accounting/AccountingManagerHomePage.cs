@@ -15,6 +15,7 @@ namespace Group6_Project
     public partial class AccountingManagerHomePage : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+      
 
         private static extern IntPtr CreateRoundRectRgn
             (
@@ -25,11 +26,12 @@ namespace Group6_Project
             int nWidthEllipse,
             int nHeightEllipse
             );
-
-        public AccountingManagerHomePage()
+        int user_id;
+        public AccountingManagerHomePage(int user_id)
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            this.user_id = user_id;
         }
 
         //Event

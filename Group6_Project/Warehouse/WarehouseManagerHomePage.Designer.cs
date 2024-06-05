@@ -59,15 +59,15 @@ namespace Group6_Project
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(277, 951);
+            this.panelMenu.Size = new System.Drawing.Size(277, 878);
             this.panelMenu.TabIndex = 3;
             // 
             // panNav
             // 
             this.panNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(120)))), ((int)(((byte)(252)))));
-            this.panNav.Location = new System.Drawing.Point(0, 141);
+            this.panNav.Location = new System.Drawing.Point(0, 130);
             this.panNav.Name = "panNav";
-            this.panNav.Size = new System.Drawing.Size(7, 83);
+            this.panNav.Size = new System.Drawing.Size(7, 77);
             this.panNav.TabIndex = 2;
             // 
             // btnCategoryManager
@@ -80,9 +80,9 @@ namespace Group6_Project
             this.btnCategoryManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategoryManager.ForeColor = System.Drawing.Color.White;
             this.btnCategoryManager.Image = global::Group6_Project.Properties.Resources.user__1_;
-            this.btnCategoryManager.Location = new System.Drawing.Point(0, 868);
+            this.btnCategoryManager.Location = new System.Drawing.Point(0, 801);
             this.btnCategoryManager.Name = "btnCategoryManager";
-            this.btnCategoryManager.Size = new System.Drawing.Size(277, 83);
+            this.btnCategoryManager.Size = new System.Drawing.Size(277, 77);
             this.btnCategoryManager.TabIndex = 7;
             this.btnCategoryManager.Text = "    Warehouse \r\n   Manager";
             this.btnCategoryManager.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -100,9 +100,9 @@ namespace Group6_Project
             this.btnDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDepartment.ForeColor = System.Drawing.Color.White;
             this.btnDepartment.Image = global::Group6_Project.Properties.Resources.truck_side;
-            this.btnDepartment.Location = new System.Drawing.Point(0, 307);
+            this.btnDepartment.Location = new System.Drawing.Point(0, 284);
             this.btnDepartment.Name = "btnDepartment";
-            this.btnDepartment.Size = new System.Drawing.Size(277, 83);
+            this.btnDepartment.Size = new System.Drawing.Size(277, 77);
             this.btnDepartment.TabIndex = 5;
             this.btnDepartment.Text = "    Complete instruction";
             this.btnDepartment.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -120,9 +120,9 @@ namespace Group6_Project
             this.btnSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupplier.ForeColor = System.Drawing.Color.White;
             this.btnSupplier.Image = global::Group6_Project.Properties.Resources.shopping_cart;
-            this.btnSupplier.Location = new System.Drawing.Point(0, 224);
+            this.btnSupplier.Location = new System.Drawing.Point(0, 207);
             this.btnSupplier.Name = "btnSupplier";
-            this.btnSupplier.Size = new System.Drawing.Size(277, 83);
+            this.btnSupplier.Size = new System.Drawing.Size(277, 77);
             this.btnSupplier.TabIndex = 4;
             this.btnSupplier.Text = "   Received item";
             this.btnSupplier.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -140,9 +140,9 @@ namespace Group6_Project
             this.btnWarehouse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWarehouse.ForeColor = System.Drawing.Color.White;
             this.btnWarehouse.Image = global::Group6_Project.Properties.Resources.box;
-            this.btnWarehouse.Location = new System.Drawing.Point(0, 141);
+            this.btnWarehouse.Location = new System.Drawing.Point(0, 130);
             this.btnWarehouse.Name = "btnWarehouse";
-            this.btnWarehouse.Size = new System.Drawing.Size(277, 83);
+            this.btnWarehouse.Size = new System.Drawing.Size(277, 77);
             this.btnWarehouse.TabIndex = 3;
             this.btnWarehouse.Text = "    Warehouse Stock";
             this.btnWarehouse.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -158,7 +158,7 @@ namespace Group6_Project
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(277, 141);
+            this.panel2.Size = new System.Drawing.Size(277, 130);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -166,7 +166,7 @@ namespace Group6_Project
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(65, 91);
+            this.label1.Location = new System.Drawing.Point(65, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 24);
             this.label1.TabIndex = 0;
@@ -175,9 +175,9 @@ namespace Group6_Project
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Group6_Project.Properties.Resources.car_circle_bolt;
-            this.pictureBox1.Location = new System.Drawing.Point(105, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(105, 30);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 46);
+            this.pictureBox1.Size = new System.Drawing.Size(63, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -190,7 +190,7 @@ namespace Group6_Project
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Location = new System.Drawing.Point(1272, 0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(45, 43);
+            this.btnClose.Size = new System.Drawing.Size(45, 40);
             this.btnClose.TabIndex = 0;
             this.btnClose.Text = "x";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -204,24 +204,25 @@ namespace Group6_Project
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(277, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1317, 951);
+            this.panel5.Size = new System.Drawing.Size(1317, 878);
             this.panel5.TabIndex = 5;
             // 
             // panFormLoad
             // 
             this.panFormLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panFormLoad.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panFormLoad.Location = new System.Drawing.Point(0, 141);
+            this.panFormLoad.Location = new System.Drawing.Point(0, 130);
             this.panFormLoad.Name = "panFormLoad";
-            this.panFormLoad.Size = new System.Drawing.Size(1317, 810);
+            this.panFormLoad.Size = new System.Drawing.Size(1317, 748);
             this.panFormLoad.TabIndex = 1;
+            this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
             // 
             // WarehouseManagerHomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1594, 951);
+            this.ClientSize = new System.Drawing.Size(1594, 878);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -25,11 +25,12 @@ namespace Group6_Project
             int nWidthEllipse,
             int nHeightEllipse
             );
-
-        public HRHomePage()
+        int user_id;
+        public HRHomePage(int user_id)
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            this.user_id = user_id;
         }
 
         //Event
@@ -96,6 +97,11 @@ namespace Group6_Project
         private void btnUserInformation_Leave(object sender, EventArgs e)
         {
             btnUserInformation.BackColor = Color.FromArgb(51, 51, 76);
+        }
+
+        private void panFormLoad_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

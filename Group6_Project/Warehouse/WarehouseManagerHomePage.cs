@@ -25,11 +25,12 @@ namespace Group6_Project
             int nWidthEllipse,
             int nHeightEllipse
             );
-
-        public WarehouseManagerHomePage()
+        int user_id;
+        public WarehouseManagerHomePage(int user_id)
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            this.user_id = user_id;
         }
 
         //Event
@@ -115,6 +116,11 @@ namespace Group6_Project
         private void btnCategoryManager_Leave(object sender, EventArgs e)
         {
             btnCategoryManager.BackColor = Color.FromArgb(51, 51, 100);
+        }
+
+        private void panFormLoad_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

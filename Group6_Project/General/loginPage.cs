@@ -64,32 +64,32 @@ namespace Group6_Project
                 if (role == "HR")
                 {
                     this.Hide();
-                    new HRHomePage().ShowDialog();
+                    new HRHomePage(user_id).ShowDialog();
                     this.Close();
                 }
                 else if (role == "Category Manager")
                 {
                     this.Hide();
-                    new CategoryManagerHomePage().ShowDialog();
+                    new CategoryManagerHomePage(user_id).ShowDialog();
                     this.Close();
                 }
                 else if (role == "Warehouse Manager")
                 {
                     this.Hide();
-                    new WarehouseManagerHomePage().ShowDialog();
+                    new WarehouseManagerHomePage(user_id).ShowDialog();
                     this.Close();
                 }
                 else if (role == "Delivery Manager")
                 {
                     this.Hide();
-                    new DeliveryManagerHomePage().ShowDialog();
+                    new DeliveryManagerHomePage(user_id).ShowDialog();
                     this.Close();
                 }
   
                 else if (role == "Purchase Manager")
                 {
                     this.Hide();
-                    new PurchaseManagerHomePage().ShowDialog();
+                    new PurchaseManagerHomePage(user_id).ShowDialog();
                     this.Close();
                 }
 
@@ -103,7 +103,7 @@ namespace Group6_Project
                 else if (role == "Account Manager")
                 {
                     this.Hide();
-                    new AccountingManagerHomePage().ShowDialog();
+                    new AccountingManagerHomePage(user_id).ShowDialog();
                     this.Close();
 
 

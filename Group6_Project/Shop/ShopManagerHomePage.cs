@@ -119,7 +119,10 @@ namespace Group6_Project
             btnvieworder.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            //load the CheckOut form
+            ViewOrder vieworder = new ViewOrder(user_id,panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            vieworder.FormBorderStyle = FormBorderStyle.None;
+            this.panFormLoad.Controls.Add(vieworder);
+            vieworder.Show();
             
         }
        

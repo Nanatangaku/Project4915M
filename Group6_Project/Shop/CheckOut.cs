@@ -229,13 +229,27 @@ namespace Group6_Project
             conn.Open();
             if(cmd.ExecuteNonQuery() >= 1)
             {
-               
+                conn.Close();
+               long delivery_id  = cmd.LastInsertedId;
+                string  sql2 = "update order_request set delivery_id = " + delivery_id + " where order_id = " + order_id + ";";
+                MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
+                conn.Open();
+                if(cmd2.ExecuteNonQuery() >= 1)
+                {
+                    conn.Close();
+                }
+                else
+                {
+                    MessageBox.Show("update order_request table failed");
+                    conn.Close();
+                }
             }
             else
             {
                 MessageBox.Show("insert delivery table failed");
+                conn.Close();
             }
-            conn.Close();
+        
            
         }
         public void delete_warehouse_quantity()
@@ -313,8 +327,6 @@ namespace Group6_Project
                  if (reader.Read())
                 {
                     int quantity_in_warehouse = Convert.ToInt32(reader["quantity"]);
-                    MessageBox.Show("warehouse quantity" +quantity_in_warehouse.ToString());
-                    MessageBox.Show("ur quantity" + quantity.ToString());
                     if (quantity_in_warehouse < quantity)
                     {
                         MessageBox.Show("Not enough quantity in warehouse");

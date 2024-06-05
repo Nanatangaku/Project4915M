@@ -213,7 +213,6 @@ C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateRole.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateScheule.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateShop.resources
-C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateStock.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateSupplier.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateUserInformation.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateWarehouse.resources
@@ -221,22 +220,18 @@ C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.Invoice.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.PurchaseOrderPage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.ReceivedItem.resources
-C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.RequestPage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.ScheulePage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchCategory.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchDepartment.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchPurchaseOrder.resources
-C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchRequest.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchRole.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchScheule.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchShop.resources
-C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchStock.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchSupplier.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchUserInformation.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchWarehouse.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchWarehouseStock.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SetRule.resources
-C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.StockPage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.UserInformationPage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.WarehouseClerkHomePage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.WarehouseManagerHomePage.resources
@@ -582,3 +577,5 @@ C:\Users\shamh\OneDrive\Desktop\github\Project4915M\Group6_Project\obj\Debug\Gro
 C:\Users\shamh\OneDrive\Desktop\github\Project4915M\Group6_Project\obj\Debug\Group6_Project.exe
 C:\Users\shamh\OneDrive\Desktop\github\Project4915M\Group6_Project\obj\Debug\Group6_Project.pdb
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CheckOut.resources
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.ViewOrder.resources
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.OrderDetail.resources

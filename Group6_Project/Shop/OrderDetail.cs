@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Group6_Project
 {
-    public partial class StockPage : Form
+    public partial class OrderDetail : Form
     {
-        public StockPage()
+        public OrderDetail()
         {
             InitializeComponent();
         }

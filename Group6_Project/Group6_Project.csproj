@@ -114,11 +114,23 @@
     <Compile Include="Accounting\AccountingManagerHomePage.Designer.cs">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shop\OrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shop\OrderDetail.Designer.cs">
+      <DependentUpon>OrderDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shop\CheckOut.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Shop\CheckOut.Designer.cs">
       <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shop\ViewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shop\ViewOrder.Designer.cs">
+      <DependentUpon>ViewOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="Warehouse\CompletedInstructions.cs">
       <SubType>Form</SubType>
@@ -174,12 +186,6 @@
     <Compile Include="Category\CreateShop.Designer.cs">
       <DependentUpon>CreateShop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shop\CreateStock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Shop\CreateStock.Designer.cs">
-      <DependentUpon>CreateStock.cs</DependentUpon>
-    </Compile>
     <Compile Include="Category\CreateSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,12 +228,6 @@
     <Compile Include="Warehouse\ReceivedItem.Designer.cs">
       <DependentUpon>ReceivedItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shop\RequestPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Shop\RequestPage.Designer.cs">
-      <DependentUpon>RequestPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Delivery\ScheulePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,12 +252,6 @@
     <Compile Include="Purchase\SearchPurchaseOrder.Designer.cs">
       <DependentUpon>SearchPurchaseOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shop\SearchRequest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Shop\SearchRequest.Designer.cs">
-      <DependentUpon>SearchRequest.cs</DependentUpon>
-    </Compile>
     <Compile Include="Category\SearchRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,12 +269,6 @@
     </Compile>
     <Compile Include="Category\SearchShop.Designer.cs">
       <DependentUpon>SearchShop.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Shop\SearchStock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Shop\SearchStock.Designer.cs">
-      <DependentUpon>SearchStock.cs</DependentUpon>
     </Compile>
     <Compile Include="Category\SearchSupplier.cs">
       <SubType>Form</SubType>
@@ -311,12 +299,6 @@
     </Compile>
     <Compile Include="General\SetRule.Designer.cs">
       <DependentUpon>SetRule.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Shop\StockPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Shop\StockPage.Designer.cs">
-      <DependentUpon>StockPage.cs</DependentUpon>
     </Compile>
     <Compile Include="HR\UserInformationPage.cs">
       <SubType>Form</SubType>
@@ -441,6 +423,12 @@
     <EmbeddedResource Include="Shop\CheckOut.resx">
       <DependentUpon>CheckOut.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Shop\OrderDetail.resx">
+      <DependentUpon>OrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop\ViewOrder.resx">
+      <DependentUpon>ViewOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\CompletedInstructions.resx">
       <DependentUpon>CompletedInstructions.cs</DependentUpon>
     </EmbeddedResource>
@@ -468,9 +456,6 @@
     <EmbeddedResource Include="Category\CreateShop.resx">
       <DependentUpon>CreateShop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shop\CreateStock.resx">
-      <DependentUpon>CreateStock.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Category\CreateSupplier.resx">
       <DependentUpon>CreateSupplier.cs</DependentUpon>
     </EmbeddedResource>
@@ -492,9 +477,6 @@
     <EmbeddedResource Include="Warehouse\ReceivedItem.resx">
       <DependentUpon>ReceivedItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shop\RequestPage.resx">
-      <DependentUpon>RequestPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Delivery\ScheulePage.resx">
       <DependentUpon>ScheulePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -507,9 +489,6 @@
     <EmbeddedResource Include="Purchase\SearchPurchaseOrder.resx">
       <DependentUpon>SearchPurchaseOrder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shop\SearchRequest.resx">
-      <DependentUpon>SearchRequest.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Category\SearchRole.resx">
       <DependentUpon>SearchRole.cs</DependentUpon>
     </EmbeddedResource>
@@ -518,9 +497,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Category\SearchShop.resx">
       <DependentUpon>SearchShop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Shop\SearchStock.resx">
-      <DependentUpon>SearchStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Category\SearchSupplier.resx">
       <DependentUpon>SearchSupplier.cs</DependentUpon>
@@ -536,9 +512,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="General\SetRule.resx">
       <DependentUpon>SetRule.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Shop\StockPage.resx">
-      <DependentUpon>StockPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HR\UserInformationPage.resx">
       <DependentUpon>UserInformationPage.cs</DependentUpon>

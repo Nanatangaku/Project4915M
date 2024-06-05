@@ -45,15 +45,15 @@ namespace Group6_Project
             string username = roundTextBox1.Texts;
             string password = roundTextBox2.Texts;
 
-            username = "\"" + "ken_sm" + "\"";
-            password = "\"" + 123 + "\"";
+            username = "\"" + username + "\"";
+            password = "\"" + password + "\"";
             string sql = "select * from user inner join role on user.role_id = role.role_id where user_name = " + username +" and password = "  + password ;
             MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
 
             MySqlDataReader reader = cmd.ExecuteReader();
-            //get the user_id 
+
           
 
             if (reader.Read())
@@ -61,8 +61,11 @@ namespace Group6_Project
                 int user_id = (int)reader["user_id"];
                 MessageBox.Show("Login Successful");
                 string role = (string)reader["role_name"];
+          
                 if (role == "HR")
                 {
+                  
+                    
                     this.Hide();
                     new HRHomePage(user_id).ShowDialog();
                     this.Close();
@@ -113,6 +116,7 @@ namespace Group6_Project
             {
                 MessageBox.Show("Invalid username or password");
             }
+            conn.Close();
         }
 
         private void roundTextBox1__TextChanged_1(object sender, EventArgs e)

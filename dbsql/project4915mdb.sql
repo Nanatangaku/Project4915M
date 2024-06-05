@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1:3306
--- 產生時間： 2024-06-05 11:30:38
+-- 產生時間： 2024-06-05 12:17:42
 -- 伺服器版本： 8.0.37
 -- PHP 版本： 8.2.13
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
   PRIMARY KEY (`cart_id`),
   KEY `item_id` (`item_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `cart`
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `delivery` (
   `despatch_date` date DEFAULT NULL,
   `recive_date` date DEFAULT NULL,
   PRIMARY KEY (`delivery_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `delivery`
@@ -73,7 +73,7 @@ TRUNCATE TABLE `delivery`;
 --
 
 INSERT INTO `delivery` (`delivery_id`, `order_id`, `user_id`, `create_date`, `expected_delivery_date`, `despatch_date`, `recive_date`) VALUES
-(2, 25, 5, '2024-06-05', '2024-06-12', NULL, NULL);
+(3, 26, 5, '2024-06-05', '2024-06-12', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -168,14 +168,7 @@ TRUNCATE TABLE `order_item`;
 --
 
 INSERT INTO `order_item` (`order_id`, `item_id`, `quantity`) VALUES
-(22, 1, 200),
-(21, 1, 200),
-(20, 1, 200),
-(19, 1, 200),
-(0, 1, 200),
-(23, 1, 200),
-(24, 1, 200),
-(25, 1, 200);
+(26, 1, 1500);
 
 -- --------------------------------------------------------
 
@@ -195,7 +188,7 @@ CREATE TABLE IF NOT EXISTS `order_request` (
   KEY `order_status_id` (`order_status_id`),
   KEY `user_id` (`user_id`),
   KEY `delivery_id` (`delivery_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `order_request`
@@ -207,15 +200,7 @@ TRUNCATE TABLE `order_request`;
 --
 
 INSERT INTO `order_request` (`order_id`, `user_id`, `payment`, `order_status_id`, `address`, `delivery_id`) VALUES
-(21, 5, 19800.00, 1, '1', NULL),
-(22, 5, 19800.00, 1, '1', NULL),
-(20, 5, 19800.00, 1, '1', NULL),
-(19, 5, 19800.00, 1, '1', NULL),
-(18, 5, 19800.00, 1, '1', NULL),
-(17, 5, 19800.00, 1, '1', NULL),
-(23, 5, 19800.00, 1, '1', NULL),
-(24, 5, 19800.00, 1, '1', NULL),
-(25, 5, 19800.00, 1, '1', NULL);
+(26, 5, 148500.00, 1, '1', 3);
 
 -- --------------------------------------------------------
 
@@ -455,7 +440,7 @@ TRUNCATE TABLE `warehouse_item`;
 --
 
 INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
-(1, 1, 800),
+(1, 1, 8500),
 (2, 1, 2500),
 (3, 1, 1500),
 (4, 1, 600),

@@ -73,6 +73,7 @@ namespace Group6_Project
             this.panFormLoad.Controls.Add(login);
             login.Show();
         }
+
         [Category("Event")]
         private void btnCategoryManager_Leave(object sender, EventArgs e)
         {
@@ -89,7 +90,7 @@ namespace Group6_Project
 
         }
 
-
+        [Category("Event")]
         private void btnCheckout_Click(object sender, EventArgs e)
         {
             panNav.Height = btnCheckout.Height;

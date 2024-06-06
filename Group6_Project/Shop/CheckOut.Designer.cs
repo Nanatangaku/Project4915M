@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckOut));
             this.gbgeneral = new System.Windows.Forms.GroupBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.txtboxtotalprice = new System.Windows.Forms.TextBox();
@@ -72,216 +73,140 @@
             this.gbgeneral.Controls.Add(this.lblName);
             this.gbgeneral.Controls.Add(this.lblcreatedate);
             this.gbgeneral.Controls.Add(this.lblcreaterid);
-            this.gbgeneral.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            resources.ApplyResources(this.gbgeneral, "gbgeneral");
             this.gbgeneral.ForeColor = System.Drawing.Color.White;
-            this.gbgeneral.Location = new System.Drawing.Point(9, 25);
             this.gbgeneral.Name = "gbgeneral";
-            this.gbgeneral.Size = new System.Drawing.Size(805, 310);
-            this.gbgeneral.TabIndex = 0;
             this.gbgeneral.TabStop = false;
-            this.gbgeneral.Text = "General";
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            resources.ApplyResources(this.btnConfirm, "btnConfirm");
             this.btnConfirm.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirm.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnConfirm.Location = new System.Drawing.Point(582, 263);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(141, 30);
-            this.btnConfirm.TabIndex = 15;
-            this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // txtboxtotalprice
             // 
             this.txtboxtotalprice.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxtotalprice.Location = new System.Drawing.Point(141, 259);
-            this.txtboxtotalprice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.txtboxtotalprice, "txtboxtotalprice");
             this.txtboxtotalprice.Name = "txtboxtotalprice";
             this.txtboxtotalprice.ReadOnly = true;
-            this.txtboxtotalprice.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtboxtotalprice.Size = new System.Drawing.Size(188, 36);
-            this.txtboxtotalprice.TabIndex = 16;
             this.txtboxtotalprice.TextChanged += new System.EventHandler(this.txtboxtotalprice_TextChanged);
             // 
             // lbltotalprice
             // 
-            this.lbltotalprice.AutoSize = true;
-            this.lbltotalprice.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lbltotalprice.Location = new System.Drawing.Point(21, 259);
+            resources.ApplyResources(this.lbltotalprice, "lbltotalprice");
             this.lbltotalprice.Name = "lbltotalprice";
-            this.lbltotalprice.Size = new System.Drawing.Size(116, 24);
-            this.lbltotalprice.TabIndex = 15;
-            this.lbltotalprice.Text = "Total Price:";
             // 
             // dateTimePicker
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(547, 125);
+            resources.ApplyResources(this.dateTimePicker, "dateTimePicker");
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(239, 36);
-            this.dateTimePicker.TabIndex = 14;
             this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // txtboxshopname
             // 
             this.txtboxshopname.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxshopname.Location = new System.Drawing.Point(547, 80);
+            resources.ApplyResources(this.txtboxshopname, "txtboxshopname");
             this.txtboxshopname.Name = "txtboxshopname";
             this.txtboxshopname.ReadOnly = true;
-            this.txtboxshopname.Size = new System.Drawing.Size(239, 36);
-            this.txtboxshopname.TabIndex = 13;
             // 
             // txtboxcreatedate
             // 
             this.txtboxcreatedate.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxcreatedate.Location = new System.Drawing.Point(143, 129);
+            resources.ApplyResources(this.txtboxcreatedate, "txtboxcreatedate");
             this.txtboxcreatedate.Name = "txtboxcreatedate";
             this.txtboxcreatedate.ReadOnly = true;
-            this.txtboxcreatedate.Size = new System.Drawing.Size(239, 36);
-            this.txtboxcreatedate.TabIndex = 12;
             // 
             // txtboxshopid
             // 
             this.txtboxshopid.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxshopid.Location = new System.Drawing.Point(143, 78);
+            resources.ApplyResources(this.txtboxshopid, "txtboxshopid");
             this.txtboxshopid.Name = "txtboxshopid";
             this.txtboxshopid.ReadOnly = true;
-            this.txtboxshopid.Size = new System.Drawing.Size(239, 36);
-            this.txtboxshopid.TabIndex = 11;
             // 
             // txtboxname
             // 
             this.txtboxname.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxname.Location = new System.Drawing.Point(547, 31);
+            resources.ApplyResources(this.txtboxname, "txtboxname");
             this.txtboxname.Name = "txtboxname";
             this.txtboxname.ReadOnly = true;
-            this.txtboxname.Size = new System.Drawing.Size(239, 36);
-            this.txtboxname.TabIndex = 10;
             // 
             // txtboxcreateid
             // 
             this.txtboxcreateid.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxcreateid.Location = new System.Drawing.Point(141, 31);
+            resources.ApplyResources(this.txtboxcreateid, "txtboxcreateid");
             this.txtboxcreateid.Name = "txtboxcreateid";
             this.txtboxcreateid.ReadOnly = true;
-            this.txtboxcreateid.Size = new System.Drawing.Size(239, 36);
-            this.txtboxcreateid.TabIndex = 9;
             // 
             // txtboxaddress
             // 
-            this.txtboxaddress.Location = new System.Drawing.Point(143, 185);
-            this.txtboxaddress.Multiline = true;
+            resources.ApplyResources(this.txtboxaddress, "txtboxaddress");
             this.txtboxaddress.Name = "txtboxaddress";
-            this.txtboxaddress.Size = new System.Drawing.Size(651, 60);
-            this.txtboxaddress.TabIndex = 8;
             // 
             // lbladdress
             // 
-            this.lbladdress.AutoSize = true;
-            this.lbladdress.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lbladdress.Location = new System.Drawing.Point(48, 187);
+            resources.ApplyResources(this.lbladdress, "lbladdress");
             this.lbladdress.Name = "lbladdress";
-            this.lbladdress.Size = new System.Drawing.Size(90, 24);
-            this.lbladdress.TabIndex = 7;
-            this.lbladdress.Text = "Address:";
             // 
             // lblshopname
             // 
-            this.lblshopname.AutoSize = true;
-            this.lblshopname.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblshopname.Location = new System.Drawing.Point(420, 80);
+            resources.ApplyResources(this.lblshopname, "lblshopname");
             this.lblshopname.Name = "lblshopname";
-            this.lblshopname.Size = new System.Drawing.Size(122, 24);
-            this.lblshopname.TabIndex = 6;
-            this.lblshopname.Text = "Shop Name:";
             // 
             // lblexpectdate
             // 
-            this.lblexpectdate.AutoSize = true;
-            this.lblexpectdate.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblexpectdate.Location = new System.Drawing.Point(416, 129);
+            resources.ApplyResources(this.lblexpectdate, "lblexpectdate");
             this.lblexpectdate.Name = "lblexpectdate";
-            this.lblexpectdate.Size = new System.Drawing.Size(126, 24);
-            this.lblexpectdate.TabIndex = 5;
-            this.lblexpectdate.Text = "Expect Date:";
             // 
             // lblshopid
             // 
-            this.lblshopid.AutoSize = true;
-            this.lblshopid.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblshopid.Location = new System.Drawing.Point(45, 80);
+            resources.ApplyResources(this.lblshopid, "lblshopid");
             this.lblshopid.Name = "lblshopid";
-            this.lblshopid.Size = new System.Drawing.Size(92, 24);
-            this.lblshopid.TabIndex = 4;
-            this.lblshopid.Text = "Shop ID:";
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblName.Location = new System.Drawing.Point(472, 34);
+            resources.ApplyResources(this.lblName, "lblName");
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(70, 24);
-            this.lblName.TabIndex = 3;
-            this.lblName.Text = "Name:";
             // 
             // lblcreatedate
             // 
-            this.lblcreatedate.AutoSize = true;
-            this.lblcreatedate.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblcreatedate.Location = new System.Drawing.Point(14, 129);
+            resources.ApplyResources(this.lblcreatedate, "lblcreatedate");
             this.lblcreatedate.Name = "lblcreatedate";
-            this.lblcreatedate.Size = new System.Drawing.Size(123, 24);
-            this.lblcreatedate.TabIndex = 2;
-            this.lblcreatedate.Text = "Create Date:";
             // 
             // lblcreaterid
             // 
-            this.lblcreaterid.AutoSize = true;
-            this.lblcreaterid.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblcreaterid.Location = new System.Drawing.Point(32, 34);
+            resources.ApplyResources(this.lblcreaterid, "lblcreaterid");
             this.lblcreaterid.Name = "lblcreaterid";
-            this.lblcreaterid.Size = new System.Drawing.Size(105, 24);
-            this.lblcreaterid.TabIndex = 0;
-            this.lblcreaterid.Text = "Create ID:";
             // 
             // gbItem
             // 
             this.gbItem.Controls.Add(this.dvgcart);
-            this.gbItem.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            resources.ApplyResources(this.gbItem, "gbItem");
             this.gbItem.ForeColor = System.Drawing.Color.White;
-            this.gbItem.Location = new System.Drawing.Point(9, 346);
             this.gbItem.Name = "gbItem";
-            this.gbItem.Size = new System.Drawing.Size(805, 355);
-            this.gbItem.TabIndex = 1;
             this.gbItem.TabStop = false;
-            this.gbItem.Text = "Item";
             // 
             // dvgcart
             // 
             this.dvgcart.AllowUserToAddRows = false;
             this.dvgcart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgcart.Location = new System.Drawing.Point(35, 36);
+            resources.ApplyResources(this.dvgcart, "dvgcart");
             this.dvgcart.Name = "dvgcart";
-            this.dvgcart.RowHeadersWidth = 62;
             this.dvgcart.RowTemplate.Height = 24;
-            this.dvgcart.Size = new System.Drawing.Size(720, 303);
-            this.dvgcart.TabIndex = 0;
             this.dvgcart.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgcart_CellClick);
             this.dvgcart.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgcart_CellContentClick);
             // 
             // CheckOut
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1283, 637);
             this.Controls.Add(this.gbItem);
             this.Controls.Add(this.gbgeneral);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CheckOut";
-            this.Text = "CheckOut";
             this.Load += new System.EventHandler(this.CheckOut_Load);
             this.gbgeneral.ResumeLayout(false);
             this.gbgeneral.PerformLayout();

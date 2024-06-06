@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1:3306
--- 產生時間： 2024-06-06 14:09:09
+-- 產生時間： 2024-06-06 14:27:39
 -- 伺服器版本： 8.0.37
 -- PHP 版本： 8.2.13
 
@@ -339,6 +339,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password` varchar(255) NOT NULL,
   `phone` int NOT NULL,
   `email` varchar(255) NOT NULL,
+  `shop_id` int NOT NULL,
   PRIMARY KEY (`user_id`),
   KEY `role_id` (`role_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -352,15 +353,15 @@ TRUNCATE TABLE `user`;
 -- 傾印資料表的資料 `user`
 --
 
-INSERT INTO `user` (`user_id`, `first_name`, `last_name`, `role_id`, `user_name`, `password`, `phone`, `email`) VALUES
-(1, 'HR', 'Ken', 1, 'ken_hr', '123', 54946051, 'ken_hr@gmail.com'),
-(2, 'CM', 'Ken', 2, 'ken_cm', '123', 54946051, 'ken_CM@gmail.com'),
-(3, 'WM', 'Ken', 3, 'ken_wm', '123', 54946051, 'ken_wm@gmail.com'),
-(4, 'PM', 'Ken', 4, 'ken_pm', '123', 54946051, 'ken_pm@gmail.com'),
-(5, 'SM', 'Ken', 5, 'ken_sm', '123', 54946051, 'ken_sm@gmail.com'),
-(6, 'DM', 'Ken', 6, 'ken_dm', '123', 54946051, 'ken_dm@gmail.com'),
-(7, 'AM', 'Ken', 7, 'ken_am', '123', 54946051, 'ken_am@gmail.com'),
-(8, 'Dealer', 'ken', 8, 'ken_dealer', '123', 47939237, 'ken_dealer@gmail.com');
+INSERT INTO `user` (`user_id`, `first_name`, `last_name`, `role_id`, `user_name`, `password`, `phone`, `email`, `shop_id`) VALUES
+(1, 'HR', 'Ken', 1, 'ken_hr', '123', 54946051, 'ken_hr@gmail.com', 5),
+(2, 'CM', 'Ken', 2, 'ken_cm', '123', 54946051, 'ken_CM@gmail.com', 5),
+(3, 'WM', 'Ken', 3, 'ken_wm', '123', 54946051, 'ken_wm@gmail.com', 5),
+(4, 'PM', 'Ken', 4, 'ken_pm', '123', 54946051, 'ken_pm@gmail.com', 5),
+(5, 'SM', 'Ken', 5, 'ken_sm', '123', 54946051, 'ken_sm@gmail.com', 5),
+(6, 'DM', 'Ken', 6, 'ken_dm', '123', 54946051, 'ken_dm@gmail.com', 5),
+(7, 'AM', 'Ken', 7, 'ken_am', '123', 54946051, 'ken_am@gmail.com', 5),
+(8, 'Dealer', 'ken', 8, 'ken_dealer', '123', 47939237, 'ken_dealer@gmail.com', 5);
 
 -- --------------------------------------------------------
 

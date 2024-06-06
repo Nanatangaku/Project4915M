@@ -16,5 +16,10 @@ namespace Group6_Project
         {
             InitializeComponent();
         }
+
+        private void SearchShop_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -44,13 +44,14 @@ namespace Group6_Project
             this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(344, 251);
+            this.roundButton1.Location = new System.Drawing.Point(344, 232);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(235, 163);
+            this.roundButton1.Size = new System.Drawing.Size(235, 150);
             this.roundButton1.TabIndex = 0;
             this.roundButton1.Text = "Search Department";
             this.roundButton1.TextColor = System.Drawing.Color.Black;
             this.roundButton1.UseVisualStyleBackColor = false;
+            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
             // 
             // roundButton2
             // 
@@ -63,9 +64,9 @@ namespace Group6_Project
             this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundButton2.ForeColor = System.Drawing.Color.Black;
-            this.roundButton2.Location = new System.Drawing.Point(728, 251);
+            this.roundButton2.Location = new System.Drawing.Point(728, 232);
             this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(235, 163);
+            this.roundButton2.Size = new System.Drawing.Size(235, 150);
             this.roundButton2.TabIndex = 1;
             this.roundButton2.Text = "Create Department";
             this.roundButton2.TextColor = System.Drawing.Color.Black;
@@ -73,10 +74,10 @@ namespace Group6_Project
             // 
             // DepartmentPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(1317, 810);
+            this.ClientSize = new System.Drawing.Size(1317, 748);
             this.Controls.Add(this.roundButton2);
             this.Controls.Add(this.roundButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

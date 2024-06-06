@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,44 @@ namespace Group6_Project
         public CreateSupplier()
         {
             InitializeComponent();
+        }
+
+        private void roundTextBox1__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundButton1_Click(object sender, EventArgs e)
+        {
+            String newSupplierName = roundTextBox1.Texts;
+            String newSupplierReMark = roundTextBox2.Texts;
+            if (newSupplierName == null || newSupplierReMark == null)
+            {
+                MessageBox.Show("Please fill in all the information!");
+            }
+            else
+            {
+                String sql = "INSERT INTO supplier (supplier_name, supplier_remark) VALUES ('" + newSupplierName + "', '" + newSupplierReMark + "')";
+                MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                conn.Open();
+                try
+                {
+                    if (cmd.ExecuteNonQuery() >= 1)
+                    {
+                        MessageBox.Show("Supplier Created Successfully");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Supplier Creation Failed");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                conn.Close();
+            }
         }
     }
 }

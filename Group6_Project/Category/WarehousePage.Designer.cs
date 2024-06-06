@@ -93,5 +93,6 @@ namespace Group6_Project
 
         private CustomControls.RoundButton roundButton2;
         private CustomControls.RoundButton roundButton1;
+        private System.Windows.Forms.Panel panWarehouse;
     }
 }

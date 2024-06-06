@@ -51,15 +51,8 @@ namespace Group6_Project
 
 
         //Event
-        [Category("Event")]
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        
-        [Category("Event")]
-       
      
+        [Category("Event")]
         private void btnWarehouse_Leave(object sender, EventArgs e)
         {
             btnOrder.BackColor = Color.FromArgb(51, 51, 76);
@@ -160,7 +153,17 @@ namespace Group6_Project
         {
             btnOrder.BackColor = Color.FromArgb(51, 51, 76);
         }
-    }
 
+        [Category("Event")]
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+ }
 

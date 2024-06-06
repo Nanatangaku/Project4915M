@@ -34,11 +34,6 @@ namespace Group6_Project
         }
 
         //Event
-        [Category("Event")]
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
         
         [Category("Event")]
         private void btnWarehouse_Click(object sender, EventArgs e)
@@ -121,6 +116,12 @@ namespace Group6_Project
         private void panFormLoad_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        [Category("Event")]
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

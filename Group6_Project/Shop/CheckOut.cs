@@ -176,7 +176,6 @@ namespace Group6_Project
             if(cmd.ExecuteNonQuery() >= 1)
             {
                 id = cmd.LastInsertedId;
-                MessageBox.Show("id is " + id.ToString());
                 conn.Close();
                 MessageBox.Show("Order Request Created");
                 insert_order_item_table(id);

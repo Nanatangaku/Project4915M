@@ -15,7 +15,7 @@ namespace Group6_Project
     public partial class OrderDetail : Form
     {
         int order_id;
-        Panel panformload;
+        Panel panFormLoad;
         int delivery_id;
         int status_id;
 
@@ -24,7 +24,7 @@ namespace Group6_Project
         public OrderDetail(int order_id ,Panel panformload,int user_id)
         {
             InitializeComponent();
-            this.panformload = panformload;
+            this.panFormLoad = panformload;
             this.order_id = order_id;
             this.user_id = user_id;
             OrderDetail_Load();
@@ -46,7 +46,7 @@ namespace Group6_Project
 
         private void lblBack_Click(object sender, EventArgs e)
         {
-            this.panformload.Controls.Clear();
+            this.panFormLoad.Controls.Clear();
         }
 
         private void load_order_items()
@@ -131,11 +131,16 @@ namespace Group6_Project
             conn.Open();
             if (cmd2.ExecuteNonQuery() >= 1)
             {
+             
                 MessageBox.Show("Delivery deleted");
+                conn.Close();
             }
             else
             {
                 MessageBox.Show("Delivery not deleted");
+                conn.Close();
+        
+                
             }
             string sql3 = "delete from order_item where order_id = " + order_id;
             MySqlCommand cmd3 = new MySqlCommand(sql3, conn);
@@ -143,12 +148,19 @@ namespace Group6_Project
             if (cmd3.ExecuteNonQuery() >= 1)
             {
                 MessageBox.Show("Order_item deleted");
+                conn.Close();
             }
             else
             {
                 MessageBox.Show("Order_item not deleted");
+                conn.Close();
             }
-            conn.Close();
+
+            this.panFormLoad.Controls.Clear();
+            ViewOrder vieworder = new ViewOrder(user_id, panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            vieworder.FormBorderStyle = FormBorderStyle.None;
+            this.panFormLoad.Controls.Add(vieworder);
+            vieworder.Show();
 
         }
 

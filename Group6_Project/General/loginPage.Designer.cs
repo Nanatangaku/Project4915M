@@ -37,6 +37,7 @@ namespace Group6_Project
             this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
             this.roundTextBox2 = new Group6_Project.RoundTextBox();
             this.roundTextBox1 = new Group6_Project.RoundTextBox();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +66,7 @@ namespace Group6_Project
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -157,6 +159,21 @@ namespace Group6_Project
             this.roundTextBox1.UnderlinedStyle = false;
             this.roundTextBox1._TextChanged += new System.EventHandler(this.roundTextBox1__TextChanged_1);
             // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(1273, 9);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Padding = new System.Windows.Forms.Padding(3);
+            this.btnClose.Size = new System.Drawing.Size(35, 33);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // loginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -187,5 +204,6 @@ namespace Group6_Project
         private RoundTextBox roundTextBox2;
         private CustomControls.RoundButton roundButton1;
         private CustomControls.RoundButton roundButton2;
+        private System.Windows.Forms.Button btnClose;
     }
 }

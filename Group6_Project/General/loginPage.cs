@@ -134,20 +134,14 @@ namespace Group6_Project
 
         }
 
-        private void btnlogin_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void loginPage_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

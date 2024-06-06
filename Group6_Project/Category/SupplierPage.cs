@@ -16,5 +16,23 @@ namespace Group6_Project
         {
             InitializeComponent();
         }
+
+        private void rbtnSearchSupplier_Click(object sender, EventArgs e)
+        {
+            this.panSupplier.Controls.Clear();
+            SearchSupplier searchsupplier = new SearchSupplier() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            searchsupplier.FormBorderStyle = FormBorderStyle.None;
+            this.panSupplier.Controls.Add(searchsupplier);
+            searchsupplier.Show();
+        }
+
+        private void rbtnCreateSupplier_Click(object sender, EventArgs e)
+        {
+            this.panSupplier.Controls.Clear();
+            CreateSupplier createsupplier = new CreateSupplier() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            createsupplier.FormBorderStyle = FormBorderStyle.None;
+            this.panSupplier.Controls.Add(createsupplier);
+            createsupplier.Show();
+        }
     }
 }

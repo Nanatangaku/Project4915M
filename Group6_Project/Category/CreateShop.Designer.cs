@@ -47,7 +47,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(462, 497);
+            this.label2.Location = new System.Drawing.Point(382, 544);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(267, 24);
             this.label2.TabIndex = 23;
@@ -63,9 +63,9 @@
             this.roundButton1.FlatAppearance.BorderSize = 0;
             this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(490, 398);
+            this.roundButton1.Location = new System.Drawing.Point(487, 468);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(250, 29);
+            this.roundButton1.Size = new System.Drawing.Size(89, 29);
             this.roundButton1.TabIndex = 22;
             this.roundButton1.Text = "Add";
             this.roundButton1.TextColor = System.Drawing.Color.Black;
@@ -77,7 +77,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(326, 109);
+            this.label1.Location = new System.Drawing.Point(214, 171);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 24);
             this.label1.TabIndex = 21;
@@ -92,7 +92,7 @@
             this.rtxtbox_newname.BorderSize = 2;
             this.rtxtbox_newname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtbox_newname.ForeColor = System.Drawing.Color.DimGray;
-            this.rtxtbox_newname.Location = new System.Drawing.Point(526, 108);
+            this.rtxtbox_newname.Location = new System.Drawing.Point(413, 166);
             this.rtxtbox_newname.Margin = new System.Windows.Forms.Padding(4);
             this.rtxtbox_newname.Multiline = false;
             this.rtxtbox_newname.Name = "rtxtbox_newname";
@@ -110,7 +110,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(308, 204);
+            this.label3.Location = new System.Drawing.Point(195, 262);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(184, 24);
             this.label3.TabIndex = 27;
@@ -125,7 +125,7 @@
             this.rtxtbox_newaddress.BorderSize = 2;
             this.rtxtbox_newaddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtbox_newaddress.ForeColor = System.Drawing.Color.DimGray;
-            this.rtxtbox_newaddress.Location = new System.Drawing.Point(526, 199);
+            this.rtxtbox_newaddress.Location = new System.Drawing.Point(413, 257);
             this.rtxtbox_newaddress.Margin = new System.Windows.Forms.Padding(4);
             this.rtxtbox_newaddress.Multiline = false;
             this.rtxtbox_newaddress.Name = "rtxtbox_newaddress";
@@ -143,7 +143,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(308, 160);
+            this.label4.Location = new System.Drawing.Point(196, 216);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(183, 24);
             this.label4.TabIndex = 25;
@@ -158,7 +158,7 @@
             this.rtxtbox_newshopnum.BorderSize = 2;
             this.rtxtbox_newshopnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtbox_newshopnum.ForeColor = System.Drawing.Color.DimGray;
-            this.rtxtbox_newshopnum.Location = new System.Drawing.Point(526, 153);
+            this.rtxtbox_newshopnum.Location = new System.Drawing.Point(413, 211);
             this.rtxtbox_newshopnum.Margin = new System.Windows.Forms.Padding(4);
             this.rtxtbox_newshopnum.Multiline = false;
             this.rtxtbox_newshopnum.Name = "rtxtbox_newshopnum";
@@ -176,7 +176,7 @@
             this.lblnewshopphone.AutoSize = true;
             this.lblnewshopphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.lblnewshopphone.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblnewshopphone.Location = new System.Drawing.Point(326, 254);
+            this.lblnewshopphone.Location = new System.Drawing.Point(213, 312);
             this.lblnewshopphone.Name = "lblnewshopphone";
             this.lblnewshopphone.Size = new System.Drawing.Size(165, 24);
             this.lblnewshopphone.TabIndex = 28;
@@ -192,7 +192,7 @@
             this.rtxtbox_newphone.BorderSize = 2;
             this.rtxtbox_newphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtbox_newphone.ForeColor = System.Drawing.Color.DimGray;
-            this.rtxtbox_newphone.Location = new System.Drawing.Point(526, 247);
+            this.rtxtbox_newphone.Location = new System.Drawing.Point(413, 305);
             this.rtxtbox_newphone.Margin = new System.Windows.Forms.Padding(4);
             this.rtxtbox_newphone.Multiline = false;
             this.rtxtbox_newphone.Name = "rtxtbox_newphone";
@@ -210,7 +210,7 @@
             this.lblnewmanagerid.AutoSize = true;
             this.lblnewmanagerid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.lblnewmanagerid.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblnewmanagerid.Location = new System.Drawing.Point(335, 319);
+            this.lblnewmanagerid.Location = new System.Drawing.Point(223, 366);
             this.lblnewmanagerid.Name = "lblnewmanagerid";
             this.lblnewmanagerid.Size = new System.Drawing.Size(156, 24);
             this.lblnewmanagerid.TabIndex = 30;
@@ -225,7 +225,7 @@
             this.rtxtbox_newmanagerid.BorderSize = 2;
             this.rtxtbox_newmanagerid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtbox_newmanagerid.ForeColor = System.Drawing.Color.DimGray;
-            this.rtxtbox_newmanagerid.Location = new System.Drawing.Point(526, 312);
+            this.rtxtbox_newmanagerid.Location = new System.Drawing.Point(413, 359);
             this.rtxtbox_newmanagerid.Margin = new System.Windows.Forms.Padding(4);
             this.rtxtbox_newmanagerid.Multiline = false;
             this.rtxtbox_newmanagerid.Name = "rtxtbox_newmanagerid";
@@ -243,7 +243,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1317, 748);
+            this.ClientSize = new System.Drawing.Size(1041, 718);
             this.Controls.Add(this.rtxtbox_newmanagerid);
             this.Controls.Add(this.lblnewmanagerid);
             this.Controls.Add(this.rtxtbox_newphone);

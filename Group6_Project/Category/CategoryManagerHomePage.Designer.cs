@@ -41,9 +41,9 @@ namespace Group6_Project
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panFormLoad = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,7 +65,7 @@ namespace Group6_Project
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(277, 878);
+            this.panelMenu.Size = new System.Drawing.Size(277, 748);
             this.panelMenu.TabIndex = 3;
             // 
             // btnCategory
@@ -107,7 +107,7 @@ namespace Group6_Project
             this.btnCategoryManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategoryManager.ForeColor = System.Drawing.Color.White;
             this.btnCategoryManager.Image = global::Group6_Project.Properties.Resources.user__1_;
-            this.btnCategoryManager.Location = new System.Drawing.Point(0, 801);
+            this.btnCategoryManager.Location = new System.Drawing.Point(0, 671);
             this.btnCategoryManager.Name = "btnCategoryManager";
             this.btnCategoryManager.Size = new System.Drawing.Size(277, 77);
             this.btnCategoryManager.TabIndex = 7;
@@ -249,47 +249,48 @@ namespace Group6_Project
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnClose
-            // 
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1272, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(45, 40);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "x";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.panel5.Controls.Add(this.panFormLoad);
             this.panel5.Controls.Add(this.btnClose);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(277, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1317, 878);
+            this.panel5.Size = new System.Drawing.Size(1041, 30);
             this.panel5.TabIndex = 5;
             // 
             // panFormLoad
             // 
             this.panFormLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panFormLoad.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panFormLoad.Location = new System.Drawing.Point(0, 130);
+            this.panFormLoad.Location = new System.Drawing.Point(277, 30);
+            this.panFormLoad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panFormLoad.Name = "panFormLoad";
-            this.panFormLoad.Size = new System.Drawing.Size(1317, 748);
+            this.panFormLoad.Size = new System.Drawing.Size(1041, 718);
             this.panFormLoad.TabIndex = 1;
             this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(1003, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Padding = new System.Windows.Forms.Padding(3);
+            this.btnClose.Size = new System.Drawing.Size(28, 28);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // CategoryManagerHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1594, 878);
+            this.ClientSize = new System.Drawing.Size(1317, 748);
+            this.Controls.Add(this.panFormLoad);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -309,7 +310,6 @@ namespace Group6_Project
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnShop;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panFormLoad;
         private System.Windows.Forms.Button btnCategoryManager;
@@ -321,6 +321,7 @@ namespace Group6_Project
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCategory;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 

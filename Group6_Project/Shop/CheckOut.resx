@@ -125,10 +125,10 @@
     <value>TopRight</value>
   </data>
   <data name="btnConfirm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>582, 263</value>
+    <value>649, 260</value>
   </data>
   <data name="btnConfirm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 30</value>
+    <value>97, 30</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnConfirm.TabIndex" type="System.Int32, mscorlib">

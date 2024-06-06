@@ -41,7 +41,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(548, 407);
+            this.label2.Location = new System.Drawing.Point(446, 466);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(320, 24);
             this.label2.TabIndex = 15;
@@ -57,7 +57,7 @@
             this.roundButton1.FlatAppearance.BorderSize = 0;
             this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(918, 374);
+            this.roundButton1.Location = new System.Drawing.Point(568, 423);
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.Size = new System.Drawing.Size(72, 29);
             this.roundButton1.TabIndex = 14;
@@ -71,7 +71,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(298, 343);
+            this.label1.Location = new System.Drawing.Point(211, 317);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(218, 24);
             this.label1.TabIndex = 13;
@@ -86,7 +86,7 @@
             this.roundTextBox1.BorderSize = 2;
             this.roundTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox1.Location = new System.Drawing.Point(523, 337);
+            this.roundTextBox1.Location = new System.Drawing.Point(436, 311);
             this.roundTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox1.Multiline = false;
             this.roundTextBox1.Name = "roundTextBox1";
@@ -108,7 +108,7 @@
             this.roundTextBox2.BorderSize = 2;
             this.roundTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox2.Location = new System.Drawing.Point(523, 374);
+            this.roundTextBox2.Location = new System.Drawing.Point(436, 348);
             this.roundTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox2.Multiline = false;
             this.roundTextBox2.Name = "roundTextBox2";
@@ -126,7 +126,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(298, 379);
+            this.label3.Location = new System.Drawing.Point(211, 353);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(218, 24);
             this.label3.TabIndex = 17;
@@ -137,7 +137,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1317, 748);
+            this.ClientSize = new System.Drawing.Size(1041, 748);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.roundTextBox2);
             this.Controls.Add(this.label2);

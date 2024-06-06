@@ -35,9 +35,6 @@ namespace Group6_Project
 
         //Event
         [Category("Event")]
-
-        
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();

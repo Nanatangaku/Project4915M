@@ -29,66 +29,81 @@ namespace Group6_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.roundButton2 = new Group6_Project.CustomControls.RoundButton();
-            this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
+            this.rbtnCreateSupplier = new Group6_Project.CustomControls.RoundButton();
+            this.rbtnSearchSupplier = new Group6_Project.CustomControls.RoundButton();
+            this.panSupplier = new System.Windows.Forms.Panel();
+            this.panSupplier.SuspendLayout();
             this.SuspendLayout();
             // 
-            // roundButton2
+            // rbtnCreateSupplier
             // 
-            this.roundButton2.BackColor = System.Drawing.Color.White;
-            this.roundButton2.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton2.BorderColor = System.Drawing.Color.Aquamarine;
-            this.roundButton2.BorderRadius = 22;
-            this.roundButton2.BorderSize = 2;
-            this.roundButton2.FlatAppearance.BorderSize = 0;
-            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton2.ForeColor = System.Drawing.Color.Black;
-            this.roundButton2.Location = new System.Drawing.Point(695, 278);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(235, 163);
-            this.roundButton2.TabIndex = 11;
-            this.roundButton2.Text = "Create Supplier";
-            this.roundButton2.TextColor = System.Drawing.Color.Black;
-            this.roundButton2.UseVisualStyleBackColor = false;
+            this.rbtnCreateSupplier.BackColor = System.Drawing.Color.White;
+            this.rbtnCreateSupplier.BackgroundColor = System.Drawing.Color.White;
+            this.rbtnCreateSupplier.BorderColor = System.Drawing.Color.Aquamarine;
+            this.rbtnCreateSupplier.BorderRadius = 22;
+            this.rbtnCreateSupplier.BorderSize = 2;
+            this.rbtnCreateSupplier.FlatAppearance.BorderSize = 0;
+            this.rbtnCreateSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnCreateSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnCreateSupplier.ForeColor = System.Drawing.Color.Black;
+            this.rbtnCreateSupplier.Location = new System.Drawing.Point(550, 266);
+            this.rbtnCreateSupplier.Name = "rbtnCreateSupplier";
+            this.rbtnCreateSupplier.Size = new System.Drawing.Size(235, 150);
+            this.rbtnCreateSupplier.TabIndex = 11;
+            this.rbtnCreateSupplier.Text = "Create Supplier";
+            this.rbtnCreateSupplier.TextColor = System.Drawing.Color.Black;
+            this.rbtnCreateSupplier.UseVisualStyleBackColor = false;
+            this.rbtnCreateSupplier.Click += new System.EventHandler(this.rbtnCreateSupplier_Click);
             // 
-            // roundButton1
+            // rbtnSearchSupplier
             // 
-            this.roundButton1.BackColor = System.Drawing.Color.White;
-            this.roundButton1.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton1.BorderColor = System.Drawing.Color.Aquamarine;
-            this.roundButton1.BorderRadius = 22;
-            this.roundButton1.BorderSize = 2;
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(359, 278);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(235, 163);
-            this.roundButton1.TabIndex = 10;
-            this.roundButton1.Text = "Search Supplier";
-            this.roundButton1.TextColor = System.Drawing.Color.Black;
-            this.roundButton1.UseVisualStyleBackColor = false;
+            this.rbtnSearchSupplier.BackColor = System.Drawing.Color.White;
+            this.rbtnSearchSupplier.BackgroundColor = System.Drawing.Color.White;
+            this.rbtnSearchSupplier.BorderColor = System.Drawing.Color.Aquamarine;
+            this.rbtnSearchSupplier.BorderRadius = 22;
+            this.rbtnSearchSupplier.BorderSize = 2;
+            this.rbtnSearchSupplier.FlatAppearance.BorderSize = 0;
+            this.rbtnSearchSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnSearchSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnSearchSupplier.ForeColor = System.Drawing.Color.Black;
+            this.rbtnSearchSupplier.Location = new System.Drawing.Point(250, 266);
+            this.rbtnSearchSupplier.Name = "rbtnSearchSupplier";
+            this.rbtnSearchSupplier.Size = new System.Drawing.Size(235, 150);
+            this.rbtnSearchSupplier.TabIndex = 10;
+            this.rbtnSearchSupplier.Text = "Search Supplier";
+            this.rbtnSearchSupplier.TextColor = System.Drawing.Color.Black;
+            this.rbtnSearchSupplier.UseVisualStyleBackColor = false;
+            this.rbtnSearchSupplier.Click += new System.EventHandler(this.rbtnSearchSupplier_Click);
+            // 
+            // panSupplier
+            // 
+            this.panSupplier.Controls.Add(this.rbtnSearchSupplier);
+            this.panSupplier.Controls.Add(this.rbtnCreateSupplier);
+            this.panSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panSupplier.Location = new System.Drawing.Point(0, 0);
+            this.panSupplier.Name = "panSupplier";
+            this.panSupplier.Size = new System.Drawing.Size(1041, 748);
+            this.panSupplier.TabIndex = 12;
             // 
             // SupplierPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1317, 810);
-            this.Controls.Add(this.roundButton2);
-            this.Controls.Add(this.roundButton1);
+            this.ClientSize = new System.Drawing.Size(1041, 748);
+            this.Controls.Add(this.panSupplier);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SupplierPage";
             this.Text = "PurchasePage";
+            this.panSupplier.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CustomControls.RoundButton roundButton2;
-        private CustomControls.RoundButton roundButton1;
+        private CustomControls.RoundButton rbtnCreateSupplier;
+        private CustomControls.RoundButton rbtnSearchSupplier;
+        private System.Windows.Forms.Panel panSupplier;
     }
 }

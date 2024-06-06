@@ -120,9 +120,6 @@ namespace Group6_Project
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             check_out();
-
-
-
         }
 
         private void txtboxtotalprice_TextChanged(object sender, EventArgs e)
@@ -156,13 +153,11 @@ namespace Group6_Project
             }
             else if (check_enought_quantity() == false)
             {
-
                 return;
             }
             else
             {
                 insert_order_table();
-
             }
         }
         public void insert_order_table()

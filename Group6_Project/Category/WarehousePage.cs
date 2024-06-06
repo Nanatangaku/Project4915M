@@ -16,19 +16,28 @@ namespace Group6_Project
         {
             InitializeComponent();
         }
-        private void roundButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundButton2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void WarehousePage_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void rbtnSearchWare_Click(object sender, EventArgs e)
+        {
+            this.panWare.Controls.Clear();
+            SearchWarehouse searchwarehouse = new SearchWarehouse() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            searchwarehouse.FormBorderStyle = FormBorderStyle.None;
+            this.panWare.Controls.Add(searchwarehouse);
+            searchwarehouse.Show();
+        }
+
+        private void rbtnCreateWare_Click(object sender, EventArgs e)
+        {
+            this.panWare.Controls.Clear();
+            CreateWarehouse createwarehouse = new CreateWarehouse() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            createwarehouse.FormBorderStyle = FormBorderStyle.None;
+            this.panWare.Controls.Add(createwarehouse);
+            createwarehouse.Show();
         }
     }
 }

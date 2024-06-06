@@ -16,18 +16,6 @@ namespace Group6_Project
         {
             InitializeComponent();
         }
-
-        private void roundButton2_Click(object sender, EventArgs e)
-        {
-            this.panShop.Controls.Clear();
-            CreateShop createshop = new CreateShop() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            createshop.FormBorderStyle = FormBorderStyle.None;
-            this.panShop.Controls.Add(createshop);
-            createshop.Show();
-
-
-        }
-
         private void ShopPage_Load(object sender, EventArgs e)
         {
 
@@ -38,13 +26,22 @@ namespace Group6_Project
            
         }
 
-        private void roundButton1_Click(object sender, EventArgs e)
+        private void rbtnSearchShop_Click(object sender, EventArgs e)
         {
             this.panShop.Controls.Clear();
             SearchShop searchShop = new SearchShop() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             searchShop.FormBorderStyle = FormBorderStyle.None;
             this.panShop.Controls.Add(searchShop);
             searchShop.Show();
+        }
+
+        private void rbtnCreateShop_Click(object sender, EventArgs e)
+        {
+            this.panShop.Controls.Clear();
+            CreateShop createshop = new CreateShop() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            createshop.FormBorderStyle = FormBorderStyle.None;
+            this.panShop.Controls.Add(createshop);
+            createshop.Show();
         }
     }
 }

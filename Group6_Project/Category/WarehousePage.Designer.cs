@@ -31,8 +31,6 @@ namespace Group6_Project
         {
             this.rbtnCreateWare = new Group6_Project.CustomControls.RoundButton();
             this.rbtnSearchWare = new Group6_Project.CustomControls.RoundButton();
-            this.panWare = new System.Windows.Forms.Panel();
-            this.panWare.SuspendLayout();
             this.SuspendLayout();
             // 
             // rbtnCreateWare
@@ -75,28 +73,18 @@ namespace Group6_Project
             this.rbtnSearchWare.UseVisualStyleBackColor = false;
             this.rbtnSearchWare.Click += new System.EventHandler(this.rbtnSearchWare_Click);
             // 
-            // panWare
-            // 
-            this.panWare.Controls.Add(this.rbtnSearchWare);
-            this.panWare.Controls.Add(this.rbtnCreateWare);
-            this.panWare.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panWare.Location = new System.Drawing.Point(0, 0);
-            this.panWare.Name = "panWare";
-            this.panWare.Size = new System.Drawing.Size(1041, 748);
-            this.panWare.TabIndex = 10;
-            // 
             // WarehousePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1041, 748);
-            this.Controls.Add(this.panWare);
+            this.Controls.Add(this.rbtnSearchWare);
+            this.Controls.Add(this.rbtnCreateWare);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "WarehousePage";
             this.Text = "WarehousePage";
             this.Load += new System.EventHandler(this.WarehousePage_Load);
-            this.panWare.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -106,6 +94,5 @@ namespace Group6_Project
         private CustomControls.RoundButton rbtnCreateWare;
         private CustomControls.RoundButton rbtnSearchWare;
         private System.Windows.Forms.Panel panWarehouse;
-        private System.Windows.Forms.Panel panWare;
     }
 }

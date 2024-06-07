@@ -29,22 +29,9 @@ namespace Group6_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.panShop = new System.Windows.Forms.Panel();
             this.rbtnCreateShop = new Group6_Project.CustomControls.RoundButton();
             this.rbtnSearchShop = new Group6_Project.CustomControls.RoundButton();
-            this.panShop.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panShop
-            // 
-            this.panShop.Controls.Add(this.rbtnCreateShop);
-            this.panShop.Controls.Add(this.rbtnSearchShop);
-            this.panShop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panShop.Location = new System.Drawing.Point(0, 0);
-            this.panShop.Name = "panShop";
-            this.panShop.Size = new System.Drawing.Size(1041, 718);
-            this.panShop.TabIndex = 10;
-            this.panShop.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // rbtnCreateShop
             // 
@@ -92,12 +79,12 @@ namespace Group6_Project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1041, 718);
-            this.Controls.Add(this.panShop);
+            this.Controls.Add(this.rbtnCreateShop);
+            this.Controls.Add(this.rbtnSearchShop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ShopPage";
             this.Text = "ShopPage";
             this.Load += new System.EventHandler(this.ShopPage_Load);
-            this.panShop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -106,6 +93,5 @@ namespace Group6_Project
 
         private CustomControls.RoundButton rbtnCreateShop;
         private CustomControls.RoundButton rbtnSearchShop;
-        private System.Windows.Forms.Panel panShop;
     }
 }

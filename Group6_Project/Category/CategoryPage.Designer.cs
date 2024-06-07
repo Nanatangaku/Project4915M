@@ -29,57 +29,58 @@ namespace Group6_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
-            this.roundButton2 = new Group6_Project.CustomControls.RoundButton();
+            this.rbtnSearchCategory = new Group6_Project.CustomControls.RoundButton();
+            this.rbtnCreateCategory = new Group6_Project.CustomControls.RoundButton();
             this.SuspendLayout();
             // 
-            // roundButton1
+            // rbtnSearchCategory
             // 
-            this.roundButton1.BackColor = System.Drawing.Color.White;
-            this.roundButton1.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton1.BorderColor = System.Drawing.Color.Aquamarine;
-            this.roundButton1.BorderRadius = 22;
-            this.roundButton1.BorderSize = 2;
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(351, 247);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(235, 163);
-            this.roundButton1.TabIndex = 1;
-            this.roundButton1.Text = "Search Category";
-            this.roundButton1.TextColor = System.Drawing.Color.Black;
-            this.roundButton1.UseVisualStyleBackColor = false;
-            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
+            this.rbtnSearchCategory.BackColor = System.Drawing.Color.White;
+            this.rbtnSearchCategory.BackgroundColor = System.Drawing.Color.White;
+            this.rbtnSearchCategory.BorderColor = System.Drawing.Color.Aquamarine;
+            this.rbtnSearchCategory.BorderRadius = 22;
+            this.rbtnSearchCategory.BorderSize = 2;
+            this.rbtnSearchCategory.FlatAppearance.BorderSize = 0;
+            this.rbtnSearchCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnSearchCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnSearchCategory.ForeColor = System.Drawing.Color.Black;
+            this.rbtnSearchCategory.Location = new System.Drawing.Point(250, 266);
+            this.rbtnSearchCategory.Name = "rbtnSearchCategory";
+            this.rbtnSearchCategory.Size = new System.Drawing.Size(235, 150);
+            this.rbtnSearchCategory.TabIndex = 1;
+            this.rbtnSearchCategory.Text = "Search Category";
+            this.rbtnSearchCategory.TextColor = System.Drawing.Color.Black;
+            this.rbtnSearchCategory.UseVisualStyleBackColor = false;
+            this.rbtnSearchCategory.Click += new System.EventHandler(this.rbtnSearchCategory_Click);
             // 
-            // roundButton2
+            // rbtnCreateCategory
             // 
-            this.roundButton2.BackColor = System.Drawing.Color.White;
-            this.roundButton2.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton2.BorderColor = System.Drawing.Color.Aquamarine;
-            this.roundButton2.BorderRadius = 22;
-            this.roundButton2.BorderSize = 2;
-            this.roundButton2.FlatAppearance.BorderSize = 0;
-            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton2.ForeColor = System.Drawing.Color.Black;
-            this.roundButton2.Location = new System.Drawing.Point(756, 247);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(235, 163);
-            this.roundButton2.TabIndex = 2;
-            this.roundButton2.Text = "Create Category";
-            this.roundButton2.TextColor = System.Drawing.Color.Black;
-            this.roundButton2.UseVisualStyleBackColor = false;
+            this.rbtnCreateCategory.BackColor = System.Drawing.Color.White;
+            this.rbtnCreateCategory.BackgroundColor = System.Drawing.Color.White;
+            this.rbtnCreateCategory.BorderColor = System.Drawing.Color.Aquamarine;
+            this.rbtnCreateCategory.BorderRadius = 22;
+            this.rbtnCreateCategory.BorderSize = 2;
+            this.rbtnCreateCategory.FlatAppearance.BorderSize = 0;
+            this.rbtnCreateCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnCreateCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnCreateCategory.ForeColor = System.Drawing.Color.Black;
+            this.rbtnCreateCategory.Location = new System.Drawing.Point(550, 266);
+            this.rbtnCreateCategory.Name = "rbtnCreateCategory";
+            this.rbtnCreateCategory.Size = new System.Drawing.Size(235, 150);
+            this.rbtnCreateCategory.TabIndex = 2;
+            this.rbtnCreateCategory.Text = "Create Category";
+            this.rbtnCreateCategory.TextColor = System.Drawing.Color.Black;
+            this.rbtnCreateCategory.UseVisualStyleBackColor = false;
+            this.rbtnCreateCategory.Click += new System.EventHandler(this.rbtnCreateCategory_Click);
             // 
             // CategoryPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1317, 810);
-            this.Controls.Add(this.roundButton2);
-            this.Controls.Add(this.roundButton1);
+            this.ClientSize = new System.Drawing.Size(1041, 718);
+            this.Controls.Add(this.rbtnCreateCategory);
+            this.Controls.Add(this.rbtnSearchCategory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CategoryPage";
             this.Text = "CategoryPage";
@@ -89,7 +90,7 @@ namespace Group6_Project
 
         #endregion
 
-        private CustomControls.RoundButton roundButton1;
-        private CustomControls.RoundButton roundButton2;
+        private CustomControls.RoundButton rbtnSearchCategory;
+        private CustomControls.RoundButton rbtnCreateCategory;
     }
 }

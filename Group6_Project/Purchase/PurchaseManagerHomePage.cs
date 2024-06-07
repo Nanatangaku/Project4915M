@@ -68,7 +68,7 @@ namespace Group6_Project
             btnSupplier.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            SupplierPage supplier = new SupplierPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            SupplierPage supplier = new SupplierPage(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             supplier.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(supplier);
             supplier.Show();

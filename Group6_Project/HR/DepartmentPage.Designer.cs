@@ -29,57 +29,58 @@ namespace Group6_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
-            this.roundButton2 = new Group6_Project.CustomControls.RoundButton();
+            this.rbtnSearchDepartment = new Group6_Project.CustomControls.RoundButton();
+            this.rbtnCreateDepartment = new Group6_Project.CustomControls.RoundButton();
             this.SuspendLayout();
             // 
-            // roundButton1
+            // rbtnSearchDepartment
             // 
-            this.roundButton1.BackColor = System.Drawing.Color.White;
-            this.roundButton1.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton1.BorderColor = System.Drawing.Color.Aquamarine;
-            this.roundButton1.BorderRadius = 22;
-            this.roundButton1.BorderSize = 2;
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(344, 232);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(235, 150);
-            this.roundButton1.TabIndex = 0;
-            this.roundButton1.Text = "Search Department";
-            this.roundButton1.TextColor = System.Drawing.Color.Black;
-            this.roundButton1.UseVisualStyleBackColor = false;
-            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
+            this.rbtnSearchDepartment.BackColor = System.Drawing.Color.White;
+            this.rbtnSearchDepartment.BackgroundColor = System.Drawing.Color.White;
+            this.rbtnSearchDepartment.BorderColor = System.Drawing.Color.Aquamarine;
+            this.rbtnSearchDepartment.BorderRadius = 22;
+            this.rbtnSearchDepartment.BorderSize = 2;
+            this.rbtnSearchDepartment.FlatAppearance.BorderSize = 0;
+            this.rbtnSearchDepartment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnSearchDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnSearchDepartment.ForeColor = System.Drawing.Color.Black;
+            this.rbtnSearchDepartment.Location = new System.Drawing.Point(250, 266);
+            this.rbtnSearchDepartment.Name = "rbtnSearchDepartment";
+            this.rbtnSearchDepartment.Size = new System.Drawing.Size(235, 150);
+            this.rbtnSearchDepartment.TabIndex = 0;
+            this.rbtnSearchDepartment.Text = "Search Department";
+            this.rbtnSearchDepartment.TextColor = System.Drawing.Color.Black;
+            this.rbtnSearchDepartment.UseVisualStyleBackColor = false;
+            this.rbtnSearchDepartment.Click += new System.EventHandler(this.rbtnSearchDepartment_Click);
             // 
-            // roundButton2
+            // rbtnCreateDepartment
             // 
-            this.roundButton2.BackColor = System.Drawing.Color.White;
-            this.roundButton2.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton2.BorderColor = System.Drawing.Color.Aquamarine;
-            this.roundButton2.BorderRadius = 22;
-            this.roundButton2.BorderSize = 2;
-            this.roundButton2.FlatAppearance.BorderSize = 0;
-            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton2.ForeColor = System.Drawing.Color.Black;
-            this.roundButton2.Location = new System.Drawing.Point(728, 232);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(235, 150);
-            this.roundButton2.TabIndex = 1;
-            this.roundButton2.Text = "Create Department";
-            this.roundButton2.TextColor = System.Drawing.Color.Black;
-            this.roundButton2.UseVisualStyleBackColor = false;
+            this.rbtnCreateDepartment.BackColor = System.Drawing.Color.White;
+            this.rbtnCreateDepartment.BackgroundColor = System.Drawing.Color.White;
+            this.rbtnCreateDepartment.BorderColor = System.Drawing.Color.Aquamarine;
+            this.rbtnCreateDepartment.BorderRadius = 22;
+            this.rbtnCreateDepartment.BorderSize = 2;
+            this.rbtnCreateDepartment.FlatAppearance.BorderSize = 0;
+            this.rbtnCreateDepartment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnCreateDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnCreateDepartment.ForeColor = System.Drawing.Color.Black;
+            this.rbtnCreateDepartment.Location = new System.Drawing.Point(550, 266);
+            this.rbtnCreateDepartment.Name = "rbtnCreateDepartment";
+            this.rbtnCreateDepartment.Size = new System.Drawing.Size(235, 150);
+            this.rbtnCreateDepartment.TabIndex = 1;
+            this.rbtnCreateDepartment.Text = "Create Department";
+            this.rbtnCreateDepartment.TextColor = System.Drawing.Color.Black;
+            this.rbtnCreateDepartment.UseVisualStyleBackColor = false;
+            this.rbtnCreateDepartment.Click += new System.EventHandler(this.rbtnCreateDepartment_Click);
             // 
             // DepartmentPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(1317, 748);
-            this.Controls.Add(this.roundButton2);
-            this.Controls.Add(this.roundButton1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.ClientSize = new System.Drawing.Size(1041, 718);
+            this.Controls.Add(this.rbtnCreateDepartment);
+            this.Controls.Add(this.rbtnSearchDepartment);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DepartmentPage";
             this.Text = "DepartmentPage";
@@ -89,7 +90,7 @@ namespace Group6_Project
 
         #endregion
 
-        private CustomControls.RoundButton roundButton1;
-        private CustomControls.RoundButton roundButton2;
+        private CustomControls.RoundButton rbtnSearchDepartment;
+        private CustomControls.RoundButton rbtnCreateDepartment;
     }
 }

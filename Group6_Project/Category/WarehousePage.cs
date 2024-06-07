@@ -12,9 +12,11 @@ namespace Group6_Project
 {
     public partial class WarehousePage : Form
     {
-        public WarehousePage()
+        Panel panFormLoad;
+        public WarehousePage(Panel panFormLoad)
         {
             InitializeComponent();
+            this.panFormLoad = panFormLoad;
         }
 
         private void WarehousePage_Load(object sender, EventArgs e)
@@ -24,19 +26,19 @@ namespace Group6_Project
 
         private void rbtnSearchWare_Click(object sender, EventArgs e)
         {
-            this.panWare.Controls.Clear();
+            this.panFormLoad.Controls.Clear();
             SearchWarehouse searchwarehouse = new SearchWarehouse() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             searchwarehouse.FormBorderStyle = FormBorderStyle.None;
-            this.panWare.Controls.Add(searchwarehouse);
+            this.panFormLoad.Controls.Add(searchwarehouse);
             searchwarehouse.Show();
         }
 
         private void rbtnCreateWare_Click(object sender, EventArgs e)
         {
-            this.panWare.Controls.Clear();
+            this.panFormLoad.Controls.Clear();
             CreateWarehouse createwarehouse = new CreateWarehouse() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             createwarehouse.FormBorderStyle = FormBorderStyle.None;
-            this.panWare.Controls.Add(createwarehouse);
+            this.panFormLoad.Controls.Add(createwarehouse);
             createwarehouse.Show();
         }
     }

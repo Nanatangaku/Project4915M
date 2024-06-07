@@ -31,8 +31,6 @@ namespace Group6_Project
         {
             this.rbtnCreateSupplier = new Group6_Project.CustomControls.RoundButton();
             this.rbtnSearchSupplier = new Group6_Project.CustomControls.RoundButton();
-            this.panSupplier = new System.Windows.Forms.Panel();
-            this.panSupplier.SuspendLayout();
             this.SuspendLayout();
             // 
             // rbtnCreateSupplier
@@ -75,27 +73,17 @@ namespace Group6_Project
             this.rbtnSearchSupplier.UseVisualStyleBackColor = false;
             this.rbtnSearchSupplier.Click += new System.EventHandler(this.rbtnSearchSupplier_Click);
             // 
-            // panSupplier
-            // 
-            this.panSupplier.Controls.Add(this.rbtnSearchSupplier);
-            this.panSupplier.Controls.Add(this.rbtnCreateSupplier);
-            this.panSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panSupplier.Location = new System.Drawing.Point(0, 0);
-            this.panSupplier.Name = "panSupplier";
-            this.panSupplier.Size = new System.Drawing.Size(1041, 748);
-            this.panSupplier.TabIndex = 12;
-            // 
             // SupplierPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1041, 748);
-            this.Controls.Add(this.panSupplier);
+            this.Controls.Add(this.rbtnSearchSupplier);
+            this.Controls.Add(this.rbtnCreateSupplier);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SupplierPage";
             this.Text = "PurchasePage";
-            this.panSupplier.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -104,6 +92,5 @@ namespace Group6_Project
 
         private CustomControls.RoundButton rbtnCreateSupplier;
         private CustomControls.RoundButton rbtnSearchSupplier;
-        private System.Windows.Forms.Panel panSupplier;
     }
 }

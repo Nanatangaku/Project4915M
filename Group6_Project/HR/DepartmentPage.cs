@@ -12,14 +12,29 @@ namespace Group6_Project
 {
     public partial class DepartmentPage : Form
     {
-        public DepartmentPage()
+        Panel panFormLoad;
+        public DepartmentPage(Panel panFormLoad)
         {
             InitializeComponent();
+            this.panFormLoad = panFormLoad;
         }
 
-        private void roundButton1_Click(object sender, EventArgs e)
+        private void rbtnSearchDepartment_Click(object sender, EventArgs e)
         {
+            this.panFormLoad.Controls.Clear();
+            SearchDepartment searchdepartment = new SearchDepartment() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            searchdepartment.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(searchdepartment);
+            searchdepartment.Show();
+        }
 
+        private void rbtnCreateDepartment_Click(object sender, EventArgs e)
+        {
+            this.panFormLoad.Controls.Clear();
+            CreateDepartment createdepartment = new CreateDepartment() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            createdepartment.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(createdepartment);
+            createdepartment.Show();
         }
     }
 }

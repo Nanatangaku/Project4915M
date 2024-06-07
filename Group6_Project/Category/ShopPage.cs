@@ -12,10 +12,13 @@ namespace Group6_Project
 {
     public partial class ShopPage : Form
     {
-        public ShopPage()
+        Panel panFormLoad;
+        public ShopPage(Panel panFormLoad)
         {
             InitializeComponent();
+            this.panFormLoad = panFormLoad;
         }
+
         private void ShopPage_Load(object sender, EventArgs e)
         {
 
@@ -28,19 +31,19 @@ namespace Group6_Project
 
         private void rbtnSearchShop_Click(object sender, EventArgs e)
         {
-            this.panShop.Controls.Clear();
+            this.panFormLoad.Controls.Clear();
             SearchShop searchShop = new SearchShop() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             searchShop.FormBorderStyle = FormBorderStyle.None;
-            this.panShop.Controls.Add(searchShop);
+            this.panFormLoad.Controls.Add(searchShop);
             searchShop.Show();
         }
 
         private void rbtnCreateShop_Click(object sender, EventArgs e)
         {
-            this.panShop.Controls.Clear();
+            this.panFormLoad.Controls.Clear();
             CreateShop createshop = new CreateShop() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             createshop.FormBorderStyle = FormBorderStyle.None;
-            this.panShop.Controls.Add(createshop);
+            this.panFormLoad.Controls.Add(createshop);
             createshop.Show();
         }
     }

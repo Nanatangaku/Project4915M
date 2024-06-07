@@ -49,7 +49,7 @@ namespace Group6_Project
             btnDepartment.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            DepartmentPage department = new DepartmentPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DepartmentPage department = new DepartmentPage(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             department.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(department);
             department.Show();

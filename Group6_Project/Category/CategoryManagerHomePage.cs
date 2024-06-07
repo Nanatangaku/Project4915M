@@ -39,6 +39,7 @@ namespace Group6_Project
         {
             this.Close();
         }
+
         [Category("Event")]
         private void btnShop_Click(object sender, EventArgs e)
         {
@@ -49,16 +50,18 @@ namespace Group6_Project
             btnShop.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            ShopPage shop = new ShopPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            ShopPage shop = new ShopPage(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             shop.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(shop);
             shop.Show();
         }
+
         [Category("Event")]
         private void btnShop_Leave(object sender, EventArgs e)
         {
             btnShop.BackColor = Color.FromArgb(51, 51, 76);
         }
+
         [Category("Event")]
         private void btnWarehouse_Click(object sender, EventArgs e)
         {
@@ -68,16 +71,19 @@ namespace Group6_Project
             btnWarehouse.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            WarehousePage warehouse = new WarehousePage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            WarehousePage warehouse = new WarehousePage(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             warehouse.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(warehouse);
             warehouse.Show();
         }
+
         [Category("Event")]
         private void btnWarehouse_Leave(object sender, EventArgs e)
         {
             btnWarehouse.BackColor = Color.FromArgb(51, 51, 76);
+
         }
+
         [Category("Event")]
         private void btnSupplier_Click(object sender, EventArgs e)
         {
@@ -87,7 +93,7 @@ namespace Group6_Project
             btnSupplier.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            SupplierPage supplier = new SupplierPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            SupplierPage supplier = new SupplierPage(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             supplier.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(supplier);
             supplier.Show();
@@ -106,7 +112,7 @@ namespace Group6_Project
             btnDepartment.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            DepartmentPage department = new DepartmentPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DepartmentPage department = new DepartmentPage(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             department.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(department);
             department.Show();
@@ -125,7 +131,7 @@ namespace Group6_Project
             btnRole.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            RolePage role = new RolePage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            RolePage role = new RolePage(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             role.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(role);
             role.Show();
@@ -145,7 +151,7 @@ namespace Group6_Project
             btnCategory.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
-            CategoryPage category = new CategoryPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            CategoryPage category = new CategoryPage(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             category.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(category);
             category.Show();

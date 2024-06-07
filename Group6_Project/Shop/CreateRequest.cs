@@ -22,8 +22,6 @@ namespace Group6_Project
         {
             InitializeComponent();
 
-         
-
             this.user_id = 5;
             this.panformload = panformLoad;
         }
@@ -44,13 +42,7 @@ namespace Group6_Project
             txt.Name = "txtquantity";
             // default value is 0
             txt.ValueType = typeof(int);
-
-
-
-
             filldvg();
-
-
         }
 
         private void searchtxtbox__TextChanged(object sender, EventArgs e)
@@ -99,8 +91,6 @@ namespace Group6_Project
             //bind the data to the datagridview
             dataGridView1.DataSource = dt;
 
-
-
             //make the data fit the datagridview1
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             //if the item_id is exist in cart remove it
@@ -112,28 +102,26 @@ namespace Group6_Project
         {
             if (e.ColumnIndex == 0)
             {
-               
                 int index = e.RowIndex;
                 DataGridViewRow selectedRow = dataGridView1.Rows[index];
                 var inputquantity = 0;
      
-                    try
-                    {
-                        inputquantity = Convert.ToInt32(selectedRow.Cells[1].Value);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Quantity cant be 0 or negative");
-                        MessageBox.Show(ex.Message);
+                try
+                {
+                    inputquantity = Convert.ToInt32(selectedRow.Cells[1].Value);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Quantity cant be 0 or negative");
+                    MessageBox.Show(ex.Message);
                     return;
-                    }
+                }
 
                 if (inputquantity <= 0)
                 {
                     MessageBox.Show("Quantity cant be 0 or negative");
                     return;
                 }
-      
              
                 var item_id = selectedRow.Cells[2].Value.ToString();
                 var sql = "insert into cart(user_id,item_id,quantity)Value(" + user_id + "," + item_id + "," + inputquantity + ");";
@@ -151,10 +139,7 @@ namespace Group6_Project
                     MessageBox.Show(ex.Message);
                 }
                 conn.Close();
-
-
             }
-            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

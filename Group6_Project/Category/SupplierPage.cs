@@ -12,26 +12,28 @@ namespace Group6_Project
 {
     public partial class SupplierPage : Form
     {
-        public SupplierPage()
+        Panel panFormLoad;
+        public SupplierPage(Panel panFormLoad)
         {
             InitializeComponent();
+            this.panFormLoad = panFormLoad;
         }
 
         private void rbtnSearchSupplier_Click(object sender, EventArgs e)
         {
-            this.panSupplier.Controls.Clear();
+            this.panFormLoad.Controls.Clear();
             SearchSupplier searchsupplier = new SearchSupplier() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             searchsupplier.FormBorderStyle = FormBorderStyle.None;
-            this.panSupplier.Controls.Add(searchsupplier);
+            this.panFormLoad.Controls.Add(searchsupplier);
             searchsupplier.Show();
         }
 
         private void rbtnCreateSupplier_Click(object sender, EventArgs e)
         {
-            this.panSupplier.Controls.Clear();
+            this.panFormLoad.Controls.Clear();
             CreateSupplier createsupplier = new CreateSupplier() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             createsupplier.FormBorderStyle = FormBorderStyle.None;
-            this.panSupplier.Controls.Add(createsupplier);
+            this.panFormLoad.Controls.Add(createsupplier);
             createsupplier.Show();
         }
     }

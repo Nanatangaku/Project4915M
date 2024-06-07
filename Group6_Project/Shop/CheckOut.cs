@@ -300,11 +300,6 @@ namespace Group6_Project
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public Boolean check_enought_quantity()
         {
             DataTable dt = get_from_cart_table();

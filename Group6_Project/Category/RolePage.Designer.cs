@@ -29,56 +29,58 @@ namespace Group6_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.roundButton2 = new Group6_Project.CustomControls.RoundButton();
-            this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
+            this.rbtnCreateRole = new Group6_Project.CustomControls.RoundButton();
+            this.rbtnSearchRole = new Group6_Project.CustomControls.RoundButton();
             this.SuspendLayout();
             // 
-            // roundButton2
+            // rbtnCreateRole
             // 
-            this.roundButton2.BackColor = System.Drawing.Color.White;
-            this.roundButton2.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton2.BorderColor = System.Drawing.Color.Aquamarine;
-            this.roundButton2.BorderRadius = 22;
-            this.roundButton2.BorderSize = 2;
-            this.roundButton2.FlatAppearance.BorderSize = 0;
-            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton2.ForeColor = System.Drawing.Color.Black;
-            this.roundButton2.Location = new System.Drawing.Point(704, 281);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(235, 163);
-            this.roundButton2.TabIndex = 11;
-            this.roundButton2.Text = "Create Role";
-            this.roundButton2.TextColor = System.Drawing.Color.Black;
-            this.roundButton2.UseVisualStyleBackColor = false;
+            this.rbtnCreateRole.BackColor = System.Drawing.Color.White;
+            this.rbtnCreateRole.BackgroundColor = System.Drawing.Color.White;
+            this.rbtnCreateRole.BorderColor = System.Drawing.Color.Aquamarine;
+            this.rbtnCreateRole.BorderRadius = 22;
+            this.rbtnCreateRole.BorderSize = 2;
+            this.rbtnCreateRole.FlatAppearance.BorderSize = 0;
+            this.rbtnCreateRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnCreateRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnCreateRole.ForeColor = System.Drawing.Color.Black;
+            this.rbtnCreateRole.Location = new System.Drawing.Point(550, 266);
+            this.rbtnCreateRole.Name = "rbtnCreateRole";
+            this.rbtnCreateRole.Size = new System.Drawing.Size(235, 150);
+            this.rbtnCreateRole.TabIndex = 11;
+            this.rbtnCreateRole.Text = "Create Role";
+            this.rbtnCreateRole.TextColor = System.Drawing.Color.Black;
+            this.rbtnCreateRole.UseVisualStyleBackColor = false;
+            this.rbtnCreateRole.Click += new System.EventHandler(this.rbtnCreateRole_Click);
             // 
-            // roundButton1
+            // rbtnSearchRole
             // 
-            this.roundButton1.BackColor = System.Drawing.Color.White;
-            this.roundButton1.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton1.BorderColor = System.Drawing.Color.Aquamarine;
-            this.roundButton1.BorderRadius = 22;
-            this.roundButton1.BorderSize = 2;
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(368, 281);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(235, 163);
-            this.roundButton1.TabIndex = 10;
-            this.roundButton1.Text = "Search Role";
-            this.roundButton1.TextColor = System.Drawing.Color.Black;
-            this.roundButton1.UseVisualStyleBackColor = false;
+            this.rbtnSearchRole.BackColor = System.Drawing.Color.White;
+            this.rbtnSearchRole.BackgroundColor = System.Drawing.Color.White;
+            this.rbtnSearchRole.BorderColor = System.Drawing.Color.Aquamarine;
+            this.rbtnSearchRole.BorderRadius = 22;
+            this.rbtnSearchRole.BorderSize = 2;
+            this.rbtnSearchRole.FlatAppearance.BorderSize = 0;
+            this.rbtnSearchRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnSearchRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnSearchRole.ForeColor = System.Drawing.Color.Black;
+            this.rbtnSearchRole.Location = new System.Drawing.Point(250, 266);
+            this.rbtnSearchRole.Name = "rbtnSearchRole";
+            this.rbtnSearchRole.Size = new System.Drawing.Size(235, 150);
+            this.rbtnSearchRole.TabIndex = 10;
+            this.rbtnSearchRole.Text = "Search Role";
+            this.rbtnSearchRole.TextColor = System.Drawing.Color.Black;
+            this.rbtnSearchRole.UseVisualStyleBackColor = false;
+            this.rbtnSearchRole.Click += new System.EventHandler(this.rbtnSearchRole_Click);
             // 
             // RolePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1317, 810);
-            this.Controls.Add(this.roundButton2);
-            this.Controls.Add(this.roundButton1);
+            this.ClientSize = new System.Drawing.Size(1041, 718);
+            this.Controls.Add(this.rbtnCreateRole);
+            this.Controls.Add(this.rbtnSearchRole);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RolePage";
             this.Text = "RolePage";
@@ -88,7 +90,7 @@ namespace Group6_Project
 
         #endregion
 
-        private CustomControls.RoundButton roundButton2;
-        private CustomControls.RoundButton roundButton1;
+        private CustomControls.RoundButton rbtnCreateRole;
+        private CustomControls.RoundButton rbtnSearchRole;
     }
 }

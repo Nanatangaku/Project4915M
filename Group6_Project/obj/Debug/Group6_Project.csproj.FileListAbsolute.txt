@@ -864,3 +864,4 @@ C:\Users\User\Documents\GitHub\Project4915M\Group6_Project\obj\Debug\Group6_Proj
 C:\Users\User\Documents\GitHub\Project4915M\Group6_Project\obj\Debug\Group6_Project.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\Project4915M\Group6_Project\obj\Debug\Group6_Project.exe
 C:\Users\User\Documents\GitHub\Project4915M\Group6_Project\obj\Debug\Group6_Project.pdb
+C:\Users\user\Desktop\github\Project4915M\Group6_Project\bin\Debug\zh-Hant\Microsoft.VisualStudio.GraphModel.resources.dll

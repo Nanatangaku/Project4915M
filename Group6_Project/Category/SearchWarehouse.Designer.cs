@@ -28,39 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView_warehouse = new System.Windows.Forms.DataGridView();
-            this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.roundTextBox1 = new Group6_Project.RoundTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_warehouse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView_warehouse
+            // dataGridView1
             // 
-            this.dataGridView_warehouse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_warehouse.Location = new System.Drawing.Point(93, 205);
-            this.dataGridView_warehouse.Name = "dataGridView_warehouse";
-            this.dataGridView_warehouse.Size = new System.Drawing.Size(849, 414);
-            this.dataGridView_warehouse.TabIndex = 11;
-            // 
-            // roundButton1
-            // 
-            this.roundButton1.BackColor = System.Drawing.Color.White;
-            this.roundButton1.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.roundButton1.BorderRadius = 22;
-            this.roundButton1.BorderSize = 2;
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(758, 133);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(72, 29);
-            this.roundButton1.TabIndex = 10;
-            this.roundButton1.Text = "Search";
-            this.roundButton1.TextColor = System.Drawing.Color.Black;
-            this.roundButton1.UseVisualStyleBackColor = false;
-            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(93, 205);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(849, 414);
+            this.dataGridView1.TabIndex = 11;
             // 
             // label1
             // 
@@ -94,6 +74,7 @@
             this.roundTextBox1.TabIndex = 8;
             this.roundTextBox1.Texts = "";
             this.roundTextBox1.UnderlinedStyle = true;
+            this.roundTextBox1._TextChanged += new System.EventHandler(this.roundTextBox1__TextChanged);
             // 
             // SearchWarehouse
             // 
@@ -101,15 +82,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1041, 748);
-            this.Controls.Add(this.dataGridView_warehouse);
-            this.Controls.Add(this.roundButton1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.roundTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SearchWarehouse";
             this.Text = "SearchWarehouse";
             this.Load += new System.EventHandler(this.SearchWarehouse_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_warehouse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,8 +97,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView_warehouse;
-        private CustomControls.RoundButton roundButton1;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private RoundTextBox roundTextBox1;
     }

@@ -28,24 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
             this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
             this.label1 = new System.Windows.Forms.Label();
             this.roundTextBox1 = new Group6_Project.RoundTextBox();
             this.roundTextBox2 = new Group6_Project.RoundTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(446, 466);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(320, 24);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Sucessed to create new Warehouse.";
             // 
             // roundButton1
             // 
@@ -140,7 +128,6 @@
             this.ClientSize = new System.Drawing.Size(1041, 748);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.roundTextBox2);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.roundTextBox1);
@@ -153,8 +140,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label2;
         private CustomControls.RoundButton roundButton1;
         private System.Windows.Forms.Label label1;
         private RoundTextBox roundTextBox1;

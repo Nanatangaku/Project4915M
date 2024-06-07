@@ -13,24 +13,10 @@ namespace Group6_Project
 {
     public partial class SearchWarehouse : Form
     {
-        public SearchWarehouse()
+        //To get Data from database
+        public DataTable GetData(String target)
         {
-            InitializeComponent();
-        }
-
-        private void roundButton1_Click(object sender, EventArgs e)
-        {
-            String warehouseName = roundTextBox1.Texts;
-
-            showTable(warehouseName);
-            
-        }
-
-      
-//geting the warehouse
-        public DataTable GetWarehouse(String warehouseName)
-        {
-            String sql = "SELECT * FROM warehouse WHERE warehouse_name = '" + warehouseName + "'";
+            String sql = "select * from warehouse where warehouse_name LIKE '%" + target + "%'";
             MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
@@ -38,15 +24,28 @@ namespace Group6_Project
             adapter.Fill(dataTable);
             return dataTable;
         }
-//To show warehouse details in dataGridView
-        public void showTable(String warehouseName)
+        //To show data details in dataGridView
+        public void showTable(String target)
         {
-            dataGridView_warehouse.DataSource = GetWarehouse(warehouseName);
+            dataGridView1.DataSource = GetData(target);
+        }
+        public SearchWarehouse()
+        {
+            InitializeComponent();
         }
 
+        private void roundButton1_Click(object sender, EventArgs e)
+        {
+            
+        }
         private void SearchWarehouse_Load(object sender, EventArgs e)
         {
+            showTable("");
+        }
 
+        private void roundTextBox1__TextChanged(object sender, EventArgs e)
+        {
+            showTable(roundTextBox1.Texts);
         }
     }
 }

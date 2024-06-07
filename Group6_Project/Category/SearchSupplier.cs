@@ -13,6 +13,22 @@ namespace Group6_Project
 {
     public partial class SearchSupplier : Form
     {
+        //To get Data from database
+        public DataTable GetData(String target)
+        {
+            String sql = "select * from supplier where supplier_name LIKE '%" + target + "%'";
+            MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+            DataTable dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            return dataTable;
+        }
+        //To show data details in dataGridView
+        public void showTable(String target)
+        {
+            dataGridView1.DataSource = GetData(target);
+        }
         public SearchSupplier()
         {
             InitializeComponent();
@@ -24,20 +40,15 @@ namespace Group6_Project
 
             showTable(supplierName);
         }
-        public DataTable GetData(String supplierName)
+
+        private void roundTextBox1__TextChanged(object sender, EventArgs e)
         {
-            String sql = "SELECT * FROM supplier WHERE supplier_name = '" + supplierName + "'";
-            MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
-            MySqlCommand cmd = new MySqlCommand(sql, conn);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-            DataTable dataTable = new DataTable();
-            adapter.Fill(dataTable);
-            return dataTable;
+            showTable(roundTextBox1.Texts);
         }
-        //To show data details in dataGridView
-        public void showTable(String supplierName)
+
+        private void SearchSupplier_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = GetData(supplierName);
+            showTable("");
         }
     }
 }

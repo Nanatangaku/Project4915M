@@ -39,5 +39,16 @@ namespace Group6_Project
         {
             dataGridView1.DataSource = GetData(Target);
         }
+
+        private void roundTextBox1__TextChanged(object sender, EventArgs e)
+        {
+            String target = roundTextBox1.Texts;
+            showTable(target);
+        }
+
+        private void SearchCategory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

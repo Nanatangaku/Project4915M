@@ -16,7 +16,7 @@ namespace Group6_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loginPage());
+            Application.Run(new SearchDepartment());
         }
     }
 }

@@ -25,20 +25,19 @@ namespace Group6_Project
 
         private void roundButton1_Click(object sender, EventArgs e)
         {
-            String newShopName = rtxtbox_newname.Texts;
-            String newnumber = rtxtbox_newshopnum.Texts;
-            String newaddress = rtxtbox_newaddress.Texts;
-            String newphone = rtxtbox_newphone.Texts;
-            String newmanagerid = rtxtbox_newmanagerid.Texts;
+            String newShopName = rtxtbox_newShopName.Texts;
+            String newShopWarehouseID = rtxtbox_newShopWarehouseID.Texts;
+            String newShopManagerID = rtxtbox_newShopManagerID.Texts;
+            String newShopRemark = rtxtbox_newShopRemark.Texts;
 
-            if (newShopName == "" || newnumber == "" || newaddress == "" || newphone == "" || newmanagerid == "")
+            if (newShopName == "" || newShopWarehouseID == "" || newShopManagerID == "" || newShopRemark == "")
             {
                 MessageBox.Show("Please fill in all the information");
             }
             else
             {
-               String sql = "INSERT INTO shop (Shop_ID, name, address, phone, manager_ID) VALUES ('" + newnumber + "', '" + newShopName + "', '" + newaddress + "', '" + newphone + "', '" + newmanagerid + "')";
-                MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=4915mdb");
+                String sql = "INSERT INTO shop (warehouse_id, user_id, remarks, shopname) VALUES ("+ newShopWarehouseID +","+ newShopManagerID +",'"+ newShopRemark +"','"+ newShopName +"');";
+                MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
                 conn.Open();
                 try

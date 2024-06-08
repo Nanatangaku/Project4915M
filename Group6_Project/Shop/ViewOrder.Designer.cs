@@ -45,10 +45,10 @@
             // 
             this.dvgvieworder_request.AllowUserToAddRows = false;
             this.dvgvieworder_request.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgvieworder_request.Location = new System.Drawing.Point(80, 107);
+            this.dvgvieworder_request.Location = new System.Drawing.Point(80, 109);
             this.dvgvieworder_request.Name = "dvgvieworder_request";
             this.dvgvieworder_request.RowTemplate.Height = 24;
-            this.dvgvieworder_request.Size = new System.Drawing.Size(400, 267);
+            this.dvgvieworder_request.Size = new System.Drawing.Size(682, 403);
             this.dvgvieworder_request.TabIndex = 1;
             this.dvgvieworder_request.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgvieworder_request_CellContentClick);
             // 
@@ -61,7 +61,7 @@
             this.txtfilter.BorderSize = 2;
             this.txtfilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfilter.ForeColor = System.Drawing.Color.DimGray;
-            this.txtfilter.Location = new System.Drawing.Point(80, 49);
+            this.txtfilter.Location = new System.Drawing.Point(80, 56);
             this.txtfilter.Margin = new System.Windows.Forms.Padding(4);
             this.txtfilter.Multiline = false;
             this.txtfilter.Name = "txtfilter";
@@ -69,7 +69,7 @@
             this.txtfilter.PasswordChar = false;
             this.txtfilter.PlaceholderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtfilter.PlaceholderText = "name";
-            this.txtfilter.Size = new System.Drawing.Size(400, 31);
+            this.txtfilter.Size = new System.Drawing.Size(682, 31);
             this.txtfilter.TabIndex = 0;
             this.txtfilter.Texts = "";
             this.txtfilter.UnderlinedStyle = false;
@@ -78,7 +78,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1117, 528);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.ClientSize = new System.Drawing.Size(1301, 709);
             this.Controls.Add(this.dvgvieworder_request);
             this.Controls.Add(this.txtfilter);
             this.Name = "ViewOrder";

@@ -198,7 +198,7 @@ namespace Group6_Project
             this.panel5.Location = new System.Drawing.Point(277, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1041, 30);
+            this.panel5.Size = new System.Drawing.Size(1041, 108);
             this.panel5.TabIndex = 5;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 

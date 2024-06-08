@@ -31,6 +31,14 @@
             this.lblBack = new System.Windows.Forms.Label();
             this.lblorder_id = new System.Windows.Forms.Label();
             this.gbgeneral = new System.Windows.Forms.GroupBox();
+            this.dtpexpecteddate = new System.Windows.Forms.DateTimePicker();
+            this.txtstatus = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.txtcreatedate = new System.Windows.Forms.TextBox();
+            this.txtshopid = new System.Windows.Forms.TextBox();
+            this.txtboxcreatorid = new System.Windows.Forms.TextBox();
+            this.txtboxorderid = new System.Windows.Forms.TextBox();
+            this.lblexpecteddeliverydate = new System.Windows.Forms.Label();
             this.lblstatus = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.lblcreatedate = new System.Windows.Forms.Label();
@@ -40,14 +48,6 @@
             this.dvgitem = new System.Windows.Forms.DataGridView();
             this.lblamounttext = new System.Windows.Forms.Label();
             this.lbltotalamount = new System.Windows.Forms.Label();
-            this.lblexpecteddeliverydate = new System.Windows.Forms.Label();
-            this.txtboxorderid = new System.Windows.Forms.TextBox();
-            this.txtboxcreatorid = new System.Windows.Forms.TextBox();
-            this.txtshopid = new System.Windows.Forms.TextBox();
-            this.txtcreatedate = new System.Windows.Forms.TextBox();
-            this.txtname = new System.Windows.Forms.TextBox();
-            this.txtstatus = new System.Windows.Forms.TextBox();
-            this.dtpexpecteddate = new System.Windows.Forms.DateTimePicker();
             this.btndelete = new Group6_Project.CustomControls.RoundButton();
             this.btnsave = new Group6_Project.CustomControls.RoundButton();
             this.gbgeneral.SuspendLayout();
@@ -97,6 +97,71 @@
             this.gbgeneral.TabStop = false;
             this.gbgeneral.Text = "General";
             this.gbgeneral.Enter += new System.EventHandler(this.gbgeneral_Enter);
+            // 
+            // dtpexpecteddate
+            // 
+            this.dtpexpecteddate.Location = new System.Drawing.Point(203, 158);
+            this.dtpexpecteddate.Name = "dtpexpecteddate";
+            this.dtpexpecteddate.Size = new System.Drawing.Size(113, 22);
+            this.dtpexpecteddate.TabIndex = 23;
+            // 
+            // txtstatus
+            // 
+            this.txtstatus.Location = new System.Drawing.Point(262, 106);
+            this.txtstatus.Name = "txtstatus";
+            this.txtstatus.ReadOnly = true;
+            this.txtstatus.Size = new System.Drawing.Size(100, 22);
+            this.txtstatus.TabIndex = 21;
+            // 
+            // txtname
+            // 
+            this.txtname.Location = new System.Drawing.Point(262, 70);
+            this.txtname.Name = "txtname";
+            this.txtname.ReadOnly = true;
+            this.txtname.Size = new System.Drawing.Size(100, 22);
+            this.txtname.TabIndex = 20;
+            this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
+            // 
+            // txtcreatedate
+            // 
+            this.txtcreatedate.Location = new System.Drawing.Point(262, 30);
+            this.txtcreatedate.Name = "txtcreatedate";
+            this.txtcreatedate.ReadOnly = true;
+            this.txtcreatedate.Size = new System.Drawing.Size(100, 22);
+            this.txtcreatedate.TabIndex = 19;
+            // 
+            // txtshopid
+            // 
+            this.txtshopid.Location = new System.Drawing.Point(95, 106);
+            this.txtshopid.Name = "txtshopid";
+            this.txtshopid.ReadOnly = true;
+            this.txtshopid.Size = new System.Drawing.Size(100, 22);
+            this.txtshopid.TabIndex = 18;
+            // 
+            // txtboxcreatorid
+            // 
+            this.txtboxcreatorid.Location = new System.Drawing.Point(95, 67);
+            this.txtboxcreatorid.Name = "txtboxcreatorid";
+            this.txtboxcreatorid.ReadOnly = true;
+            this.txtboxcreatorid.Size = new System.Drawing.Size(100, 22);
+            this.txtboxcreatorid.TabIndex = 17;
+            // 
+            // txtboxorderid
+            // 
+            this.txtboxorderid.Location = new System.Drawing.Point(95, 30);
+            this.txtboxorderid.Name = "txtboxorderid";
+            this.txtboxorderid.ReadOnly = true;
+            this.txtboxorderid.Size = new System.Drawing.Size(100, 22);
+            this.txtboxorderid.TabIndex = 16;
+            // 
+            // lblexpecteddeliverydate
+            // 
+            this.lblexpecteddeliverydate.AutoSize = true;
+            this.lblexpecteddeliverydate.Location = new System.Drawing.Point(77, 158);
+            this.lblexpecteddeliverydate.Name = "lblexpecteddeliverydate";
+            this.lblexpecteddeliverydate.Size = new System.Drawing.Size(118, 12);
+            this.lblexpecteddeliverydate.TabIndex = 15;
+            this.lblexpecteddeliverydate.Text = "Expected Delivery Date:";
             // 
             // lblstatus
             // 
@@ -182,71 +247,6 @@
             this.lbltotalamount.Size = new System.Drawing.Size(0, 24);
             this.lbltotalamount.TabIndex = 7;
             // 
-            // lblexpecteddeliverydate
-            // 
-            this.lblexpecteddeliverydate.AutoSize = true;
-            this.lblexpecteddeliverydate.Location = new System.Drawing.Point(77, 158);
-            this.lblexpecteddeliverydate.Name = "lblexpecteddeliverydate";
-            this.lblexpecteddeliverydate.Size = new System.Drawing.Size(118, 12);
-            this.lblexpecteddeliverydate.TabIndex = 15;
-            this.lblexpecteddeliverydate.Text = "Expected Delivery Date:";
-            // 
-            // txtboxorderid
-            // 
-            this.txtboxorderid.Location = new System.Drawing.Point(95, 30);
-            this.txtboxorderid.Name = "txtboxorderid";
-            this.txtboxorderid.ReadOnly = true;
-            this.txtboxorderid.Size = new System.Drawing.Size(100, 22);
-            this.txtboxorderid.TabIndex = 16;
-            // 
-            // txtboxcreatorid
-            // 
-            this.txtboxcreatorid.Location = new System.Drawing.Point(95, 67);
-            this.txtboxcreatorid.Name = "txtboxcreatorid";
-            this.txtboxcreatorid.ReadOnly = true;
-            this.txtboxcreatorid.Size = new System.Drawing.Size(100, 22);
-            this.txtboxcreatorid.TabIndex = 17;
-            // 
-            // txtshopid
-            // 
-            this.txtshopid.Location = new System.Drawing.Point(95, 106);
-            this.txtshopid.Name = "txtshopid";
-            this.txtshopid.ReadOnly = true;
-            this.txtshopid.Size = new System.Drawing.Size(100, 22);
-            this.txtshopid.TabIndex = 18;
-            // 
-            // txtcreatedate
-            // 
-            this.txtcreatedate.Location = new System.Drawing.Point(262, 30);
-            this.txtcreatedate.Name = "txtcreatedate";
-            this.txtcreatedate.ReadOnly = true;
-            this.txtcreatedate.Size = new System.Drawing.Size(100, 22);
-            this.txtcreatedate.TabIndex = 19;
-            // 
-            // txtname
-            // 
-            this.txtname.Location = new System.Drawing.Point(262, 70);
-            this.txtname.Name = "txtname";
-            this.txtname.ReadOnly = true;
-            this.txtname.Size = new System.Drawing.Size(100, 22);
-            this.txtname.TabIndex = 20;
-            this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
-            // 
-            // txtstatus
-            // 
-            this.txtstatus.Location = new System.Drawing.Point(262, 106);
-            this.txtstatus.Name = "txtstatus";
-            this.txtstatus.ReadOnly = true;
-            this.txtstatus.Size = new System.Drawing.Size(100, 22);
-            this.txtstatus.TabIndex = 21;
-            // 
-            // dtpexpecteddate
-            // 
-            this.dtpexpecteddate.Location = new System.Drawing.Point(203, 158);
-            this.dtpexpecteddate.Name = "dtpexpecteddate";
-            this.dtpexpecteddate.Size = new System.Drawing.Size(113, 22);
-            this.dtpexpecteddate.TabIndex = 23;
-            // 
             // btndelete
             // 
             this.btndelete.BackColor = System.Drawing.Color.Red;
@@ -289,6 +289,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(983, 551);
             this.Controls.Add(this.lbltotalamount);
             this.Controls.Add(this.lblamounttext);

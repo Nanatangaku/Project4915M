@@ -47,6 +47,11 @@ namespace Group6_Project
         private void lblBack_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
+            ViewOrder vieworder = new ViewOrder(user_id, panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            vieworder.FormBorderStyle = FormBorderStyle.None;
+            this.panFormLoad.Controls.Add(vieworder);
+            vieworder.Show();
+
         }
 
         private void load_order_items()

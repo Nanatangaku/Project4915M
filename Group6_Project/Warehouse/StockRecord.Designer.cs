@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblitemnamefilter = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtboxnamefilter = new System.Windows.Forms.TextBox();
             this.cbstatus = new System.Windows.Forms.ComboBox();
             this.dvgstockrecord = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dvgstockrecord)).BeginInit();
@@ -46,14 +46,15 @@
             this.lblitemnamefilter.TabIndex = 0;
             this.lblitemnamefilter.Text = "Search by item name:";
             // 
-            // textBox1
+            // txtboxnamefilter
             // 
-            this.textBox1.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox1.Location = new System.Drawing.Point(276, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(351, 36);
-            this.textBox1.TabIndex = 1;
+            this.txtboxnamefilter.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtboxnamefilter.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtboxnamefilter.Location = new System.Drawing.Point(276, 50);
+            this.txtboxnamefilter.Name = "txtboxnamefilter";
+            this.txtboxnamefilter.Size = new System.Drawing.Size(351, 36);
+            this.txtboxnamefilter.TabIndex = 1;
+            this.txtboxnamefilter.TextChanged += new System.EventHandler(this.txtboxnamefilter_TextChanged);
             // 
             // cbstatus
             // 
@@ -72,11 +73,12 @@
             // 
             // dvgstockrecord
             // 
+            this.dvgstockrecord.AllowUserToAddRows = false;
             this.dvgstockrecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgstockrecord.Location = new System.Drawing.Point(67, 125);
             this.dvgstockrecord.Name = "dvgstockrecord";
             this.dvgstockrecord.RowTemplate.Height = 24;
-            this.dvgstockrecord.Size = new System.Drawing.Size(860, 311);
+            this.dvgstockrecord.Size = new System.Drawing.Size(860, 400);
             this.dvgstockrecord.TabIndex = 3;
             // 
             // StockRecord
@@ -87,7 +89,7 @@
             this.ClientSize = new System.Drawing.Size(1025, 679);
             this.Controls.Add(this.dvgstockrecord);
             this.Controls.Add(this.cbstatus);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtboxnamefilter);
             this.Controls.Add(this.lblitemnamefilter);
             this.Name = "StockRecord";
             this.Text = "StockRecord";
@@ -101,7 +103,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblitemnamefilter;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtboxnamefilter;
         private System.Windows.Forms.ComboBox cbstatus;
         private System.Windows.Forms.DataGridView dvgstockrecord;
     }

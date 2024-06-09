@@ -864,3 +864,4 @@ C:\Users\user\Desktop\github\Project4915M\Group6_Project\bin\Debug\zh-Hant\Micro
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\bin\Debug\zh-Hant\Microsoft.VisualStudio.GraphModel.resources.dll
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.Dispatch.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.Dispatch_Detail.resources
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.StockRecord.resources

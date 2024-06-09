@@ -85,12 +85,13 @@ namespace Group6_Project
 
         private void Order_idfilter_TextChanged(object sender, EventArgs e)
         {
-            string keyword = "\"    %" + Order_idfilter.Text + "%\"";
+            string keyword = "\"%" + Order_idfilter.Text + "%\"";
             
 
             if (cborder_status.Text == "All")
             {
-                string sql = "select order_request.order_id,order_request.payment,order_status.status,delivery.create_date,delivery.expected_delivery_date from order_request,order_status,delivery where order_request.order_status_id = order_status.order_status_id and order_request.delivery_id = delivery.delivery_id and order_request.order_id like " + keyword+";";
+                string sql = "select order_request.order_id,order_request.payment,order_status.status,delivery.create_date,delivery.expected_delivery_date from order_request," +
+                    "order_status,delivery where order_request.order_status_id = order_status.order_status_id and order_request.delivery_id = delivery.delivery_id and order_request.order_id like " + keyword+";";
                 conn.Open();
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
                 MySqlDataReader reader = cmd.ExecuteReader();

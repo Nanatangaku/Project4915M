@@ -90,5 +90,15 @@ namespace Group6_Project
             dispatch.Show();
 
         }
+
+        private void btnStockPage_Click(object sender, EventArgs e)
+        {
+            this.panFormLoad.Controls.Clear();
+            StockRecord stockrecord = new StockRecord(user_id,panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            stockrecord.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(stockrecord);
+            stockrecord.Show();
+
+        }
     }
 }

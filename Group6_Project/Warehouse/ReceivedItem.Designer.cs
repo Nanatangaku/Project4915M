@@ -87,7 +87,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(659, 203);
+            this.btnadd.Location = new System.Drawing.Point(220, 203);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(102, 34);
             this.btnadd.TabIndex = 5;
@@ -97,7 +97,7 @@
             // 
             // btnclear
             // 
-            this.btnclear.Location = new System.Drawing.Point(798, 203);
+            this.btnclear.Location = new System.Drawing.Point(359, 203);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(102, 34);
             this.btnclear.TabIndex = 7;
@@ -140,7 +140,7 @@
             // 
             this.dvgpreadditem.AllowUserToAddRows = false;
             this.dvgpreadditem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgpreadditem.Location = new System.Drawing.Point(220, 278);
+            this.dvgpreadditem.Location = new System.Drawing.Point(220, 264);
             this.dvgpreadditem.Name = "dvgpreadditem";
             this.dvgpreadditem.RowTemplate.Height = 24;
             this.dvgpreadditem.Size = new System.Drawing.Size(680, 225);
@@ -158,7 +158,7 @@
             // 
             // btnconfirm
             // 
-            this.btnconfirm.Location = new System.Drawing.Point(764, 543);
+            this.btnconfirm.Location = new System.Drawing.Point(764, 531);
             this.btnconfirm.Name = "btnconfirm";
             this.btnconfirm.Size = new System.Drawing.Size(136, 42);
             this.btnconfirm.TabIndex = 13;

@@ -40,6 +40,7 @@ namespace Group6_Project
             this.btnDispatch = new System.Windows.Forms.Button();
             this.btnreceiveditem = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnStockPage = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -49,6 +50,7 @@ namespace Group6_Project
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelMenu.Controls.Add(this.btnStockPage);
             this.panelMenu.Controls.Add(this.panNav);
             this.panelMenu.Controls.Add(this.btnCategoryManager);
             this.panelMenu.Controls.Add(this.btnDispatch);
@@ -193,6 +195,25 @@ namespace Group6_Project
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnStockPage
+            // 
+            this.btnStockPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnStockPage.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnStockPage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStockPage.FlatAppearance.BorderSize = 0;
+            this.btnStockPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStockPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStockPage.ForeColor = System.Drawing.Color.White;
+            this.btnStockPage.Image = global::Group6_Project.Properties.Resources.truck_side;
+            this.btnStockPage.Location = new System.Drawing.Point(0, 284);
+            this.btnStockPage.Name = "btnStockPage";
+            this.btnStockPage.Size = new System.Drawing.Size(277, 77);
+            this.btnStockPage.TabIndex = 8;
+            this.btnStockPage.Text = "Stock";
+            this.btnStockPage.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnStockPage.UseVisualStyleBackColor = false;
+            this.btnStockPage.Click += new System.EventHandler(this.btnStockPage_Click);
+            // 
             // WarehouseManagerHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -227,6 +248,7 @@ namespace Group6_Project
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStockPage;
     }
 }
 

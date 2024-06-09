@@ -114,6 +114,12 @@
     <Compile Include="Accounting\AccountingManagerHomePage.Designer.cs">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Warehouse\StockRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\StockRecord.Designer.cs">
+      <DependentUpon>StockRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Warehouse\Dispatch_Detail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -500,6 +506,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\ReceivedItem.resx">
       <DependentUpon>ReceivedItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\StockRecord.resx">
+      <DependentUpon>StockRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\WarehouseManagerHomePage.resx">
       <DependentUpon>WarehouseManagerHomePage.cs</DependentUpon>

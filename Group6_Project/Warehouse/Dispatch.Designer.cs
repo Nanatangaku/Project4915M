@@ -56,13 +56,14 @@
             // 
             // cborder_status
             // 
+            this.cborder_status.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cborder_status.FormattingEnabled = true;
             this.cborder_status.Items.AddRange(new object[] {
             "All",
             "waiting to process"});
-            this.cborder_status.Location = new System.Drawing.Point(850, 67);
+            this.cborder_status.Location = new System.Drawing.Point(767, 63);
             this.cborder_status.Name = "cborder_status";
-            this.cborder_status.Size = new System.Drawing.Size(121, 20);
+            this.cborder_status.Size = new System.Drawing.Size(204, 32);
             this.cborder_status.TabIndex = 2;
             this.cborder_status.SelectedIndexChanged += new System.EventHandler(this.cborder_status_SelectedIndexChanged);
             // 
@@ -70,7 +71,7 @@
             // 
             this.dvgorder_request.AllowUserToAddRows = false;
             this.dvgorder_request.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgorder_request.Location = new System.Drawing.Point(81, 147);
+            this.dvgorder_request.Location = new System.Drawing.Point(81, 108);
             this.dvgorder_request.Name = "dvgorder_request";
             this.dvgorder_request.RowTemplate.Height = 24;
             this.dvgorder_request.Size = new System.Drawing.Size(890, 403);

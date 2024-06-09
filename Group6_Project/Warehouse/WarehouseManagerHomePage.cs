@@ -36,64 +36,9 @@ namespace Group6_Project
         //Event
         
         [Category("Event")]
-        private void btnWarehouse_Click(object sender, EventArgs e)
-        {
-            panNav.Height = btnWarehouse.Height;
-            panNav.Top = btnWarehouse.Top;
-            panNav.Left = btnWarehouse.Left;
-            btnWarehouse.BackColor = Color.FromArgb(46, 51, 73);
 
-            this.panFormLoad.Controls.Clear();
-            CreateWarehouseStock warehouse = new CreateWarehouseStock() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            warehouse.FormBorderStyle = FormBorderStyle.None;
-            panFormLoad.Controls.Add(warehouse);
-            warehouse.Show();
-        }
-        [Category("Event")]
-        private void btnWarehouse_Leave(object sender, EventArgs e)
-        {
-            btnWarehouse.BackColor = Color.FromArgb(51, 51, 76);
-        }
-        [Category("Event")]
-        private void btnSupplier_Click(object sender, EventArgs e)
-        {
-            panNav.Height = btnSupplier.Height;
-            panNav.Top = btnSupplier.Top;
-            panNav.Left = btnSupplier.Left;
-            btnSupplier.BackColor = Color.FromArgb(46, 51, 73);
-
-            this.panFormLoad.Controls.Clear();
-            ReceivedItem receivedItemList = new ReceivedItem() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            receivedItemList.FormBorderStyle = FormBorderStyle.None;
-            panFormLoad.Controls.Add(receivedItemList);
-            receivedItemList.Show();
-        }
-        [Category("Event")]
-        private void btnSupplier_Leave(object sender, EventArgs e)
-        {
-            btnSupplier.BackColor = Color.FromArgb(51, 51, 76);
-        }
-        [Category("Event")]
-        private void btnDepartment_Click(object sender, EventArgs e)
-        {
-            panNav.Height = btnDepartment.Height;
-            panNav.Top = btnDepartment.Top;
-            panNav.Left = btnDepartment.Left;
-            btnDepartment.BackColor = Color.FromArgb(46, 51, 73);
-
-            this.panFormLoad.Controls.Clear();
-            CompletedInstructions completedlist = new CompletedInstructions() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            completedlist.FormBorderStyle = FormBorderStyle.None;
-            panFormLoad.Controls.Add(completedlist);
-            completedlist.Show();
-        }
-        [Category("Event")]
-        private void btnDepartment_Leave(object sender, EventArgs e)
-        {
-            btnDepartment.BackColor = Color.FromArgb(51, 51, 76);
-        }
         
-        [Category("Event")]
+
         private void btnCategoryManager_Click(object sender, EventArgs e)
         {
             panNav.Height = btnCategoryManager.Height;
@@ -122,6 +67,21 @@ namespace Group6_Project
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnreceiveditem_Click(object sender, EventArgs e)
+        {
+
+            this.panFormLoad.Controls.Clear();
+            ReceivedItem receivedItem = new ReceivedItem(user_id,panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            receivedItem.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(receivedItem);
+            receivedItem.Show();
+        }
+
+        private void btnDepartment_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

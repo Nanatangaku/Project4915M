@@ -204,7 +204,6 @@ C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\bin\Debug\Microso
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.csproj.AssemblyReference.cache
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.AccountingClerkHomePage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.AccountingManagerHomePage.resources
-C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CompletedInstructions.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CompletePayment.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateCategory.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateDepartment.resources
@@ -216,7 +215,6 @@ C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateSupplier.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateUserInformation.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateWarehouse.resources
-C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.CreateWarehouseStock.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.Invoice.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.PurchaseOrderPage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.ReceivedItem.resources
@@ -230,10 +228,8 @@ C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchSupplier.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchUserInformation.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchWarehouse.resources
-C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SearchWarehouseStock.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.SetRule.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.UserInformationPage.resources
-C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.WarehouseClerkHomePage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.WarehouseManagerHomePage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.PurchaseClerkHomePage.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.PurchaseManagerHomePage.resources

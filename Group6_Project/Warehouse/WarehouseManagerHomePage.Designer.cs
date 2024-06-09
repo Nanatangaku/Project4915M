@@ -33,8 +33,7 @@ namespace Group6_Project
             this.panNav = new System.Windows.Forms.Panel();
             this.btnCategoryManager = new System.Windows.Forms.Button();
             this.btnDepartment = new System.Windows.Forms.Button();
-            this.btnSupplier = new System.Windows.Forms.Button();
-            this.btnWarehouse = new System.Windows.Forms.Button();
+            this.btnreceiveditem = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -53,8 +52,7 @@ namespace Group6_Project
             this.panelMenu.Controls.Add(this.panNav);
             this.panelMenu.Controls.Add(this.btnCategoryManager);
             this.panelMenu.Controls.Add(this.btnDepartment);
-            this.panelMenu.Controls.Add(this.btnSupplier);
-            this.panelMenu.Controls.Add(this.btnWarehouse);
+            this.panelMenu.Controls.Add(this.btnreceiveditem);
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -100,7 +98,7 @@ namespace Group6_Project
             this.btnDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDepartment.ForeColor = System.Drawing.Color.White;
             this.btnDepartment.Image = global::Group6_Project.Properties.Resources.truck_side;
-            this.btnDepartment.Location = new System.Drawing.Point(0, 284);
+            this.btnDepartment.Location = new System.Drawing.Point(0, 207);
             this.btnDepartment.Name = "btnDepartment";
             this.btnDepartment.Size = new System.Drawing.Size(277, 77);
             this.btnDepartment.TabIndex = 5;
@@ -108,47 +106,25 @@ namespace Group6_Project
             this.btnDepartment.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnDepartment.UseVisualStyleBackColor = false;
             this.btnDepartment.Click += new System.EventHandler(this.btnDepartment_Click);
-            this.btnDepartment.Leave += new System.EventHandler(this.btnDepartment_Leave);
             // 
-            // btnSupplier
+            // btnreceiveditem
             // 
-            this.btnSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnSupplier.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnSupplier.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSupplier.FlatAppearance.BorderSize = 0;
-            this.btnSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupplier.ForeColor = System.Drawing.Color.White;
-            this.btnSupplier.Image = global::Group6_Project.Properties.Resources.shopping_cart;
-            this.btnSupplier.Location = new System.Drawing.Point(0, 207);
-            this.btnSupplier.Name = "btnSupplier";
-            this.btnSupplier.Size = new System.Drawing.Size(277, 77);
-            this.btnSupplier.TabIndex = 4;
-            this.btnSupplier.Text = "   Received item";
-            this.btnSupplier.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnSupplier.UseVisualStyleBackColor = false;
-            this.btnSupplier.Click += new System.EventHandler(this.btnSupplier_Click);
-            this.btnSupplier.Leave += new System.EventHandler(this.btnSupplier_Leave);
-            // 
-            // btnWarehouse
-            // 
-            this.btnWarehouse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnWarehouse.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnWarehouse.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnWarehouse.FlatAppearance.BorderSize = 0;
-            this.btnWarehouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWarehouse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWarehouse.ForeColor = System.Drawing.Color.White;
-            this.btnWarehouse.Image = global::Group6_Project.Properties.Resources.box;
-            this.btnWarehouse.Location = new System.Drawing.Point(0, 130);
-            this.btnWarehouse.Name = "btnWarehouse";
-            this.btnWarehouse.Size = new System.Drawing.Size(277, 77);
-            this.btnWarehouse.TabIndex = 3;
-            this.btnWarehouse.Text = "    Warehouse Stock";
-            this.btnWarehouse.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnWarehouse.UseVisualStyleBackColor = false;
-            this.btnWarehouse.Click += new System.EventHandler(this.btnWarehouse_Click);
-            this.btnWarehouse.Leave += new System.EventHandler(this.btnWarehouse_Leave);
+            this.btnreceiveditem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnreceiveditem.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnreceiveditem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnreceiveditem.FlatAppearance.BorderSize = 0;
+            this.btnreceiveditem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreceiveditem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreceiveditem.ForeColor = System.Drawing.Color.White;
+            this.btnreceiveditem.Image = global::Group6_Project.Properties.Resources.shopping_cart;
+            this.btnreceiveditem.Location = new System.Drawing.Point(0, 130);
+            this.btnreceiveditem.Name = "btnreceiveditem";
+            this.btnreceiveditem.Size = new System.Drawing.Size(277, 77);
+            this.btnreceiveditem.TabIndex = 4;
+            this.btnreceiveditem.Text = "   Received item";
+            this.btnreceiveditem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnreceiveditem.UseVisualStyleBackColor = false;
+            this.btnreceiveditem.Click += new System.EventHandler(this.btnreceiveditem_Click);
             // 
             // panel2
             // 
@@ -246,8 +222,7 @@ namespace Group6_Project
         private System.Windows.Forms.Panel panFormLoad;
         private System.Windows.Forms.Button btnCategoryManager;
         private System.Windows.Forms.Button btnDepartment;
-        private System.Windows.Forms.Button btnSupplier;
-        private System.Windows.Forms.Button btnWarehouse;
+        private System.Windows.Forms.Button btnreceiveditem;
         private System.Windows.Forms.Panel panNav;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;

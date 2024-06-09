@@ -114,6 +114,12 @@
     <Compile Include="Accounting\AccountingManagerHomePage.Designer.cs">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Warehouse\ReceivedItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\ReceivedItem.Designer.cs">
+      <DependentUpon>ReceivedItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shop\OrderDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,12 +137,6 @@
     </Compile>
     <Compile Include="Shop\ViewOrder.Designer.cs">
       <DependentUpon>ViewOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Warehouse\CompletedInstructions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Warehouse\CompletedInstructions.Designer.cs">
-      <DependentUpon>CompletedInstructions.cs</DependentUpon>
     </Compile>
     <Compile Include="Accounting\CompletePayment.cs">
       <SubType>Form</SubType>
@@ -204,12 +204,6 @@
     <Compile Include="Category\CreateWarehouse.Designer.cs">
       <DependentUpon>CreateWarehouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Warehouse\CreateWarehouseStock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Warehouse\CreateWarehouseStock.Designer.cs">
-      <DependentUpon>CreateWarehouseStock.cs</DependentUpon>
-    </Compile>
     <Compile Include="Accounting\Invoice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,12 +215,6 @@
     </Compile>
     <Compile Include="Purchase\PurchaseOrderPage.Designer.cs">
       <DependentUpon>PurchaseOrderPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Warehouse\ReceivedItem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Warehouse\ReceivedItem.Designer.cs">
-      <DependentUpon>ReceivedItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Delivery\ScheulePage.cs">
       <SubType>Form</SubType>
@@ -288,12 +276,6 @@
     <Compile Include="Category\SearchWarehouse.Designer.cs">
       <DependentUpon>SearchWarehouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Warehouse\SearchWarehouseStock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Warehouse\SearchWarehouseStock.Designer.cs">
-      <DependentUpon>SearchWarehouseStock.cs</DependentUpon>
-    </Compile>
     <Compile Include="General\SetRule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,12 +287,6 @@
     </Compile>
     <Compile Include="HR\UserInformationPage.Designer.cs">
       <DependentUpon>UserInformationPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Warehouse\WarehouseClerkrHomePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Warehouse\WarehouseClerkrHomePage.Designer.cs">
-      <DependentUpon>WarehouseClerkrHomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="Warehouse\WarehouseManagerHomePage.cs">
       <SubType>Form</SubType>
@@ -429,9 +405,6 @@
     <EmbeddedResource Include="Shop\ViewOrder.resx">
       <DependentUpon>ViewOrder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Warehouse\CompletedInstructions.resx">
-      <DependentUpon>CompletedInstructions.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Accounting\CompletePayment.resx">
       <DependentUpon>CompletePayment.cs</DependentUpon>
     </EmbeddedResource>
@@ -465,17 +438,11 @@
     <EmbeddedResource Include="Category\CreateWarehouse.resx">
       <DependentUpon>CreateWarehouse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Warehouse\CreateWarehouseStock.resx">
-      <DependentUpon>CreateWarehouseStock.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Accounting\Invoice.resx">
       <DependentUpon>Invoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PurchaseOrderPage.resx">
       <DependentUpon>PurchaseOrderPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Warehouse\ReceivedItem.resx">
-      <DependentUpon>ReceivedItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Delivery\ScheulePage.resx">
       <DependentUpon>ScheulePage.cs</DependentUpon>
@@ -507,17 +474,14 @@
     <EmbeddedResource Include="Category\SearchWarehouse.resx">
       <DependentUpon>SearchWarehouse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Warehouse\SearchWarehouseStock.resx">
-      <DependentUpon>SearchWarehouseStock.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="General\SetRule.resx">
       <DependentUpon>SetRule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HR\UserInformationPage.resx">
       <DependentUpon>UserInformationPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Warehouse\WarehouseClerkrHomePage.resx">
-      <DependentUpon>WarehouseClerkrHomePage.cs</DependentUpon>
+    <EmbeddedResource Include="Warehouse\ReceivedItem.resx">
+      <DependentUpon>ReceivedItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\WarehouseManagerHomePage.resx">
       <DependentUpon>WarehouseManagerHomePage.cs</DependentUpon>

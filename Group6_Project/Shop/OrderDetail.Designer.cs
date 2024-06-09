@@ -297,7 +297,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(983, 551);
+            this.ClientSize = new System.Drawing.Size(987, 551);
             this.Controls.Add(this.lbltotalamount);
             this.Controls.Add(this.lblamounttext);
             this.Controls.Add(this.btndelete);

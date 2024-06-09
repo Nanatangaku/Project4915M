@@ -862,3 +862,5 @@ C:\Users\User\Documents\GitHub\Project4915M\Group6_Project\obj\Debug\Group6_Proj
 C:\Users\User\Documents\GitHub\Project4915M\Group6_Project\obj\Debug\Group6_Project.pdb
 C:\Users\user\Desktop\github\Project4915M\Group6_Project\bin\Debug\zh-Hant\Microsoft.VisualStudio.GraphModel.resources.dll
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\bin\Debug\zh-Hant\Microsoft.VisualStudio.GraphModel.resources.dll
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.Dispatch.resources
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.Dispatch_Detail.resources

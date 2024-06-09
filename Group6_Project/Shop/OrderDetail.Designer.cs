@@ -58,9 +58,11 @@
             // lblBack
             // 
             this.lblBack.AutoSize = true;
-            this.lblBack.Location = new System.Drawing.Point(53, 31);
+            this.lblBack.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblBack.ForeColor = System.Drawing.Color.White;
+            this.lblBack.Location = new System.Drawing.Point(51, 18);
             this.lblBack.Name = "lblBack";
-            this.lblBack.Size = new System.Drawing.Size(44, 12);
+            this.lblBack.Size = new System.Drawing.Size(86, 24);
             this.lblBack.TabIndex = 0;
             this.lblBack.Text = "← Back";
             this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
@@ -91,9 +93,11 @@
             this.gbgeneral.Controls.Add(this.lblshopid);
             this.gbgeneral.Controls.Add(this.lblcreatorid);
             this.gbgeneral.Controls.Add(this.lblorder_id);
+            this.gbgeneral.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.gbgeneral.ForeColor = System.Drawing.Color.White;
             this.gbgeneral.Location = new System.Drawing.Point(55, 60);
             this.gbgeneral.Name = "gbgeneral";
-            this.gbgeneral.Size = new System.Drawing.Size(889, 267);
+            this.gbgeneral.Size = new System.Drawing.Size(889, 252);
             this.gbgeneral.TabIndex = 2;
             this.gbgeneral.TabStop = false;
             this.gbgeneral.Text = "General";
@@ -103,7 +107,7 @@
             // 
             this.dtpexpecteddate.Location = new System.Drawing.Point(285, 195);
             this.dtpexpecteddate.Name = "dtpexpecteddate";
-            this.dtpexpecteddate.Size = new System.Drawing.Size(113, 22);
+            this.dtpexpecteddate.Size = new System.Drawing.Size(113, 36);
             this.dtpexpecteddate.TabIndex = 23;
             // 
             // txtstatus
@@ -111,7 +115,7 @@
             this.txtstatus.Location = new System.Drawing.Point(664, 129);
             this.txtstatus.Name = "txtstatus";
             this.txtstatus.ReadOnly = true;
-            this.txtstatus.Size = new System.Drawing.Size(100, 22);
+            this.txtstatus.Size = new System.Drawing.Size(100, 36);
             this.txtstatus.TabIndex = 21;
             // 
             // txtname
@@ -119,7 +123,7 @@
             this.txtname.Location = new System.Drawing.Point(664, 79);
             this.txtname.Name = "txtname";
             this.txtname.ReadOnly = true;
-            this.txtname.Size = new System.Drawing.Size(100, 22);
+            this.txtname.Size = new System.Drawing.Size(100, 36);
             this.txtname.TabIndex = 20;
             this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
             // 
@@ -128,7 +132,7 @@
             this.txtcreatedate.Location = new System.Drawing.Point(664, 33);
             this.txtcreatedate.Name = "txtcreatedate";
             this.txtcreatedate.ReadOnly = true;
-            this.txtcreatedate.Size = new System.Drawing.Size(100, 22);
+            this.txtcreatedate.Size = new System.Drawing.Size(100, 36);
             this.txtcreatedate.TabIndex = 19;
             // 
             // txtshopid
@@ -136,7 +140,7 @@
             this.txtshopid.Location = new System.Drawing.Point(285, 129);
             this.txtshopid.Name = "txtshopid";
             this.txtshopid.ReadOnly = true;
-            this.txtshopid.Size = new System.Drawing.Size(100, 22);
+            this.txtshopid.Size = new System.Drawing.Size(100, 36);
             this.txtshopid.TabIndex = 18;
             // 
             // txtboxcreatorid
@@ -144,7 +148,7 @@
             this.txtboxcreatorid.Location = new System.Drawing.Point(285, 79);
             this.txtboxcreatorid.Name = "txtboxcreatorid";
             this.txtboxcreatorid.ReadOnly = true;
-            this.txtboxcreatorid.Size = new System.Drawing.Size(100, 22);
+            this.txtboxcreatorid.Size = new System.Drawing.Size(100, 36);
             this.txtboxcreatorid.TabIndex = 17;
             // 
             // txtboxorderid
@@ -152,7 +156,7 @@
             this.txtboxorderid.Location = new System.Drawing.Point(285, 33);
             this.txtboxorderid.Name = "txtboxorderid";
             this.txtboxorderid.ReadOnly = true;
-            this.txtboxorderid.Size = new System.Drawing.Size(100, 22);
+            this.txtboxorderid.Size = new System.Drawing.Size(100, 36);
             this.txtboxorderid.TabIndex = 16;
             // 
             // lblexpecteddeliverydate
@@ -218,9 +222,11 @@
             // gbitem
             // 
             this.gbitem.Controls.Add(this.dvgitem);
-            this.gbitem.Location = new System.Drawing.Point(55, 333);
+            this.gbitem.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.gbitem.ForeColor = System.Drawing.Color.White;
+            this.gbitem.Location = new System.Drawing.Point(55, 318);
             this.gbitem.Name = "gbitem";
-            this.gbitem.Size = new System.Drawing.Size(889, 160);
+            this.gbitem.Size = new System.Drawing.Size(889, 175);
             this.gbitem.TabIndex = 3;
             this.gbitem.TabStop = false;
             this.gbitem.Text = "Item";
@@ -239,11 +245,13 @@
             // 
             this.lblamounttext.AutoSize = true;
             this.lblamounttext.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblamounttext.ForeColor = System.Drawing.Color.White;
             this.lblamounttext.Location = new System.Drawing.Point(62, 505);
             this.lblamounttext.Name = "lblamounttext";
             this.lblamounttext.Size = new System.Drawing.Size(142, 24);
             this.lblamounttext.TabIndex = 6;
             this.lblamounttext.Text = "Total Amount:";
+            this.lblamounttext.Click += new System.EventHandler(this.lblamounttext_Click);
             // 
             // lbltotalamount
             // 

@@ -114,6 +114,18 @@
     <Compile Include="Accounting\AccountingManagerHomePage.Designer.cs">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Warehouse\Dispatch_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\Dispatch_Detail.Designer.cs">
+      <DependentUpon>Dispatch_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\Dispatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\Dispatch.Designer.cs">
+      <DependentUpon>Dispatch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Warehouse\ReceivedItem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -479,6 +491,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HR\UserInformationPage.resx">
       <DependentUpon>UserInformationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\Dispatch.resx">
+      <DependentUpon>Dispatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\Dispatch_Detail.resx">
+      <DependentUpon>Dispatch_Detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\ReceivedItem.resx">
       <DependentUpon>ReceivedItem.cs</DependentUpon>

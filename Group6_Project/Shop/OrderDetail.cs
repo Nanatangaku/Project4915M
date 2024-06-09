@@ -190,5 +190,10 @@ namespace Group6_Project
         {
 
         }
+
+        private void lblamounttext_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

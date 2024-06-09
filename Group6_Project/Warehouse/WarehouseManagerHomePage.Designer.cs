@@ -31,19 +31,19 @@ namespace Group6_Project
         {
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panNav = new System.Windows.Forms.Panel();
-            this.btnCategoryManager = new System.Windows.Forms.Button();
-            this.btnDepartment = new System.Windows.Forms.Button();
-            this.btnreceiveditem = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panFormLoad = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnCategoryManager = new System.Windows.Forms.Button();
+            this.btnDispatch = new System.Windows.Forms.Button();
+            this.btnreceiveditem = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -51,7 +51,7 @@ namespace Group6_Project
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelMenu.Controls.Add(this.panNav);
             this.panelMenu.Controls.Add(this.btnCategoryManager);
-            this.panelMenu.Controls.Add(this.btnDepartment);
+            this.panelMenu.Controls.Add(this.btnDispatch);
             this.panelMenu.Controls.Add(this.btnreceiveditem);
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -67,64 +67,6 @@ namespace Group6_Project
             this.panNav.Name = "panNav";
             this.panNav.Size = new System.Drawing.Size(7, 77);
             this.panNav.TabIndex = 2;
-            // 
-            // btnCategoryManager
-            // 
-            this.btnCategoryManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.btnCategoryManager.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCategoryManager.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnCategoryManager.FlatAppearance.BorderSize = 0;
-            this.btnCategoryManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCategoryManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategoryManager.ForeColor = System.Drawing.Color.White;
-            this.btnCategoryManager.Image = global::Group6_Project.Properties.Resources.user__1_;
-            this.btnCategoryManager.Location = new System.Drawing.Point(0, 671);
-            this.btnCategoryManager.Name = "btnCategoryManager";
-            this.btnCategoryManager.Size = new System.Drawing.Size(277, 77);
-            this.btnCategoryManager.TabIndex = 7;
-            this.btnCategoryManager.Text = "    Warehouse \r\n   Manager";
-            this.btnCategoryManager.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCategoryManager.UseVisualStyleBackColor = false;
-            this.btnCategoryManager.Click += new System.EventHandler(this.btnCategoryManager_Click);
-            this.btnCategoryManager.Leave += new System.EventHandler(this.btnCategoryManager_Leave);
-            // 
-            // btnDepartment
-            // 
-            this.btnDepartment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnDepartment.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnDepartment.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDepartment.FlatAppearance.BorderSize = 0;
-            this.btnDepartment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDepartment.ForeColor = System.Drawing.Color.White;
-            this.btnDepartment.Image = global::Group6_Project.Properties.Resources.truck_side;
-            this.btnDepartment.Location = new System.Drawing.Point(0, 207);
-            this.btnDepartment.Name = "btnDepartment";
-            this.btnDepartment.Size = new System.Drawing.Size(277, 77);
-            this.btnDepartment.TabIndex = 5;
-            this.btnDepartment.Text = "    Complete instruction";
-            this.btnDepartment.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnDepartment.UseVisualStyleBackColor = false;
-            this.btnDepartment.Click += new System.EventHandler(this.btnDepartment_Click);
-            // 
-            // btnreceiveditem
-            // 
-            this.btnreceiveditem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnreceiveditem.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnreceiveditem.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnreceiveditem.FlatAppearance.BorderSize = 0;
-            this.btnreceiveditem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnreceiveditem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnreceiveditem.ForeColor = System.Drawing.Color.White;
-            this.btnreceiveditem.Image = global::Group6_Project.Properties.Resources.shopping_cart;
-            this.btnreceiveditem.Location = new System.Drawing.Point(0, 130);
-            this.btnreceiveditem.Name = "btnreceiveditem";
-            this.btnreceiveditem.Size = new System.Drawing.Size(277, 77);
-            this.btnreceiveditem.TabIndex = 4;
-            this.btnreceiveditem.Text = "   Received item";
-            this.btnreceiveditem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnreceiveditem.UseVisualStyleBackColor = false;
-            this.btnreceiveditem.Click += new System.EventHandler(this.btnreceiveditem_Click);
             // 
             // panel2
             // 
@@ -147,16 +89,6 @@ namespace Group6_Project
             this.label1.Size = new System.Drawing.Size(139, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "OPSR System";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Group6_Project.Properties.Resources.car_circle_bolt;
-            this.pictureBox1.Location = new System.Drawing.Point(105, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 42);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panFormLoad
             // 
@@ -193,6 +125,74 @@ namespace Group6_Project
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnCategoryManager
+            // 
+            this.btnCategoryManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.btnCategoryManager.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCategoryManager.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCategoryManager.FlatAppearance.BorderSize = 0;
+            this.btnCategoryManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategoryManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategoryManager.ForeColor = System.Drawing.Color.White;
+            this.btnCategoryManager.Image = global::Group6_Project.Properties.Resources.user__1_;
+            this.btnCategoryManager.Location = new System.Drawing.Point(0, 671);
+            this.btnCategoryManager.Name = "btnCategoryManager";
+            this.btnCategoryManager.Size = new System.Drawing.Size(277, 77);
+            this.btnCategoryManager.TabIndex = 7;
+            this.btnCategoryManager.Text = "    Warehouse \r\n   Manager";
+            this.btnCategoryManager.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnCategoryManager.UseVisualStyleBackColor = false;
+            this.btnCategoryManager.Click += new System.EventHandler(this.btnCategoryManager_Click);
+            this.btnCategoryManager.Leave += new System.EventHandler(this.btnCategoryManager_Leave);
+            // 
+            // btnDispatch
+            // 
+            this.btnDispatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnDispatch.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnDispatch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDispatch.FlatAppearance.BorderSize = 0;
+            this.btnDispatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDispatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDispatch.ForeColor = System.Drawing.Color.White;
+            this.btnDispatch.Image = global::Group6_Project.Properties.Resources.truck_side;
+            this.btnDispatch.Location = new System.Drawing.Point(0, 207);
+            this.btnDispatch.Name = "btnDispatch";
+            this.btnDispatch.Size = new System.Drawing.Size(277, 77);
+            this.btnDispatch.TabIndex = 5;
+            this.btnDispatch.Text = "Dispatch\r\n";
+            this.btnDispatch.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnDispatch.UseVisualStyleBackColor = false;
+            this.btnDispatch.Click += new System.EventHandler(this.btnDispatch_Click);
+            // 
+            // btnreceiveditem
+            // 
+            this.btnreceiveditem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnreceiveditem.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnreceiveditem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnreceiveditem.FlatAppearance.BorderSize = 0;
+            this.btnreceiveditem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreceiveditem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreceiveditem.ForeColor = System.Drawing.Color.White;
+            this.btnreceiveditem.Image = global::Group6_Project.Properties.Resources.shopping_cart;
+            this.btnreceiveditem.Location = new System.Drawing.Point(0, 130);
+            this.btnreceiveditem.Name = "btnreceiveditem";
+            this.btnreceiveditem.Size = new System.Drawing.Size(277, 77);
+            this.btnreceiveditem.TabIndex = 4;
+            this.btnreceiveditem.Text = "   Received item";
+            this.btnreceiveditem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnreceiveditem.UseVisualStyleBackColor = false;
+            this.btnreceiveditem.Click += new System.EventHandler(this.btnreceiveditem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Group6_Project.Properties.Resources.car_circle_bolt;
+            this.pictureBox1.Location = new System.Drawing.Point(105, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // WarehouseManagerHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -209,8 +209,8 @@ namespace Group6_Project
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,7 +221,7 @@ namespace Group6_Project
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panFormLoad;
         private System.Windows.Forms.Button btnCategoryManager;
-        private System.Windows.Forms.Button btnDepartment;
+        private System.Windows.Forms.Button btnDispatch;
         private System.Windows.Forms.Button btnreceiveditem;
         private System.Windows.Forms.Panel panNav;
         private System.Windows.Forms.PictureBox pictureBox1;

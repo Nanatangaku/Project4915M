@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1:3306
--- 產生時間： 2024-06-09 08:22:32
+-- 產生時間： 2024-06-09 10:21:15
 -- 伺服器版本： 8.0.37
 -- PHP 版本： 8.2.13
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
   PRIMARY KEY (`cart_id`),
   KEY `item_id` (`item_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `cart`
@@ -59,9 +59,10 @@ CREATE TABLE IF NOT EXISTS `delivery` (
   `create_date` date NOT NULL,
   `expected_delivery_date` date NOT NULL,
   `despatch_date` date DEFAULT NULL,
+  `delivery_date` date DEFAULT NULL,
   `recive_date` date DEFAULT NULL,
   PRIMARY KEY (`delivery_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `delivery`
@@ -72,8 +73,9 @@ TRUNCATE TABLE `delivery`;
 -- 傾印資料表的資料 `delivery`
 --
 
-INSERT INTO `delivery` (`delivery_id`, `order_id`, `user_id`, `create_date`, `expected_delivery_date`, `despatch_date`, `recive_date`) VALUES
-(3, 26, 5, '2024-06-05', '2024-06-12', NULL, NULL);
+INSERT INTO `delivery` (`delivery_id`, `order_id`, `user_id`, `create_date`, `expected_delivery_date`, `despatch_date`, `delivery_date`, `recive_date`) VALUES
+(3, 26, 5, '2024-06-05', '2024-06-12', NULL, NULL, NULL),
+(4, 27, 5, '2024-06-09', '2024-06-16', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -168,7 +170,8 @@ TRUNCATE TABLE `order_item`;
 --
 
 INSERT INTO `order_item` (`order_id`, `item_id`, `quantity`) VALUES
-(26, 1, 1500);
+(26, 1, 1500),
+(27, 1, 1500);
 
 -- --------------------------------------------------------
 
@@ -188,7 +191,7 @@ CREATE TABLE IF NOT EXISTS `order_request` (
   KEY `order_status_id` (`order_status_id`),
   KEY `user_id` (`user_id`),
   KEY `delivery_id` (`delivery_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `order_request`
@@ -200,7 +203,8 @@ TRUNCATE TABLE `order_request`;
 --
 
 INSERT INTO `order_request` (`order_id`, `user_id`, `payment`, `order_status_id`, `address`, `delivery_id`) VALUES
-(26, 5, 148500.00, 1, '1', 3);
+(26, 5, 148500.00, 1, '1', 3),
+(27, 5, 148500.00, 7, '2', 4);
 
 -- --------------------------------------------------------
 
@@ -461,7 +465,7 @@ TRUNCATE TABLE `warehouse_item`;
 --
 
 INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
-(1, 1, 9000),
+(1, 1, 7500),
 (2, 1, 2500),
 (3, 1, 1500),
 (4, 1, 600),

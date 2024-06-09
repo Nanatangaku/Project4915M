@@ -79,8 +79,15 @@ namespace Group6_Project
             receivedItem.Show();
         }
 
-        private void btnDepartment_Click(object sender, EventArgs e)
+     
+
+        private void btnDispatch_Click(object sender, EventArgs e)
         {
+            this.panFormLoad.Controls.Clear();
+            Dispatch dispatch = new Dispatch(user_id,panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            dispatch.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(dispatch);
+            dispatch.Show();
 
         }
     }

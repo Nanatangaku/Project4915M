@@ -44,7 +44,6 @@
             this.lblcreatedate = new System.Windows.Forms.Label();
             this.lblshopid = new System.Windows.Forms.Label();
             this.lblcreatorid = new System.Windows.Forms.Label();
-            this.gbitem = new System.Windows.Forms.GroupBox();
             this.dvgitem = new System.Windows.Forms.DataGridView();
             this.lblamounttext = new System.Windows.Forms.Label();
             this.lbltotalamount = new System.Windows.Forms.Label();
@@ -53,18 +52,17 @@
             this.btndelete = new Group6_Project.CustomControls.RoundButton();
             this.btnsave = new Group6_Project.CustomControls.RoundButton();
             this.gbgeneral.SuspendLayout();
-            this.gbitem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgitem)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBack
             // 
             this.lblBack.AutoSize = true;
-            this.lblBack.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBack.ForeColor = System.Drawing.Color.White;
-            this.lblBack.Location = new System.Drawing.Point(51, 18);
+            this.lblBack.Location = new System.Drawing.Point(30, 18);
             this.lblBack.Name = "lblBack";
-            this.lblBack.Size = new System.Drawing.Size(86, 24);
+            this.lblBack.Size = new System.Drawing.Size(87, 25);
             this.lblBack.TabIndex = 0;
             this.lblBack.Text = "← Back";
             this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
@@ -72,10 +70,10 @@
             // lblorder_id
             // 
             this.lblorder_id.AutoSize = true;
-            this.lblorder_id.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblorder_id.Location = new System.Drawing.Point(151, 33);
+            this.lblorder_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblorder_id.Location = new System.Drawing.Point(154, 47);
             this.lblorder_id.Name = "lblorder_id";
-            this.lblorder_id.Size = new System.Drawing.Size(99, 24);
+            this.lblorder_id.Size = new System.Drawing.Size(86, 24);
             this.lblorder_id.TabIndex = 1;
             this.lblorder_id.Text = "Order ID:";
             // 
@@ -85,6 +83,8 @@
             this.gbgeneral.Controls.Add(this.txtstatus);
             this.gbgeneral.Controls.Add(this.txtname);
             this.gbgeneral.Controls.Add(this.txtcreatedate);
+            this.gbgeneral.Controls.Add(this.btnsave);
+            this.gbgeneral.Controls.Add(this.btndelete);
             this.gbgeneral.Controls.Add(this.txtshopid);
             this.gbgeneral.Controls.Add(this.txtboxcreatorid);
             this.gbgeneral.Controls.Add(this.txtboxorderid);
@@ -95,11 +95,11 @@
             this.gbgeneral.Controls.Add(this.lblshopid);
             this.gbgeneral.Controls.Add(this.lblcreatorid);
             this.gbgeneral.Controls.Add(this.lblorder_id);
-            this.gbgeneral.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.gbgeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbgeneral.ForeColor = System.Drawing.Color.White;
-            this.gbgeneral.Location = new System.Drawing.Point(55, 60);
+            this.gbgeneral.Location = new System.Drawing.Point(35, 60);
             this.gbgeneral.Name = "gbgeneral";
-            this.gbgeneral.Size = new System.Drawing.Size(949, 252);
+            this.gbgeneral.Size = new System.Drawing.Size(983, 272);
             this.gbgeneral.TabIndex = 2;
             this.gbgeneral.TabStop = false;
             this.gbgeneral.Text = "General";
@@ -107,151 +107,154 @@
             // 
             // dtpexpecteddate
             // 
-            this.dtpexpecteddate.Location = new System.Drawing.Point(273, 195);
+            this.dtpexpecteddate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpexpecteddate.Location = new System.Drawing.Point(264, 216);
             this.dtpexpecteddate.Name = "dtpexpecteddate";
-            this.dtpexpecteddate.Size = new System.Drawing.Size(185, 36);
+            this.dtpexpecteddate.Size = new System.Drawing.Size(208, 29);
             this.dtpexpecteddate.TabIndex = 23;
             this.dtpexpecteddate.ValueChanged += new System.EventHandler(this.dtpexpecteddate_ValueChanged);
             // 
             // txtstatus
             // 
-            this.txtstatus.Location = new System.Drawing.Point(664, 129);
+            this.txtstatus.BackColor = System.Drawing.Color.DarkGray;
+            this.txtstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtstatus.Location = new System.Drawing.Point(666, 156);
             this.txtstatus.Name = "txtstatus";
             this.txtstatus.ReadOnly = true;
-            this.txtstatus.Size = new System.Drawing.Size(155, 36);
+            this.txtstatus.Size = new System.Drawing.Size(210, 29);
             this.txtstatus.TabIndex = 21;
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(664, 79);
+            this.txtname.BackColor = System.Drawing.Color.DarkGray;
+            this.txtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtname.Location = new System.Drawing.Point(666, 99);
             this.txtname.Name = "txtname";
             this.txtname.ReadOnly = true;
-            this.txtname.Size = new System.Drawing.Size(120, 36);
+            this.txtname.Size = new System.Drawing.Size(210, 29);
             this.txtname.TabIndex = 20;
             this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
             // 
             // txtcreatedate
             // 
-            this.txtcreatedate.Location = new System.Drawing.Point(664, 33);
+            this.txtcreatedate.BackColor = System.Drawing.Color.DarkGray;
+            this.txtcreatedate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcreatedate.Location = new System.Drawing.Point(666, 42);
             this.txtcreatedate.Name = "txtcreatedate";
             this.txtcreatedate.ReadOnly = true;
-            this.txtcreatedate.Size = new System.Drawing.Size(100, 36);
+            this.txtcreatedate.Size = new System.Drawing.Size(210, 29);
             this.txtcreatedate.TabIndex = 19;
             // 
             // txtshopid
             // 
-            this.txtshopid.Location = new System.Drawing.Point(285, 129);
+            this.txtshopid.BackColor = System.Drawing.Color.DarkGray;
+            this.txtshopid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtshopid.Location = new System.Drawing.Point(264, 159);
             this.txtshopid.Name = "txtshopid";
             this.txtshopid.ReadOnly = true;
-            this.txtshopid.Size = new System.Drawing.Size(100, 36);
+            this.txtshopid.Size = new System.Drawing.Size(208, 29);
             this.txtshopid.TabIndex = 18;
             // 
             // txtboxcreatorid
             // 
-            this.txtboxcreatorid.Location = new System.Drawing.Point(285, 79);
+            this.txtboxcreatorid.BackColor = System.Drawing.Color.DarkGray;
+            this.txtboxcreatorid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxcreatorid.Location = new System.Drawing.Point(264, 102);
             this.txtboxcreatorid.Name = "txtboxcreatorid";
             this.txtboxcreatorid.ReadOnly = true;
-            this.txtboxcreatorid.Size = new System.Drawing.Size(100, 36);
+            this.txtboxcreatorid.Size = new System.Drawing.Size(208, 29);
             this.txtboxcreatorid.TabIndex = 17;
             // 
             // txtboxorderid
             // 
-            this.txtboxorderid.Location = new System.Drawing.Point(285, 33);
+            this.txtboxorderid.BackColor = System.Drawing.Color.DarkGray;
+            this.txtboxorderid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxorderid.Location = new System.Drawing.Point(264, 45);
             this.txtboxorderid.Name = "txtboxorderid";
             this.txtboxorderid.ReadOnly = true;
-            this.txtboxorderid.Size = new System.Drawing.Size(100, 36);
+            this.txtboxorderid.Size = new System.Drawing.Size(208, 29);
             this.txtboxorderid.TabIndex = 16;
             // 
             // lblexpecteddeliverydate
             // 
             this.lblexpecteddeliverydate.AutoSize = true;
-            this.lblexpecteddeliverydate.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblexpecteddeliverydate.Location = new System.Drawing.Point(19, 195);
+            this.lblexpecteddeliverydate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblexpecteddeliverydate.Location = new System.Drawing.Point(29, 218);
             this.lblexpecteddeliverydate.Name = "lblexpecteddeliverydate";
-            this.lblexpecteddeliverydate.Size = new System.Drawing.Size(231, 24);
+            this.lblexpecteddeliverydate.Size = new System.Drawing.Size(211, 24);
             this.lblexpecteddeliverydate.TabIndex = 15;
             this.lblexpecteddeliverydate.Text = "Expected Delivery Date:";
             // 
             // lblstatus
             // 
             this.lblstatus.AutoSize = true;
-            this.lblstatus.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblstatus.Location = new System.Drawing.Point(578, 127);
+            this.lblstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblstatus.Location = new System.Drawing.Point(568, 158);
             this.lblstatus.Name = "lblstatus";
-            this.lblstatus.Size = new System.Drawing.Size(71, 24);
+            this.lblstatus.Size = new System.Drawing.Size(65, 24);
             this.lblstatus.TabIndex = 7;
             this.lblstatus.Text = "Status:";
             // 
             // lblname
             // 
             this.lblname.AutoSize = true;
-            this.lblname.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblname.Location = new System.Drawing.Point(579, 73);
+            this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.Location = new System.Drawing.Point(567, 101);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(70, 24);
+            this.lblname.Size = new System.Drawing.Size(66, 24);
             this.lblname.TabIndex = 6;
             this.lblname.Text = "Name:";
             // 
             // lblcreatedate
             // 
             this.lblcreatedate.AutoSize = true;
-            this.lblcreatedate.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblcreatedate.Location = new System.Drawing.Point(526, 31);
+            this.lblcreatedate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcreatedate.Location = new System.Drawing.Point(520, 44);
             this.lblcreatedate.Name = "lblcreatedate";
-            this.lblcreatedate.Size = new System.Drawing.Size(123, 24);
+            this.lblcreatedate.Size = new System.Drawing.Size(113, 24);
             this.lblcreatedate.TabIndex = 5;
             this.lblcreatedate.Text = "Create Date:";
             // 
             // lblshopid
             // 
             this.lblshopid.AutoSize = true;
-            this.lblshopid.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblshopid.Location = new System.Drawing.Point(158, 123);
+            this.lblshopid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblshopid.Location = new System.Drawing.Point(158, 161);
             this.lblshopid.Name = "lblshopid";
-            this.lblshopid.Size = new System.Drawing.Size(92, 24);
+            this.lblshopid.Size = new System.Drawing.Size(82, 24);
             this.lblshopid.TabIndex = 4;
             this.lblshopid.Text = "Shop ID:";
             // 
             // lblcreatorid
             // 
             this.lblcreatorid.AutoSize = true;
-            this.lblcreatorid.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblcreatorid.Location = new System.Drawing.Point(136, 79);
+            this.lblcreatorid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcreatorid.Location = new System.Drawing.Point(142, 104);
             this.lblcreatorid.Name = "lblcreatorid";
-            this.lblcreatorid.Size = new System.Drawing.Size(114, 24);
+            this.lblcreatorid.Size = new System.Drawing.Size(98, 24);
             this.lblcreatorid.TabIndex = 3;
             this.lblcreatorid.Text = "Creator ID:";
-            // 
-            // gbitem
-            // 
-            this.gbitem.Controls.Add(this.dvgitem);
-            this.gbitem.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.gbitem.ForeColor = System.Drawing.Color.White;
-            this.gbitem.Location = new System.Drawing.Point(55, 318);
-            this.gbitem.Name = "gbitem";
-            this.gbitem.Size = new System.Drawing.Size(949, 242);
-            this.gbitem.TabIndex = 3;
-            this.gbitem.TabStop = false;
-            this.gbitem.Text = "Item";
             // 
             // dvgitem
             // 
             this.dvgitem.AllowUserToAddRows = false;
+            this.dvgitem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.dvgitem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dvgitem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgitem.Location = new System.Drawing.Point(6, 24);
+            this.dvgitem.Location = new System.Drawing.Point(35, 341);
             this.dvgitem.Name = "dvgitem";
             this.dvgitem.RowTemplate.Height = 24;
-            this.dvgitem.Size = new System.Drawing.Size(937, 212);
+            this.dvgitem.Size = new System.Drawing.Size(983, 290);
             this.dvgitem.TabIndex = 0;
             // 
             // lblamounttext
             // 
             this.lblamounttext.AutoSize = true;
-            this.lblamounttext.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblamounttext.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblamounttext.ForeColor = System.Drawing.Color.White;
-            this.lblamounttext.Location = new System.Drawing.Point(51, 595);
+            this.lblamounttext.Location = new System.Drawing.Point(30, 655);
             this.lblamounttext.Name = "lblamounttext";
-            this.lblamounttext.Size = new System.Drawing.Size(142, 24);
+            this.lblamounttext.Size = new System.Drawing.Size(145, 25);
             this.lblamounttext.TabIndex = 6;
             this.lblamounttext.Text = "Total Amount:";
             this.lblamounttext.Click += new System.EventHandler(this.lblamounttext_Click);
@@ -268,15 +271,16 @@
             // 
             // btndownloaddispatchpdf
             // 
-            this.btndownloaddispatchpdf.BackColor = System.Drawing.Color.Red;
-            this.btndownloaddispatchpdf.BackgroundColor = System.Drawing.Color.Red;
-            this.btndownloaddispatchpdf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.btndownloaddispatchpdf.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btndownloaddispatchpdf.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btndownloaddispatchpdf.BorderColor = System.Drawing.Color.Transparent;
             this.btndownloaddispatchpdf.BorderRadius = 16;
-            this.btndownloaddispatchpdf.BorderSize = 0;
+            this.btndownloaddispatchpdf.BorderSize = 2;
             this.btndownloaddispatchpdf.FlatAppearance.BorderSize = 0;
             this.btndownloaddispatchpdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndownloaddispatchpdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndownloaddispatchpdf.ForeColor = System.Drawing.Color.White;
-            this.btndownloaddispatchpdf.Location = new System.Drawing.Point(808, 12);
+            this.btndownloaddispatchpdf.Location = new System.Drawing.Point(717, 648);
             this.btndownloaddispatchpdf.Name = "btndownloaddispatchpdf";
             this.btndownloaddispatchpdf.Size = new System.Drawing.Size(145, 42);
             this.btndownloaddispatchpdf.TabIndex = 9;
@@ -287,15 +291,16 @@
             // 
             // btnreceive
             // 
-            this.btnreceive.BackColor = System.Drawing.Color.Red;
-            this.btnreceive.BackgroundColor = System.Drawing.Color.Red;
-            this.btnreceive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.btnreceive.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnreceive.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnreceive.BorderColor = System.Drawing.Color.Transparent;
             this.btnreceive.BorderRadius = 16;
-            this.btnreceive.BorderSize = 0;
+            this.btnreceive.BorderSize = 2;
             this.btnreceive.FlatAppearance.BorderSize = 0;
             this.btnreceive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreceive.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreceive.ForeColor = System.Drawing.Color.White;
-            this.btnreceive.Location = new System.Drawing.Point(680, 12);
+            this.btnreceive.Location = new System.Drawing.Point(896, 648);
             this.btnreceive.Name = "btnreceive";
             this.btnreceive.Size = new System.Drawing.Size(103, 42);
             this.btnreceive.TabIndex = 8;
@@ -306,15 +311,16 @@
             // 
             // btndelete
             // 
-            this.btndelete.BackColor = System.Drawing.Color.Red;
-            this.btndelete.BackgroundColor = System.Drawing.Color.Red;
-            this.btndelete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.btndelete.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btndelete.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btndelete.BorderColor = System.Drawing.Color.Transparent;
             this.btndelete.BorderRadius = 16;
-            this.btndelete.BorderSize = 0;
+            this.btndelete.BorderSize = 2;
             this.btndelete.FlatAppearance.BorderSize = 0;
             this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.ForeColor = System.Drawing.Color.White;
-            this.btndelete.Location = new System.Drawing.Point(808, 12);
+            this.btndelete.Location = new System.Drawing.Point(638, 212);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(103, 42);
             this.btndelete.TabIndex = 5;
@@ -325,15 +331,16 @@
             // 
             // btnsave
             // 
-            this.btnsave.BackColor = System.Drawing.Color.Red;
-            this.btnsave.BackgroundColor = System.Drawing.Color.Red;
-            this.btnsave.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.btnsave.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnsave.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnsave.BorderColor = System.Drawing.Color.Transparent;
             this.btnsave.BorderRadius = 16;
-            this.btnsave.BorderSize = 0;
+            this.btnsave.BorderSize = 2;
             this.btnsave.FlatAppearance.BorderSize = 0;
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.ForeColor = System.Drawing.Color.White;
-            this.btnsave.Location = new System.Drawing.Point(680, 12);
+            this.btnsave.Location = new System.Drawing.Point(773, 212);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(103, 42);
             this.btnsave.TabIndex = 4;
@@ -347,22 +354,20 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1025, 679);
+            this.ClientSize = new System.Drawing.Size(1041, 718);
+            this.Controls.Add(this.dvgitem);
             this.Controls.Add(this.btndownloaddispatchpdf);
             this.Controls.Add(this.btnreceive);
             this.Controls.Add(this.lbltotalamount);
             this.Controls.Add(this.lblamounttext);
-            this.Controls.Add(this.btndelete);
-            this.Controls.Add(this.btnsave);
-            this.Controls.Add(this.gbitem);
             this.Controls.Add(this.gbgeneral);
             this.Controls.Add(this.lblBack);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OrderDetail";
             this.Text = "OrderDetail";
             this.Load += new System.EventHandler(this.OrderDetail_Load);
             this.gbgeneral.ResumeLayout(false);
             this.gbgeneral.PerformLayout();
-            this.gbitem.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvgitem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -379,7 +384,6 @@
         private System.Windows.Forms.Label lblcreatorid;
         private System.Windows.Forms.Label lblstatus;
         private System.Windows.Forms.Label lblname;
-        private System.Windows.Forms.GroupBox gbitem;
         private System.Windows.Forms.DataGridView dvgitem;
         private CustomControls.RoundButton btnsave;
         private CustomControls.RoundButton btndelete;

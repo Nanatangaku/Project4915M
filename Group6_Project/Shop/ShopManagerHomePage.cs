@@ -27,67 +27,21 @@ namespace Group6_Project
             int nWidthEllipse,
             int nHeightEllipse
             );
+
         private int user_id;
 
-        public ShopManagerHomePage(int user_id, Panel panformLoad)
-        {
-            InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            this.user_id = user_id;
-            this.panFormLoad = panformLoad;
-        }
         public ShopManagerHomePage(int user_id)
         {
             InitializeComponent();
             this.user_id = user_id;
-
-
-        }
-        public ShopManagerHomePage()
-        {
-            InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
 
-
         //Event
-     
-        [Category("Event")]
-        private void btnWarehouse_Leave(object sender, EventArgs e)
-        {
-            btnOrder.BackColor = Color.FromArgb(51, 51, 76);
-        }
-        
-        [Category("Event")]
-     
-        private void btnCategoryManager_Click(object sender, EventArgs e)
-        {
-            panNav.Height = btnCategoryManager.Height;
-            panNav.Top = btnCategoryManager.Top;
-            panNav.Left = btnCategoryManager.Left;
-            btnCategoryManager.BackColor = Color.FromArgb(46, 51, 73);
-
-            this.panFormLoad.Controls.Clear();
-            loginPage login = new loginPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            login.FormBorderStyle = FormBorderStyle.None;
-            this.panFormLoad.Controls.Add(login);
-            login.Show();
-        }
-
         [Category("Event")]
         private void btnCategoryManager_Leave(object sender, EventArgs e)
         {
-            btnCategoryManager.BackColor = Color.FromArgb(51, 51, 100);
-        }
-
-        private void panFormLoad_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelMenu_Paint(object sender, PaintEventArgs e)
-        {
-
+            btnSmLogout.BackColor = Color.FromArgb(51, 51, 100);
         }
 
         [Category("Event")]
@@ -103,27 +57,6 @@ namespace Group6_Project
             checkout.FormBorderStyle = FormBorderStyle.None;
             this.panFormLoad.Controls.Add(checkout);
             checkout.Show();
-        }
-
-        private void btnvieworder_Click(object sender, EventArgs e)
-        {
-            panNav.Height = btnvieworder.Height;
-            panNav.Top = btnvieworder.Top;
-            panNav.Left = btnvieworder.Left;
-            btnvieworder.BackColor = Color.FromArgb(46, 51, 73);
-
-            this.panFormLoad.Controls.Clear();
-            ViewOrder vieworder = new ViewOrder(user_id, panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            vieworder.FormBorderStyle = FormBorderStyle.None;
-            this.panFormLoad.Controls.Add(vieworder);
-            vieworder.Show();
-
-        }
-       
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnOrder_Click(object sender, EventArgs e)
@@ -147,23 +80,38 @@ namespace Group6_Project
 
         private void btnCheckout_Leave(object sender, EventArgs e)
         {
-            btnOrder.BackColor = Color.FromArgb(51, 51, 76);
+            btnCheckout.BackColor = Color.FromArgb(51, 51, 76);
         }
 
-        private void btnvieworder_Leave(object sender, EventArgs e)
+        private void btnViewOrder_Leave(object sender, EventArgs e)
         {
-            btnOrder.BackColor = Color.FromArgb(51, 51, 76);
+            btnViewOrder.BackColor = Color.FromArgb(51, 51, 76);
         }
 
         [Category("Event")]
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        private void btnViewOrder_Click(object sender, EventArgs e)
+        {
+            panNav.Height = btnViewOrder.Height;
+            panNav.Top = btnViewOrder.Top;
+            panNav.Left = btnViewOrder.Left;
+            btnViewOrder.BackColor = Color.FromArgb(46, 51, 73);
 
-        private void btnClose_Click(object sender, EventArgs e)
+            this.panFormLoad.Controls.Clear();
+            ViewOrder vieworder = new ViewOrder(user_id, panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            vieworder.FormBorderStyle = FormBorderStyle.None;
+            this.panFormLoad.Controls.Add(vieworder);
+            vieworder.Show();
+        }
+
+        private void btnSmLogout_Click(object sender, EventArgs e)
         {
 
+            new loginPage().ShowDialog();
+            this.Close();
         }
     }
  }

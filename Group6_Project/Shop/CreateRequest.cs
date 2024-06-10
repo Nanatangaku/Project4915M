@@ -63,10 +63,12 @@ namespace Group6_Project
             string sql = "select item.item_id,item.item_name,item.price,item_Category,warehouse_item.quantity from warehouse_item,item where item.item_id = warehouse_item.item_id";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
+
             //use adapter to fill the data in the datatable
             MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             adp.Fill(dt);
+
             //bind the data to the datagridview
             dataGridView1.DataSource = dt;
 
@@ -81,13 +83,15 @@ namespace Group6_Project
 
         private void filldvg(string valueToSearch)
         {
-            string sql = "select item.item_id, item.item_name,item.price,item_Category,warehouse_item.quantity from warehouse_item,item where item.item_id = warehouse_item.item_id and item_name like '%" + valueToSearch + "%'";
+            string sql = "select item.item_id,item.item_name,item.price,item_Category,warehouse_item.quantity from warehouse_item,item where item.item_id = warehouse_item.item_id and item_name like '%" + valueToSearch + "%'";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
+
             //use adapter to fill the data in the datatable
             MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             adp.Fill(dt);
+
             //bind the data to the datagridview
             dataGridView1.DataSource = dt;
 
@@ -105,7 +109,6 @@ namespace Group6_Project
                 int index = e.RowIndex;
                 DataGridViewRow selectedRow = dataGridView1.Rows[index];
                 var inputquantity = 0;
-     
                 try
                 {
                     inputquantity = Convert.ToInt32(selectedRow.Cells[1].Value);
@@ -142,23 +145,13 @@ namespace Group6_Project
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnContinue_Click(object sender, EventArgs e)
         {
             this.panformload.Controls.Clear();
             CheckOut checkOut = new CheckOut(user_id, panformload) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             checkOut.FormBorderStyle = FormBorderStyle.None;
             this.panformload.Controls.Add(checkOut);
             checkOut.Show();
-        }
-
-        private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
-        {
-           
         }
     }
 }

@@ -188,11 +188,6 @@ namespace Group6_Project
     
         }
 
-        private void roundTextBox4__TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblamounttext_Click(object sender, EventArgs e)
         {
 

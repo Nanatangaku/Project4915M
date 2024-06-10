@@ -30,10 +30,10 @@ namespace Group6_Project
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnvieworder = new System.Windows.Forms.Button();
-            this.btnCheckout = new System.Windows.Forms.Button();
             this.panNav = new System.Windows.Forms.Panel();
-            this.btnCategoryManager = new System.Windows.Forms.Button();
+            this.btnViewOrder = new System.Windows.Forms.Button();
+            this.btnCheckout = new System.Windows.Forms.Button();
+            this.btnSmLogout = new System.Windows.Forms.Button();
             this.btnOrder = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,10 +50,10 @@ namespace Group6_Project
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.btnvieworder);
-            this.panelMenu.Controls.Add(this.btnCheckout);
             this.panelMenu.Controls.Add(this.panNav);
-            this.panelMenu.Controls.Add(this.btnCategoryManager);
+            this.panelMenu.Controls.Add(this.btnViewOrder);
+            this.panelMenu.Controls.Add(this.btnCheckout);
+            this.panelMenu.Controls.Add(this.btnSmLogout);
             this.panelMenu.Controls.Add(this.btnOrder);
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -62,28 +62,36 @@ namespace Group6_Project
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(277, 748);
             this.panelMenu.TabIndex = 3;
-            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
-            // btnvieworder
+            // panNav
             // 
-            this.btnvieworder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnvieworder.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnvieworder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnvieworder.FlatAppearance.BorderSize = 0;
-            this.btnvieworder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnvieworder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnvieworder.ForeColor = System.Drawing.Color.White;
-            this.btnvieworder.Image = global::Group6_Project.Properties.Resources.truck_side;
-            this.btnvieworder.Location = new System.Drawing.Point(0, 284);
-            this.btnvieworder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnvieworder.Name = "btnvieworder";
-            this.btnvieworder.Size = new System.Drawing.Size(277, 77);
-            this.btnvieworder.TabIndex = 9;
-            this.btnvieworder.Text = "View Order";
-            this.btnvieworder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnvieworder.UseVisualStyleBackColor = false;
-            this.btnvieworder.Click += new System.EventHandler(this.btnvieworder_Click);
-            this.btnvieworder.Leave += new System.EventHandler(this.btnvieworder_Leave);
+            this.panNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(120)))), ((int)(((byte)(252)))));
+            this.panNav.Location = new System.Drawing.Point(0, 130);
+            this.panNav.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panNav.Name = "panNav";
+            this.panNav.Size = new System.Drawing.Size(7, 77);
+            this.panNav.TabIndex = 2;
+            // 
+            // btnViewOrder
+            // 
+            this.btnViewOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnViewOrder.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnViewOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnViewOrder.FlatAppearance.BorderSize = 0;
+            this.btnViewOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewOrder.ForeColor = System.Drawing.Color.White;
+            this.btnViewOrder.Image = global::Group6_Project.Properties.Resources.truck_side;
+            this.btnViewOrder.Location = new System.Drawing.Point(0, 284);
+            this.btnViewOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnViewOrder.Name = "btnViewOrder";
+            this.btnViewOrder.Size = new System.Drawing.Size(277, 77);
+            this.btnViewOrder.TabIndex = 9;
+            this.btnViewOrder.Text = "View Order";
+            this.btnViewOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnViewOrder.UseVisualStyleBackColor = false;
+            this.btnViewOrder.Click += new System.EventHandler(this.btnViewOrder_Click);
+            this.btnViewOrder.Leave += new System.EventHandler(this.btnViewOrder_Leave);
             // 
             // btnCheckout
             // 
@@ -106,35 +114,26 @@ namespace Group6_Project
             this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
             this.btnCheckout.Leave += new System.EventHandler(this.btnCheckout_Leave);
             // 
-            // panNav
+            // btnSmLogout
             // 
-            this.panNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(120)))), ((int)(((byte)(252)))));
-            this.panNav.Location = new System.Drawing.Point(0, 130);
-            this.panNav.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panNav.Name = "panNav";
-            this.panNav.Size = new System.Drawing.Size(7, 77);
-            this.panNav.TabIndex = 2;
-            // 
-            // btnCategoryManager
-            // 
-            this.btnCategoryManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.btnCategoryManager.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCategoryManager.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnCategoryManager.FlatAppearance.BorderSize = 0;
-            this.btnCategoryManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCategoryManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategoryManager.ForeColor = System.Drawing.Color.White;
-            this.btnCategoryManager.Image = global::Group6_Project.Properties.Resources.user__1_;
-            this.btnCategoryManager.Location = new System.Drawing.Point(0, 671);
-            this.btnCategoryManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCategoryManager.Name = "btnCategoryManager";
-            this.btnCategoryManager.Size = new System.Drawing.Size(277, 77);
-            this.btnCategoryManager.TabIndex = 7;
-            this.btnCategoryManager.Text = "    Shop \r\n   Manager";
-            this.btnCategoryManager.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCategoryManager.UseVisualStyleBackColor = false;
-            this.btnCategoryManager.Click += new System.EventHandler(this.btnCategoryManager_Click);
-            this.btnCategoryManager.Leave += new System.EventHandler(this.btnCategoryManager_Leave);
+            this.btnSmLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.btnSmLogout.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSmLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSmLogout.FlatAppearance.BorderSize = 0;
+            this.btnSmLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSmLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSmLogout.ForeColor = System.Drawing.Color.White;
+            this.btnSmLogout.Image = global::Group6_Project.Properties.Resources.user__1_;
+            this.btnSmLogout.Location = new System.Drawing.Point(0, 671);
+            this.btnSmLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSmLogout.Name = "btnSmLogout";
+            this.btnSmLogout.Size = new System.Drawing.Size(277, 77);
+            this.btnSmLogout.TabIndex = 7;
+            this.btnSmLogout.Text = "  Shop Manager\r\nLogout";
+            this.btnSmLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnSmLogout.UseVisualStyleBackColor = false;
+            this.btnSmLogout.Click += new System.EventHandler(this.btnSmLogout_Click);
+            this.btnSmLogout.Leave += new System.EventHandler(this.btnCategoryManager_Leave);
             // 
             // btnOrder
             // 
@@ -198,24 +197,23 @@ namespace Group6_Project
             this.panel5.Location = new System.Drawing.Point(277, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1041, 108);
+            this.panel5.Size = new System.Drawing.Size(1041, 30);
             this.panel5.TabIndex = 5;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // btnClose
             // 
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(1003, 2);
+            this.btnClose.Location = new System.Drawing.Point(1003, 0);
             this.btnClose.Margin = new System.Windows.Forms.Padding(0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Padding = new System.Windows.Forms.Padding(3);
+            this.btnClose.Padding = new System.Windows.Forms.Padding(2);
             this.btnClose.Size = new System.Drawing.Size(28, 28);
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.button1_Click);
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // panFormLoad
             // 
@@ -225,7 +223,6 @@ namespace Group6_Project
             this.panFormLoad.Name = "panFormLoad";
             this.panFormLoad.Size = new System.Drawing.Size(1041, 718);
             this.panFormLoad.TabIndex = 1;
-            this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
             // 
             // ShopManagerHomePage
             // 
@@ -255,12 +252,12 @@ namespace Group6_Project
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panFormLoad;
-        private System.Windows.Forms.Button btnCategoryManager;
+        private System.Windows.Forms.Button btnSmLogout;
         private System.Windows.Forms.Button btnOrder;
         private System.Windows.Forms.Panel panNav;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnvieworder;
+        private System.Windows.Forms.Button btnViewOrder;
         private System.Windows.Forms.Button btnCheckout;
         private System.Windows.Forms.Button btnClose;
     }

@@ -117,18 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gbgeneral.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="btnConfirm.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnConfirm.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 15.75pt</value>
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="btnConfirm.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
   </data>
   <data name="btnConfirm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 260</value>
+    <value>658, 265</value>
   </data>
   <data name="btnConfirm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 30</value>
+    <value>97, 31</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnConfirm.TabIndex" type="System.Int32, mscorlib">
@@ -149,10 +156,12 @@
   <data name="&gt;&gt;btnConfirm.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="txtboxtotalprice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 259</value>
+  <data name="txtboxtotalprice.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtboxtotalprice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 262</value>
+  </data>
   <data name="txtboxtotalprice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -160,7 +169,7 @@
     <value>No</value>
   </data>
   <data name="txtboxtotalprice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 33</value>
+    <value>188, 29</value>
   </data>
   <data name="txtboxtotalprice.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -181,13 +190,13 @@
     <value>True</value>
   </data>
   <data name="lbltotalprice.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 15.75pt</value>
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lbltotalprice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 259</value>
+    <value>27, 265</value>
   </data>
   <data name="lbltotalprice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 26</value>
+    <value>104, 24</value>
   </data>
   <data name="lbltotalprice.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -207,11 +216,17 @@
   <data name="&gt;&gt;lbltotalprice.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="dateTimePicker.CalendarFont" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="dateTimePicker.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="dateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>547, 125</value>
+    <value>551, 126</value>
   </data>
   <data name="dateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 33</value>
+    <value>204, 29</value>
   </data>
   <data name="dateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -228,11 +243,14 @@
   <data name="&gt;&gt;dateTimePicker.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="txtboxshopname.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="txtboxshopname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>547, 80</value>
+    <value>551, 81</value>
   </data>
   <data name="txtboxshopname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 33</value>
+    <value>204, 29</value>
   </data>
   <data name="txtboxshopname.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -249,11 +267,14 @@
   <data name="&gt;&gt;txtboxshopname.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="txtboxcreatedate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="txtboxcreatedate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 129</value>
+    <value>139, 133</value>
   </data>
   <data name="txtboxcreatedate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 33</value>
+    <value>236, 29</value>
   </data>
   <data name="txtboxcreatedate.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -270,11 +291,14 @@
   <data name="&gt;&gt;txtboxcreatedate.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="txtboxshopid.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="txtboxshopid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 78</value>
+    <value>139, 85</value>
   </data>
   <data name="txtboxshopid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 33</value>
+    <value>236, 29</value>
   </data>
   <data name="txtboxshopid.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -291,11 +315,14 @@
   <data name="&gt;&gt;txtboxshopid.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="txtboxname.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="txtboxname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>547, 31</value>
+    <value>551, 37</value>
   </data>
   <data name="txtboxname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 33</value>
+    <value>204, 29</value>
   </data>
   <data name="txtboxname.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -312,11 +339,14 @@
   <data name="&gt;&gt;txtboxname.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="txtboxcreateid.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="txtboxcreateid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 31</value>
+    <value>139, 40</value>
   </data>
   <data name="txtboxcreateid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 33</value>
+    <value>236, 29</value>
   </data>
   <data name="txtboxcreateid.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -333,14 +363,17 @@
   <data name="&gt;&gt;txtboxcreateid.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="txtboxaddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="txtboxaddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 185</value>
+    <value>139, 185</value>
   </data>
   <data name="txtboxaddress.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txtboxaddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>651, 60</value>
+    <value>616, 60</value>
   </data>
   <data name="txtboxaddress.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -361,13 +394,13 @@
     <value>True</value>
   </data>
   <data name="lbladdress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 15.75pt</value>
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lbladdress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 187</value>
+    <value>46, 188</value>
   </data>
   <data name="lbladdress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 26</value>
+    <value>85, 24</value>
   </data>
   <data name="lbladdress.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -391,13 +424,13 @@
     <value>True</value>
   </data>
   <data name="lblshopname.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 15.75pt</value>
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblshopname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 82</value>
+    <value>428, 83</value>
   </data>
   <data name="lblshopname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 26</value>
+    <value>116, 24</value>
   </data>
   <data name="lblshopname.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -421,13 +454,13 @@
     <value>True</value>
   </data>
   <data name="lblexpectdate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 15.75pt</value>
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblexpectdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 128</value>
+    <value>427, 128</value>
   </data>
   <data name="lblexpectdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 26</value>
+    <value>117, 24</value>
   </data>
   <data name="lblexpectdate.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -451,13 +484,13 @@
     <value>True</value>
   </data>
   <data name="lblshopid.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 15.75pt</value>
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblshopid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 83</value>
+    <value>49, 87</value>
   </data>
   <data name="lblshopid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 26</value>
+    <value>82, 24</value>
   </data>
   <data name="lblshopid.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -481,13 +514,13 @@
     <value>True</value>
   </data>
   <data name="lblName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 15.75pt</value>
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>472, 34</value>
+    <value>478, 39</value>
   </data>
   <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 26</value>
+    <value>66, 24</value>
   </data>
   <data name="lblName.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -511,13 +544,13 @@
     <value>True</value>
   </data>
   <data name="lblcreatedate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 15.75pt</value>
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblcreatedate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 132</value>
+    <value>18, 136</value>
   </data>
   <data name="lblcreatedate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 26</value>
+    <value>113, 24</value>
   </data>
   <data name="lblcreatedate.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -541,13 +574,13 @@
     <value>True</value>
   </data>
   <data name="lblcreaterid.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 15.75pt</value>
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblcreaterid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 38</value>
+    <value>39, 42</value>
   </data>
   <data name="lblcreaterid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 26</value>
+    <value>92, 24</value>
   </data>
   <data name="lblcreaterid.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -568,13 +601,16 @@
     <value>16</value>
   </data>
   <data name="gbgeneral.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 15.75pt</value>
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="gbgeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 12</value>
+    <value>132, 15</value>
+  </data>
+  <data name="gbgeneral.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
   </data>
   <data name="gbgeneral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>805, 310</value>
+    <value>776, 310</value>
   </data>
   <data name="gbgeneral.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -595,13 +631,13 @@
     <value>1</value>
   </data>
   <data name="dvgcart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 31</value>
+    <value>37, 331</value>
   </data>
   <data name="dvgcart.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="dvgcart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>720, 303</value>
+    <value>972, 359</value>
   </data>
   <data name="dvgcart.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -613,36 +649,9 @@
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dvgcart.Parent" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;dvgcart.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gbItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 15.75pt</value>
-  </data>
-  <data name="gbItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 333</value>
-  </data>
-  <data name="gbItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>805, 355</value>
-  </data>
-  <data name="gbItem.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="gbItem.Text" xml:space="preserve">
-    <value>Item</value>
-  </data>
-  <data name="&gt;&gt;gbItem.Name" xml:space="preserve">
-    <value>gbItem</value>
-  </data>
-  <data name="&gt;&gt;gbItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbItem.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;gbItem.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dvgcart.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

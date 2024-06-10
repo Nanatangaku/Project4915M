@@ -94,14 +94,13 @@
             this.cbfilter.Items.AddRange(new object[] {
             "All",
             "Waiting to Process",
-            "Dispatch",
-            "Delivering",
+            "Dispatched",
             "Complete Order"});
             this.cbfilter.Location = new System.Drawing.Point(799, 34);
             this.cbfilter.Name = "cbfilter";
             this.cbfilter.Size = new System.Drawing.Size(214, 32);
             this.cbfilter.TabIndex = 3;
-            this.cbfilter.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbfilter.SelectedIndexChanged += new System.EventHandler(this.cbfilter_SelectedIndexChanged);
             // 
             // ViewOrder
             // 

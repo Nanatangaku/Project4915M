@@ -80,9 +80,40 @@ namespace Group6_Project
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbfilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cbfilter.SelectedIndex == 0)
+            {
+                string sql = "select order_request.order_id,order_request.payment,order_request.address,delivery.create_date,delivery.despatch_date,delivery.recive_date,order_status.status from order_request,delivery,order_status where order_request.order_id = delivery.order_id and order_request.order_status_id = order_status.order_status_id and order_request.user_id = " + user_id;
+                MySqlDataAdapter adapter = new MySqlDataAdapter(sql, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dvgvieworder_request.DataSource = dt;
+            }
+            else if (cbfilter.SelectedIndex == 1)
+            {
+                string sql = "select order_request.order_id,order_request.payment,order_request.address,delivery.create_date,delivery.despatch_date,delivery.recive_date,order_status.status from order_request,delivery,order_status where order_request.order_id = delivery.order_id and order_request.order_status_id = order_status.order_status_id and order_request.user_id = " + user_id + " and order_request.order_status_id = " + 1 + ";" ;
+                MySqlDataAdapter adapter = new MySqlDataAdapter(sql, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dvgvieworder_request.DataSource = dt;
+            }
+            else if (cbfilter.SelectedIndex == 2)
+            {
+                string sql = "select order_request.order_id,order_request.payment,order_request.address,delivery.create_date,delivery.despatch_date,delivery.recive_date,order_status.status from order_request,delivery,order_status where order_request.order_id = delivery.order_id and order_request.order_status_id = order_status.order_status_id and order_request.user_id = " + user_id + " and order_request.order_status_id = " + 7 + ";";
+                MySqlDataAdapter adapter = new MySqlDataAdapter(sql, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dvgvieworder_request.DataSource = dt;
+            }
+            else if (cbfilter.SelectedIndex == 3)
+            {
+                string sql = "select order_request.order_id,order_request.payment,order_request.address,delivery.create_date,delivery.despatch_date,delivery.recive_date,order_status.status from order_request,delivery,order_status where order_request.order_id = delivery.order_id and order_request.order_status_id = order_status.order_status_id and order_request.user_id = " + user_id + " and order_request.order_status_id = " + 9 + ";";
+                MySqlDataAdapter adapter = new MySqlDataAdapter(sql, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dvgvieworder_request.DataSource = dt;
+            }
         }
     }
 }

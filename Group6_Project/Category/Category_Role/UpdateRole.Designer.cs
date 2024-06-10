@@ -54,6 +54,7 @@
             this.cancel.Text = "Cancel";
             this.cancel.TextColor = System.Drawing.Color.Black;
             this.cancel.UseVisualStyleBackColor = false;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // roundButton1
             // 
@@ -165,6 +166,7 @@
             this.Controls.Add(this.roundTextBox1);
             this.Name = "UpdateRole";
             this.Text = "UpdateRole";
+            this.Load += new System.EventHandler(this.UpdateRole_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

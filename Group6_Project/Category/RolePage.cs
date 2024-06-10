@@ -31,7 +31,7 @@ namespace Group6_Project
         private void rbtnCreateRole_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
-            CreateRole createrole = new CreateRole() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            CreateRole createrole = new CreateRole(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             createrole.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(createrole);
             createrole.Show();

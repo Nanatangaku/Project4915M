@@ -58,6 +58,7 @@
             this.cancel.Text = "Cancel";
             this.cancel.TextColor = System.Drawing.Color.Black;
             this.cancel.UseVisualStyleBackColor = false;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // roundButton1
             // 

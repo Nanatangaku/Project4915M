@@ -24,9 +24,13 @@ namespace Group6_Project
         {
             String newWarehouseName = roundTextBox1.Texts;
             String newWarehousePhone = roundTextBox2.Texts;
+            long i;
             if (newWarehouseName == null || newWarehousePhone == null || newWarehouseName == "" || newWarehousePhone == "")
             {
                 MessageBox.Show("Please fill in all the information!");
+            }else if (!(long.TryParse(newWarehousePhone, out i)))
+            {
+                MessageBox.Show("Please no letters in Phone field!");
             }
             else
             {

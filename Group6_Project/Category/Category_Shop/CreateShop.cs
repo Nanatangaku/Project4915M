@@ -13,8 +13,10 @@ namespace Group6_Project
 {
     public partial class CreateShop : Form
     {
-        public CreateShop()
+        Panel panFormLoad;
+        public CreateShop(Panel panFormLoad)
         {
+            this.panFormLoad = panFormLoad;
             InitializeComponent();
         }
 
@@ -62,6 +64,15 @@ namespace Group6_Project
         private void CreateShop_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            this.panFormLoad.Controls.Clear();
+            SearchShop searchShop = new SearchShop(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            searchShop.FormBorderStyle = FormBorderStyle.None;
+            this.panFormLoad.Controls.Add(searchShop);
+            searchShop.Show();
         }
     }
 }

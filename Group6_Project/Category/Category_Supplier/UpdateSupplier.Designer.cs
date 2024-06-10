@@ -28,50 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancel = new Group6_Project.CustomControls.RoundButton();
-            this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.roundTextBox2 = new Group6_Project.RoundTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.roundTextBox2 = new Group6_Project.RoundTextBox();
             this.roundTextBox1 = new Group6_Project.RoundTextBox();
+            this.cancel = new Group6_Project.CustomControls.RoundButton();
+            this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
             this.SuspendLayout();
-            // 
-            // cancel
-            // 
-            this.cancel.BackColor = System.Drawing.Color.White;
-            this.cancel.BackgroundColor = System.Drawing.Color.White;
-            this.cancel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.cancel.BorderRadius = 22;
-            this.cancel.BorderSize = 2;
-            this.cancel.FlatAppearance.BorderSize = 0;
-            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancel.ForeColor = System.Drawing.Color.Black;
-            this.cancel.Location = new System.Drawing.Point(476, 207);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(72, 29);
-            this.cancel.TabIndex = 27;
-            this.cancel.Text = "Cancel";
-            this.cancel.TextColor = System.Drawing.Color.Black;
-            this.cancel.UseVisualStyleBackColor = false;
-            // 
-            // roundButton1
-            // 
-            this.roundButton1.BackColor = System.Drawing.Color.White;
-            this.roundButton1.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.roundButton1.BorderRadius = 22;
-            this.roundButton1.BorderSize = 2;
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(563, 207);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(72, 29);
-            this.roundButton1.TabIndex = 24;
-            this.roundButton1.Text = "Update";
-            this.roundButton1.TextColor = System.Drawing.Color.Black;
-            this.roundButton1.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -95,6 +59,17 @@
             this.label3.TabIndex = 31;
             this.label3.Text = "New Supplier Remark: ";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(22, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 24);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "New Supplier Name: ";
+            // 
             // roundTextBox2
             // 
             this.roundTextBox2.BackColor = System.Drawing.SystemColors.Window;
@@ -117,17 +92,6 @@
             this.roundTextBox2.Texts = "";
             this.roundTextBox2.UnderlinedStyle = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(22, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 24);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "New Supplier Name: ";
-            // 
             // roundTextBox1
             // 
             this.roundTextBox1.BackColor = System.Drawing.SystemColors.Window;
@@ -149,6 +113,44 @@
             this.roundTextBox1.TabIndex = 28;
             this.roundTextBox1.Texts = "";
             this.roundTextBox1.UnderlinedStyle = true;
+            // 
+            // cancel
+            // 
+            this.cancel.BackColor = System.Drawing.Color.White;
+            this.cancel.BackgroundColor = System.Drawing.Color.White;
+            this.cancel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.cancel.BorderRadius = 22;
+            this.cancel.BorderSize = 2;
+            this.cancel.FlatAppearance.BorderSize = 0;
+            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancel.ForeColor = System.Drawing.Color.Black;
+            this.cancel.Location = new System.Drawing.Point(476, 207);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(72, 29);
+            this.cancel.TabIndex = 27;
+            this.cancel.Text = "Cancel";
+            this.cancel.TextColor = System.Drawing.Color.Black;
+            this.cancel.UseVisualStyleBackColor = false;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
+            // 
+            // roundButton1
+            // 
+            this.roundButton1.BackColor = System.Drawing.Color.White;
+            this.roundButton1.BackgroundColor = System.Drawing.Color.White;
+            this.roundButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.roundButton1.BorderRadius = 22;
+            this.roundButton1.BorderSize = 2;
+            this.roundButton1.FlatAppearance.BorderSize = 0;
+            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundButton1.ForeColor = System.Drawing.Color.Black;
+            this.roundButton1.Location = new System.Drawing.Point(563, 207);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(72, 29);
+            this.roundButton1.TabIndex = 24;
+            this.roundButton1.Text = "Update";
+            this.roundButton1.TextColor = System.Drawing.Color.Black;
+            this.roundButton1.UseVisualStyleBackColor = false;
+            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
             // 
             // UpdateSupplier
             // 

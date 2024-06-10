@@ -41,7 +41,7 @@ namespace Group6_Project
         private void rbtnCreateShop_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
-            CreateShop createshop = new CreateShop() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            CreateShop createshop = new CreateShop(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             createshop.FormBorderStyle = FormBorderStyle.None;
             this.panFormLoad.Controls.Add(createshop);
             createshop.Show();

@@ -108,6 +108,24 @@
     <Compile Include="Accounting\AccountingManagerHomePage.Designer.cs">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Category\Category_Role\UpdateRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\Category_Role\UpdateRole.Designer.cs">
+      <DependentUpon>UpdateRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\Category_Shop\UpdateShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\Category_Shop\UpdateShop.Designer.cs">
+      <DependentUpon>UpdateShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category\Category_Supplier\UpdateSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\Category_Supplier\UpdateSupplier.Designer.cs">
+      <DependentUpon>UpdateSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category\Category_Warehouse\UpdateWarehouse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -379,6 +397,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Accounting\AccountingManagerHomePage.resx">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\Category_Role\UpdateRole.resx">
+      <DependentUpon>UpdateRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\Category_Shop\UpdateShop.resx">
+      <DependentUpon>UpdateShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category\Category_Supplier\UpdateSupplier.resx">
+      <DependentUpon>UpdateSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Category\Category_Warehouse\UpdateWarehouse.resx">
       <DependentUpon>UpdateWarehouse.cs</DependentUpon>

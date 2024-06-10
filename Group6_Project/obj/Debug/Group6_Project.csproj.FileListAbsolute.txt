@@ -167,3 +167,9 @@ C:\Users\user\Desktop\github\Project4915M\Group6_Project\obj\Debug\Group6_P.480E
 C:\Users\user\Desktop\github\Project4915M\Group6_Project\obj\Debug\Group6_Project.exe
 C:\Users\user\Desktop\github\Project4915M\Group6_Project\obj\Debug\Group6_Project.pdb
 C:\Users\user\Desktop\github\Project4915M\Group6_Project\obj\Debug\Group6_Project.Category.Category_Warehouse.UpdateWarehouse.resources
+C:\Users\user\Desktop\github\Project4915M\Group6_Project\obj\Debug\Group6_Project.Category.Category_Role.UpdateRole.resources
+C:\Users\user\Desktop\github\Project4915M\Group6_Project\obj\Debug\Group6_Project.Category.Category_Shop.UpdateShop.resources
+C:\Users\user\Desktop\github\Project4915M\Group6_Project\obj\Debug\Group6_Project.Category.Category_Supplier.UpdateSupplier.resources
+C:\Users\user\Desktop\github\Project4915M\Group6_Project\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\user\Desktop\github\Project4915M\Group6_Project\bin\Debug\Microsoft.VisualStudio.GraphModel.xml
+C:\Users\user\Desktop\github\Project4915M\Group6_Project\bin\Debug\zh-Hant\Microsoft.VisualStudio.GraphModel.resources.dll

@@ -22,7 +22,7 @@ namespace Group6_Project
         private void rbtnSearchSupplier_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
-            SearchSupplier searchsupplier = new SearchSupplier() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            SearchSupplier searchsupplier = new SearchSupplier(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             searchsupplier.FormBorderStyle = FormBorderStyle.None;
             this.panFormLoad.Controls.Add(searchsupplier);
             searchsupplier.Show();

@@ -22,7 +22,7 @@ namespace Group6_Project
         private void rbtnSearchRole_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
-            SearchRole searchrole = new SearchRole() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            SearchRole searchrole = new SearchRole(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             searchrole.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(searchrole);
             searchrole.Show();

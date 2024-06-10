@@ -47,6 +47,7 @@
             this.label1.Size = new System.Drawing.Size(174, 24);
             this.label1.TabIndex = 11;
             this.label1.Text = "Warehouse Name: ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // roundTextBox1
             // 
@@ -69,6 +70,7 @@
             this.roundTextBox1.TabIndex = 10;
             this.roundTextBox1.Texts = "";
             this.roundTextBox1.UnderlinedStyle = true;
+            this.roundTextBox1._TextChanged += new System.EventHandler(this.roundTextBox1__TextChanged);
             // 
             // label2
             // 
@@ -80,6 +82,7 @@
             this.label2.Size = new System.Drawing.Size(85, 24);
             this.label2.TabIndex = 12;
             this.label2.Text = "Update : ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -91,6 +94,7 @@
             this.label3.Size = new System.Drawing.Size(218, 24);
             this.label3.TabIndex = 19;
             this.label3.Text = "New Warehouse Phone:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // roundTextBox2
             // 
@@ -113,6 +117,7 @@
             this.roundTextBox2.TabIndex = 18;
             this.roundTextBox2.Texts = "";
             this.roundTextBox2.UnderlinedStyle = true;
+            this.roundTextBox2._TextChanged += new System.EventHandler(this.roundTextBox2__TextChanged);
             // 
             // roundButton1
             // 

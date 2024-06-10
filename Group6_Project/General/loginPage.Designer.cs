@@ -34,7 +34,7 @@ namespace Group6_Project
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
-            this.roundButton2 = new Group6_Project.CustomControls.RoundButton();
+            this.rbtnForgotPassword = new Group6_Project.CustomControls.RoundButton();
             this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
             this.roundTextBox2 = new Group6_Project.RoundTextBox();
             this.roundTextBox1 = new Group6_Project.RoundTextBox();
@@ -57,7 +57,7 @@ namespace Group6_Project
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(591, 198);
+            this.label1.Location = new System.Drawing.Point(600, 197);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(163, 26);
             this.label1.TabIndex = 1;
@@ -90,24 +90,25 @@ namespace Group6_Project
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // roundButton2
+            // rbtnForgotPassword
             // 
-            this.roundButton2.BackColor = System.Drawing.Color.White;
-            this.roundButton2.BackgroundColor = System.Drawing.Color.White;
-            this.roundButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.roundButton2.BorderRadius = 23;
-            this.roundButton2.BorderSize = 1;
-            this.roundButton2.FlatAppearance.BorderSize = 0;
-            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton2.ForeColor = System.Drawing.Color.DimGray;
-            this.roundButton2.Location = new System.Drawing.Point(557, 470);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(112, 34);
-            this.roundButton2.TabIndex = 13;
-            this.roundButton2.Text = "Forgot Password";
-            this.roundButton2.TextColor = System.Drawing.Color.DimGray;
-            this.roundButton2.UseVisualStyleBackColor = false;
-            this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
+            this.rbtnForgotPassword.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnForgotPassword.BackgroundColor = System.Drawing.Color.Transparent;
+            this.rbtnForgotPassword.BorderColor = System.Drawing.Color.Transparent;
+            this.rbtnForgotPassword.BorderRadius = 10;
+            this.rbtnForgotPassword.BorderSize = 1;
+            this.rbtnForgotPassword.FlatAppearance.BorderSize = 0;
+            this.rbtnForgotPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnForgotPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnForgotPassword.ForeColor = System.Drawing.Color.DimGray;
+            this.rbtnForgotPassword.Location = new System.Drawing.Point(622, 514);
+            this.rbtnForgotPassword.Name = "rbtnForgotPassword";
+            this.rbtnForgotPassword.Size = new System.Drawing.Size(132, 34);
+            this.rbtnForgotPassword.TabIndex = 13;
+            this.rbtnForgotPassword.Text = "Forgot Password?";
+            this.rbtnForgotPassword.TextColor = System.Drawing.Color.DimGray;
+            this.rbtnForgotPassword.UseVisualStyleBackColor = false;
+            this.rbtnForgotPassword.Click += new System.EventHandler(this.rbtnForgotPassword_Click);
             // 
             // roundButton1
             // 
@@ -118,8 +119,9 @@ namespace Group6_Project
             this.roundButton1.BorderSize = 1;
             this.roundButton1.FlatAppearance.BorderSize = 0;
             this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundButton1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundButton1.Location = new System.Drawing.Point(695, 470);
+            this.roundButton1.Location = new System.Drawing.Point(626, 474);
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.Size = new System.Drawing.Size(112, 34);
             this.roundButton1.TabIndex = 12;
@@ -137,7 +139,7 @@ namespace Group6_Project
             this.roundTextBox2.BorderSize = 2;
             this.roundTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox2.Location = new System.Drawing.Point(557, 387);
+            this.roundTextBox2.Location = new System.Drawing.Point(560, 414);
             this.roundTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox2.Multiline = false;
             this.roundTextBox2.Name = "roundTextBox2";
@@ -160,7 +162,7 @@ namespace Group6_Project
             this.roundTextBox1.BorderSize = 2;
             this.roundTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox1.Location = new System.Drawing.Point(557, 309);
+            this.roundTextBox1.Location = new System.Drawing.Point(560, 357);
             this.roundTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox1.Multiline = false;
             this.roundTextBox1.Name = "roundTextBox1";
@@ -180,7 +182,7 @@ namespace Group6_Project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1317, 748);
-            this.Controls.Add(this.roundButton2);
+            this.Controls.Add(this.rbtnForgotPassword);
             this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.roundTextBox2);
             this.Controls.Add(this.roundTextBox1);
@@ -204,7 +206,7 @@ namespace Group6_Project
         private RoundTextBox roundTextBox1;
         private RoundTextBox roundTextBox2;
         private CustomControls.RoundButton roundButton1;
-        private CustomControls.RoundButton roundButton2;
+        private CustomControls.RoundButton rbtnForgotPassword;
         private System.Windows.Forms.Button btnClose;
     }
 }

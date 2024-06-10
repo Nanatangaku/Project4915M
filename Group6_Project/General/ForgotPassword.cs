@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 
 namespace Group6_Project
 {
-    public partial class loginPage : Form
+    public partial class ForgotPassword : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -26,17 +26,67 @@ namespace Group6_Project
            int nHeightEllipse
            );
 
-        public loginPage()
+        public ForgotPassword()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
 
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundTextBox1__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void roundButton1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void roundTextBox1__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundTextBox2__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void rbtnVerify_Click(object sender, EventArgs e)
+        {
             //get the roundtestbox text
-            string username = roundTextBox1.Texts;
-            string password = roundTextBox2.Texts;
+            string username = rtxtUserName.Texts;
+            string password = rtxtEmail.Texts;
 
             username = "\"" + username + "\"";
             password = "\"" + password + "\"";
@@ -55,8 +105,6 @@ namespace Group6_Project
           
                 if (role == "HR")
                 {
-                  
-                    
                     this.Hide();
                     new HRHomePage(user_id).ShowDialog();
                     this.Close();
@@ -99,8 +147,6 @@ namespace Group6_Project
                     this.Hide();
                     new AccountingManagerHomePage(user_id).ShowDialog();
                     this.Close();
-
-
                 }
             }
             else
@@ -108,31 +154,6 @@ namespace Group6_Project
                 MessageBox.Show("Invalid username or password");
             }
             conn.Close();
-        }
-
-        private void roundTextBox1__TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundTextBox2__TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void loginPage_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void rbtnForgotPassword_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

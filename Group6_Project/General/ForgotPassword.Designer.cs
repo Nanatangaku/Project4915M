@@ -34,11 +34,11 @@ namespace Group6_Project
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
+            this.rbtnReturnLogin = new Group6_Project.CustomControls.RoundButton();
+            this.rtxtPhone = new Group6_Project.RoundTextBox();
             this.rbtnVerify = new Group6_Project.CustomControls.RoundButton();
             this.rtxtEmail = new Group6_Project.RoundTextBox();
             this.rtxtUserName = new Group6_Project.RoundTextBox();
-            this.rtxtPhone = new Group6_Project.RoundTextBox();
-            this.rbtnForgotPassword = new Group6_Project.CustomControls.RoundButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -84,12 +84,54 @@ namespace Group6_Project
             this.btnClose.Location = new System.Drawing.Point(1273, 9);
             this.btnClose.Margin = new System.Windows.Forms.Padding(0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.btnClose.Padding = new System.Windows.Forms.Padding(3);
             this.btnClose.Size = new System.Drawing.Size(35, 33);
             this.btnClose.TabIndex = 2;
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // rbtnReturnLogin
+            // 
+            this.rbtnReturnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnReturnLogin.BackgroundColor = System.Drawing.Color.Transparent;
+            this.rbtnReturnLogin.BorderColor = System.Drawing.Color.Transparent;
+            this.rbtnReturnLogin.BorderRadius = 10;
+            this.rbtnReturnLogin.BorderSize = 1;
+            this.rbtnReturnLogin.FlatAppearance.BorderSize = 0;
+            this.rbtnReturnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnReturnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnReturnLogin.ForeColor = System.Drawing.Color.DimGray;
+            this.rbtnReturnLogin.Location = new System.Drawing.Point(597, 535);
+            this.rbtnReturnLogin.Name = "rbtnReturnLogin";
+            this.rbtnReturnLogin.Size = new System.Drawing.Size(161, 34);
+            this.rbtnReturnLogin.TabIndex = 15;
+            this.rbtnReturnLogin.Text = "Wanna try login again?";
+            this.rbtnReturnLogin.TextColor = System.Drawing.Color.DimGray;
+            this.rbtnReturnLogin.UseVisualStyleBackColor = false;
+            this.rbtnReturnLogin.Click += new System.EventHandler(this.rbtnReturnLogin_Click);
+            // 
+            // rtxtPhone
+            // 
+            this.rtxtPhone.BackColor = System.Drawing.SystemColors.Window;
+            this.rtxtPhone.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.rtxtPhone.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.rtxtPhone.BorderRadius = 0;
+            this.rtxtPhone.BorderSize = 2;
+            this.rtxtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtPhone.ForeColor = System.Drawing.Color.DimGray;
+            this.rtxtPhone.Location = new System.Drawing.Point(552, 431);
+            this.rtxtPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.rtxtPhone.Multiline = false;
+            this.rtxtPhone.Name = "rtxtPhone";
+            this.rtxtPhone.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rtxtPhone.PasswordChar = false;
+            this.rtxtPhone.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.rtxtPhone.PlaceholderText = "Phone:";
+            this.rtxtPhone.Size = new System.Drawing.Size(250, 31);
+            this.rtxtPhone.TabIndex = 14;
+            this.rtxtPhone.Texts = "";
+            this.rtxtPhone.UnderlinedStyle = false;
             // 
             // rbtnVerify
             // 
@@ -121,18 +163,17 @@ namespace Group6_Project
             this.rtxtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtEmail.ForeColor = System.Drawing.Color.DimGray;
             this.rtxtEmail.Location = new System.Drawing.Point(552, 380);
-            this.rtxtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtxtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.rtxtEmail.Multiline = false;
             this.rtxtEmail.Name = "rtxtEmail";
             this.rtxtEmail.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rtxtEmail.PasswordChar = true;
+            this.rtxtEmail.PasswordChar = false;
             this.rtxtEmail.PlaceholderColor = System.Drawing.Color.DimGray;
             this.rtxtEmail.PlaceholderText = "Email:";
             this.rtxtEmail.Size = new System.Drawing.Size(250, 31);
             this.rtxtEmail.TabIndex = 11;
             this.rtxtEmail.Texts = "";
             this.rtxtEmail.UnderlinedStyle = false;
-            this.rtxtEmail._TextChanged += new System.EventHandler(this.roundTextBox2__TextChanged);
             // 
             // rtxtUserName
             // 
@@ -144,7 +185,7 @@ namespace Group6_Project
             this.rtxtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtUserName.ForeColor = System.Drawing.Color.DimGray;
             this.rtxtUserName.Location = new System.Drawing.Point(552, 330);
-            this.rtxtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtxtUserName.Margin = new System.Windows.Forms.Padding(4);
             this.rtxtUserName.Multiline = false;
             this.rtxtUserName.Name = "rtxtUserName";
             this.rtxtUserName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -155,48 +196,6 @@ namespace Group6_Project
             this.rtxtUserName.TabIndex = 10;
             this.rtxtUserName.Texts = "";
             this.rtxtUserName.UnderlinedStyle = false;
-            this.rtxtUserName._TextChanged += new System.EventHandler(this.roundTextBox1__TextChanged_1);
-            // 
-            // rtxtPhone
-            // 
-            this.rtxtPhone.BackColor = System.Drawing.SystemColors.Window;
-            this.rtxtPhone.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.rtxtPhone.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.rtxtPhone.BorderRadius = 0;
-            this.rtxtPhone.BorderSize = 2;
-            this.rtxtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtPhone.ForeColor = System.Drawing.Color.DimGray;
-            this.rtxtPhone.Location = new System.Drawing.Point(552, 431);
-            this.rtxtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.rtxtPhone.Multiline = false;
-            this.rtxtPhone.Name = "rtxtPhone";
-            this.rtxtPhone.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rtxtPhone.PasswordChar = true;
-            this.rtxtPhone.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.rtxtPhone.PlaceholderText = "Phone:";
-            this.rtxtPhone.Size = new System.Drawing.Size(250, 31);
-            this.rtxtPhone.TabIndex = 14;
-            this.rtxtPhone.Texts = "";
-            this.rtxtPhone.UnderlinedStyle = false;
-            // 
-            // rbtnForgotPassword
-            // 
-            this.rbtnForgotPassword.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnForgotPassword.BackgroundColor = System.Drawing.Color.Transparent;
-            this.rbtnForgotPassword.BorderColor = System.Drawing.Color.Transparent;
-            this.rbtnForgotPassword.BorderRadius = 10;
-            this.rbtnForgotPassword.BorderSize = 1;
-            this.rbtnForgotPassword.FlatAppearance.BorderSize = 0;
-            this.rbtnForgotPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtnForgotPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnForgotPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.rbtnForgotPassword.Location = new System.Drawing.Point(597, 535);
-            this.rbtnForgotPassword.Name = "rbtnForgotPassword";
-            this.rbtnForgotPassword.Size = new System.Drawing.Size(161, 34);
-            this.rbtnForgotPassword.TabIndex = 15;
-            this.rbtnForgotPassword.Text = "Wanna try login again?";
-            this.rbtnForgotPassword.TextColor = System.Drawing.Color.DimGray;
-            this.rbtnForgotPassword.UseVisualStyleBackColor = false;
             // 
             // ForgotPassword
             // 
@@ -204,7 +203,7 @@ namespace Group6_Project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1317, 748);
-            this.Controls.Add(this.rbtnForgotPassword);
+            this.Controls.Add(this.rbtnReturnLogin);
             this.Controls.Add(this.rtxtPhone);
             this.Controls.Add(this.rbtnVerify);
             this.Controls.Add(this.rtxtEmail);
@@ -213,7 +212,6 @@ namespace Group6_Project
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ForgotPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.loginPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -231,6 +229,6 @@ namespace Group6_Project
         private CustomControls.RoundButton rbtnVerify;
         private System.Windows.Forms.Button btnClose;
         private RoundTextBox rtxtPhone;
-        private CustomControls.RoundButton rbtnForgotPassword;
+        private CustomControls.RoundButton rbtnReturnLogin;
     }
 }

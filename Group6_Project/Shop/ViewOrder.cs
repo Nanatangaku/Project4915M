@@ -25,11 +25,13 @@ namespace Group6_Project
             InitializeComponent();
             this.user_id = user_id;
             this.panformload = panformLoad;
+           
         }
 
         private void ViewOrder_Load(object sender, EventArgs e)
         {
             ViewOrder_dvg_load();
+            cbfilter.SelectedIndex = 0;
         }
 
         public void ViewOrder_dvg_load()
@@ -78,6 +80,9 @@ namespace Group6_Project
 
         }
 
-  
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

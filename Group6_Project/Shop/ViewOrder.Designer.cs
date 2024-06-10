@@ -30,8 +30,9 @@
         {
             this.mySqlDataAdapter1 = new MySql.Data.MySqlClient.MySqlDataAdapter();
             this.dvgvieworder_request = new System.Windows.Forms.DataGridView();
-            this.lblsearchname = new System.Windows.Forms.Label();
+            this.lblsearchid = new System.Windows.Forms.Label();
             this.txtfilter = new Group6_Project.RoundTextBox();
+            this.cbfilter = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvgvieworder_request)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,23 +47,23 @@
             // 
             this.dvgvieworder_request.AllowUserToAddRows = false;
             this.dvgvieworder_request.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgvieworder_request.Location = new System.Drawing.Point(47, 110);
+            this.dvgvieworder_request.Location = new System.Drawing.Point(25, 106);
             this.dvgvieworder_request.Name = "dvgvieworder_request";
             this.dvgvieworder_request.RowTemplate.Height = 24;
-            this.dvgvieworder_request.Size = new System.Drawing.Size(863, 493);
+            this.dvgvieworder_request.Size = new System.Drawing.Size(988, 493);
             this.dvgvieworder_request.TabIndex = 1;
             this.dvgvieworder_request.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgvieworder_request_CellContentClick);
             // 
-            // lblsearchname
+            // lblsearchid
             // 
-            this.lblsearchname.AutoSize = true;
-            this.lblsearchname.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblsearchname.ForeColor = System.Drawing.Color.White;
-            this.lblsearchname.Location = new System.Drawing.Point(80, 50);
-            this.lblsearchname.Name = "lblsearchname";
-            this.lblsearchname.Size = new System.Drawing.Size(166, 24);
-            this.lblsearchname.TabIndex = 2;
-            this.lblsearchname.Text = "Search by Name:";
+            this.lblsearchid.AutoSize = true;
+            this.lblsearchid.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblsearchid.ForeColor = System.Drawing.Color.White;
+            this.lblsearchid.Location = new System.Drawing.Point(21, 37);
+            this.lblsearchid.Name = "lblsearchid";
+            this.lblsearchid.Size = new System.Drawing.Size(195, 24);
+            this.lblsearchid.TabIndex = 2;
+            this.lblsearchid.Text = "Search by Order ID:";
             // 
             // txtfilter
             // 
@@ -73,26 +74,43 @@
             this.txtfilter.BorderSize = 2;
             this.txtfilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfilter.ForeColor = System.Drawing.Color.DimGray;
-            this.txtfilter.Location = new System.Drawing.Point(274, 50);
+            this.txtfilter.Location = new System.Drawing.Point(223, 37);
             this.txtfilter.Margin = new System.Windows.Forms.Padding(4);
             this.txtfilter.Multiline = false;
             this.txtfilter.Name = "txtfilter";
             this.txtfilter.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtfilter.PasswordChar = false;
             this.txtfilter.PlaceholderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtfilter.PlaceholderText = "name";
-            this.txtfilter.Size = new System.Drawing.Size(261, 31);
+            this.txtfilter.PlaceholderText = "";
+            this.txtfilter.Size = new System.Drawing.Size(367, 31);
             this.txtfilter.TabIndex = 0;
             this.txtfilter.Texts = "";
             this.txtfilter.UnderlinedStyle = false;
+            // 
+            // cbfilter
+            // 
+            this.cbfilter.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cbfilter.FormattingEnabled = true;
+            this.cbfilter.Items.AddRange(new object[] {
+            "All",
+            "Waiting to Process",
+            "Dispatch",
+            "Delivering",
+            "Complete Order"});
+            this.cbfilter.Location = new System.Drawing.Point(799, 34);
+            this.cbfilter.Name = "cbfilter";
+            this.cbfilter.Size = new System.Drawing.Size(214, 32);
+            this.cbfilter.TabIndex = 3;
+            this.cbfilter.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // ViewOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1301, 709);
-            this.Controls.Add(this.lblsearchname);
+            this.ClientSize = new System.Drawing.Size(1025, 679);
+            this.Controls.Add(this.cbfilter);
+            this.Controls.Add(this.lblsearchid);
             this.Controls.Add(this.dvgvieworder_request);
             this.Controls.Add(this.txtfilter);
             this.Name = "ViewOrder";
@@ -109,6 +127,7 @@
         private RoundTextBox txtfilter;
         private MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
         private System.Windows.Forms.DataGridView dvgvieworder_request;
-        private System.Windows.Forms.Label lblsearchname;
+        private System.Windows.Forms.Label lblsearchid;
+        private System.Windows.Forms.ComboBox cbfilter;
     }
 }

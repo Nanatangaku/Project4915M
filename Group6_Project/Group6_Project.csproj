@@ -108,6 +108,12 @@
     <Compile Include="Accounting\AccountingManagerHomePage.Designer.cs">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delivery\DeliveryOrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery\DeliveryOrderDetail.Designer.cs">
+      <DependentUpon>DeliveryOrderDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Delivery\DeliveryOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -365,6 +371,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Delivery\DeliveryOrder.resx">
       <DependentUpon>DeliveryOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery\DeliveryOrderDetail.resx">
+      <DependentUpon>DeliveryOrderDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="General\ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>

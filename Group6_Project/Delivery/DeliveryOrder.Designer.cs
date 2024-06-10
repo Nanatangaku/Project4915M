@@ -53,6 +53,7 @@
             this.txtboxsearchbyid.Name = "txtboxsearchbyid";
             this.txtboxsearchbyid.Size = new System.Drawing.Size(460, 36);
             this.txtboxsearchbyid.TabIndex = 1;
+            this.txtboxsearchbyid.TextChanged += new System.EventHandler(this.txtboxsearchbyid_TextChanged);
             // 
             // cbstatusfilter
             // 
@@ -60,11 +61,12 @@
             this.cbstatusfilter.FormattingEnabled = true;
             this.cbstatusfilter.Items.AddRange(new object[] {
             "Waiting to delivery",
-            "Delivering"});
+            "Delivered"});
             this.cbstatusfilter.Location = new System.Drawing.Point(947, 65);
             this.cbstatusfilter.Name = "cbstatusfilter";
             this.cbstatusfilter.Size = new System.Drawing.Size(200, 32);
             this.cbstatusfilter.TabIndex = 2;
+            this.cbstatusfilter.SelectedIndexChanged += new System.EventHandler(this.cbstatusfilter_SelectedIndexChanged);
             // 
             // dvgdeliveryorder
             // 
@@ -75,6 +77,7 @@
             this.dvgdeliveryorder.RowTemplate.Height = 24;
             this.dvgdeliveryorder.Size = new System.Drawing.Size(1050, 465);
             this.dvgdeliveryorder.TabIndex = 3;
+            this.dvgdeliveryorder.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgdeliveryorder_CellContentClick);
             // 
             // DeliveryOrder
             // 

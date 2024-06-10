@@ -48,6 +48,7 @@
             this.dvgitem = new System.Windows.Forms.DataGridView();
             this.lblamounttext = new System.Windows.Forms.Label();
             this.lbltotalamount = new System.Windows.Forms.Label();
+            this.btnreceive = new Group6_Project.CustomControls.RoundButton();
             this.btndelete = new Group6_Project.CustomControls.RoundButton();
             this.btnsave = new Group6_Project.CustomControls.RoundButton();
             this.gbgeneral.SuspendLayout();
@@ -97,7 +98,7 @@
             this.gbgeneral.ForeColor = System.Drawing.Color.White;
             this.gbgeneral.Location = new System.Drawing.Point(55, 60);
             this.gbgeneral.Name = "gbgeneral";
-            this.gbgeneral.Size = new System.Drawing.Size(889, 252);
+            this.gbgeneral.Size = new System.Drawing.Size(949, 252);
             this.gbgeneral.TabIndex = 2;
             this.gbgeneral.TabStop = false;
             this.gbgeneral.Text = "General";
@@ -225,9 +226,9 @@
             this.gbitem.Controls.Add(this.dvgitem);
             this.gbitem.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.gbitem.ForeColor = System.Drawing.Color.White;
-            this.gbitem.Location = new System.Drawing.Point(55, 318);
+            this.gbitem.Location = new System.Drawing.Point(55, 327);
             this.gbitem.Name = "gbitem";
-            this.gbitem.Size = new System.Drawing.Size(889, 175);
+            this.gbitem.Size = new System.Drawing.Size(949, 242);
             this.gbitem.TabIndex = 3;
             this.gbitem.TabStop = false;
             this.gbitem.Text = "Item";
@@ -236,10 +237,10 @@
             // 
             this.dvgitem.AllowUserToAddRows = false;
             this.dvgitem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgitem.Location = new System.Drawing.Point(23, 22);
+            this.dvgitem.Location = new System.Drawing.Point(6, 23);
             this.dvgitem.Name = "dvgitem";
             this.dvgitem.RowTemplate.Height = 24;
-            this.dvgitem.Size = new System.Drawing.Size(824, 132);
+            this.dvgitem.Size = new System.Drawing.Size(937, 212);
             this.dvgitem.TabIndex = 0;
             // 
             // lblamounttext
@@ -247,7 +248,7 @@
             this.lblamounttext.AutoSize = true;
             this.lblamounttext.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblamounttext.ForeColor = System.Drawing.Color.White;
-            this.lblamounttext.Location = new System.Drawing.Point(62, 505);
+            this.lblamounttext.Location = new System.Drawing.Point(51, 590);
             this.lblamounttext.Name = "lblamounttext";
             this.lblamounttext.Size = new System.Drawing.Size(142, 24);
             this.lblamounttext.TabIndex = 6;
@@ -262,6 +263,25 @@
             this.lbltotalamount.Name = "lbltotalamount";
             this.lbltotalamount.Size = new System.Drawing.Size(0, 24);
             this.lbltotalamount.TabIndex = 7;
+            // 
+            // btnreceive
+            // 
+            this.btnreceive.BackColor = System.Drawing.Color.Red;
+            this.btnreceive.BackgroundColor = System.Drawing.Color.Red;
+            this.btnreceive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.btnreceive.BorderRadius = 16;
+            this.btnreceive.BorderSize = 0;
+            this.btnreceive.FlatAppearance.BorderSize = 0;
+            this.btnreceive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreceive.ForeColor = System.Drawing.Color.White;
+            this.btnreceive.Location = new System.Drawing.Point(680, 12);
+            this.btnreceive.Name = "btnreceive";
+            this.btnreceive.Size = new System.Drawing.Size(103, 42);
+            this.btnreceive.TabIndex = 8;
+            this.btnreceive.Text = "Receive";
+            this.btnreceive.TextColor = System.Drawing.Color.White;
+            this.btnreceive.UseVisualStyleBackColor = false;
+            this.btnreceive.Click += new System.EventHandler(this.btnreceive_Click);
             // 
             // btndelete
             // 
@@ -306,7 +326,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(987, 551);
+            this.ClientSize = new System.Drawing.Size(1025, 679);
+            this.Controls.Add(this.btnreceive);
             this.Controls.Add(this.lbltotalamount);
             this.Controls.Add(this.lblamounttext);
             this.Controls.Add(this.btndelete);
@@ -350,5 +371,6 @@
         private System.Windows.Forms.TextBox txtboxcreatorid;
         private System.Windows.Forms.TextBox txtboxorderid;
         private System.Windows.Forms.DateTimePicker dtpexpecteddate;
+        private CustomControls.RoundButton btnreceive;
     }
 }

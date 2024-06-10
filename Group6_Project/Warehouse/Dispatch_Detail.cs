@@ -85,6 +85,17 @@ namespace Group6_Project
                 MessageBox.Show("Order id "+order_id +" is Dispatched");
             }
             conn.Close();
+            string sql2 = "update delivery set despatch_date = now() where order_id = " + order_id;
+            conn.Open();
+            MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
+            if (cmd2.ExecuteNonQuery() >= 1)
+            {
+
+            } else {
+                MessageBox.Show("despatch_date set error ");
+            } 
+                  
+            conn.Close();
         }
 
         private Boolean checkdispached()

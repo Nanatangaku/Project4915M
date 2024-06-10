@@ -16,10 +16,9 @@ namespace Group6_Project
         MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
         int user_id;
         Panel panformload;
-        int order_status_waittoprocess = 1;
-        int order_status_dispatch = 4;
-        int order_status_dispatched = 3;
-        int order_status_cancel = 8;
+        int order_id;
+        int order_status_id;
+        int delivery_id;
 
         public ViewOrder(int user_id, Panel panformLoad)
         {
@@ -42,14 +41,14 @@ namespace Group6_Project
             btn.Name = "btndetail";
             btn.UseColumnTextForButtonValue = true;
 
-            string sql = "select order_id,payment from order_request where user_id = " + user_id + " and order_status_id <> " +  order_status_cancel  + "; ";
-            MySqlCommand cmd = new MySqlCommand(sql, conn);
-            conn.Open();
-            MySqlDataReader reader = cmd.ExecuteReader();
+            string sql = "select order_request.order_id,order_request.payment,order_request.address,delivery.create_date,delivery.despatch_date,delivery.recive_date,order_status.status from order_request,delivery,order_status where order_request.order_id = delivery.order_id and order_request.order_status_id = order_status.order_status_id and order_request.user_id = " + user_id;
+            MySqlDataAdapter adapter = new MySqlDataAdapter(sql, conn);
             DataTable dt = new DataTable();
-            dt.Load(reader);
+            adapter.Fill(dt);
             dvgvieworder_request.DataSource = dt;
-            conn.Close();
+
+
+
 
             dvgvieworder_request.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
@@ -63,15 +62,20 @@ namespace Group6_Project
                 int index = e.RowIndex;
                 DataGridViewRow selectedRow = dvgvieworder_request.Rows[index];
                 int order_id = Convert.ToInt32(selectedRow.Cells["order_id"].Value);
+                String order_status = selectedRow.Cells["status"].Value.ToString();
 
                 this.panformload.Controls.Clear();
-                OrderDetail orderDetail = new OrderDetail(order_id,this.panformload,this.user_id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                OrderDetail orderDetail = new OrderDetail(order_id,order_status,this.panformload,this.user_id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 orderDetail.FormBorderStyle = FormBorderStyle.None;
                 this.panformload.Controls.Add(orderDetail);
                 orderDetail.Show();
 
             }
            
+        }
+        private void initialize_basic_info()
+        {
+
         }
 
   

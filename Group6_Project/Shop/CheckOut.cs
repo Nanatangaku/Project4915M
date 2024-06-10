@@ -42,7 +42,7 @@ namespace Group6_Project
                 txtboxname.Text = reader["last_name"].ToString();
             }
             conn.Close();
-            String sql2 = "select * from shop where user_id = " + user_id;
+            String sql2 = "select shop.shop_id,shop.shopname from shop ,user where user.shop_id = shop.shop_id and user.user_id = " + user_id;
             MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
             conn.Open();
             MySqlDataReader reader2 = cmd2.ExecuteReader();

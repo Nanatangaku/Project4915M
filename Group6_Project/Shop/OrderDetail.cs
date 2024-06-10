@@ -18,17 +18,19 @@ namespace Group6_Project
         Panel panFormLoad;
         int delivery_id;
         int status_id;
-
+        String order_status;
         MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
         int user_id;
-        public OrderDetail(int order_id ,Panel panformload,int user_id)
+        public OrderDetail( int order_id,String order_status,Panel panformload,int user_id)
         {
             InitializeComponent();
             this.panFormLoad = panformload;
             this.order_id = order_id;
             this.user_id = user_id;
+            this.order_status = order_status;
             OrderDetail_Load();
             load_order_items();
+            order_status_load_btn(order_status);
      
             
         }
@@ -199,6 +201,44 @@ namespace Group6_Project
         private void dtpexpecteddate_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+        private void order_status_load_btn(string order_status)
+        {
+            if(order_status == "waiting to process")
+            {
+                btndelete.Visible = true;
+                btnsave.Visible = true;
+                btnreceive.Visible = false;
+            }
+            else if(order_status == "despatched")
+            {
+                btndelete.Visible = false;
+                btnsave.Visible = false;
+                btnreceive.Visible = true;
+            }else if(order_status == "Received")
+            {
+                btndelete.Visible = false;
+                btnsave.Visible = false;
+                btnreceive.Visible = false;
+            }
+        }
+
+        private void btnreceive_Click(object sender, EventArgs e)
+        {
+            string sql = "update order_request set order_status_id = 9 where order_id = " + order_id;
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            conn.Open();
+            if (cmd.ExecuteNonQuery() >= 1)
+            {
+                MessageBox.Show("Order id " + order_id + " is Received");
+            }
+            conn.Close();
+
+            this.panFormLoad.Controls.Clear();
+            DispatchNotes dispatchnotes = new DispatchNotes(user_id, panFormLoad,order_id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            dispatchnotes.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(dispatchnotes);
+            dispatchnotes.Show();
         }
     }
 }

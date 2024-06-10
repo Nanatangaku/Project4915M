@@ -46,7 +46,7 @@
             // 
             this.dvgvieworder_request.AllowUserToAddRows = false;
             this.dvgvieworder_request.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgvieworder_request.Location = new System.Drawing.Point(80, 109);
+            this.dvgvieworder_request.Location = new System.Drawing.Point(47, 110);
             this.dvgvieworder_request.Name = "dvgvieworder_request";
             this.dvgvieworder_request.RowTemplate.Height = 24;
             this.dvgvieworder_request.Size = new System.Drawing.Size(863, 493);

@@ -105,17 +105,18 @@
             // 
             // dtpexpecteddate
             // 
-            this.dtpexpecteddate.Location = new System.Drawing.Point(285, 195);
+            this.dtpexpecteddate.Location = new System.Drawing.Point(273, 195);
             this.dtpexpecteddate.Name = "dtpexpecteddate";
-            this.dtpexpecteddate.Size = new System.Drawing.Size(113, 36);
+            this.dtpexpecteddate.Size = new System.Drawing.Size(185, 36);
             this.dtpexpecteddate.TabIndex = 23;
+            this.dtpexpecteddate.ValueChanged += new System.EventHandler(this.dtpexpecteddate_ValueChanged);
             // 
             // txtstatus
             // 
             this.txtstatus.Location = new System.Drawing.Point(664, 129);
             this.txtstatus.Name = "txtstatus";
             this.txtstatus.ReadOnly = true;
-            this.txtstatus.Size = new System.Drawing.Size(100, 36);
+            this.txtstatus.Size = new System.Drawing.Size(155, 36);
             this.txtstatus.TabIndex = 21;
             // 
             // txtname
@@ -123,7 +124,7 @@
             this.txtname.Location = new System.Drawing.Point(664, 79);
             this.txtname.Name = "txtname";
             this.txtname.ReadOnly = true;
-            this.txtname.Size = new System.Drawing.Size(100, 36);
+            this.txtname.Size = new System.Drawing.Size(120, 36);
             this.txtname.TabIndex = 20;
             this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
             // 

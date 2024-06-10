@@ -114,6 +114,12 @@
     <Compile Include="Accounting\AccountingManagerHomePage.Designer.cs">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shop\DispatchNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shop\DispatchNotes.Designer.cs">
+      <DependentUpon>DispatchNotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Warehouse\StockRecord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -416,6 +422,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Shop\CheckOut.resx">
       <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop\DispatchNotes.resx">
+      <DependentUpon>DispatchNotes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shop\OrderDetail.resx">
       <DependentUpon>OrderDetail.cs</DependentUpon>

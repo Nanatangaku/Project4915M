@@ -40,7 +40,11 @@
             this.dvgpreadditem = new System.Windows.Forms.DataGridView();
             this.cbitem = new System.Windows.Forms.ComboBox();
             this.btnconfirm = new System.Windows.Forms.Button();
+            this.gbinput = new System.Windows.Forms.GroupBox();
+            this.gbreciveitem = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvgpreadditem)).BeginInit();
+            this.gbinput.SuspendLayout();
+            this.gbreciveitem.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbluserid
@@ -48,7 +52,7 @@
             this.lbluserid.AutoSize = true;
             this.lbluserid.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lbluserid.ForeColor = System.Drawing.Color.White;
-            this.lbluserid.Location = new System.Drawing.Point(125, 45);
+            this.lbluserid.Location = new System.Drawing.Point(64, 52);
             this.lbluserid.Name = "lbluserid";
             this.lbluserid.Size = new System.Drawing.Size(89, 24);
             this.lbluserid.TabIndex = 1;
@@ -59,7 +63,7 @@
             this.lblrole.AutoSize = true;
             this.lblrole.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblrole.ForeColor = System.Drawing.Color.White;
-            this.lblrole.Location = new System.Drawing.Point(609, 45);
+            this.lblrole.Location = new System.Drawing.Point(494, 43);
             this.lblrole.Name = "lblrole";
             this.lblrole.Size = new System.Drawing.Size(58, 24);
             this.lblrole.TabIndex = 2;
@@ -69,7 +73,7 @@
             // 
             this.txtboxuserid.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtboxuserid.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtboxuserid.Location = new System.Drawing.Point(220, 38);
+            this.txtboxuserid.Location = new System.Drawing.Point(183, 40);
             this.txtboxuserid.Name = "txtboxuserid";
             this.txtboxuserid.ReadOnly = true;
             this.txtboxuserid.Size = new System.Drawing.Size(186, 36);
@@ -79,7 +83,7 @@
             // 
             this.txtboxrole.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtboxrole.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtboxrole.Location = new System.Drawing.Point(682, 38);
+            this.txtboxrole.Location = new System.Drawing.Point(558, 40);
             this.txtboxrole.Name = "txtboxrole";
             this.txtboxrole.ReadOnly = true;
             this.txtboxrole.Size = new System.Drawing.Size(218, 36);
@@ -87,7 +91,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(220, 203);
+            this.btnadd.Location = new System.Drawing.Point(183, 172);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(102, 34);
             this.btnadd.TabIndex = 5;
@@ -97,7 +101,7 @@
             // 
             // btnclear
             // 
-            this.btnclear.Location = new System.Drawing.Point(359, 203);
+            this.btnclear.Location = new System.Drawing.Point(303, 172);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(102, 34);
             this.btnclear.TabIndex = 7;
@@ -110,7 +114,7 @@
             this.lblitem.AutoSize = true;
             this.lblitem.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblitem.ForeColor = System.Drawing.Color.White;
-            this.lblitem.Location = new System.Drawing.Point(156, 105);
+            this.lblitem.Location = new System.Drawing.Point(73, 103);
             this.lblitem.Name = "lblitem";
             this.lblitem.Size = new System.Drawing.Size(58, 24);
             this.lblitem.TabIndex = 8;
@@ -121,7 +125,7 @@
             this.lblquantity.AutoSize = true;
             this.lblquantity.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblquantity.ForeColor = System.Drawing.Color.White;
-            this.lblquantity.Location = new System.Drawing.Point(574, 105);
+            this.lblquantity.Location = new System.Drawing.Point(459, 103);
             this.lblquantity.Name = "lblquantity";
             this.lblquantity.Size = new System.Drawing.Size(93, 24);
             this.lblquantity.TabIndex = 9;
@@ -131,7 +135,7 @@
             // 
             this.txtboxquantity.BackColor = System.Drawing.SystemColors.Window;
             this.txtboxquantity.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtboxquantity.Location = new System.Drawing.Point(682, 102);
+            this.txtboxquantity.Location = new System.Drawing.Point(558, 103);
             this.txtboxquantity.Name = "txtboxquantity";
             this.txtboxquantity.Size = new System.Drawing.Size(79, 36);
             this.txtboxquantity.TabIndex = 10;
@@ -140,17 +144,17 @@
             // 
             this.dvgpreadditem.AllowUserToAddRows = false;
             this.dvgpreadditem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgpreadditem.Location = new System.Drawing.Point(220, 264);
+            this.dvgpreadditem.Location = new System.Drawing.Point(15, 27);
             this.dvgpreadditem.Name = "dvgpreadditem";
             this.dvgpreadditem.RowTemplate.Height = 24;
-            this.dvgpreadditem.Size = new System.Drawing.Size(680, 225);
+            this.dvgpreadditem.Size = new System.Drawing.Size(869, 264);
             this.dvgpreadditem.TabIndex = 11;
             // 
             // cbitem
             // 
             this.cbitem.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cbitem.FormattingEnabled = true;
-            this.cbitem.Location = new System.Drawing.Point(220, 102);
+            this.cbitem.Location = new System.Drawing.Point(183, 103);
             this.cbitem.Name = "cbitem";
             this.cbitem.Size = new System.Drawing.Size(186, 32);
             this.cbitem.TabIndex = 12;
@@ -158,7 +162,7 @@
             // 
             // btnconfirm
             // 
-            this.btnconfirm.Location = new System.Drawing.Point(764, 531);
+            this.btnconfirm.Location = new System.Drawing.Point(828, 625);
             this.btnconfirm.Name = "btnconfirm";
             this.btnconfirm.Size = new System.Drawing.Size(136, 42);
             this.btnconfirm.TabIndex = 13;
@@ -166,30 +170,56 @@
             this.btnconfirm.UseVisualStyleBackColor = true;
             this.btnconfirm.Click += new System.EventHandler(this.btnconfirm_Click);
             // 
+            // gbinput
+            // 
+            this.gbinput.Controls.Add(this.lbluserid);
+            this.gbinput.Controls.Add(this.txtboxuserid);
+            this.gbinput.Controls.Add(this.cbitem);
+            this.gbinput.Controls.Add(this.txtboxquantity);
+            this.gbinput.Controls.Add(this.lblitem);
+            this.gbinput.Controls.Add(this.lblquantity);
+            this.gbinput.Controls.Add(this.btnadd);
+            this.gbinput.Controls.Add(this.txtboxrole);
+            this.gbinput.Controls.Add(this.btnclear);
+            this.gbinput.Controls.Add(this.lblrole);
+            this.gbinput.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.gbinput.ForeColor = System.Drawing.Color.White;
+            this.gbinput.Location = new System.Drawing.Point(74, 48);
+            this.gbinput.Name = "gbinput";
+            this.gbinput.Size = new System.Drawing.Size(890, 247);
+            this.gbinput.TabIndex = 14;
+            this.gbinput.TabStop = false;
+            this.gbinput.Text = "groupBox1";
+            // 
+            // gbreciveitem
+            // 
+            this.gbreciveitem.Controls.Add(this.dvgpreadditem);
+            this.gbreciveitem.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.gbreciveitem.ForeColor = System.Drawing.Color.White;
+            this.gbreciveitem.Location = new System.Drawing.Point(74, 301);
+            this.gbreciveitem.Name = "gbreciveitem";
+            this.gbreciveitem.Size = new System.Drawing.Size(890, 306);
+            this.gbreciveitem.TabIndex = 15;
+            this.gbreciveitem.TabStop = false;
+            this.gbreciveitem.Text = "Receive Item";
+            // 
             // ReceivedItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1025, 679);
+            this.Controls.Add(this.gbreciveitem);
+            this.Controls.Add(this.gbinput);
             this.Controls.Add(this.btnconfirm);
-            this.Controls.Add(this.cbitem);
-            this.Controls.Add(this.dvgpreadditem);
-            this.Controls.Add(this.txtboxquantity);
-            this.Controls.Add(this.lblquantity);
-            this.Controls.Add(this.lblitem);
-            this.Controls.Add(this.btnclear);
-            this.Controls.Add(this.btnadd);
-            this.Controls.Add(this.txtboxrole);
-            this.Controls.Add(this.txtboxuserid);
-            this.Controls.Add(this.lblrole);
-            this.Controls.Add(this.lbluserid);
             this.Name = "ReceivedItem";
             this.Text = "ReceivedItem";
             this.Load += new System.EventHandler(this.ReceivedItem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvgpreadditem)).EndInit();
+            this.gbinput.ResumeLayout(false);
+            this.gbinput.PerformLayout();
+            this.gbreciveitem.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -207,5 +237,7 @@
         private System.Windows.Forms.DataGridView dvgpreadditem;
         private System.Windows.Forms.ComboBox cbitem;
         private System.Windows.Forms.Button btnconfirm;
+        private System.Windows.Forms.GroupBox gbinput;
+        private System.Windows.Forms.GroupBox gbreciveitem;
     }
 }

@@ -102,11 +102,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accounting\AccountingClerkHomePage.cs" />
+    <Compile Include="Accounting\AccountingClerkHomePage.Designer.cs">
+      <DependentUpon>AccountingClerkHomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Accounting\AccountingManagerHomePage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Accounting\AccountingManagerHomePage.Designer.cs">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Shop\DispatchNotes.cs">
       <SubType>Form</SubType>
@@ -168,6 +178,12 @@
     <Compile Include="Category\CreateCategory.Designer.cs">
       <DependentUpon>CreateCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="HR\CreateDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\CreateDepartment.Designer.cs">
+      <DependentUpon>CreateDepartment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\CreatePurchaseOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +202,10 @@
     <Compile Include="Category\CreateRole.Designer.cs">
       <DependentUpon>CreateRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delivery\CreateScheule.cs" />
+    <Compile Include="Delivery\CreateScheule.Designer.cs">
+      <DependentUpon>CreateScheule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category\CreateShop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +217,10 @@
     </Compile>
     <Compile Include="Category\CreateSupplier.Designer.cs">
       <DependentUpon>CreateSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\CreateUserInformation.cs" />
+    <Compile Include="HR\CreateUserInformation.Designer.cs">
+      <DependentUpon>CreateUserInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="Category\CreateWarehouse.cs">
       <SubType>Form</SubType>
@@ -216,11 +240,19 @@
     <Compile Include="Purchase\PurchaseOrderPage.Designer.cs">
       <DependentUpon>PurchaseOrderPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delivery\ScheulePage.cs" />
+    <Compile Include="Delivery\ScheulePage.Designer.cs">
+      <DependentUpon>ScheulePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category\SearchCategory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Category\SearchCategory.Designer.cs">
       <DependentUpon>SearchCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\SearchDepartment.cs" />
+    <Compile Include="HR\SearchDepartment.Designer.cs">
+      <DependentUpon>SearchDepartment.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\SearchPurchaseOrder.cs">
       <SubType>Form</SubType>
@@ -234,6 +266,10 @@
     <Compile Include="Category\SearchRole.Designer.cs">
       <DependentUpon>SearchRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delivery\SearchScheule.cs" />
+    <Compile Include="Delivery\SearchScheule.Designer.cs">
+      <DependentUpon>SearchScheule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category\SearchShop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +282,10 @@
     <Compile Include="Category\SearchSupplier.Designer.cs">
       <DependentUpon>SearchSupplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="HR\SearchUserInformation.cs" />
+    <Compile Include="HR\SearchUserInformation.Designer.cs">
+      <DependentUpon>SearchUserInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category\SearchWarehouse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,6 +297,10 @@
     </Compile>
     <Compile Include="General\SetRule.Designer.cs">
       <DependentUpon>SetRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\UserInformationPage.cs" />
+    <Compile Include="HR\UserInformationPage.Designer.cs">
+      <DependentUpon>UserInformationPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Warehouse\WarehouseManagerHomePage.cs">
       <SubType>Form</SubType>
@@ -288,6 +332,12 @@
     <Compile Include="Shop\ShopManagerHomePage.Designer.cs">
       <DependentUpon>ShopManagerHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="HR\HRHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HRHomePage.Designer.cs">
+      <DependentUpon>HRHomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category\CategoryPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +346,12 @@
     </Compile>
     <Compile Include="CustomControls\RoundButton.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\DepartmentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\DepartmentPage.Designer.cs">
+      <DependentUpon>DepartmentPage.cs</DependentUpon>
     </Compile>
     <Compile Include="GraphicsExtension.cs" />
     <Compile Include="General\loginPage.cs">
@@ -348,8 +404,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Accounting\AccountingClerkHomePage.resx">
+      <DependentUpon>AccountingClerkHomePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Accounting\AccountingManagerHomePage.resx">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shop\CheckOut.resx">
       <DependentUpon>CheckOut.cs</DependentUpon>
@@ -369,6 +431,9 @@
     <EmbeddedResource Include="Category\CreateCategory.resx">
       <DependentUpon>CreateCategory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HR\CreateDepartment.resx">
+      <DependentUpon>CreateDepartment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\CreatePurchaseOrder.resx">
       <DependentUpon>CreatePurchaseOrder.cs</DependentUpon>
     </EmbeddedResource>
@@ -378,11 +443,17 @@
     <EmbeddedResource Include="Category\CreateRole.resx">
       <DependentUpon>CreateRole.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Delivery\CreateScheule.resx">
+      <DependentUpon>CreateScheule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Category\CreateShop.resx">
       <DependentUpon>CreateShop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Category\CreateSupplier.resx">
       <DependentUpon>CreateSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\CreateUserInformation.resx">
+      <DependentUpon>CreateUserInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Category\CreateWarehouse.resx">
       <DependentUpon>CreateWarehouse.cs</DependentUpon>
@@ -393,8 +464,14 @@
     <EmbeddedResource Include="Purchase\PurchaseOrderPage.resx">
       <DependentUpon>PurchaseOrderPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Delivery\ScheulePage.resx">
+      <DependentUpon>ScheulePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Category\SearchCategory.resx">
       <DependentUpon>SearchCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\SearchDepartment.resx">
+      <DependentUpon>SearchDepartment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\SearchPurchaseOrder.resx">
       <DependentUpon>SearchPurchaseOrder.cs</DependentUpon>
@@ -402,17 +479,26 @@
     <EmbeddedResource Include="Category\SearchRole.resx">
       <DependentUpon>SearchRole.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Delivery\SearchScheule.resx">
+      <DependentUpon>SearchScheule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Category\SearchShop.resx">
       <DependentUpon>SearchShop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Category\SearchSupplier.resx">
       <DependentUpon>SearchSupplier.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HR\SearchUserInformation.resx">
+      <DependentUpon>SearchUserInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Category\SearchWarehouse.resx">
       <DependentUpon>SearchWarehouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="General\SetRule.resx">
       <DependentUpon>SetRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\UserInformationPage.resx">
+      <DependentUpon>UserInformationPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\Dispatch.resx">
       <DependentUpon>Dispatch.cs</DependentUpon>
@@ -441,8 +527,14 @@
     <EmbeddedResource Include="Shop\ShopManagerHomePage.resx">
       <DependentUpon>ShopManagerHomePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HR\HRHomePage.resx">
+      <DependentUpon>HRHomePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Category\CategoryPage.resx">
       <DependentUpon>CategoryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\DepartmentPage.resx">
+      <DependentUpon>DepartmentPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="General\loginPage.resx">
       <DependentUpon>loginPage.cs</DependentUpon>

@@ -31,8 +31,6 @@ namespace Group6_Project
             OrderDetail_Load();
             load_order_items();
             order_status_load_btn(order_status);
-     
-            
         }
 
         private void OrderDetail_Load()
@@ -43,7 +41,6 @@ namespace Group6_Project
             da.Fill(dt);
             dvgitem.DataSource = dt;
             dvgitem.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
         }
 
         private void lblBack_Click(object sender, EventArgs e)
@@ -235,11 +232,8 @@ namespace Group6_Project
             string sql2 =  "update delivery set received_date = '" + DateTime.Now.ToString("yyyy-MM-dd") + "' where delivery_id = " + delivery_id;
             MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
             conn.Open();
-            if (cmd2.ExecuteNonQuery() >= 1)
+            if (!(cmd2.ExecuteNonQuery() >= 1))
             {
-
-            }
-            else {
                 MessageBox.Show("Delivery recevied date not updated");
             }
             conn.Close();

@@ -49,8 +49,8 @@
             this.lbltotalamount = new System.Windows.Forms.Label();
             this.btndownloaddispatchpdf = new Group6_Project.CustomControls.RoundButton();
             this.btnreceive = new Group6_Project.CustomControls.RoundButton();
-            this.btndelete = new Group6_Project.CustomControls.RoundButton();
             this.btnsave = new Group6_Project.CustomControls.RoundButton();
+            this.btndelete = new Group6_Project.CustomControls.RoundButton();
             this.gbgeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgitem)).BeginInit();
             this.SuspendLayout();
@@ -264,7 +264,7 @@
             this.lbltotalamount.AutoSize = true;
             this.lbltotalamount.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lbltotalamount.ForeColor = System.Drawing.Color.White;
-            this.lbltotalamount.Location = new System.Drawing.Point(206, 595);
+            this.lbltotalamount.Location = new System.Drawing.Point(189, 656);
             this.lbltotalamount.Name = "lbltotalamount";
             this.lbltotalamount.Size = new System.Drawing.Size(0, 24);
             this.lbltotalamount.TabIndex = 7;
@@ -309,26 +309,6 @@
             this.btnreceive.UseVisualStyleBackColor = false;
             this.btnreceive.Click += new System.EventHandler(this.btnreceive_Click);
             // 
-            // btndelete
-            // 
-            this.btndelete.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btndelete.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btndelete.BorderColor = System.Drawing.Color.Transparent;
-            this.btndelete.BorderRadius = 16;
-            this.btndelete.BorderSize = 2;
-            this.btndelete.FlatAppearance.BorderSize = 0;
-            this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.ForeColor = System.Drawing.Color.White;
-            this.btndelete.Location = new System.Drawing.Point(638, 212);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(103, 42);
-            this.btndelete.TabIndex = 5;
-            this.btndelete.Text = "Delete";
-            this.btndelete.TextColor = System.Drawing.Color.White;
-            this.btndelete.UseVisualStyleBackColor = false;
-            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
-            // 
             // btnsave
             // 
             this.btnsave.BackColor = System.Drawing.Color.MediumSlateBlue;
@@ -348,6 +328,26 @@
             this.btnsave.TextColor = System.Drawing.Color.White;
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // btndelete
+            // 
+            this.btndelete.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btndelete.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btndelete.BorderColor = System.Drawing.Color.Transparent;
+            this.btndelete.BorderRadius = 16;
+            this.btndelete.BorderSize = 2;
+            this.btndelete.FlatAppearance.BorderSize = 0;
+            this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.ForeColor = System.Drawing.Color.White;
+            this.btndelete.Location = new System.Drawing.Point(638, 212);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(103, 42);
+            this.btndelete.TabIndex = 5;
+            this.btndelete.Text = "Delete";
+            this.btndelete.TextColor = System.Drawing.Color.White;
+            this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // OrderDetail
             // 

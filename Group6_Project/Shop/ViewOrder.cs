@@ -50,8 +50,6 @@ namespace Group6_Project
             dvgvieworder_request.DataSource = dt;
 
 
-
-
             dvgvieworder_request.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 

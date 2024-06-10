@@ -186,10 +186,11 @@
             this.dvgpreadditem.RowTemplate.Height = 24;
             this.dvgpreadditem.Size = new System.Drawing.Size(873, 334);
             this.dvgpreadditem.TabIndex = 11;
+            this.dvgpreadditem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgpreadditem_CellContentClick);
             // 
             // cbitem
             // 
-            this.cbitem.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cbitem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbitem.FormattingEnabled = true;
             this.cbitem.Location = new System.Drawing.Point(162, 96);
             this.cbitem.Name = "cbitem";

@@ -77,8 +77,7 @@ namespace Group6_Project
             dvgpreadditem.Columns.Add("quantity", "Quantity");
             dvgpreadditem.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             //set column 0 weight = 1, column 1 weight = 2, column 2 weight = 1
-
-
+            
 
         }
 
@@ -107,7 +106,7 @@ namespace Group6_Project
         private void clear_input()
         {
 
-           cbitem.Text = "";
+            cbitem.Text = "";
             txtboxquantity.Text = "";
         }
 
@@ -193,6 +192,15 @@ namespace Group6_Project
                 conn.Close();
             } else { MessageBox.Show("shop not found"); }
             return warehouse_id;
+        }
+
+        private void dvgpreadditem_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                //remove e.rowindex from dvgpreadditem
+                dvgpreadditem.Rows.RemoveAt(e.RowIndex);
+            }
         }
     }
 }

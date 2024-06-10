@@ -27,7 +27,7 @@ namespace Group6_Project
         private void rbtnSearchWare_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
-            SearchWarehouse searchwarehouse = new SearchWarehouse() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            SearchWarehouse searchwarehouse = new SearchWarehouse(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             searchwarehouse.FormBorderStyle = FormBorderStyle.None;
             this.panFormLoad.Controls.Add(searchwarehouse);
             searchwarehouse.Show();
@@ -36,7 +36,7 @@ namespace Group6_Project
         private void rbtnCreateWare_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
-            CreateWarehouse createwarehouse = new CreateWarehouse() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            CreateWarehouse createwarehouse = new CreateWarehouse(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             createwarehouse.FormBorderStyle = FormBorderStyle.None;
             this.panFormLoad.Controls.Add(createwarehouse);
             createwarehouse.Show();

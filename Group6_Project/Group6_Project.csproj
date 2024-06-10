@@ -108,6 +108,12 @@
     <Compile Include="Accounting\AccountingManagerHomePage.Designer.cs">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Category\Category_Warehouse\UpdateWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\Category_Warehouse\UpdateWarehouse.Designer.cs">
+      <DependentUpon>UpdateWarehouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Delivery\DeliveryOrderDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,28 +204,28 @@
     <Compile Include="Shop\CreateRequest.Designer.cs">
       <DependentUpon>CreateRequest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Category\CreateRole.cs">
+    <Compile Include="Category\Category_Role\CreateRole.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Category\CreateRole.Designer.cs">
+    <Compile Include="Category\Category_Role\CreateRole.Designer.cs">
       <DependentUpon>CreateRole.cs</DependentUpon>
     </Compile>
-    <Compile Include="Category\CreateShop.cs">
+    <Compile Include="Category\Category_Shop\CreateShop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Category\CreateShop.Designer.cs">
+    <Compile Include="Category\Category_Shop\CreateShop.Designer.cs">
       <DependentUpon>CreateShop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Category\CreateSupplier.cs">
+    <Compile Include="Category\Category_Supplier\CreateSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Category\CreateSupplier.Designer.cs">
+    <Compile Include="Category\Category_Supplier\CreateSupplier.Designer.cs">
       <DependentUpon>CreateSupplier.cs</DependentUpon>
     </Compile>
-    <Compile Include="Category\CreateWarehouse.cs">
+    <Compile Include="Category\Category_Warehouse\CreateWarehouse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Category\CreateWarehouse.Designer.cs">
+    <Compile Include="Category\Category_Warehouse\CreateWarehouse.Designer.cs">
       <DependentUpon>CreateWarehouse.cs</DependentUpon>
     </Compile>
     <Compile Include="Accounting\Invoice.cs">
@@ -246,28 +252,28 @@
     <Compile Include="Purchase\SearchPurchaseOrder.Designer.cs">
       <DependentUpon>SearchPurchaseOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="Category\SearchRole.cs">
+    <Compile Include="Category\Category_Role\SearchRole.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Category\SearchRole.Designer.cs">
+    <Compile Include="Category\Category_Role\SearchRole.Designer.cs">
       <DependentUpon>SearchRole.cs</DependentUpon>
     </Compile>
-    <Compile Include="Category\SearchShop.cs">
+    <Compile Include="Category\Category_Shop\SearchShop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Category\SearchShop.Designer.cs">
+    <Compile Include="Category\Category_Shop\SearchShop.Designer.cs">
       <DependentUpon>SearchShop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Category\SearchSupplier.cs">
+    <Compile Include="Category\Category_Supplier\SearchSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Category\SearchSupplier.Designer.cs">
+    <Compile Include="Category\Category_Supplier\SearchSupplier.Designer.cs">
       <DependentUpon>SearchSupplier.cs</DependentUpon>
     </Compile>
-    <Compile Include="Category\SearchWarehouse.cs">
+    <Compile Include="Category\Category_Warehouse\SearchWarehouse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Category\SearchWarehouse.Designer.cs">
+    <Compile Include="Category\Category_Warehouse\SearchWarehouse.Designer.cs">
       <DependentUpon>SearchWarehouse.cs</DependentUpon>
     </Compile>
     <Compile Include="General\SetRule.cs">
@@ -369,6 +375,9 @@
     <EmbeddedResource Include="Accounting\AccountingManagerHomePage.resx">
       <DependentUpon>AccountingManagerHomePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Category\Category_Warehouse\UpdateWarehouse.resx">
+      <DependentUpon>UpdateWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Delivery\DeliveryOrder.resx">
       <DependentUpon>DeliveryOrder.cs</DependentUpon>
     </EmbeddedResource>
@@ -402,16 +411,16 @@
     <EmbeddedResource Include="Shop\CreateRequest.resx">
       <DependentUpon>CreateRequest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Category\CreateRole.resx">
+    <EmbeddedResource Include="Category\Category_Role\CreateRole.resx">
       <DependentUpon>CreateRole.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Category\CreateShop.resx">
+    <EmbeddedResource Include="Category\Category_Shop\CreateShop.resx">
       <DependentUpon>CreateShop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Category\CreateSupplier.resx">
+    <EmbeddedResource Include="Category\Category_Supplier\CreateSupplier.resx">
       <DependentUpon>CreateSupplier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Category\CreateWarehouse.resx">
+    <EmbeddedResource Include="Category\Category_Warehouse\CreateWarehouse.resx">
       <DependentUpon>CreateWarehouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accounting\Invoice.resx">
@@ -426,16 +435,16 @@
     <EmbeddedResource Include="Purchase\SearchPurchaseOrder.resx">
       <DependentUpon>SearchPurchaseOrder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Category\SearchRole.resx">
+    <EmbeddedResource Include="Category\Category_Role\SearchRole.resx">
       <DependentUpon>SearchRole.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Category\SearchShop.resx">
+    <EmbeddedResource Include="Category\Category_Shop\SearchShop.resx">
       <DependentUpon>SearchShop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Category\SearchSupplier.resx">
+    <EmbeddedResource Include="Category\Category_Supplier\SearchSupplier.resx">
       <DependentUpon>SearchSupplier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Category\SearchWarehouse.resx">
+    <EmbeddedResource Include="Category\Category_Warehouse\SearchWarehouse.resx">
       <DependentUpon>SearchWarehouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="General\SetRule.resx">

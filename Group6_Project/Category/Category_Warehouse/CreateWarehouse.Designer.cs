@@ -33,6 +33,7 @@
             this.roundTextBox1 = new Group6_Project.RoundTextBox();
             this.roundTextBox2 = new Group6_Project.RoundTextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.roundButton2 = new Group6_Project.CustomControls.RoundButton();
             this.SuspendLayout();
             // 
             // roundButton1
@@ -45,7 +46,7 @@
             this.roundButton1.FlatAppearance.BorderSize = 0;
             this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(568, 423);
+            this.roundButton1.Location = new System.Drawing.Point(752, 432);
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.Size = new System.Drawing.Size(72, 29);
             this.roundButton1.TabIndex = 14;
@@ -120,12 +121,32 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "New Warehouse Phone:";
             // 
+            // roundButton2
+            // 
+            this.roundButton2.BackColor = System.Drawing.Color.White;
+            this.roundButton2.BackgroundColor = System.Drawing.Color.White;
+            this.roundButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.roundButton2.BorderRadius = 22;
+            this.roundButton2.BorderSize = 2;
+            this.roundButton2.FlatAppearance.BorderSize = 0;
+            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundButton2.ForeColor = System.Drawing.Color.Black;
+            this.roundButton2.Location = new System.Drawing.Point(659, 432);
+            this.roundButton2.Name = "roundButton2";
+            this.roundButton2.Size = new System.Drawing.Size(72, 29);
+            this.roundButton2.TabIndex = 21;
+            this.roundButton2.Text = "Cancel";
+            this.roundButton2.TextColor = System.Drawing.Color.Black;
+            this.roundButton2.UseVisualStyleBackColor = false;
+            this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
+            // 
             // CreateWarehouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1041, 748);
+            this.Controls.Add(this.roundButton2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.roundTextBox2);
             this.Controls.Add(this.roundButton1);
@@ -145,5 +166,6 @@
         private RoundTextBox roundTextBox1;
         private RoundTextBox roundTextBox2;
         private System.Windows.Forms.Label label3;
+        private CustomControls.RoundButton roundButton2;
     }
 }

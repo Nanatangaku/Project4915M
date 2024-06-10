@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Group6_Project.Category.Category_Warehouse;
+using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Asn1.X509;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace Group6_Project
 {
     public partial class SearchWarehouse : Form
     {
+        Panel panFormLoad;
         //To get Data from database
         public DataTable GetData(String target)
         {
@@ -30,8 +32,9 @@ namespace Group6_Project
         {
             dataGridView1.DataSource = GetData(target);
         }
-        public SearchWarehouse()
+        public SearchWarehouse(Panel panFromLoad)
         {
+            this.panFormLoad = panFromLoad;
             InitializeComponent();
         }
 
@@ -41,12 +44,21 @@ namespace Group6_Project
         }
         private void SearchWarehouse_Load(object sender, EventArgs e)
         {
-            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
-            btn.Name = "Delete";
-            btn.HeaderText = "Delete";
-            btn.Text = "Delete";
-            btn.UseColumnTextForButtonValue = true;
-            dataGridView1.Columns.Insert(0, btn);
+            //create button update
+            DataGridViewButtonColumn btnUpdate = new DataGridViewButtonColumn();
+            btnUpdate.Name = "Update";
+            btnUpdate.HeaderText = "Update";
+            btnUpdate.Text = "Update";
+            btnUpdate.UseColumnTextForButtonValue = true;
+            dataGridView1.Columns.Insert(0, btnUpdate);
+
+            //create button delete
+            DataGridViewButtonColumn btnDelete = new DataGridViewButtonColumn();
+            btnDelete.Name = "Delete";
+            btnDelete.HeaderText = "Delete";
+            btnDelete.Text = "Delete";
+            btnDelete.UseColumnTextForButtonValue = true;
+            dataGridView1.Columns.Insert(1, btnDelete);
             showTable("");
         }
 
@@ -63,6 +75,14 @@ namespace Group6_Project
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == 0)
+            {
+                this.panFormLoad.Controls.Clear();
+                UpdateWarehouse updateWarehouse = new UpdateWarehouse(panFormLoad, dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex + 2].Value.ToString()) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                updateWarehouse.FormBorderStyle = FormBorderStyle.None;
+                this.panFormLoad.Controls.Add(updateWarehouse);
+                updateWarehouse.Show();
+            }
+            if (e.ColumnIndex == 1)
             {
                 try     //try deleting row from datagridview which equals to id next to the delete item
                 {

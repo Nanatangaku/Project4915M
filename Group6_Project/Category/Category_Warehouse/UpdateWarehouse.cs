@@ -9,12 +9,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Group6_Project
+namespace Group6_Project.Category.Category_Warehouse
 {
-    public partial class CreateWarehouse : Form
+    public partial class UpdateWarehouse : Form
     {
-        public CreateWarehouse()
+        Panel panFormLoad;
+        String id;
+        public UpdateWarehouse(Panel panFormLoad, String id)
         {
+            this.panFormLoad = panFormLoad;
+            this.id = id;
             InitializeComponent();
         }
 
@@ -22,13 +26,13 @@ namespace Group6_Project
         {
             String newWarehouseName = roundTextBox1.Texts;
             String newWarehousePhone = roundTextBox2.Texts;
-            if (newWarehouseName == null || newWarehousePhone == null)
+            if (newWarehouseName == null || newWarehousePhone == null || newWarehouseName == "" || newWarehousePhone == "")
             {
                 MessageBox.Show("Please fill in all the information!");
             }
             else
             {
-                String sql = "INSERT INTO warehouse (warehouse_name, phone) VALUES ('" + newWarehouseName + "', '" + newWarehousePhone + "')";
+                String sql = "UPDATE warehouse SET warehouse_name = '"+ newWarehouseName +"', phone = '"+ newWarehousePhone +"' WHERE warehouse_id = '"+ id +"'";
                 MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
                 conn.Open();
@@ -36,11 +40,11 @@ namespace Group6_Project
                 {
                     if (cmd.ExecuteNonQuery() >= 1)
                     {
-                        MessageBox.Show("Warehouse Created Successfully");
+                        MessageBox.Show("Warehouse Update Successfully");
                     }
                     else
                     {
-                        MessageBox.Show("Warehouse Creation Failed");
+                        MessageBox.Show("Warehouse Update Failed");
                     }
                 }
                 catch (Exception ex)
@@ -49,6 +53,20 @@ namespace Group6_Project
                 }
                 conn.Close();
             }
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            this.panFormLoad.Controls.Clear();
+            SearchWarehouse searchwarehouse = new SearchWarehouse(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            searchwarehouse.FormBorderStyle = FormBorderStyle.None;
+            this.panFormLoad.Controls.Add(searchwarehouse);
+            searchwarehouse.Show();
+        }
+
+        private void UpdateWarehouse_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -31,22 +31,24 @@ namespace Group6_Project
         {
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panNav = new System.Windows.Forms.Panel();
-            this.btnCategoryManager = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panFormLoad = new System.Windows.Forms.Panel();
+            this.btndeliveryorder = new System.Windows.Forms.Button();
+            this.btnCategoryManager = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelMenu.Controls.Add(this.btndeliveryorder);
             this.panelMenu.Controls.Add(this.panNav);
             this.panelMenu.Controls.Add(this.btnCategoryManager);
             this.panelMenu.Controls.Add(this.panel2);
@@ -64,26 +66,6 @@ namespace Group6_Project
             this.panNav.Name = "panNav";
             this.panNav.Size = new System.Drawing.Size(7, 77);
             this.panNav.TabIndex = 2;
-            // 
-            // btnCategoryManager
-            // 
-            this.btnCategoryManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.btnCategoryManager.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCategoryManager.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnCategoryManager.FlatAppearance.BorderSize = 0;
-            this.btnCategoryManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCategoryManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategoryManager.ForeColor = System.Drawing.Color.White;
-            this.btnCategoryManager.Image = global::Group6_Project.Properties.Resources.user__1_;
-            this.btnCategoryManager.Location = new System.Drawing.Point(0, 801);
-            this.btnCategoryManager.Name = "btnCategoryManager";
-            this.btnCategoryManager.Size = new System.Drawing.Size(277, 77);
-            this.btnCategoryManager.TabIndex = 7;
-            this.btnCategoryManager.Text = "    Delivery \r\n   Manager";
-            this.btnCategoryManager.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCategoryManager.UseVisualStyleBackColor = false;
-            this.btnCategoryManager.Click += new System.EventHandler(this.btnCategoryManager_Click);
-            this.btnCategoryManager.Leave += new System.EventHandler(this.btnCategoryManager_Leave);
             // 
             // panel2
             // 
@@ -106,16 +88,6 @@ namespace Group6_Project
             this.label1.Size = new System.Drawing.Size(139, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "OPSR System";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Group6_Project.Properties.Resources.car_circle_bolt;
-            this.pictureBox1.Location = new System.Drawing.Point(105, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 42);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnClose
             // 
@@ -152,6 +124,56 @@ namespace Group6_Project
             this.panFormLoad.TabIndex = 1;
             this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
             // 
+            // btndeliveryorder
+            // 
+            this.btndeliveryorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btndeliveryorder.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btndeliveryorder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btndeliveryorder.FlatAppearance.BorderSize = 0;
+            this.btndeliveryorder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndeliveryorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndeliveryorder.ForeColor = System.Drawing.Color.White;
+            this.btndeliveryorder.Image = global::Group6_Project.Properties.Resources.truck_side;
+            this.btndeliveryorder.Location = new System.Drawing.Point(0, 130);
+            this.btndeliveryorder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btndeliveryorder.Name = "btndeliveryorder";
+            this.btndeliveryorder.Size = new System.Drawing.Size(277, 77);
+            this.btndeliveryorder.TabIndex = 9;
+            this.btndeliveryorder.Text = "Order";
+            this.btndeliveryorder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btndeliveryorder.UseVisualStyleBackColor = false;
+            this.btndeliveryorder.Click += new System.EventHandler(this.btndeliveryorder_Click);
+            // 
+            // btnCategoryManager
+            // 
+            this.btnCategoryManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.btnCategoryManager.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCategoryManager.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCategoryManager.FlatAppearance.BorderSize = 0;
+            this.btnCategoryManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategoryManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategoryManager.ForeColor = System.Drawing.Color.White;
+            this.btnCategoryManager.Image = global::Group6_Project.Properties.Resources.user__1_;
+            this.btnCategoryManager.Location = new System.Drawing.Point(0, 801);
+            this.btnCategoryManager.Name = "btnCategoryManager";
+            this.btnCategoryManager.Size = new System.Drawing.Size(277, 77);
+            this.btnCategoryManager.TabIndex = 7;
+            this.btnCategoryManager.Text = "    Delivery \r\n   Manager";
+            this.btnCategoryManager.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnCategoryManager.UseVisualStyleBackColor = false;
+            this.btnCategoryManager.Click += new System.EventHandler(this.btnCategoryManager_Click);
+            this.btnCategoryManager.Leave += new System.EventHandler(this.btnCategoryManager_Leave);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Group6_Project.Properties.Resources.car_circle_bolt;
+            this.pictureBox1.Location = new System.Drawing.Point(105, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // DeliveryManagerHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -167,8 +189,8 @@ namespace Group6_Project
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -183,6 +205,7 @@ namespace Group6_Project
         private System.Windows.Forms.Panel panNav;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btndeliveryorder;
     }
 }
 

@@ -30,8 +30,8 @@
         {
             this.mySqlDataAdapter1 = new MySql.Data.MySqlClient.MySqlDataAdapter();
             this.dvgvieworder_request = new System.Windows.Forms.DataGridView();
-            this.txtfilter = new Group6_Project.RoundTextBox();
             this.lblsearchname = new System.Windows.Forms.Label();
+            this.txtfilter = new Group6_Project.RoundTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvgvieworder_request)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +52,17 @@
             this.dvgvieworder_request.Size = new System.Drawing.Size(863, 493);
             this.dvgvieworder_request.TabIndex = 1;
             this.dvgvieworder_request.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgvieworder_request_CellContentClick);
+            // 
+            // lblsearchname
+            // 
+            this.lblsearchname.AutoSize = true;
+            this.lblsearchname.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblsearchname.ForeColor = System.Drawing.Color.White;
+            this.lblsearchname.Location = new System.Drawing.Point(80, 50);
+            this.lblsearchname.Name = "lblsearchname";
+            this.lblsearchname.Size = new System.Drawing.Size(166, 24);
+            this.lblsearchname.TabIndex = 2;
+            this.lblsearchname.Text = "Search by Name:";
             // 
             // txtfilter
             // 
@@ -74,16 +85,6 @@
             this.txtfilter.TabIndex = 0;
             this.txtfilter.Texts = "";
             this.txtfilter.UnderlinedStyle = false;
-            // 
-            // lblsearchname
-            // 
-            this.lblsearchname.AutoSize = true;
-            this.lblsearchname.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblsearchname.Location = new System.Drawing.Point(80, 50);
-            this.lblsearchname.Name = "lblsearchname";
-            this.lblsearchname.Size = new System.Drawing.Size(166, 24);
-            this.lblsearchname.TabIndex = 2;
-            this.lblsearchname.Text = "Search by Name:";
             // 
             // ViewOrder
             // 

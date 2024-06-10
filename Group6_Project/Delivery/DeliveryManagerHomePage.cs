@@ -70,5 +70,20 @@ namespace Group6_Project
         {
 
         }
+
+        private void btndeliveryorder_Click(object sender, EventArgs e)
+        {
+
+            this.panFormLoad.Controls.Clear();
+            DeliveryOrder deliveryorder = new DeliveryOrder(user_id, panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            deliveryorder.FormBorderStyle = FormBorderStyle.None;
+            this.panFormLoad.Controls.Add(deliveryorder);
+            deliveryorder.Show();
+        }
+
+        private void roundTextBox1__TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

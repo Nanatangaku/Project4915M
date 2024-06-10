@@ -91,6 +91,7 @@
             // 
             // btnadd
             // 
+            this.btnadd.ForeColor = System.Drawing.Color.Black;
             this.btnadd.Location = new System.Drawing.Point(183, 172);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(102, 34);
@@ -101,6 +102,7 @@
             // 
             // btnclear
             // 
+            this.btnclear.ForeColor = System.Drawing.Color.Black;
             this.btnclear.Location = new System.Drawing.Point(303, 172);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(102, 34);

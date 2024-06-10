@@ -237,6 +237,18 @@ namespace Group6_Project
             }
             conn.Close();
 
+            string sql2 =  "update delivery set received_date = '" + DateTime.Now.ToString("yyyy-MM-dd") + "' where delivery_id = " + delivery_id;
+            MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
+            conn.Open();
+            if (cmd2.ExecuteNonQuery() >= 1)
+            {
+
+            }
+            else {
+                MessageBox.Show("Delivery recevied date not updated");
+            }
+            conn.Close();
+
             this.panFormLoad.Controls.Clear();
             DispatchNotes dispatchnotes = new DispatchNotes(user_id, panFormLoad,order_id,delivery_id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             dispatchnotes.FormBorderStyle = FormBorderStyle.None;

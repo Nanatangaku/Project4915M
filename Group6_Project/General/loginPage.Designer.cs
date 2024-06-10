@@ -101,7 +101,7 @@ namespace Group6_Project
             this.rbtnForgotPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtnForgotPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnForgotPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.rbtnForgotPassword.Location = new System.Drawing.Point(622, 514);
+            this.rbtnForgotPassword.Location = new System.Drawing.Point(617, 514);
             this.rbtnForgotPassword.Name = "rbtnForgotPassword";
             this.rbtnForgotPassword.Size = new System.Drawing.Size(132, 34);
             this.rbtnForgotPassword.TabIndex = 13;

@@ -855,3 +855,4 @@ C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.Dispatch_Detail.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.StockRecord.resources
 C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.DispatchNotes.resources
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.ForgotPassword.resources

@@ -189,7 +189,7 @@
             this.gbinput.Size = new System.Drawing.Size(890, 247);
             this.gbinput.TabIndex = 14;
             this.gbinput.TabStop = false;
-            this.gbinput.Text = "groupBox1";
+            this.gbinput.Text = "Input";
             // 
             // gbreciveitem
             // 

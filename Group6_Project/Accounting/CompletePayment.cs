@@ -16,5 +16,10 @@ namespace Group6_Project
         {
             InitializeComponent();
         }
+
+        private void CompletePayment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

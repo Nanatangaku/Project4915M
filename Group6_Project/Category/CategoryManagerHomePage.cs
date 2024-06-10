@@ -106,16 +106,7 @@ namespace Group6_Project
         [Category("Event")]
         private void btnDepartment_Click(object sender, EventArgs e)
         {
-            panNav.Height = btnDepartment.Height;
-            panNav.Top = btnDepartment.Top;
-            panNav.Left = btnDepartment.Left;
-            btnDepartment.BackColor = Color.FromArgb(46, 51, 73);
-
-            this.panFormLoad.Controls.Clear();
-            DepartmentPage department = new DepartmentPage(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            department.FormBorderStyle = FormBorderStyle.None;
-            panFormLoad.Controls.Add(department);
-            department.Show();
+        
         }
         [Category("Event")]
         private void btnDepartment_Leave(object sender, EventArgs e)

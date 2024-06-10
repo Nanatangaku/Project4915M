@@ -78,6 +78,7 @@ namespace Group6_Project
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CompletePayment";
             this.Text = "CompletePayment";
+            this.Load += new System.EventHandler(this.CompletePayment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

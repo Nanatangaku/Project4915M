@@ -41,26 +41,7 @@ namespace Group6_Project
             this.Close();
         }
         [Category("Event")]
-        private void btnShop_Click(object sender, EventArgs e)
-        {
-            panNav.Height = btnShop.Height;
-            panNav.Top = btnShop.Top;
-            panNav.Left = btnShop.Left;
-            btnShop.BackColor = Color.FromArgb(46, 51, 73);
 
-            this.panFormLoad.Controls.Clear();
-            SearchScheule shop = new SearchScheule() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            shop.FormBorderStyle = FormBorderStyle.None;
-            panFormLoad.Controls.Add(shop);
-            shop.Show();
-        }
-        [Category("Event")]
-        private void btnShop_Leave(object sender, EventArgs e)
-        {
-            btnShop.BackColor = Color.FromArgb(51, 51, 76);
-        }
-        
-        [Category("Event")]
         private void btnCategoryManager_Click(object sender, EventArgs e)
         {
             panNav.Height = btnCategoryManager.Height;
@@ -81,6 +62,11 @@ namespace Group6_Project
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panFormLoad_Paint(object sender, PaintEventArgs e)
         {
 
         }

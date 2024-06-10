@@ -16,65 +16,19 @@ namespace Group6_Project
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
-        private static extern IntPtr CreateRoundRectRgn
-           (
+        private static extern IntPtr CreateRoundRectRgn (
            int nLeftRect,
            int nTopRect,
            int nRightRect,
            int nBottomRect,
            int nWidthEllipse,
            int nHeightEllipse
-           );
+         );
 
         public ForgotPassword()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundTextBox1__TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundButton1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void roundTextBox1__TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundTextBox2__TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void loginPage_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -86,11 +40,14 @@ namespace Group6_Project
         {
             //get the roundtestbox text
             string username = rtxtUserName.Texts;
-            string password = rtxtEmail.Texts;
+            string email = rtxtEmail.Texts;
+            string phone = rtxtPhone.Texts;
 
             username = "\"" + username + "\"";
-            password = "\"" + password + "\"";
-            string sql = "select * from user inner join role on user.role_id = role.role_id where user_name = " + username +" and password = "  + password ;
+            email = "\"" + email + "\"";
+            phone = "\"" + phone + "\"";
+
+            string sql = "select * from user where user_name = " + username + " and email = " + email + " and phone = " + phone;
             MySqlConnection conn = new MySqlConnection("datasource=localhost;port=3306;username=root;password=1234;database=project4915mdb");
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
@@ -99,56 +56,28 @@ namespace Group6_Project
 
             if (reader.Read())
             {
-                int user_id = (int)reader["user_id"];
-                MessageBox.Show("Login Successful");
-                string role = (string)reader["role_name"];
-          
-         
-                 if (role == "Category Manager")
-                {
-                    this.Hide();
-                    new CategoryManagerHomePage(user_id).ShowDialog();
-                    this.Close();
-                }
-                else if (role == "Warehouse Manager")
-                {
-                    this.Hide();
-                    new WarehouseManagerHomePage(user_id).ShowDialog();
-                    this.Close();
-                }
-                else if (role == "Delivery Manager")
-                {
-                    this.Hide();
-                    new DeliveryManagerHomePage(user_id).ShowDialog();
-                    this.Close();
-                }
-  
-                else if (role == "Purchase Manager")
-                {
-                    this.Hide();
-                    new PurchaseManagerHomePage(user_id).ShowDialog();
-                    this.Close();
-                }
+                int user_id = 0;
+                user_id = (int)reader["user_id"];
 
-                else if (role == "Shop Manager")
+                if (user_id != 0)
                 {
+                    MessageBox.Show("Verify Successful!!!");
                     this.Hide();
-                    new ShopManagerHomePage(user_id).ShowDialog();
+                    new loginPage().ShowDialog();
                     this.Close();
+                }else
+                {
+                    MessageBox.Show("Invalid Account Infromation");
+                }
+                conn.Close();
+            }
+        }
 
-                }
-                else if (role == "Account Manager")
-                {
-                    this.Hide();
-                    new AccountingManagerHomePage(user_id).ShowDialog();
-                    this.Close();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Invalid username or password");
-            }
-            conn.Close();
+        private void rbtnReturnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new loginPage().ShowDialog();
+            this.Close();
         }
     }
 }

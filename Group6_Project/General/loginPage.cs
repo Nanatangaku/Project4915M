@@ -92,8 +92,6 @@ namespace Group6_Project
                     this.Hide();
                     new AccountingManagerHomePage(user_id).ShowDialog();
                     this.Close();
-
-
                 }
             }
             else
@@ -125,7 +123,9 @@ namespace Group6_Project
 
         private void rbtnForgotPassword_Click(object sender, EventArgs e)
         {
-            
+            new ForgotPassword().ShowDialog();
+            this.Hide();
+            this.Close();
         }
     }
 }

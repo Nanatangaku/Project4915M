@@ -32,7 +32,7 @@ namespace Group6_Project
         private void rbtnSearchShop_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
-            SearchShop searchShop = new SearchShop() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            SearchShop searchShop = new SearchShop(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             searchShop.FormBorderStyle = FormBorderStyle.None;
             this.panFormLoad.Controls.Add(searchShop);
             searchShop.Show();

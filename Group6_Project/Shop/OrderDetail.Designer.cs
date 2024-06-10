@@ -48,6 +48,7 @@
             this.dvgitem = new System.Windows.Forms.DataGridView();
             this.lblamounttext = new System.Windows.Forms.Label();
             this.lbltotalamount = new System.Windows.Forms.Label();
+            this.btndownloaddispatchpdf = new Group6_Project.CustomControls.RoundButton();
             this.btnreceive = new Group6_Project.CustomControls.RoundButton();
             this.btndelete = new Group6_Project.CustomControls.RoundButton();
             this.btnsave = new Group6_Project.CustomControls.RoundButton();
@@ -226,7 +227,7 @@
             this.gbitem.Controls.Add(this.dvgitem);
             this.gbitem.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.gbitem.ForeColor = System.Drawing.Color.White;
-            this.gbitem.Location = new System.Drawing.Point(55, 327);
+            this.gbitem.Location = new System.Drawing.Point(55, 318);
             this.gbitem.Name = "gbitem";
             this.gbitem.Size = new System.Drawing.Size(949, 242);
             this.gbitem.TabIndex = 3;
@@ -237,7 +238,7 @@
             // 
             this.dvgitem.AllowUserToAddRows = false;
             this.dvgitem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgitem.Location = new System.Drawing.Point(6, 23);
+            this.dvgitem.Location = new System.Drawing.Point(6, 24);
             this.dvgitem.Name = "dvgitem";
             this.dvgitem.RowTemplate.Height = 24;
             this.dvgitem.Size = new System.Drawing.Size(937, 212);
@@ -248,7 +249,7 @@
             this.lblamounttext.AutoSize = true;
             this.lblamounttext.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblamounttext.ForeColor = System.Drawing.Color.White;
-            this.lblamounttext.Location = new System.Drawing.Point(51, 590);
+            this.lblamounttext.Location = new System.Drawing.Point(51, 595);
             this.lblamounttext.Name = "lblamounttext";
             this.lblamounttext.Size = new System.Drawing.Size(142, 24);
             this.lblamounttext.TabIndex = 6;
@@ -259,10 +260,30 @@
             // 
             this.lbltotalamount.AutoSize = true;
             this.lbltotalamount.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lbltotalamount.Location = new System.Drawing.Point(224, 505);
+            this.lbltotalamount.ForeColor = System.Drawing.Color.White;
+            this.lbltotalamount.Location = new System.Drawing.Point(206, 595);
             this.lbltotalamount.Name = "lbltotalamount";
             this.lbltotalamount.Size = new System.Drawing.Size(0, 24);
             this.lbltotalamount.TabIndex = 7;
+            // 
+            // btndownloaddispatchpdf
+            // 
+            this.btndownloaddispatchpdf.BackColor = System.Drawing.Color.Red;
+            this.btndownloaddispatchpdf.BackgroundColor = System.Drawing.Color.Red;
+            this.btndownloaddispatchpdf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.btndownloaddispatchpdf.BorderRadius = 16;
+            this.btndownloaddispatchpdf.BorderSize = 0;
+            this.btndownloaddispatchpdf.FlatAppearance.BorderSize = 0;
+            this.btndownloaddispatchpdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndownloaddispatchpdf.ForeColor = System.Drawing.Color.White;
+            this.btndownloaddispatchpdf.Location = new System.Drawing.Point(808, 12);
+            this.btndownloaddispatchpdf.Name = "btndownloaddispatchpdf";
+            this.btndownloaddispatchpdf.Size = new System.Drawing.Size(145, 42);
+            this.btndownloaddispatchpdf.TabIndex = 9;
+            this.btndownloaddispatchpdf.Text = "Download Dispatch ";
+            this.btndownloaddispatchpdf.TextColor = System.Drawing.Color.White;
+            this.btndownloaddispatchpdf.UseVisualStyleBackColor = false;
+            this.btndownloaddispatchpdf.Click += new System.EventHandler(this.btndownloaddispatchpdf_Click);
             // 
             // btnreceive
             // 
@@ -327,6 +348,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1025, 679);
+            this.Controls.Add(this.btndownloaddispatchpdf);
             this.Controls.Add(this.btnreceive);
             this.Controls.Add(this.lbltotalamount);
             this.Controls.Add(this.lblamounttext);
@@ -372,5 +394,6 @@
         private System.Windows.Forms.TextBox txtboxorderid;
         private System.Windows.Forms.DateTimePicker dtpexpecteddate;
         private CustomControls.RoundButton btnreceive;
+        private CustomControls.RoundButton btndownloaddispatchpdf;
     }
 }

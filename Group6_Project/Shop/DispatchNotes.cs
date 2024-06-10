@@ -16,12 +16,14 @@ namespace Group6_Project
         int user_id;
         int order_id;
         Panel panFormLoad;
-        public DispatchNotes(int user_id,Panel panFormLoad,int order_id)
+        int delivery_id;
+        public DispatchNotes(int user_id,Panel panFormLoad,int order_id,int delivery_id)
         {
             InitializeComponent();
             this.user_id = user_id;
             this.panFormLoad = panFormLoad;
             this.order_id = order_id;
+            this.delivery_id = delivery_id;
         }
 
         private void DispatchNotes_Load(object sender, EventArgs e)

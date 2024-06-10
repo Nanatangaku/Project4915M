@@ -209,17 +209,20 @@ namespace Group6_Project
                 btndelete.Visible = true;
                 btnsave.Visible = true;
                 btnreceive.Visible = false;
+                btndownloaddispatchpdf.Visible = false;
             }
             else if(order_status == "despatched")
             {
                 btndelete.Visible = false;
                 btnsave.Visible = false;
                 btnreceive.Visible = true;
+                btndownloaddispatchpdf.Visible = false;
             }else if(order_status == "Received")
             {
                 btndelete.Visible = false;
                 btnsave.Visible = false;
                 btnreceive.Visible = false;
+                btndownloaddispatchpdf.Visible = true;
             }
         }
 
@@ -235,7 +238,16 @@ namespace Group6_Project
             conn.Close();
 
             this.panFormLoad.Controls.Clear();
-            DispatchNotes dispatchnotes = new DispatchNotes(user_id, panFormLoad,order_id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DispatchNotes dispatchnotes = new DispatchNotes(user_id, panFormLoad,order_id,delivery_id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            dispatchnotes.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(dispatchnotes);
+            dispatchnotes.Show();
+        }
+
+        private void btndownloaddispatchpdf_Click(object sender, EventArgs e)
+        {
+            this.panFormLoad.Controls.Clear();
+            DispatchNotes dispatchnotes = new DispatchNotes(user_id, panFormLoad, order_id, delivery_id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             dispatchnotes.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(dispatchnotes);
             dispatchnotes.Show();

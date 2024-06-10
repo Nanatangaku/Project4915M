@@ -15,6 +15,7 @@ namespace Group6_Project.Category.Category_Warehouse
     {
         Panel panFormLoad;
         String id;
+        long i;
         public UpdateWarehouse(Panel panFormLoad, String id)
         {
             this.panFormLoad = panFormLoad;
@@ -29,6 +30,10 @@ namespace Group6_Project.Category.Category_Warehouse
             if (newWarehouseName == null || newWarehousePhone == null || newWarehouseName == "" || newWarehousePhone == "")
             {
                 MessageBox.Show("Please fill in all the information!");
+            }
+            else if (!(long.TryParse(newWarehousePhone, out i)))
+            {
+                MessageBox.Show("Please no letters in Phone field!");
             }
             else
             {

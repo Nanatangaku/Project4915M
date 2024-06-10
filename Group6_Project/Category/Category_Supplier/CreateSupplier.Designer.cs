@@ -33,6 +33,7 @@
             this.roundTextBox1 = new Group6_Project.RoundTextBox();
             this.roundTextBox2 = new Group6_Project.RoundTextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.cancel = new Group6_Project.CustomControls.RoundButton();
             this.SuspendLayout();
             // 
             // roundButton1
@@ -45,7 +46,7 @@
             this.roundButton1.FlatAppearance.BorderSize = 0;
             this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(557, 403);
+            this.roundButton1.Location = new System.Drawing.Point(727, 372);
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.Size = new System.Drawing.Size(72, 29);
             this.roundButton1.TabIndex = 18;
@@ -121,12 +122,32 @@
             this.label3.TabIndex = 21;
             this.label3.Text = "New Supplier Remark: ";
             // 
+            // cancel
+            // 
+            this.cancel.BackColor = System.Drawing.Color.White;
+            this.cancel.BackgroundColor = System.Drawing.Color.White;
+            this.cancel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.cancel.BorderRadius = 22;
+            this.cancel.BorderSize = 2;
+            this.cancel.FlatAppearance.BorderSize = 0;
+            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancel.ForeColor = System.Drawing.Color.Black;
+            this.cancel.Location = new System.Drawing.Point(628, 372);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(72, 29);
+            this.cancel.TabIndex = 28;
+            this.cancel.Text = "Cancel";
+            this.cancel.TextColor = System.Drawing.Color.Black;
+            this.cancel.UseVisualStyleBackColor = false;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
+            // 
             // CreateSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1041, 748);
+            this.Controls.Add(this.cancel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.roundTextBox2);
             this.Controls.Add(this.roundButton1);
@@ -146,5 +167,6 @@
         private RoundTextBox roundTextBox1;
         private RoundTextBox roundTextBox2;
         private System.Windows.Forms.Label label3;
+        private CustomControls.RoundButton cancel;
     }
 }

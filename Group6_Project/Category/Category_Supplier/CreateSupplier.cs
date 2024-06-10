@@ -13,8 +13,10 @@ namespace Group6_Project
 {
     public partial class CreateSupplier : Form
     {
-        public CreateSupplier()
+        Panel panFormLoad;
+        public CreateSupplier(Panel panFormLoad)
         {
+            this.panFormLoad = panFormLoad; 
             InitializeComponent();
         }
 
@@ -54,6 +56,15 @@ namespace Group6_Project
                 }
                 conn.Close();
             }
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            this.panFormLoad.Controls.Clear();
+            SearchSupplier searchSupplier = new SearchSupplier(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            searchSupplier.FormBorderStyle = FormBorderStyle.None;
+            this.panFormLoad.Controls.Add(searchSupplier);
+            searchSupplier.Show();
         }
     }
 }

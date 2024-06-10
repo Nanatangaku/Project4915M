@@ -31,7 +31,7 @@ namespace Group6_Project
         private void rbtnCreateSupplier_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
-            CreateSupplier createsupplier = new CreateSupplier() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            CreateSupplier createsupplier = new CreateSupplier(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             createsupplier.FormBorderStyle = FormBorderStyle.None;
             this.panFormLoad.Controls.Add(createsupplier);
             createsupplier.Show();

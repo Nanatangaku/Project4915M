@@ -86,6 +86,7 @@
             this.roundTextBox1.TabIndex = 32;
             this.roundTextBox1.Texts = "";
             this.roundTextBox1.UnderlinedStyle = true;
+            this.roundTextBox1._TextChanged += new System.EventHandler(this.roundTextBox1__TextChanged);
             // 
             // roundTextBox2
             // 

@@ -74,16 +74,7 @@ namespace Group6_Project
                 int user_id = (int)reader["user_id"];
                 MessageBox.Show("Login Successful");
                 string role = (string)reader["role_name"];
-          
-                if (role == "HR")
-                {
-                  
-                    
-                    this.Hide();
-                    new HRHomePage(user_id).ShowDialog();
-                    this.Close();
-                }
-                else if (role == "Category Manager")
+                if (role == "Category Manager")
                 {
                     this.Hide();
                     new CategoryManagerHomePage(user_id).ShowDialog();

@@ -32,7 +32,6 @@ namespace Group6_Project
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panNav = new System.Windows.Forms.Panel();
             this.btnCategoryManager = new System.Windows.Forms.Button();
-            this.btnShop = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,7 +49,6 @@ namespace Group6_Project
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelMenu.Controls.Add(this.panNav);
             this.panelMenu.Controls.Add(this.btnCategoryManager);
-            this.panelMenu.Controls.Add(this.btnShop);
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -86,26 +84,6 @@ namespace Group6_Project
             this.btnCategoryManager.UseVisualStyleBackColor = false;
             this.btnCategoryManager.Click += new System.EventHandler(this.btnCategoryManager_Click);
             this.btnCategoryManager.Leave += new System.EventHandler(this.btnCategoryManager_Leave);
-            // 
-            // btnShop
-            // 
-            this.btnShop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnShop.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnShop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnShop.FlatAppearance.BorderSize = 0;
-            this.btnShop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShop.ForeColor = System.Drawing.Color.White;
-            this.btnShop.Image = global::Group6_Project.Properties.Resources.home2;
-            this.btnShop.Location = new System.Drawing.Point(0, 130);
-            this.btnShop.Name = "btnShop";
-            this.btnShop.Size = new System.Drawing.Size(277, 77);
-            this.btnShop.TabIndex = 1;
-            this.btnShop.Text = "Scheule";
-            this.btnShop.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnShop.UseVisualStyleBackColor = false;
-            this.btnShop.Click += new System.EventHandler(this.btnShop_Click);
-            this.btnShop.Leave += new System.EventHandler(this.btnShop_Leave);
             // 
             // panel2
             // 
@@ -172,6 +150,7 @@ namespace Group6_Project
             this.panFormLoad.Name = "panFormLoad";
             this.panFormLoad.Size = new System.Drawing.Size(1317, 748);
             this.panFormLoad.TabIndex = 1;
+            this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
             // 
             // DeliveryManagerHomePage
             // 
@@ -197,7 +176,6 @@ namespace Group6_Project
         #endregion
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnShop;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panFormLoad;

@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckOut));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbgeneral = new System.Windows.Forms.GroupBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.txtboxtotalprice = new System.Windows.Forms.TextBox();
@@ -47,15 +50,15 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblcreatedate = new System.Windows.Forms.Label();
             this.lblcreaterid = new System.Windows.Forms.Label();
-            this.gbItem = new System.Windows.Forms.GroupBox();
             this.dvgcart = new System.Windows.Forms.DataGridView();
             this.gbgeneral.SuspendLayout();
-            this.gbItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgcart)).BeginInit();
             this.SuspendLayout();
             // 
             // gbgeneral
             // 
+            this.gbgeneral.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.gbgeneral, "gbgeneral");
             this.gbgeneral.Controls.Add(this.btnConfirm);
             this.gbgeneral.Controls.Add(this.txtboxtotalprice);
             this.gbgeneral.Controls.Add(this.lbltotalprice);
@@ -73,69 +76,70 @@
             this.gbgeneral.Controls.Add(this.lblName);
             this.gbgeneral.Controls.Add(this.lblcreatedate);
             this.gbgeneral.Controls.Add(this.lblcreaterid);
-            resources.ApplyResources(this.gbgeneral, "gbgeneral");
             this.gbgeneral.ForeColor = System.Drawing.Color.White;
             this.gbgeneral.Name = "gbgeneral";
             this.gbgeneral.TabStop = false;
             // 
             // btnConfirm
             // 
+            this.btnConfirm.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.btnConfirm, "btnConfirm");
-            this.btnConfirm.ForeColor = System.Drawing.Color.Black;
+            this.btnConfirm.ForeColor = System.Drawing.Color.LightGray;
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.UseVisualStyleBackColor = false;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // txtboxtotalprice
             // 
-            this.txtboxtotalprice.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtboxtotalprice.BackColor = System.Drawing.Color.DarkGray;
             resources.ApplyResources(this.txtboxtotalprice, "txtboxtotalprice");
             this.txtboxtotalprice.Name = "txtboxtotalprice";
             this.txtboxtotalprice.ReadOnly = true;
-            this.txtboxtotalprice.TextChanged += new System.EventHandler(this.txtboxtotalprice_TextChanged);
             // 
             // lbltotalprice
             // 
             resources.ApplyResources(this.lbltotalprice, "lbltotalprice");
+            this.lbltotalprice.ForeColor = System.Drawing.Color.White;
             this.lbltotalprice.Name = "lbltotalprice";
             // 
             // dateTimePicker
             // 
             resources.ApplyResources(this.dateTimePicker, "dateTimePicker");
+            this.dateTimePicker.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.dateTimePicker.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // txtboxshopname
             // 
-            this.txtboxshopname.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtboxshopname.BackColor = System.Drawing.Color.DarkGray;
             resources.ApplyResources(this.txtboxshopname, "txtboxshopname");
             this.txtboxshopname.Name = "txtboxshopname";
             this.txtboxshopname.ReadOnly = true;
             // 
             // txtboxcreatedate
             // 
-            this.txtboxcreatedate.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtboxcreatedate.BackColor = System.Drawing.Color.DarkGray;
             resources.ApplyResources(this.txtboxcreatedate, "txtboxcreatedate");
             this.txtboxcreatedate.Name = "txtboxcreatedate";
             this.txtboxcreatedate.ReadOnly = true;
             // 
             // txtboxshopid
             // 
-            this.txtboxshopid.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtboxshopid.BackColor = System.Drawing.Color.DarkGray;
             resources.ApplyResources(this.txtboxshopid, "txtboxshopid");
             this.txtboxshopid.Name = "txtboxshopid";
             this.txtboxshopid.ReadOnly = true;
             // 
             // txtboxname
             // 
-            this.txtboxname.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtboxname.BackColor = System.Drawing.Color.DarkGray;
             resources.ApplyResources(this.txtboxname, "txtboxname");
             this.txtboxname.Name = "txtboxname";
             this.txtboxname.ReadOnly = true;
             // 
             // txtboxcreateid
             // 
-            this.txtboxcreateid.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtboxcreateid.BackColor = System.Drawing.Color.DarkGray;
             resources.ApplyResources(this.txtboxcreateid, "txtboxcreateid");
             this.txtboxcreateid.Name = "txtboxcreateid";
             this.txtboxcreateid.ReadOnly = true;
@@ -148,69 +152,94 @@
             // lbladdress
             // 
             resources.ApplyResources(this.lbladdress, "lbladdress");
+            this.lbladdress.ForeColor = System.Drawing.Color.White;
             this.lbladdress.Name = "lbladdress";
             // 
             // lblshopname
             // 
             resources.ApplyResources(this.lblshopname, "lblshopname");
+            this.lblshopname.ForeColor = System.Drawing.Color.White;
             this.lblshopname.Name = "lblshopname";
             // 
             // lblexpectdate
             // 
             resources.ApplyResources(this.lblexpectdate, "lblexpectdate");
+            this.lblexpectdate.ForeColor = System.Drawing.Color.White;
             this.lblexpectdate.Name = "lblexpectdate";
             // 
             // lblshopid
             // 
             resources.ApplyResources(this.lblshopid, "lblshopid");
+            this.lblshopid.ForeColor = System.Drawing.Color.White;
             this.lblshopid.Name = "lblshopid";
             // 
             // lblName
             // 
             resources.ApplyResources(this.lblName, "lblName");
+            this.lblName.ForeColor = System.Drawing.Color.White;
             this.lblName.Name = "lblName";
             // 
             // lblcreatedate
             // 
             resources.ApplyResources(this.lblcreatedate, "lblcreatedate");
+            this.lblcreatedate.ForeColor = System.Drawing.Color.White;
             this.lblcreatedate.Name = "lblcreatedate";
             // 
             // lblcreaterid
             // 
             resources.ApplyResources(this.lblcreaterid, "lblcreaterid");
+            this.lblcreaterid.BackColor = System.Drawing.Color.Transparent;
+            this.lblcreaterid.ForeColor = System.Drawing.Color.White;
             this.lblcreaterid.Name = "lblcreaterid";
-            // 
-            // gbItem
-            // 
-            this.gbItem.Controls.Add(this.dvgcart);
-            resources.ApplyResources(this.gbItem, "gbItem");
-            this.gbItem.ForeColor = System.Drawing.Color.White;
-            this.gbItem.Name = "gbItem";
-            this.gbItem.TabStop = false;
             // 
             // dvgcart
             // 
             this.dvgcart.AllowUserToAddRows = false;
+            this.dvgcart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.dvgcart.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgcart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dvgcart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvgcart.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dvgcart.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             resources.ApplyResources(this.dvgcart, "dvgcart");
             this.dvgcart.Name = "dvgcart";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgcart.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dvgcart.RowTemplate.Height = 24;
             this.dvgcart.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgcart_CellClick);
-            this.dvgcart.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgcart_CellContentClick);
             // 
             // CheckOut
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.Controls.Add(this.gbItem);
+            this.Controls.Add(this.dvgcart);
             this.Controls.Add(this.gbgeneral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CheckOut";
             this.Load += new System.EventHandler(this.CheckOut_Load);
             this.gbgeneral.ResumeLayout(false);
             this.gbgeneral.PerformLayout();
-            this.gbItem.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvgcart)).EndInit();
             this.ResumeLayout(false);
 
@@ -233,7 +262,6 @@
         private System.Windows.Forms.TextBox txtboxname;
         private System.Windows.Forms.TextBox txtboxcreateid;
         private System.Windows.Forms.Button btnConfirm;
-        private System.Windows.Forms.GroupBox gbItem;
         private System.Windows.Forms.DataGridView dvgcart;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.TextBox txtboxtotalprice;

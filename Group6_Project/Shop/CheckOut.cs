@@ -58,14 +58,10 @@ namespace Group6_Project
             dateTimePicker.MaxDate = DateTime.Now.AddMonths(3);
             filldvg(dvgcart);
             txtboxtotalprice.Text = "$" + count_total_price().ToString();
-
-           
-
         }
 
         private void filldvg(DataGridView dataGridView)
         {
-         
             string sql = "select item.item_id,item.item_Name,item.item_Category, item.price  ,cart.quantity from cart,item where item.item_id = cart.item_id ";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
@@ -77,16 +73,6 @@ namespace Group6_Project
             dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView.ForeColor = Color.Black;
             conn.Close();
-
-        }
-
-        private void dvgcart_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker_ValueChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -111,20 +97,12 @@ namespace Group6_Project
                     MessageBox.Show("Item Removal Failed");
                 }
                 conn.Close();
-                 
-
             }
-
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             check_out();
-        }
-
-        private void txtboxtotalprice_TextChanged(object sender, EventArgs e)
-        {
-
         }
         public double count_total_price()
         {
@@ -160,6 +138,7 @@ namespace Group6_Project
                 insert_order_table();
             }
         }
+
         public void insert_order_table()
         {
             long id = 0;
@@ -182,7 +161,6 @@ namespace Group6_Project
                 conn.Close();
                 MessageBox.Show("Create Order failed");
             }
-       
         }
 
         public void insert_order_item_table(long id)
@@ -197,23 +175,16 @@ namespace Group6_Project
                 string sql2 = "insert into order_item(order_id,item_id,quantity)values(" + id + "," + item_id + "," + quantity + ");";
                 MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
             
-                if(cmd2.ExecuteNonQuery() >= 1)
+                if(!(cmd2.ExecuteNonQuery() >= 1))
                 {
-                    
-
-                }
-                else
-                {
-                    //
                     MessageBox.Show("create order_item table failed");
                 }
-               
             }
             conn.Close();
         }
         public void insert_delivery_table(long id)
         {
-           long order_id = id;
+            long order_id = id;
             String date = "\"" + txtboxcreatedate.Text + "\"" ;
             String delivery_date = "\"" + dateTimePicker.Value.ToString("yyyy-MM-dd") + "\"" ;
         
@@ -224,7 +195,7 @@ namespace Group6_Project
             if(cmd.ExecuteNonQuery() >= 1)
             {
                 conn.Close();
-               long delivery_id  = cmd.LastInsertedId;
+                long delivery_id  = cmd.LastInsertedId;
                 string  sql2 = "update order_request set delivery_id = " + delivery_id + " where order_id = " + order_id + ";";
                 MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
                 conn.Open();
@@ -243,9 +214,8 @@ namespace Group6_Project
                 MessageBox.Show("insert delivery table failed");
                 conn.Close();
             }
-        
-           
         }
+
         public void delete_warehouse_quantity()
         {
             DataTable dt = get_from_cart_table();
@@ -256,16 +226,11 @@ namespace Group6_Project
                 int quantity = Convert.ToInt32(row["quantity"]);
                 string sql = "update warehouse_item set quantity = quantity - " + quantity + " where item_id = " + item_id + ";";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
-              
-                if(cmd.ExecuteNonQuery() >= 1)
-                {
-                    
-                }
-                else
+                
+                if(!(cmd.ExecuteNonQuery() >= 1))
                 {
                     MessageBox.Show("update warehouse_item table failed");
                 }
-             
             }
             conn.Close();
         }
@@ -312,8 +277,8 @@ namespace Group6_Project
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
               
                 MySqlDataReader reader = cmd.ExecuteReader();
-             //if not engouht return false
-                 if (reader.Read())
+                //if not engouht return false
+                if (reader.Read())          
                 {
                     int quantity_in_warehouse = Convert.ToInt32(reader["quantity"]);
                     if (quantity_in_warehouse < quantity)
@@ -323,7 +288,6 @@ namespace Group6_Project
                         return false;
                     }
                 }
-               
             }
             conn.Close();
             return true;

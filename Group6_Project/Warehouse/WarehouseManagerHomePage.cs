@@ -34,33 +34,10 @@ namespace Group6_Project
         }
 
         //Event
-        
-        [Category("Event")]
-
-        
-
-        private void btnCategoryManager_Click(object sender, EventArgs e)
-        {
-            panNav.Height = btnCategoryManager.Height;
-            panNav.Top = btnCategoryManager.Top;
-            panNav.Left = btnCategoryManager.Left;
-            btnCategoryManager.BackColor = Color.FromArgb(46, 51, 73);
-
-            this.panFormLoad.Controls.Clear();
-            loginPage login = new loginPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            login.FormBorderStyle = FormBorderStyle.None;
-            this.panFormLoad.Controls.Add(login);
-            login.Show();
-        }
         [Category("Event")]
         private void btnCategoryManager_Leave(object sender, EventArgs e)
         {
-            btnCategoryManager.BackColor = Color.FromArgb(51, 51, 100);
-        }
-
-        private void panFormLoad_Paint(object sender, PaintEventArgs e)
-        {
-
+            btnWmLogout.BackColor = Color.FromArgb(51, 51, 100);
         }
 
         [Category("Event")]
@@ -69,6 +46,7 @@ namespace Group6_Project
             this.Close();
         }
 
+        [Category("Event")]
         private void btnreceiveditem_Click(object sender, EventArgs e)
         {
 
@@ -79,8 +57,7 @@ namespace Group6_Project
             receivedItem.Show();
         }
 
-     
-
+        [Category("Event")]
         private void btnDispatch_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
@@ -91,6 +68,7 @@ namespace Group6_Project
 
         }
 
+        [Category("Event")]
         private void btnStockPage_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
@@ -99,6 +77,13 @@ namespace Group6_Project
             panFormLoad.Controls.Add(stockrecord);
             stockrecord.Show();
 
+        }
+
+        [Category("Event")]
+        private void btnWmLogout_Click(object sender, EventArgs e)
+        {
+            new loginPage().ShowDialog();
+            this.Close();
         }
     }
 }

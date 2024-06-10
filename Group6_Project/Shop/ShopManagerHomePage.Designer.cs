@@ -31,20 +31,20 @@ namespace Group6_Project
         {
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panNav = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.panFormLoad = new System.Windows.Forms.Panel();
             this.btnViewOrder = new System.Windows.Forms.Button();
             this.btnCheckout = new System.Windows.Forms.Button();
             this.btnSmLogout = new System.Windows.Forms.Button();
             this.btnOrder = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.panFormLoad = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -72,90 +72,6 @@ namespace Group6_Project
             this.panNav.Size = new System.Drawing.Size(7, 77);
             this.panNav.TabIndex = 2;
             // 
-            // btnViewOrder
-            // 
-            this.btnViewOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnViewOrder.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnViewOrder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnViewOrder.FlatAppearance.BorderSize = 0;
-            this.btnViewOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewOrder.ForeColor = System.Drawing.Color.White;
-            this.btnViewOrder.Image = global::Group6_Project.Properties.Resources.truck_side;
-            this.btnViewOrder.Location = new System.Drawing.Point(0, 284);
-            this.btnViewOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnViewOrder.Name = "btnViewOrder";
-            this.btnViewOrder.Size = new System.Drawing.Size(277, 77);
-            this.btnViewOrder.TabIndex = 9;
-            this.btnViewOrder.Text = "View Order";
-            this.btnViewOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnViewOrder.UseVisualStyleBackColor = false;
-            this.btnViewOrder.Click += new System.EventHandler(this.btnViewOrder_Click);
-            this.btnViewOrder.Leave += new System.EventHandler(this.btnViewOrder_Leave);
-            // 
-            // btnCheckout
-            // 
-            this.btnCheckout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnCheckout.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCheckout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCheckout.FlatAppearance.BorderSize = 0;
-            this.btnCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckout.ForeColor = System.Drawing.Color.White;
-            this.btnCheckout.Image = global::Group6_Project.Properties.Resources.truck_side;
-            this.btnCheckout.Location = new System.Drawing.Point(0, 207);
-            this.btnCheckout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(277, 77);
-            this.btnCheckout.TabIndex = 8;
-            this.btnCheckout.Text = "Check Out";
-            this.btnCheckout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCheckout.UseVisualStyleBackColor = false;
-            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
-            this.btnCheckout.Leave += new System.EventHandler(this.btnCheckout_Leave);
-            // 
-            // btnSmLogout
-            // 
-            this.btnSmLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.btnSmLogout.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnSmLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnSmLogout.FlatAppearance.BorderSize = 0;
-            this.btnSmLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSmLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSmLogout.ForeColor = System.Drawing.Color.White;
-            this.btnSmLogout.Image = global::Group6_Project.Properties.Resources.user__1_;
-            this.btnSmLogout.Location = new System.Drawing.Point(0, 671);
-            this.btnSmLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSmLogout.Name = "btnSmLogout";
-            this.btnSmLogout.Size = new System.Drawing.Size(277, 77);
-            this.btnSmLogout.TabIndex = 7;
-            this.btnSmLogout.Text = "  Shop Manager\r\nLogout";
-            this.btnSmLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnSmLogout.UseVisualStyleBackColor = false;
-            this.btnSmLogout.Click += new System.EventHandler(this.btnSmLogout_Click);
-            this.btnSmLogout.Leave += new System.EventHandler(this.btnCategoryManager_Leave);
-            // 
-            // btnOrder
-            // 
-            this.btnOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnOrder.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnOrder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOrder.FlatAppearance.BorderSize = 0;
-            this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrder.ForeColor = System.Drawing.Color.White;
-            this.btnOrder.Image = global::Group6_Project.Properties.Resources.box;
-            this.btnOrder.Location = new System.Drawing.Point(0, 130);
-            this.btnOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(277, 77);
-            this.btnOrder.TabIndex = 3;
-            this.btnOrder.Text = "    Order";
-            this.btnOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnOrder.UseVisualStyleBackColor = false;
-            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
-            this.btnOrder.Leave += new System.EventHandler(this.btnOrder_Leave);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
@@ -178,17 +94,6 @@ namespace Group6_Project
             this.label1.Size = new System.Drawing.Size(139, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "OPSR System";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Group6_Project.Properties.Resources.car_circle_bolt;
-            this.pictureBox1.Location = new System.Drawing.Point(105, 30);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 42);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel5
             // 
@@ -224,6 +129,97 @@ namespace Group6_Project
             this.panFormLoad.Size = new System.Drawing.Size(1041, 718);
             this.panFormLoad.TabIndex = 1;
             // 
+            // btnViewOrder
+            // 
+            this.btnViewOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnViewOrder.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnViewOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnViewOrder.FlatAppearance.BorderSize = 0;
+            this.btnViewOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewOrder.ForeColor = System.Drawing.Color.White;
+            this.btnViewOrder.Location = new System.Drawing.Point(0, 284);
+            this.btnViewOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnViewOrder.Name = "btnViewOrder";
+            this.btnViewOrder.Size = new System.Drawing.Size(277, 77);
+            this.btnViewOrder.TabIndex = 9;
+            this.btnViewOrder.Text = "View Order";
+            this.btnViewOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnViewOrder.UseVisualStyleBackColor = false;
+            this.btnViewOrder.Click += new System.EventHandler(this.btnViewOrder_Click);
+            this.btnViewOrder.Leave += new System.EventHandler(this.btnViewOrder_Leave);
+            // 
+            // btnCheckout
+            // 
+            this.btnCheckout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnCheckout.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCheckout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCheckout.FlatAppearance.BorderSize = 0;
+            this.btnCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckout.ForeColor = System.Drawing.Color.White;
+            this.btnCheckout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckout.Location = new System.Drawing.Point(0, 207);
+            this.btnCheckout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCheckout.Name = "btnCheckout";
+            this.btnCheckout.Size = new System.Drawing.Size(277, 77);
+            this.btnCheckout.TabIndex = 8;
+            this.btnCheckout.Text = "Check Out";
+            this.btnCheckout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnCheckout.UseVisualStyleBackColor = false;
+            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
+            this.btnCheckout.Leave += new System.EventHandler(this.btnCheckout_Leave);
+            // 
+            // btnSmLogout
+            // 
+            this.btnSmLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.btnSmLogout.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSmLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSmLogout.FlatAppearance.BorderSize = 0;
+            this.btnSmLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSmLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSmLogout.ForeColor = System.Drawing.Color.White;
+            this.btnSmLogout.Location = new System.Drawing.Point(0, 671);
+            this.btnSmLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSmLogout.Name = "btnSmLogout";
+            this.btnSmLogout.Size = new System.Drawing.Size(277, 77);
+            this.btnSmLogout.TabIndex = 7;
+            this.btnSmLogout.Text = "  Shop Manager\r\nLogout";
+            this.btnSmLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnSmLogout.UseVisualStyleBackColor = false;
+            this.btnSmLogout.Click += new System.EventHandler(this.btnSmLogout_Click);
+            this.btnSmLogout.Leave += new System.EventHandler(this.btnCategoryManager_Leave);
+            // 
+            // btnOrder
+            // 
+            this.btnOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnOrder.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrder.FlatAppearance.BorderSize = 0;
+            this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.ForeColor = System.Drawing.Color.White;
+            this.btnOrder.Location = new System.Drawing.Point(0, 130);
+            this.btnOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(277, 77);
+            this.btnOrder.TabIndex = 3;
+            this.btnOrder.Text = "Order";
+            this.btnOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnOrder.UseVisualStyleBackColor = false;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
+            this.btnOrder.Leave += new System.EventHandler(this.btnOrder_Leave);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(105, 30);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // ShopManagerHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -241,8 +237,8 @@ namespace Group6_Project
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

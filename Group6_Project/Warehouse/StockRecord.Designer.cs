@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblitemnamefilter = new System.Windows.Forms.Label();
             this.txtboxnamefilter = new System.Windows.Forms.TextBox();
             this.cbstatus = new System.Windows.Forms.ComboBox();
@@ -38,34 +41,34 @@
             // lblitemnamefilter
             // 
             this.lblitemnamefilter.AutoSize = true;
-            this.lblitemnamefilter.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblitemnamefilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblitemnamefilter.ForeColor = System.Drawing.Color.White;
-            this.lblitemnamefilter.Location = new System.Drawing.Point(63, 53);
+            this.lblitemnamefilter.Location = new System.Drawing.Point(120, 67);
             this.lblitemnamefilter.Name = "lblitemnamefilter";
-            this.lblitemnamefilter.Size = new System.Drawing.Size(207, 24);
+            this.lblitemnamefilter.Size = new System.Drawing.Size(193, 24);
             this.lblitemnamefilter.TabIndex = 0;
             this.lblitemnamefilter.Text = "Search by item name:";
             // 
             // txtboxnamefilter
             // 
-            this.txtboxnamefilter.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtboxnamefilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxnamefilter.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtboxnamefilter.Location = new System.Drawing.Point(276, 50);
+            this.txtboxnamefilter.Location = new System.Drawing.Point(343, 65);
             this.txtboxnamefilter.Name = "txtboxnamefilter";
-            this.txtboxnamefilter.Size = new System.Drawing.Size(351, 36);
+            this.txtboxnamefilter.Size = new System.Drawing.Size(351, 29);
             this.txtboxnamefilter.TabIndex = 1;
             this.txtboxnamefilter.TextChanged += new System.EventHandler(this.txtboxnamefilter_TextChanged);
             // 
             // cbstatus
             // 
-            this.cbstatus.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cbstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbstatus.FormattingEnabled = true;
             this.cbstatus.Items.AddRange(new object[] {
             "All",
             "Normal",
             "Low Stock",
             "Danger level Stock"});
-            this.cbstatus.Location = new System.Drawing.Point(730, 50);
+            this.cbstatus.Location = new System.Drawing.Point(730, 63);
             this.cbstatus.Name = "cbstatus";
             this.cbstatus.Size = new System.Drawing.Size(197, 32);
             this.cbstatus.TabIndex = 2;
@@ -74,11 +77,37 @@
             // dvgstockrecord
             // 
             this.dvgstockrecord.AllowUserToAddRows = false;
+            this.dvgstockrecord.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.dvgstockrecord.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgstockrecord.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dvgstockrecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgstockrecord.Location = new System.Drawing.Point(67, 125);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvgstockrecord.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dvgstockrecord.Location = new System.Drawing.Point(95, 120);
             this.dvgstockrecord.Name = "dvgstockrecord";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgstockrecord.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dvgstockrecord.RowTemplate.Height = 24;
-            this.dvgstockrecord.Size = new System.Drawing.Size(860, 400);
+            this.dvgstockrecord.Size = new System.Drawing.Size(860, 525);
             this.dvgstockrecord.TabIndex = 3;
             // 
             // StockRecord
@@ -86,11 +115,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1025, 679);
+            this.ClientSize = new System.Drawing.Size(1041, 718);
             this.Controls.Add(this.dvgstockrecord);
             this.Controls.Add(this.cbstatus);
             this.Controls.Add(this.txtboxnamefilter);
             this.Controls.Add(this.lblitemnamefilter);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StockRecord";
             this.Text = "StockRecord";
             this.Load += new System.EventHandler(this.StockRecord_Load);

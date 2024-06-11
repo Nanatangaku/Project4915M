@@ -35,26 +35,7 @@ namespace Group6_Project
         }
 
         //Event
-        [Category("Event")]
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        [Category("Event")]
-
-        private void btnCategoryManager_Click(object sender, EventArgs e)
-        {
-            panNav.Height = btnLogout.Height;
-            panNav.Top = btnLogout.Top;
-            panNav.Left = btnLogout.Left;
-            btnLogout.BackColor = Color.FromArgb(46, 51, 73);
-
-            this.panFormLoad.Controls.Clear();
-            loginPage login = new loginPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            login.FormBorderStyle = FormBorderStyle.None;
-            this.panFormLoad.Controls.Add(login);
-            login.Show();
-        }
+        
         [Category("Event")]
         private void btnCategoryManager_Leave(object sender, EventArgs e)
         {
@@ -88,6 +69,11 @@ namespace Group6_Project
         {
             this.Hide();
             new loginPage().ShowDialog();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

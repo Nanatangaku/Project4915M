@@ -36,8 +36,8 @@ namespace Group6_Project
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panFormLoad = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -54,9 +54,8 @@ namespace Group6_Project
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(369, 1098);
+            this.panelMenu.Size = new System.Drawing.Size(277, 810);
             this.panelMenu.TabIndex = 3;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
@@ -70,10 +69,10 @@ namespace Group6_Project
             this.btndeliveryorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndeliveryorder.ForeColor = System.Drawing.Color.White;
             this.btndeliveryorder.Image = global::Group6_Project.Properties.Resources.truck_side;
-            this.btndeliveryorder.Location = new System.Drawing.Point(0, 162);
-            this.btndeliveryorder.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btndeliveryorder.Location = new System.Drawing.Point(0, 140);
+            this.btndeliveryorder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btndeliveryorder.Name = "btndeliveryorder";
-            this.btndeliveryorder.Size = new System.Drawing.Size(369, 96);
+            this.btndeliveryorder.Size = new System.Drawing.Size(277, 83);
             this.btndeliveryorder.TabIndex = 9;
             this.btndeliveryorder.Text = "Order";
             this.btndeliveryorder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -83,10 +82,9 @@ namespace Group6_Project
             // panNav
             // 
             this.panNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(120)))), ((int)(((byte)(252)))));
-            this.panNav.Location = new System.Drawing.Point(0, 162);
-            this.panNav.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panNav.Location = new System.Drawing.Point(0, 140);
             this.panNav.Name = "panNav";
-            this.panNav.Size = new System.Drawing.Size(9, 96);
+            this.panNav.Size = new System.Drawing.Size(7, 83);
             this.panNav.TabIndex = 2;
             // 
             // btnLogout
@@ -99,10 +97,9 @@ namespace Group6_Project
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = global::Group6_Project.Properties.Resources.user__1_;
-            this.btnLogout.Location = new System.Drawing.Point(0, 1002);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogout.Location = new System.Drawing.Point(0, 727);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(369, 96);
+            this.btnLogout.Size = new System.Drawing.Size(277, 83);
             this.btnLogout.TabIndex = 7;
             this.btnLogout.Text = "    Delivery \r\n   Manager";
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -117,9 +114,8 @@ namespace Group6_Project
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(369, 162);
+            this.panel2.Size = new System.Drawing.Size(277, 140);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -127,8 +123,7 @@ namespace Group6_Project
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(87, 105);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(65, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 24);
             this.label1.TabIndex = 0;
@@ -137,62 +132,56 @@ namespace Group6_Project
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Group6_Project.Properties.Resources.car_circle_bolt;
-            this.pictureBox1.Location = new System.Drawing.Point(140, 38);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(105, 33);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(84, 52);
+            this.pictureBox1.Size = new System.Drawing.Size(63, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnClose
-            // 
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1696, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(60, 50);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "x";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.panel5.Controls.Add(this.panFormLoad);
-            this.panel5.Controls.Add(this.btnClose);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(369, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Controls.Add(this.button1);
+            this.panel5.Location = new System.Drawing.Point(277, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1756, 1098);
+            this.panel5.Size = new System.Drawing.Size(1041, 30);
             this.panel5.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1003, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(3);
+            this.button1.Size = new System.Drawing.Size(28, 30);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panFormLoad
             // 
             this.panFormLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panFormLoad.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panFormLoad.Location = new System.Drawing.Point(0, 163);
-            this.panFormLoad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panFormLoad.Location = new System.Drawing.Point(277, 30);
             this.panFormLoad.Name = "panFormLoad";
-            this.panFormLoad.Size = new System.Drawing.Size(1756, 935);
+            this.panFormLoad.Size = new System.Drawing.Size(1041, 778);
             this.panFormLoad.TabIndex = 1;
             this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
             // 
             // DeliveryManagerHomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(2125, 1098);
+            this.ClientSize = new System.Drawing.Size(1317, 810);
+            this.Controls.Add(this.panFormLoad);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DeliveryManagerHomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "userHomePage";
@@ -208,7 +197,6 @@ namespace Group6_Project
         #endregion
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panFormLoad;
         private System.Windows.Forms.Button btnLogout;
@@ -216,6 +204,7 @@ namespace Group6_Project
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btndeliveryorder;
+        private System.Windows.Forms.Button button1;
     }
 }
 

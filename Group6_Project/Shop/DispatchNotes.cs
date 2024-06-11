@@ -102,5 +102,15 @@ namespace Group6_Project
         {
 
         }
+
+        private void txtreceivedate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

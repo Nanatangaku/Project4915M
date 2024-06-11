@@ -82,6 +82,7 @@ namespace Group6_Project
         [Category("Event")]
         private void btnWmLogout_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new loginPage().ShowDialog();
             this.Close();
         }

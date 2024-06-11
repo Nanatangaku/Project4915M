@@ -43,9 +43,10 @@
             this.lblitemnamefilter.AutoSize = true;
             this.lblitemnamefilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblitemnamefilter.ForeColor = System.Drawing.Color.White;
-            this.lblitemnamefilter.Location = new System.Drawing.Point(120, 67);
+            this.lblitemnamefilter.Location = new System.Drawing.Point(180, 112);
+            this.lblitemnamefilter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblitemnamefilter.Name = "lblitemnamefilter";
-            this.lblitemnamefilter.Size = new System.Drawing.Size(193, 24);
+            this.lblitemnamefilter.Size = new System.Drawing.Size(299, 33);
             this.lblitemnamefilter.TabIndex = 0;
             this.lblitemnamefilter.Text = "Search by item name:";
             // 
@@ -53,9 +54,10 @@
             // 
             this.txtboxnamefilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxnamefilter.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtboxnamefilter.Location = new System.Drawing.Point(343, 65);
+            this.txtboxnamefilter.Location = new System.Drawing.Point(514, 108);
+            this.txtboxnamefilter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtboxnamefilter.Name = "txtboxnamefilter";
-            this.txtboxnamefilter.Size = new System.Drawing.Size(351, 29);
+            this.txtboxnamefilter.Size = new System.Drawing.Size(524, 40);
             this.txtboxnamefilter.TabIndex = 1;
             this.txtboxnamefilter.TextChanged += new System.EventHandler(this.txtboxnamefilter_TextChanged);
             // 
@@ -68,9 +70,10 @@
             "Normal",
             "Low Stock",
             "Danger level Stock"});
-            this.cbstatus.Location = new System.Drawing.Point(730, 63);
+            this.cbstatus.Location = new System.Drawing.Point(1095, 105);
+            this.cbstatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbstatus.Name = "cbstatus";
-            this.cbstatus.Size = new System.Drawing.Size(197, 32);
+            this.cbstatus.Size = new System.Drawing.Size(294, 41);
             this.cbstatus.TabIndex = 2;
             this.cbstatus.SelectedIndexChanged += new System.EventHandler(this.cbstatus_SelectedIndexChanged);
             // 
@@ -96,7 +99,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dvgstockrecord.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dvgstockrecord.Location = new System.Drawing.Point(95, 120);
+            this.dvgstockrecord.Location = new System.Drawing.Point(142, 200);
+            this.dvgstockrecord.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dvgstockrecord.Name = "dvgstockrecord";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -106,21 +110,24 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dvgstockrecord.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dvgstockrecord.RowHeadersWidth = 62;
             this.dvgstockrecord.RowTemplate.Height = 24;
-            this.dvgstockrecord.Size = new System.Drawing.Size(860, 525);
+            this.dvgstockrecord.Size = new System.Drawing.Size(1290, 875);
             this.dvgstockrecord.TabIndex = 3;
+            this.dvgstockrecord.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgstockrecord_CellContentClick);
             // 
             // StockRecord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1041, 718);
+            this.ClientSize = new System.Drawing.Size(1562, 1197);
             this.Controls.Add(this.dvgstockrecord);
             this.Controls.Add(this.cbstatus);
             this.Controls.Add(this.txtboxnamefilter);
             this.Controls.Add(this.lblitemnamefilter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "StockRecord";
             this.Text = "StockRecord";
             this.Load += new System.EventHandler(this.StockRecord_Load);

@@ -167,5 +167,10 @@ namespace Group6_Project
                 conn.Close();
             }
         }
+
+        private void dvgstockrecord_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

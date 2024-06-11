@@ -84,6 +84,7 @@ namespace Group6_Project
                     btnstart_delivery.Visible = false;
                 }
             }
+            conn.Close();
         }
 
         private void lblBack_Click(object sender, EventArgs e)
@@ -97,14 +98,13 @@ namespace Group6_Project
 
         private void btnstart_delivery_Click(object sender, EventArgs e)
         {
-            string sql = "update order_request set order_status_id = 9 where order_id = " + order_id;
+            string sql = "update order_request set order_status_id = 5 where order_id = " + order_id;
             conn.Open();
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             try
             {
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Delivery started");
-                hide_button_check();
             }
             catch (Exception ex)
             {

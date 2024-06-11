@@ -132,10 +132,13 @@
     <value>TopRight</value>
   </data>
   <data name="btnConfirm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>658, 265</value>
+    <value>877, 331</value>
+  </data>
+  <data name="btnConfirm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnConfirm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 31</value>
+    <value>129, 39</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnConfirm.TabIndex" type="System.Int32, mscorlib">
@@ -160,16 +163,16 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="txtboxtotalprice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 262</value>
+    <value>185, 328</value>
   </data>
   <data name="txtboxtotalprice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="txtboxtotalprice.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="txtboxtotalprice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 29</value>
+    <value>249, 29</value>
   </data>
   <data name="txtboxtotalprice.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -193,7 +196,10 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lbltotalprice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 265</value>
+    <value>36, 331</value>
+  </data>
+  <data name="lbltotalprice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lbltotalprice.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 24</value>
@@ -223,10 +229,13 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="dateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 126</value>
+    <value>735, 158</value>
+  </data>
+  <data name="dateTimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="dateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 29</value>
+    <value>271, 29</value>
   </data>
   <data name="dateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -247,10 +256,13 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="txtboxshopname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 81</value>
+    <value>735, 101</value>
+  </data>
+  <data name="txtboxshopname.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtboxshopname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 29</value>
+    <value>271, 29</value>
   </data>
   <data name="txtboxshopname.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -271,10 +283,13 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="txtboxcreatedate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 133</value>
+    <value>185, 166</value>
+  </data>
+  <data name="txtboxcreatedate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtboxcreatedate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 29</value>
+    <value>313, 29</value>
   </data>
   <data name="txtboxcreatedate.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -295,10 +310,13 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="txtboxshopid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 85</value>
+    <value>185, 106</value>
+  </data>
+  <data name="txtboxshopid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtboxshopid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 29</value>
+    <value>313, 29</value>
   </data>
   <data name="txtboxshopid.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -319,10 +337,13 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="txtboxname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 37</value>
+    <value>735, 46</value>
+  </data>
+  <data name="txtboxname.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtboxname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 29</value>
+    <value>271, 29</value>
   </data>
   <data name="txtboxname.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -343,10 +364,13 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="txtboxcreateid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 40</value>
+    <value>185, 50</value>
+  </data>
+  <data name="txtboxcreateid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtboxcreateid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 29</value>
+    <value>313, 29</value>
   </data>
   <data name="txtboxcreateid.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -367,13 +391,16 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="txtboxaddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 185</value>
+    <value>185, 231</value>
+  </data>
+  <data name="txtboxaddress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtboxaddress.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txtboxaddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>616, 60</value>
+    <value>820, 74</value>
   </data>
   <data name="txtboxaddress.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -397,7 +424,10 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lbladdress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 188</value>
+    <value>61, 235</value>
+  </data>
+  <data name="lbladdress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lbladdress.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 24</value>
@@ -427,7 +457,10 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblshopname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 83</value>
+    <value>571, 104</value>
+  </data>
+  <data name="lblshopname.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblshopname.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 24</value>
@@ -457,7 +490,10 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblexpectdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>427, 128</value>
+    <value>569, 160</value>
+  </data>
+  <data name="lblexpectdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblexpectdate.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 24</value>
@@ -487,7 +523,10 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblshopid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 87</value>
+    <value>65, 109</value>
+  </data>
+  <data name="lblshopid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblshopid.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 24</value>
@@ -517,7 +556,10 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 39</value>
+    <value>637, 49</value>
+  </data>
+  <data name="lblName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 24</value>
@@ -547,7 +589,10 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblcreatedate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 136</value>
+    <value>24, 170</value>
+  </data>
+  <data name="lblcreatedate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblcreatedate.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 24</value>
@@ -577,7 +622,10 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblcreaterid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 42</value>
+    <value>52, 52</value>
+  </data>
+  <data name="lblcreaterid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblcreaterid.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 24</value>
@@ -604,13 +652,19 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="gbgeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 15</value>
+    <value>176, 19</value>
+  </data>
+  <data name="gbgeneral.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="gbgeneral.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="gbgeneral.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="gbgeneral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>776, 310</value>
+    <value>1035, 388</value>
   </data>
   <data name="gbgeneral.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -631,13 +685,16 @@
     <value>1</value>
   </data>
   <data name="dvgcart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 331</value>
+    <value>49, 414</value>
+  </data>
+  <data name="dvgcart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="dvgcart.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="dvgcart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 359</value>
+    <value>1296, 449</value>
   </data>
   <data name="dvgcart.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -658,10 +715,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+    <value>8, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1041, 718</value>
+    <value>1388, 898</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>CheckOut</value>

@@ -207,9 +207,17 @@ namespace Group6_Project
             {
                 btndelete.Visible = false;
                 btnsave.Visible = false;
+                btnreceive.Visible = false;
+                btndownloaddispatchpdf.Visible = false;
+            }
+            else if (order_status == "delivering")
+            {
+                btndelete.Visible = false;
+                btnsave.Visible = false;
                 btnreceive.Visible = true;
                 btndownloaddispatchpdf.Visible = false;
-            }else if(order_status == "Received")
+            }
+            else if(order_status == "Received")
             {
                 btndelete.Visible = false;
                 btnsave.Visible = false;
@@ -229,7 +237,7 @@ namespace Group6_Project
             }
             conn.Close();
 
-            string sql2 =  "update delivery set received_date = '" + DateTime.Now.ToString("yyyy-MM-dd") + "' where delivery_id = " + delivery_id;
+            string sql2 = "update delivery set recive_date = '" + DateTime.Now.ToString("yyyy-MM-dd") + "' where delivery_id = " + delivery_id;
             MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
             conn.Open();
             if (!(cmd2.ExecuteNonQuery() >= 1))

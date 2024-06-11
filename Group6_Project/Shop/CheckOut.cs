@@ -149,6 +149,7 @@ namespace Group6_Project
             conn.Open();
             if(cmd.ExecuteNonQuery() >= 1)
             {
+            
                 id = cmd.LastInsertedId;
                 conn.Close();
                 MessageBox.Show("Order Request Created");
@@ -268,9 +269,10 @@ namespace Group6_Project
         public Boolean check_enought_quantity()
         {
             DataTable dt = get_from_cart_table();
-            conn.Open();
             foreach (DataRow row in dt.Rows)
             {
+                conn.Open();
+
                 int item_id = Convert.ToInt32(row["item_id"]);
                 int quantity = Convert.ToInt32(row["quantity"]);
                 string sql = "select quantity from warehouse_item where item_id = " + item_id + ";";
@@ -288,9 +290,15 @@ namespace Group6_Project
                         return false;
                     }
                 }
+                conn.Close();
             }
-            conn.Close();
+
             return true;
+        }
+
+        private void dvgcart_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

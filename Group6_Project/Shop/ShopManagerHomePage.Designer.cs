@@ -58,18 +58,18 @@ namespace Group6_Project
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(277, 748);
+            this.panelMenu.Size = new System.Drawing.Size(369, 935);
             this.panelMenu.TabIndex = 3;
             // 
             // panNav
             // 
             this.panNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(120)))), ((int)(((byte)(252)))));
-            this.panNav.Location = new System.Drawing.Point(0, 130);
-            this.panNav.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panNav.Location = new System.Drawing.Point(0, 162);
+            this.panNav.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panNav.Name = "panNav";
-            this.panNav.Size = new System.Drawing.Size(7, 77);
+            this.panNav.Size = new System.Drawing.Size(9, 96);
             this.panNav.TabIndex = 2;
             // 
             // btnViewOrder
@@ -83,10 +83,10 @@ namespace Group6_Project
             this.btnViewOrder.ForeColor = System.Drawing.Color.White;
             this.btnViewOrder.Image = global::Group6_Project.Properties.Resources.truck_check;
             this.btnViewOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewOrder.Location = new System.Drawing.Point(0, 284);
-            this.btnViewOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnViewOrder.Location = new System.Drawing.Point(0, 354);
+            this.btnViewOrder.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnViewOrder.Name = "btnViewOrder";
-            this.btnViewOrder.Size = new System.Drawing.Size(277, 77);
+            this.btnViewOrder.Size = new System.Drawing.Size(369, 96);
             this.btnViewOrder.TabIndex = 9;
             this.btnViewOrder.Text = "View Order";
             this.btnViewOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -105,10 +105,10 @@ namespace Group6_Project
             this.btnCheckout.ForeColor = System.Drawing.Color.White;
             this.btnCheckout.Image = global::Group6_Project.Properties.Resources.shopping_cart__3_;
             this.btnCheckout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCheckout.Location = new System.Drawing.Point(0, 207);
-            this.btnCheckout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCheckout.Location = new System.Drawing.Point(0, 258);
+            this.btnCheckout.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(277, 77);
+            this.btnCheckout.Size = new System.Drawing.Size(369, 96);
             this.btnCheckout.TabIndex = 8;
             this.btnCheckout.Text = "Check Out";
             this.btnCheckout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -126,10 +126,10 @@ namespace Group6_Project
             this.btnSmLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSmLogout.ForeColor = System.Drawing.Color.White;
             this.btnSmLogout.Image = global::Group6_Project.Properties.Resources.user__1_;
-            this.btnSmLogout.Location = new System.Drawing.Point(0, 671);
-            this.btnSmLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSmLogout.Location = new System.Drawing.Point(0, 839);
+            this.btnSmLogout.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnSmLogout.Name = "btnSmLogout";
-            this.btnSmLogout.Size = new System.Drawing.Size(277, 77);
+            this.btnSmLogout.Size = new System.Drawing.Size(369, 96);
             this.btnSmLogout.TabIndex = 7;
             this.btnSmLogout.Text = "  Shop Manager\r\nLogout";
             this.btnSmLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -148,10 +148,10 @@ namespace Group6_Project
             this.btnOrder.ForeColor = System.Drawing.Color.White;
             this.btnOrder.Image = global::Group6_Project.Properties.Resources.list1;
             this.btnOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrder.Location = new System.Drawing.Point(0, 130);
-            this.btnOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOrder.Location = new System.Drawing.Point(0, 162);
+            this.btnOrder.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(277, 77);
+            this.btnOrder.Size = new System.Drawing.Size(369, 96);
             this.btnOrder.TabIndex = 3;
             this.btnOrder.Text = "Order   ";
             this.btnOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -166,9 +166,9 @@ namespace Group6_Project
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(277, 130);
+            this.panel2.Size = new System.Drawing.Size(369, 162);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -176,7 +176,8 @@ namespace Group6_Project
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(65, 84);
+            this.label1.Location = new System.Drawing.Point(87, 105);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 24);
             this.label1.TabIndex = 0;
@@ -188,10 +189,10 @@ namespace Group6_Project
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.ErrorImage = global::Group6_Project.Properties.Resources.car_circle_bolt;
             this.pictureBox1.InitialImage = global::Group6_Project.Properties.Resources.car_circle_bolt;
-            this.pictureBox1.Location = new System.Drawing.Point(105, 30);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(140, 38);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 42);
+            this.pictureBox1.Size = new System.Drawing.Size(84, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -200,10 +201,10 @@ namespace Group6_Project
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
             this.panel5.Controls.Add(this.btnClose);
-            this.panel5.Location = new System.Drawing.Point(277, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Location = new System.Drawing.Point(369, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1041, 30);
+            this.panel5.Size = new System.Drawing.Size(1388, 38);
             this.panel5.TabIndex = 5;
             // 
             // btnClose
@@ -211,11 +212,11 @@ namespace Group6_Project
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(1003, 0);
+            this.btnClose.Location = new System.Drawing.Point(1337, 0);
             this.btnClose.Margin = new System.Windows.Forms.Padding(0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Padding = new System.Windows.Forms.Padding(2);
-            this.btnClose.Size = new System.Drawing.Size(28, 28);
+            this.btnClose.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Size = new System.Drawing.Size(37, 35);
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -224,23 +225,24 @@ namespace Group6_Project
             // panFormLoad
             // 
             this.panFormLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panFormLoad.Location = new System.Drawing.Point(277, 30);
-            this.panFormLoad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panFormLoad.Location = new System.Drawing.Point(369, 38);
+            this.panFormLoad.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panFormLoad.Name = "panFormLoad";
-            this.panFormLoad.Size = new System.Drawing.Size(1041, 718);
+            this.panFormLoad.Size = new System.Drawing.Size(1388, 898);
             this.panFormLoad.TabIndex = 1;
+            this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
             // 
             // ShopManagerHomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1317, 748);
+            this.ClientSize = new System.Drawing.Size(1756, 935);
             this.Controls.Add(this.panFormLoad);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "ShopManagerHomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "userHomePage";

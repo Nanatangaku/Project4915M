@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1:3306
--- 產生時間： 2024-06-09 10:21:15
+-- 產生時間： 2024-06-11 00:28:01
 -- 伺服器版本： 8.0.37
 -- PHP 版本： 8.2.13
 
@@ -26,6 +26,27 @@ USE `project4915mdb`;
 -- --------------------------------------------------------
 
 --
+-- 資料表結構 `cancel_order`
+--
+
+DROP TABLE IF EXISTS `cancel_order`;
+CREATE TABLE IF NOT EXISTS `cancel_order` (
+  `cancel_order_id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
+  `order_id` int NOT NULL,
+  `payment` int NOT NULL,
+  PRIMARY KEY (`cancel_order_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- 資料表新增資料前，先清除舊資料 `cancel_order`
+--
+
+TRUNCATE TABLE `cancel_order`;
+-- --------------------------------------------------------
+
+--
 -- 資料表結構 `cart`
 --
 
@@ -38,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
   PRIMARY KEY (`cart_id`),
   KEY `item_id` (`item_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `cart`
@@ -59,10 +80,9 @@ CREATE TABLE IF NOT EXISTS `delivery` (
   `create_date` date NOT NULL,
   `expected_delivery_date` date NOT NULL,
   `despatch_date` date DEFAULT NULL,
-  `delivery_date` date DEFAULT NULL,
   `recive_date` date DEFAULT NULL,
   PRIMARY KEY (`delivery_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `delivery`
@@ -73,9 +93,10 @@ TRUNCATE TABLE `delivery`;
 -- 傾印資料表的資料 `delivery`
 --
 
-INSERT INTO `delivery` (`delivery_id`, `order_id`, `user_id`, `create_date`, `expected_delivery_date`, `despatch_date`, `delivery_date`, `recive_date`) VALUES
-(3, 26, 5, '2024-06-05', '2024-06-12', NULL, NULL, NULL),
-(4, 27, 5, '2024-06-09', '2024-06-16', NULL, NULL, NULL);
+INSERT INTO `delivery` (`delivery_id`, `order_id`, `user_id`, `create_date`, `expected_delivery_date`, `despatch_date`, `recive_date`) VALUES
+(3, 26, 5, '2024-06-05', '2024-06-12', NULL, NULL),
+(4, 27, 5, '2024-06-09', '2024-06-16', NULL, NULL),
+(5, 28, 5, '2024-06-10', '2024-06-17', '2024-06-10', NULL);
 
 -- --------------------------------------------------------
 
@@ -171,7 +192,8 @@ TRUNCATE TABLE `order_item`;
 
 INSERT INTO `order_item` (`order_id`, `item_id`, `quantity`) VALUES
 (26, 1, 1500),
-(27, 1, 1500);
+(27, 1, 1500),
+(28, 1, 1500);
 
 -- --------------------------------------------------------
 
@@ -191,7 +213,7 @@ CREATE TABLE IF NOT EXISTS `order_request` (
   KEY `order_status_id` (`order_status_id`),
   KEY `user_id` (`user_id`),
   KEY `delivery_id` (`delivery_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `order_request`
@@ -204,7 +226,8 @@ TRUNCATE TABLE `order_request`;
 
 INSERT INTO `order_request` (`order_id`, `user_id`, `payment`, `order_status_id`, `address`, `delivery_id`) VALUES
 (26, 5, 148500.00, 1, '1', 3),
-(27, 5, 148500.00, 7, '2', 4);
+(27, 5, 148500.00, 9, '2', 4),
+(28, 5, 148500.00, 7, 'chaiwan', 5);
 
 -- --------------------------------------------------------
 
@@ -218,7 +241,7 @@ CREATE TABLE IF NOT EXISTS `order_status` (
   `status` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   PRIMARY KEY (`order_status_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `order_status`
@@ -234,10 +257,11 @@ INSERT INTO `order_status` (`order_status_id`, `status`, `description`) VALUES
 (2, 'error process', 'request'),
 (3, 'complete process', 'request'),
 (4, 'wait to delivery', 'delivery reuqest'),
-(5, 'delivered', 'delivery reuqest'),
+(5, 'delivering', 'delivering request'),
 (6, 'waiting to despatch', 'warehouse'),
 (7, 'despatched', 'warehouse'),
-(8, 'Cancel Order', 'Order is canceled');
+(8, 'Cancel Order', 'Order is canceled'),
+(9, 'Received', 'Goods is Received');
 
 -- --------------------------------------------------------
 
@@ -366,7 +390,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `shop_id` int NOT NULL,
   PRIMARY KEY (`user_id`),
   KEY `role_id` (`role_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `user`
@@ -385,7 +409,8 @@ INSERT INTO `user` (`user_id`, `first_name`, `last_name`, `role_id`, `user_name`
 (5, 'SM', 'Ken', 5, 'ken_sm', '123', 54946051, 'ken_sm@gmail.com', 1),
 (6, 'DM', 'Ken', 6, 'ken_dm', '123', 54946051, 'ken_dm@gmail.com', 1),
 (7, 'AM', 'Ken', 7, 'ken_am', '123', 54946051, 'ken_am@gmail.com', 1),
-(8, 'Dealer', 'ken', 8, 'ken_dealer', '123', 47939237, 'ken_dealer@gmail.com', 1);
+(8, 'Dealer', 'ken', 8, 'ken_dealer', '123', 47939237, 'ken_dealer@gmail.com', 1),
+(9, 'SM2', 'Ken', 5, 'ken_sm2', '123', 54946052, 'ken_sm2@gmail.com', 1);
 
 -- --------------------------------------------------------
 
@@ -465,7 +490,7 @@ TRUNCATE TABLE `warehouse_item`;
 --
 
 INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
-(1, 1, 7500),
+(1, 1, 6000),
 (2, 1, 2500),
 (3, 1, 1500),
 (4, 1, 600),
@@ -478,17 +503,16 @@ INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
 --
 
 --
+-- 資料表的限制式 `cancel_order`
+--
+ALTER TABLE `cancel_order`
+  ADD CONSTRAINT `cancel_order_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`);
+
+--
 -- 資料表的限制式 `item`
 --
 ALTER TABLE `item`
   ADD CONSTRAINT `item_ibfk_1` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`supplier_id`);
-
---
--- 資料表的限制式 `shop_user`
---
-ALTER TABLE `shop_user`
-  ADD CONSTRAINT `shop_user_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`),
-  ADD CONSTRAINT `shop_user_ibfk_2` FOREIGN KEY (`shop_id`) REFERENCES `shop` (`shop_id`);
 
 --
 -- 資料表的限制式 `user`

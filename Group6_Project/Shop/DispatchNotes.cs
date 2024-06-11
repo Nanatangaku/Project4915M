@@ -83,7 +83,7 @@ namespace Group6_Project
                 txtstatus.Text = reader3["status"].ToString();
             }
             conn.Close();
-            string sql4 = "select create_date,expected_delivery_date from delivery where delivery_id = " + delivery_id;
+            string sql4 = "select create_date,expected_delivery_date,recive_date from delivery where delivery_id = " + delivery_id;
             MySqlCommand cmd4 = new MySqlCommand(sql4, conn);
             conn.Open();
             MySqlDataReader reader4 = cmd4.ExecuteReader();
@@ -93,8 +93,14 @@ namespace Group6_Project
                 txtcreatedate.Text = reader4["create_date"].ToString();
                 //make the datetimepicker value = expected_delivery_date and only choose 3month from create_date
                 dtpexpecteddate.Value = Convert.ToDateTime(reader4["expected_delivery_date"]);
+               txtreceivedate.Text = reader4["recive_date"].ToString();
             }
             conn.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

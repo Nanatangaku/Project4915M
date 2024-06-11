@@ -109,9 +109,14 @@ namespace Group6_Project
 
         private void btnSmLogout_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
             new loginPage().ShowDialog();
             this.Close();
+        }
+
+        private void panFormLoad_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
  }

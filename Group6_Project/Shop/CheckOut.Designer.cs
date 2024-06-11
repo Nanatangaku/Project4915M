@@ -227,6 +227,7 @@
             this.dvgcart.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dvgcart.RowTemplate.Height = 24;
             this.dvgcart.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgcart_CellClick);
+            this.dvgcart.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgcart_CellContentClick);
             // 
             // CheckOut
             // 

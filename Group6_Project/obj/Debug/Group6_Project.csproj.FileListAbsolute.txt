@@ -265,3 +265,10 @@ C:\Users\User\Documents\GitHub\Project4915M\Group6_Project\obj\Debug\Group6_Proj
 C:\Users\User\Documents\GitHub\Project4915M\Group6_Project\obj\Debug\Group6_Project.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\Project4915M\Group6_Project\obj\Debug\Group6_Project.exe
 C:\Users\User\Documents\GitHub\Project4915M\Group6_Project\obj\Debug\Group6_Project.pdb
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\bin\Debug\Microsoft.VisualStudio.GraphModel.xml
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\bin\Debug\zh-Hant\Microsoft.VisualStudio.GraphModel.resources.dll
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.Category.Category_Role.UpdateRole.resources
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.Category.Category_Shop.UpdateShop.resources
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.Category.Category_Supplier.UpdateSupplier.resources
+C:\Users\ku123\Desktop\github file\Project4915M\Group6_Project\obj\Debug\Group6_Project.Category.Category_Warehouse.UpdateWarehouse.resources

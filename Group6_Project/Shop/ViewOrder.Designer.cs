@@ -68,7 +68,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dvgvieworder_request.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dvgvieworder_request.Location = new System.Drawing.Point(65, 106);
+            this.dvgvieworder_request.Location = new System.Drawing.Point(87, 132);
+            this.dvgvieworder_request.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dvgvieworder_request.Name = "dvgvieworder_request";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -79,7 +80,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dvgvieworder_request.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dvgvieworder_request.RowTemplate.Height = 24;
-            this.dvgvieworder_request.Size = new System.Drawing.Size(934, 545);
+            this.dvgvieworder_request.Size = new System.Drawing.Size(1245, 681);
             this.dvgvieworder_request.TabIndex = 1;
             this.dvgvieworder_request.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgvieworder_request_CellContentClick);
             // 
@@ -88,7 +89,8 @@
             this.lblsearchid.AutoSize = true;
             this.lblsearchid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsearchid.ForeColor = System.Drawing.Color.White;
-            this.lblsearchid.Location = new System.Drawing.Point(142, 49);
+            this.lblsearchid.Location = new System.Drawing.Point(189, 61);
+            this.lblsearchid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsearchid.Name = "lblsearchid";
             this.lblsearchid.Size = new System.Drawing.Size(176, 24);
             this.lblsearchid.TabIndex = 2;
@@ -103,15 +105,15 @@
             this.txtfilter.BorderSize = 1;
             this.txtfilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfilter.ForeColor = System.Drawing.Color.DimGray;
-            this.txtfilter.Location = new System.Drawing.Point(325, 46);
-            this.txtfilter.Margin = new System.Windows.Forms.Padding(4);
+            this.txtfilter.Location = new System.Drawing.Point(433, 58);
+            this.txtfilter.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtfilter.Multiline = false;
             this.txtfilter.Name = "txtfilter";
-            this.txtfilter.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtfilter.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtfilter.PasswordChar = false;
             this.txtfilter.PlaceholderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtfilter.PlaceholderText = "";
-            this.txtfilter.Size = new System.Drawing.Size(367, 33);
+            this.txtfilter.Size = new System.Drawing.Size(489, 37);
             this.txtfilter.TabIndex = 0;
             this.txtfilter.Texts = "";
             this.txtfilter.UnderlinedStyle = false;
@@ -124,24 +126,27 @@
             "All",
             "Waiting to Process",
             "Dispatched",
+            "Delivering",
             "Complete Order"});
-            this.cbfilter.Location = new System.Drawing.Point(759, 46);
+            this.cbfilter.Location = new System.Drawing.Point(1012, 58);
+            this.cbfilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbfilter.Name = "cbfilter";
-            this.cbfilter.Size = new System.Drawing.Size(214, 32);
+            this.cbfilter.Size = new System.Drawing.Size(284, 32);
             this.cbfilter.TabIndex = 3;
             this.cbfilter.SelectedIndexChanged += new System.EventHandler(this.cbfilter_SelectedIndexChanged);
             // 
             // ViewOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1041, 718);
+            this.ClientSize = new System.Drawing.Size(1388, 898);
             this.Controls.Add(this.cbfilter);
             this.Controls.Add(this.lblsearchid);
             this.Controls.Add(this.dvgvieworder_request);
             this.Controls.Add(this.txtfilter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ViewOrder";
             this.Text = "ViewOrder";
             this.Load += new System.EventHandler(this.ViewOrder_Load);

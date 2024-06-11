@@ -44,10 +44,10 @@ namespace Group6_Project
 
         private void btnCategoryManager_Click(object sender, EventArgs e)
         {
-            panNav.Height = btnCategoryManager.Height;
-            panNav.Top = btnCategoryManager.Top;
-            panNav.Left = btnCategoryManager.Left;
-            btnCategoryManager.BackColor = Color.FromArgb(46, 51, 73);
+            panNav.Height = btnLogout.Height;
+            panNav.Top = btnLogout.Top;
+            panNav.Left = btnLogout.Left;
+            btnLogout.BackColor = Color.FromArgb(46, 51, 73);
 
             this.panFormLoad.Controls.Clear();
             loginPage login = new loginPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -58,7 +58,7 @@ namespace Group6_Project
         [Category("Event")]
         private void btnCategoryManager_Leave(object sender, EventArgs e)
         {
-            btnCategoryManager.BackColor = Color.FromArgb(51, 51, 100);
+            btnLogout.BackColor = Color.FromArgb(51, 51, 100);
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
@@ -81,9 +81,14 @@ namespace Group6_Project
             deliveryorder.Show();
         }
 
-        private void roundTextBox1__TextChanged(object sender, EventArgs e)
-        {
+  
 
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new loginPage().ShowDialog();
+            this.Close();
         }
     }
 }

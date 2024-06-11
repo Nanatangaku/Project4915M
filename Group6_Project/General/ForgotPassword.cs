@@ -79,5 +79,10 @@ namespace Group6_Project
             new loginPage().ShowDialog();
             this.Close();
         }
+
+        private void ForgotPassword_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

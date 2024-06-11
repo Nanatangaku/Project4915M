@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1:3306
--- 產生時間： 2024-06-11 00:28:01
+-- 產生時間： 2024-06-11 00:57:27
 -- 伺服器版本： 8.0.37
 -- PHP 版本： 8.2.13
 
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
   PRIMARY KEY (`cart_id`),
   KEY `item_id` (`item_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `cart`
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `delivery` (
   `despatch_date` date DEFAULT NULL,
   `recive_date` date DEFAULT NULL,
   PRIMARY KEY (`delivery_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `delivery`
@@ -96,7 +96,12 @@ TRUNCATE TABLE `delivery`;
 INSERT INTO `delivery` (`delivery_id`, `order_id`, `user_id`, `create_date`, `expected_delivery_date`, `despatch_date`, `recive_date`) VALUES
 (3, 26, 5, '2024-06-05', '2024-06-12', NULL, NULL),
 (4, 27, 5, '2024-06-09', '2024-06-16', NULL, NULL),
-(5, 28, 5, '2024-06-10', '2024-06-17', '2024-06-10', NULL);
+(5, 28, 5, '2024-06-10', '2024-06-17', '2024-06-10', NULL),
+(6, 29, 5, '2024-06-11', '2024-06-18', '2024-06-11', NULL),
+(7, 30, 5, '2024-06-11', '2024-06-18', '2024-06-11', NULL),
+(8, 31, 5, '2024-06-11', '2024-06-26', '2024-06-11', NULL),
+(9, 32, 5, '2024-06-11', '2024-06-18', '2024-06-11', '2024-06-11'),
+(10, 33, 5, '2024-06-11', '2024-06-18', '2024-06-11', '2024-06-11');
 
 -- --------------------------------------------------------
 
@@ -193,7 +198,16 @@ TRUNCATE TABLE `order_item`;
 INSERT INTO `order_item` (`order_id`, `item_id`, `quantity`) VALUES
 (26, 1, 1500),
 (27, 1, 1500),
-(28, 1, 1500);
+(28, 1, 1500),
+(29, 1, 500),
+(29, 8, 500),
+(29, 7, 500),
+(30, 1, 100),
+(30, 2, 200),
+(31, 1, 100),
+(31, 8, 100),
+(32, 1, 100),
+(33, 1, 100);
 
 -- --------------------------------------------------------
 
@@ -213,7 +227,7 @@ CREATE TABLE IF NOT EXISTS `order_request` (
   KEY `order_status_id` (`order_status_id`),
   KEY `user_id` (`user_id`),
   KEY `delivery_id` (`delivery_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `order_request`
@@ -225,9 +239,10 @@ TRUNCATE TABLE `order_request`;
 --
 
 INSERT INTO `order_request` (`order_id`, `user_id`, `payment`, `order_status_id`, `address`, `delivery_id`) VALUES
-(26, 5, 148500.00, 1, '1', 3),
-(27, 5, 148500.00, 9, '2', 4),
-(28, 5, 148500.00, 7, 'chaiwan', 5);
+(32, 5, 9900.00, 9, 'Ting Yi', 9),
+(31, 5, 12100.00, 9, 'Chai Wan Campus', 8),
+(30, 5, 27500.00, 9, 'Wan Chai Campus', 7),
+(33, 5, 9900.00, 9, 'Test1', 10);
 
 -- --------------------------------------------------------
 
@@ -490,13 +505,13 @@ TRUNCATE TABLE `warehouse_item`;
 --
 
 INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
-(1, 1, 6000),
-(2, 1, 2500),
-(3, 1, 1500),
-(4, 1, 600),
+(1, 1, 7000),
+(2, 1, 3300),
+(3, 1, 3500),
+(4, 1, 840),
 (5, 1, 2000),
-(7, 1, 2500),
-(8, 1, 3000);
+(7, 1, 2000),
+(8, 1, 2400);
 
 --
 -- 已傾印資料表的限制式

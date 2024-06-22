@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblBack = new System.Windows.Forms.Label();
             this.lblorder_id = new System.Windows.Forms.Label();
             this.gbgeneral = new System.Windows.Forms.GroupBox();
@@ -60,7 +63,7 @@
             this.lblBack.AutoSize = true;
             this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBack.ForeColor = System.Drawing.Color.White;
-            this.lblBack.Location = new System.Drawing.Point(30, 20);
+            this.lblBack.Location = new System.Drawing.Point(30, 18);
             this.lblBack.Name = "lblBack";
             this.lblBack.Size = new System.Drawing.Size(75, 24);
             this.lblBack.TabIndex = 0;
@@ -71,7 +74,7 @@
             // 
             this.lblorder_id.AutoSize = true;
             this.lblorder_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblorder_id.Location = new System.Drawing.Point(154, 51);
+            this.lblorder_id.Location = new System.Drawing.Point(154, 47);
             this.lblorder_id.Name = "lblorder_id";
             this.lblorder_id.Size = new System.Drawing.Size(86, 24);
             this.lblorder_id.TabIndex = 1;
@@ -97,9 +100,9 @@
             this.gbgeneral.Controls.Add(this.lblorder_id);
             this.gbgeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbgeneral.ForeColor = System.Drawing.Color.White;
-            this.gbgeneral.Location = new System.Drawing.Point(35, 65);
+            this.gbgeneral.Location = new System.Drawing.Point(35, 60);
             this.gbgeneral.Name = "gbgeneral";
-            this.gbgeneral.Size = new System.Drawing.Size(975, 295);
+            this.gbgeneral.Size = new System.Drawing.Size(975, 272);
             this.gbgeneral.TabIndex = 2;
             this.gbgeneral.TabStop = false;
             this.gbgeneral.Text = "General";
@@ -108,7 +111,7 @@
             // dtpexpecteddate
             // 
             this.dtpexpecteddate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpexpecteddate.Location = new System.Drawing.Point(264, 234);
+            this.dtpexpecteddate.Location = new System.Drawing.Point(264, 216);
             this.dtpexpecteddate.Name = "dtpexpecteddate";
             this.dtpexpecteddate.Size = new System.Drawing.Size(208, 29);
             this.dtpexpecteddate.TabIndex = 23;
@@ -118,7 +121,7 @@
             // 
             this.txtstatus.BackColor = System.Drawing.Color.DarkGray;
             this.txtstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtstatus.Location = new System.Drawing.Point(666, 169);
+            this.txtstatus.Location = new System.Drawing.Point(666, 156);
             this.txtstatus.Name = "txtstatus";
             this.txtstatus.ReadOnly = true;
             this.txtstatus.Size = new System.Drawing.Size(210, 29);
@@ -128,7 +131,7 @@
             // 
             this.txtname.BackColor = System.Drawing.Color.DarkGray;
             this.txtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtname.Location = new System.Drawing.Point(666, 107);
+            this.txtname.Location = new System.Drawing.Point(666, 99);
             this.txtname.Name = "txtname";
             this.txtname.ReadOnly = true;
             this.txtname.Size = new System.Drawing.Size(210, 29);
@@ -139,7 +142,7 @@
             // 
             this.txtcreatedate.BackColor = System.Drawing.Color.DarkGray;
             this.txtcreatedate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcreatedate.Location = new System.Drawing.Point(666, 46);
+            this.txtcreatedate.Location = new System.Drawing.Point(666, 42);
             this.txtcreatedate.Name = "txtcreatedate";
             this.txtcreatedate.ReadOnly = true;
             this.txtcreatedate.Size = new System.Drawing.Size(210, 29);
@@ -156,9 +159,9 @@
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.ForeColor = System.Drawing.Color.White;
-            this.btnsave.Location = new System.Drawing.Point(773, 230);
+            this.btnsave.Location = new System.Drawing.Point(773, 212);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(103, 46);
+            this.btnsave.Size = new System.Drawing.Size(103, 42);
             this.btnsave.TabIndex = 4;
             this.btnsave.Text = "Save";
             this.btnsave.TextColor = System.Drawing.Color.White;
@@ -176,9 +179,9 @@
             this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.ForeColor = System.Drawing.Color.White;
-            this.btndelete.Location = new System.Drawing.Point(638, 230);
+            this.btndelete.Location = new System.Drawing.Point(638, 212);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(103, 46);
+            this.btndelete.Size = new System.Drawing.Size(103, 42);
             this.btndelete.TabIndex = 5;
             this.btndelete.Text = "Delete";
             this.btndelete.TextColor = System.Drawing.Color.White;
@@ -189,7 +192,7 @@
             // 
             this.txtshopid.BackColor = System.Drawing.Color.DarkGray;
             this.txtshopid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtshopid.Location = new System.Drawing.Point(264, 172);
+            this.txtshopid.Location = new System.Drawing.Point(264, 159);
             this.txtshopid.Name = "txtshopid";
             this.txtshopid.ReadOnly = true;
             this.txtshopid.Size = new System.Drawing.Size(208, 29);
@@ -199,7 +202,7 @@
             // 
             this.txtboxcreatorid.BackColor = System.Drawing.Color.DarkGray;
             this.txtboxcreatorid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxcreatorid.Location = new System.Drawing.Point(264, 111);
+            this.txtboxcreatorid.Location = new System.Drawing.Point(264, 102);
             this.txtboxcreatorid.Name = "txtboxcreatorid";
             this.txtboxcreatorid.ReadOnly = true;
             this.txtboxcreatorid.Size = new System.Drawing.Size(208, 29);
@@ -209,7 +212,7 @@
             // 
             this.txtboxorderid.BackColor = System.Drawing.Color.DarkGray;
             this.txtboxorderid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxorderid.Location = new System.Drawing.Point(264, 49);
+            this.txtboxorderid.Location = new System.Drawing.Point(264, 45);
             this.txtboxorderid.Name = "txtboxorderid";
             this.txtboxorderid.ReadOnly = true;
             this.txtboxorderid.Size = new System.Drawing.Size(208, 29);
@@ -219,7 +222,7 @@
             // 
             this.lblexpecteddeliverydate.AutoSize = true;
             this.lblexpecteddeliverydate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblexpecteddeliverydate.Location = new System.Drawing.Point(29, 236);
+            this.lblexpecteddeliverydate.Location = new System.Drawing.Point(29, 218);
             this.lblexpecteddeliverydate.Name = "lblexpecteddeliverydate";
             this.lblexpecteddeliverydate.Size = new System.Drawing.Size(211, 24);
             this.lblexpecteddeliverydate.TabIndex = 15;
@@ -229,7 +232,7 @@
             // 
             this.lblstatus.AutoSize = true;
             this.lblstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblstatus.Location = new System.Drawing.Point(568, 171);
+            this.lblstatus.Location = new System.Drawing.Point(568, 158);
             this.lblstatus.Name = "lblstatus";
             this.lblstatus.Size = new System.Drawing.Size(65, 24);
             this.lblstatus.TabIndex = 7;
@@ -239,7 +242,7 @@
             // 
             this.lblname.AutoSize = true;
             this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblname.Location = new System.Drawing.Point(567, 109);
+            this.lblname.Location = new System.Drawing.Point(567, 101);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(66, 24);
             this.lblname.TabIndex = 6;
@@ -249,7 +252,7 @@
             // 
             this.lblcreatedate.AutoSize = true;
             this.lblcreatedate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcreatedate.Location = new System.Drawing.Point(520, 48);
+            this.lblcreatedate.Location = new System.Drawing.Point(520, 44);
             this.lblcreatedate.Name = "lblcreatedate";
             this.lblcreatedate.Size = new System.Drawing.Size(113, 24);
             this.lblcreatedate.TabIndex = 5;
@@ -259,7 +262,7 @@
             // 
             this.lblshopid.AutoSize = true;
             this.lblshopid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblshopid.Location = new System.Drawing.Point(158, 174);
+            this.lblshopid.Location = new System.Drawing.Point(158, 161);
             this.lblshopid.Name = "lblshopid";
             this.lblshopid.Size = new System.Drawing.Size(82, 24);
             this.lblshopid.TabIndex = 4;
@@ -269,7 +272,7 @@
             // 
             this.lblcreatorid.AutoSize = true;
             this.lblcreatorid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcreatorid.Location = new System.Drawing.Point(142, 113);
+            this.lblcreatorid.Location = new System.Drawing.Point(142, 104);
             this.lblcreatorid.Name = "lblcreatorid";
             this.lblcreatorid.Size = new System.Drawing.Size(98, 24);
             this.lblcreatorid.TabIndex = 3;
@@ -280,11 +283,35 @@
             this.dvgitem.AllowUserToAddRows = false;
             this.dvgitem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.dvgitem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgitem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dvgitem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgitem.Location = new System.Drawing.Point(35, 369);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvgitem.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dvgitem.Location = new System.Drawing.Point(35, 341);
             this.dvgitem.Name = "dvgitem";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgitem.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dvgitem.RowTemplate.Height = 24;
-            this.dvgitem.Size = new System.Drawing.Size(983, 314);
+            this.dvgitem.Size = new System.Drawing.Size(983, 290);
             this.dvgitem.TabIndex = 0;
             // 
             // lblamounttext
@@ -292,7 +319,7 @@
             this.lblamounttext.AutoSize = true;
             this.lblamounttext.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblamounttext.ForeColor = System.Drawing.Color.White;
-            this.lblamounttext.Location = new System.Drawing.Point(30, 711);
+            this.lblamounttext.Location = new System.Drawing.Point(30, 656);
             this.lblamounttext.Name = "lblamounttext";
             this.lblamounttext.Size = new System.Drawing.Size(127, 24);
             this.lblamounttext.TabIndex = 6;
@@ -304,7 +331,7 @@
             this.lbltotalamount.AutoSize = true;
             this.lbltotalamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotalamount.ForeColor = System.Drawing.Color.White;
-            this.lbltotalamount.Location = new System.Drawing.Point(163, 712);
+            this.lbltotalamount.Location = new System.Drawing.Point(163, 657);
             this.lbltotalamount.Name = "lbltotalamount";
             this.lbltotalamount.Size = new System.Drawing.Size(0, 24);
             this.lbltotalamount.TabIndex = 7;
@@ -320,9 +347,9 @@
             this.btndownloaddispatchpdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndownloaddispatchpdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndownloaddispatchpdf.ForeColor = System.Drawing.Color.White;
-            this.btndownloaddispatchpdf.Location = new System.Drawing.Point(717, 702);
+            this.btndownloaddispatchpdf.Location = new System.Drawing.Point(717, 648);
             this.btndownloaddispatchpdf.Name = "btndownloaddispatchpdf";
-            this.btndownloaddispatchpdf.Size = new System.Drawing.Size(145, 46);
+            this.btndownloaddispatchpdf.Size = new System.Drawing.Size(145, 42);
             this.btndownloaddispatchpdf.TabIndex = 9;
             this.btndownloaddispatchpdf.Text = "Download Dispatch ";
             this.btndownloaddispatchpdf.TextColor = System.Drawing.Color.White;
@@ -340,9 +367,9 @@
             this.btnreceive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreceive.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreceive.ForeColor = System.Drawing.Color.White;
-            this.btnreceive.Location = new System.Drawing.Point(896, 702);
+            this.btnreceive.Location = new System.Drawing.Point(896, 648);
             this.btnreceive.Name = "btnreceive";
-            this.btnreceive.Size = new System.Drawing.Size(103, 46);
+            this.btnreceive.Size = new System.Drawing.Size(103, 42);
             this.btnreceive.TabIndex = 8;
             this.btnreceive.Text = "Receive";
             this.btnreceive.TextColor = System.Drawing.Color.White;
@@ -351,10 +378,10 @@
             // 
             // OrderDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1041, 778);
+            this.ClientSize = new System.Drawing.Size(1041, 718);
             this.Controls.Add(this.dvgitem);
             this.Controls.Add(this.btndownloaddispatchpdf);
             this.Controls.Add(this.btnreceive);

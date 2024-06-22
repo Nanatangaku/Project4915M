@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1:3306
--- 產生時間： 2024-06-11 00:57:27
+-- 產生時間： 2024-06-22 11:26:44
 -- 伺服器版本： 8.0.37
 -- PHP 版本： 8.2.13
 
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
   PRIMARY KEY (`cart_id`),
   KEY `item_id` (`item_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `cart`
@@ -82,27 +82,13 @@ CREATE TABLE IF NOT EXISTS `delivery` (
   `despatch_date` date DEFAULT NULL,
   `recive_date` date DEFAULT NULL,
   PRIMARY KEY (`delivery_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `delivery`
 --
 
 TRUNCATE TABLE `delivery`;
---
--- 傾印資料表的資料 `delivery`
---
-
-INSERT INTO `delivery` (`delivery_id`, `order_id`, `user_id`, `create_date`, `expected_delivery_date`, `despatch_date`, `recive_date`) VALUES
-(3, 26, 5, '2024-06-05', '2024-06-12', NULL, NULL),
-(4, 27, 5, '2024-06-09', '2024-06-16', NULL, NULL),
-(5, 28, 5, '2024-06-10', '2024-06-17', '2024-06-10', NULL),
-(6, 29, 5, '2024-06-11', '2024-06-18', '2024-06-11', NULL),
-(7, 30, 5, '2024-06-11', '2024-06-18', '2024-06-11', NULL),
-(8, 31, 5, '2024-06-11', '2024-06-26', '2024-06-11', NULL),
-(9, 32, 5, '2024-06-11', '2024-06-18', '2024-06-11', '2024-06-11'),
-(10, 33, 5, '2024-06-11', '2024-06-18', '2024-06-11', '2024-06-11');
-
 -- --------------------------------------------------------
 
 --
@@ -191,24 +177,6 @@ CREATE TABLE IF NOT EXISTS `order_item` (
 --
 
 TRUNCATE TABLE `order_item`;
---
--- 傾印資料表的資料 `order_item`
---
-
-INSERT INTO `order_item` (`order_id`, `item_id`, `quantity`) VALUES
-(26, 1, 1500),
-(27, 1, 1500),
-(28, 1, 1500),
-(29, 1, 500),
-(29, 8, 500),
-(29, 7, 500),
-(30, 1, 100),
-(30, 2, 200),
-(31, 1, 100),
-(31, 8, 100),
-(32, 1, 100),
-(33, 1, 100);
-
 -- --------------------------------------------------------
 
 --
@@ -227,23 +195,13 @@ CREATE TABLE IF NOT EXISTS `order_request` (
   KEY `order_status_id` (`order_status_id`),
   KEY `user_id` (`user_id`),
   KEY `delivery_id` (`delivery_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `order_request`
 --
 
 TRUNCATE TABLE `order_request`;
---
--- 傾印資料表的資料 `order_request`
---
-
-INSERT INTO `order_request` (`order_id`, `user_id`, `payment`, `order_status_id`, `address`, `delivery_id`) VALUES
-(32, 5, 9900.00, 9, 'Ting Yi', 9),
-(31, 5, 12100.00, 9, 'Chai Wan Campus', 8),
-(30, 5, 27500.00, 9, 'Wan Chai Campus', 7),
-(33, 5, 9900.00, 9, 'Test1', 10);
-
 -- --------------------------------------------------------
 
 --
@@ -310,6 +268,33 @@ INSERT INTO `role` (`role_id`, `role_name`, `role_description`) VALUES
 (6, 'Delivery Manager', NULL),
 (7, 'Account Manager', NULL),
 (8, 'Dealer', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `setoflevels`
+--
+
+DROP TABLE IF EXISTS `setoflevels`;
+CREATE TABLE IF NOT EXISTS `setoflevels` (
+  `levelid` int NOT NULL AUTO_INCREMENT,
+  `level_description` varchar(255) NOT NULL,
+  PRIMARY KEY (`levelid`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- 資料表新增資料前，先清除舊資料 `setoflevels`
+--
+
+TRUNCATE TABLE `setoflevels`;
+--
+-- 傾印資料表的資料 `setoflevels`
+--
+
+INSERT INTO `setoflevels` (`levelid`, `level_description`) VALUES
+(1, 'Normal'),
+(2, 'Low stock'),
+(3, 'Danger Stock');
 
 -- --------------------------------------------------------
 
@@ -505,9 +490,9 @@ TRUNCATE TABLE `warehouse_item`;
 --
 
 INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
-(1, 1, 7000),
-(2, 1, 3300),
-(3, 1, 3500),
+(1, 1, 4500),
+(2, 1, 4450),
+(3, 1, 6000),
 (4, 1, 840),
 (5, 1, 2000),
 (7, 1, 2000),
@@ -516,12 +501,6 @@ INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
 --
 -- 已傾印資料表的限制式
 --
-
---
--- 資料表的限制式 `cancel_order`
---
-ALTER TABLE `cancel_order`
-  ADD CONSTRAINT `cancel_order_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`);
 
 --
 -- 資料表的限制式 `item`

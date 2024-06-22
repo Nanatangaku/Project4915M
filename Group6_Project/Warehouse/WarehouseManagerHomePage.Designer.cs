@@ -41,6 +41,7 @@ namespace Group6_Project
             this.panFormLoad = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnsetoflevel = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,6 +51,7 @@ namespace Group6_Project
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelMenu.Controls.Add(this.btnsetoflevel);
             this.panelMenu.Controls.Add(this.btnStockPage);
             this.panelMenu.Controls.Add(this.panNav);
             this.panelMenu.Controls.Add(this.btnWmLogout);
@@ -213,6 +215,25 @@ namespace Group6_Project
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnsetoflevel
+            // 
+            this.btnsetoflevel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnsetoflevel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnsetoflevel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsetoflevel.FlatAppearance.BorderSize = 0;
+            this.btnsetoflevel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsetoflevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsetoflevel.ForeColor = System.Drawing.Color.White;
+            this.btnsetoflevel.Image = global::Group6_Project.Properties.Resources.truck_side;
+            this.btnsetoflevel.Location = new System.Drawing.Point(0, 361);
+            this.btnsetoflevel.Name = "btnsetoflevel";
+            this.btnsetoflevel.Size = new System.Drawing.Size(277, 77);
+            this.btnsetoflevel.TabIndex = 9;
+            this.btnsetoflevel.Text = "Set of level";
+            this.btnsetoflevel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnsetoflevel.UseVisualStyleBackColor = false;
+            this.btnsetoflevel.Click += new System.EventHandler(this.btnsetoflevel_Click);
+            // 
             // WarehouseManagerHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -248,6 +269,7 @@ namespace Group6_Project
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnStockPage;
+        private System.Windows.Forms.Button btnsetoflevel;
     }
 }
 

@@ -155,6 +155,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Warehouse\addnewlevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\addnewlevel.Designer.cs">
+      <DependentUpon>addnewlevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\editlevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\editlevel.Designer.cs">
+      <DependentUpon>editlevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\setoflevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\setoflevel.Designer.cs">
+      <DependentUpon>setoflevel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shop\DispatchNotes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -482,14 +500,23 @@
     <EmbeddedResource Include="General\SetRule.resx">
       <DependentUpon>SetRule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\addnewlevel.resx">
+      <DependentUpon>addnewlevel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\Dispatch.resx">
       <DependentUpon>Dispatch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\Dispatch_Detail.resx">
       <DependentUpon>Dispatch_Detail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\editlevel.resx">
+      <DependentUpon>editlevel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\ReceivedItem.resx">
       <DependentUpon>ReceivedItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\setoflevel.resx">
+      <DependentUpon>setoflevel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\StockRecord.resx">
       <DependentUpon>StockRecord.cs</DependentUpon>

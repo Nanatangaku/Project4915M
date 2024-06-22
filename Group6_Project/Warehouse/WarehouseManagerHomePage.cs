@@ -86,5 +86,15 @@ namespace Group6_Project
             new loginPage().ShowDialog();
             this.Close();
         }
+
+        private void btnsetoflevel_Click(object sender, EventArgs e)
+        {
+            this.panFormLoad.Controls.Clear();
+            setoflevel setoflevel = new setoflevel(user_id,panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            setoflevel.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(setoflevel);
+            setoflevel.Show();
+
+        }
     }
 }

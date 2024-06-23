@@ -83,7 +83,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(190, 260);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(197, 24);
@@ -94,7 +94,7 @@
             // 
             this.roundTextBox2.BackColor = System.Drawing.SystemColors.Window;
             this.roundTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.roundTextBox2.BorderFocusColor = System.Drawing.Color.DarkSlateBlue;
+            this.roundTextBox2.BorderFocusColor = System.Drawing.Color.MediumPurple;
             this.roundTextBox2.BorderRadius = 0;
             this.roundTextBox2.BorderSize = 2;
             this.roundTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -117,7 +117,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(471, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 25);
@@ -128,7 +128,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(233, 219);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 24);
@@ -139,7 +139,7 @@
             // 
             this.roundTextBox1.BackColor = System.Drawing.SystemColors.Window;
             this.roundTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.roundTextBox1.BorderFocusColor = System.Drawing.Color.DarkSlateBlue;
+            this.roundTextBox1.BorderFocusColor = System.Drawing.Color.MediumPurple;
             this.roundTextBox1.BorderRadius = 0;
             this.roundTextBox1.BorderSize = 2;
             this.roundTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

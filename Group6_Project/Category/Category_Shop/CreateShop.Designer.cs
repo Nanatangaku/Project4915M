@@ -67,7 +67,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(233, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 24);
@@ -78,7 +78,7 @@
             // 
             this.rtxtbox_newShopName.BackColor = System.Drawing.SystemColors.Window;
             this.rtxtbox_newShopName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.rtxtbox_newShopName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.rtxtbox_newShopName.BorderFocusColor = System.Drawing.Color.MediumPurple;
             this.rtxtbox_newShopName.BorderRadius = 0;
             this.rtxtbox_newShopName.BorderSize = 2;
             this.rtxtbox_newShopName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -100,7 +100,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(187, 278);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(206, 24);
@@ -111,7 +111,7 @@
             // 
             this.rtxtbox_newShopManagerID.BackColor = System.Drawing.SystemColors.Window;
             this.rtxtbox_newShopManagerID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.rtxtbox_newShopManagerID.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.rtxtbox_newShopManagerID.BorderFocusColor = System.Drawing.Color.MediumPurple;
             this.rtxtbox_newShopManagerID.BorderRadius = 0;
             this.rtxtbox_newShopManagerID.BorderSize = 2;
             this.rtxtbox_newShopManagerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -133,7 +133,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(164, 217);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(229, 24);
@@ -144,7 +144,7 @@
             // 
             this.rtxtbox_newShopWarehouseID.BackColor = System.Drawing.SystemColors.Window;
             this.rtxtbox_newShopWarehouseID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.rtxtbox_newShopWarehouseID.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.rtxtbox_newShopWarehouseID.BorderFocusColor = System.Drawing.Color.MediumPurple;
             this.rtxtbox_newShopWarehouseID.BorderRadius = 0;
             this.rtxtbox_newShopWarehouseID.BorderSize = 2;
             this.rtxtbox_newShopWarehouseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -166,7 +166,7 @@
             // 
             this.lblnewshopphone.AutoSize = true;
             this.lblnewshopphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lblnewshopphone.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblnewshopphone.ForeColor = System.Drawing.Color.White;
             this.lblnewshopphone.Location = new System.Drawing.Point(219, 335);
             this.lblnewshopphone.Name = "lblnewshopphone";
             this.lblnewshopphone.Size = new System.Drawing.Size(174, 24);
@@ -178,7 +178,7 @@
             // 
             this.rtxtbox_newShopRemark.BackColor = System.Drawing.SystemColors.Window;
             this.rtxtbox_newShopRemark.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.rtxtbox_newShopRemark.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.rtxtbox_newShopRemark.BorderFocusColor = System.Drawing.Color.MediumPurple;
             this.rtxtbox_newShopRemark.BorderRadius = 0;
             this.rtxtbox_newShopRemark.BorderSize = 2;
             this.rtxtbox_newShopRemark.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -240,8 +240,8 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(440, 74);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(479, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 25);
             this.label2.TabIndex = 40;

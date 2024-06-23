@@ -630,5 +630,17 @@
   <ItemGroup>
     <None Include="Photo\shopping-cart %283%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\wood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\wood %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\pattern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\pattern %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

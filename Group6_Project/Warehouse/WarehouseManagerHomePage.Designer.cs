@@ -30,6 +30,7 @@ namespace Group6_Project
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnsetoflevel = new System.Windows.Forms.Button();
             this.btnStockPage = new System.Windows.Forms.Button();
             this.panNav = new System.Windows.Forms.Panel();
             this.btnWmLogout = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@ namespace Group6_Project
             this.panFormLoad = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnsetoflevel = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +64,25 @@ namespace Group6_Project
             this.panelMenu.Size = new System.Drawing.Size(277, 748);
             this.panelMenu.TabIndex = 3;
             // 
+            // btnsetoflevel
+            // 
+            this.btnsetoflevel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnsetoflevel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnsetoflevel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsetoflevel.FlatAppearance.BorderSize = 0;
+            this.btnsetoflevel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsetoflevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsetoflevel.ForeColor = System.Drawing.Color.White;
+            this.btnsetoflevel.Image = global::Group6_Project.Properties.Resources.truck_side;
+            this.btnsetoflevel.Location = new System.Drawing.Point(0, 361);
+            this.btnsetoflevel.Name = "btnsetoflevel";
+            this.btnsetoflevel.Size = new System.Drawing.Size(277, 77);
+            this.btnsetoflevel.TabIndex = 9;
+            this.btnsetoflevel.Text = "Set of level";
+            this.btnsetoflevel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnsetoflevel.UseVisualStyleBackColor = false;
+            this.btnsetoflevel.Click += new System.EventHandler(this.btnsetoflevel_Click);
+            // 
             // btnStockPage
             // 
             this.btnStockPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
@@ -85,7 +104,7 @@ namespace Group6_Project
             // 
             // panNav
             // 
-            this.panNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.panNav.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panNav.Location = new System.Drawing.Point(0, 130);
             this.panNav.Name = "panNav";
             this.panNav.Size = new System.Drawing.Size(7, 77);
@@ -214,25 +233,6 @@ namespace Group6_Project
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnsetoflevel
-            // 
-            this.btnsetoflevel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnsetoflevel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnsetoflevel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnsetoflevel.FlatAppearance.BorderSize = 0;
-            this.btnsetoflevel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsetoflevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsetoflevel.ForeColor = System.Drawing.Color.White;
-            this.btnsetoflevel.Image = global::Group6_Project.Properties.Resources.truck_side;
-            this.btnsetoflevel.Location = new System.Drawing.Point(0, 361);
-            this.btnsetoflevel.Name = "btnsetoflevel";
-            this.btnsetoflevel.Size = new System.Drawing.Size(277, 77);
-            this.btnsetoflevel.TabIndex = 9;
-            this.btnsetoflevel.Text = "Set of level";
-            this.btnsetoflevel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnsetoflevel.UseVisualStyleBackColor = false;
-            this.btnsetoflevel.Click += new System.EventHandler(this.btnsetoflevel_Click);
             // 
             // WarehouseManagerHomePage
             // 

@@ -26,6 +26,7 @@ namespace Group6_Project
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             return dataTable;
         }
         //To show data details in dataGridView

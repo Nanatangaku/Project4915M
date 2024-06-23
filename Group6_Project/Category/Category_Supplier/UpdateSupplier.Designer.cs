@@ -35,25 +35,27 @@
             this.roundTextBox1 = new Group6_Project.RoundTextBox();
             this.cancel = new Group6_Project.CustomControls.RoundButton();
             this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(22, 23);
+            this.label2.Location = new System.Drawing.Point(495, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 24);
+            this.label2.Size = new System.Drawing.Size(166, 25);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Update : ";
+            this.label2.Text = "Update Supplier";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(22, 106);
+            this.label3.Location = new System.Drawing.Point(156, 267);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(204, 24);
             this.label3.TabIndex = 31;
@@ -64,7 +66,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(22, 70);
+            this.label1.Location = new System.Drawing.Point(156, 231);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 24);
             this.label1.TabIndex = 29;
@@ -79,7 +81,7 @@
             this.roundTextBox2.BorderSize = 2;
             this.roundTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox2.Location = new System.Drawing.Point(247, 101);
+            this.roundTextBox2.Location = new System.Drawing.Point(381, 262);
             this.roundTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox2.Multiline = false;
             this.roundTextBox2.Name = "roundTextBox2";
@@ -101,7 +103,7 @@
             this.roundTextBox1.BorderSize = 2;
             this.roundTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox1.Location = new System.Drawing.Point(247, 64);
+            this.roundTextBox1.Location = new System.Drawing.Point(381, 225);
             this.roundTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox1.Multiline = false;
             this.roundTextBox1.Name = "roundTextBox1";
@@ -124,7 +126,7 @@
             this.cancel.FlatAppearance.BorderSize = 0;
             this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancel.ForeColor = System.Drawing.Color.Black;
-            this.cancel.Location = new System.Drawing.Point(476, 207);
+            this.cancel.Location = new System.Drawing.Point(610, 368);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(72, 29);
             this.cancel.TabIndex = 27;
@@ -143,7 +145,7 @@
             this.roundButton1.FlatAppearance.BorderSize = 0;
             this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(563, 207);
+            this.roundButton1.Location = new System.Drawing.Point(697, 368);
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.Size = new System.Drawing.Size(72, 29);
             this.roundButton1.TabIndex = 24;
@@ -152,23 +154,35 @@
             this.roundButton1.UseVisualStyleBackColor = false;
             this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.roundButton1);
+            this.panel1.Controls.Add(this.roundTextBox2);
+            this.panel1.Controls.Add(this.cancel);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.roundTextBox1);
+            this.panel1.Location = new System.Drawing.Point(0, 100);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1041, 541);
+            this.panel1.TabIndex = 32;
+            // 
             // UpdateSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.roundTextBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.roundTextBox1);
-            this.Controls.Add(this.cancel);
-            this.Controls.Add(this.roundButton1);
-            this.Controls.Add(this.label2);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
+            this.ClientSize = new System.Drawing.Size(1041, 718);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UpdateSupplier";
             this.Text = "UpdateSupplier";
             this.Load += new System.EventHandler(this.UpdateSupplier_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -181,5 +195,6 @@
         private RoundTextBox roundTextBox2;
         private System.Windows.Forms.Label label1;
         private RoundTextBox roundTextBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

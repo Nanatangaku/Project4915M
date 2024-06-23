@@ -42,8 +42,8 @@ namespace Group6_Project
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panFormLoad = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
+            this.panFormLoad = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -90,7 +90,7 @@ namespace Group6_Project
             // 
             // panNav
             // 
-            this.panNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(120)))), ((int)(((byte)(252)))));
+            this.panNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panNav.Location = new System.Drawing.Point(0, 130);
             this.panNav.Name = "panNav";
             this.panNav.Size = new System.Drawing.Size(7, 77);
@@ -111,7 +111,7 @@ namespace Group6_Project
             this.btnCategoryManager.Name = "btnCategoryManager";
             this.btnCategoryManager.Size = new System.Drawing.Size(277, 77);
             this.btnCategoryManager.TabIndex = 7;
-            this.btnCategoryManager.Text = "    Category \r\n   Manager";
+            this.btnCategoryManager.Text = "Category Manager\r\nLogout";
             this.btnCategoryManager.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCategoryManager.UseVisualStyleBackColor = false;
             this.btnCategoryManager.Click += new System.EventHandler(this.btnCategoryManager_Click);
@@ -259,16 +259,6 @@ namespace Group6_Project
             this.panel5.Size = new System.Drawing.Size(1041, 30);
             this.panel5.TabIndex = 5;
             // 
-            // panFormLoad
-            // 
-            this.panFormLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panFormLoad.Location = new System.Drawing.Point(277, 30);
-            this.panFormLoad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panFormLoad.Name = "panFormLoad";
-            this.panFormLoad.Size = new System.Drawing.Size(1041, 718);
-            this.panFormLoad.TabIndex = 1;
-            this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
-            // 
             // btnClose
             // 
             this.btnClose.FlatAppearance.BorderSize = 0;
@@ -283,6 +273,16 @@ namespace Group6_Project
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // panFormLoad
+            // 
+            this.panFormLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panFormLoad.Location = new System.Drawing.Point(277, 30);
+            this.panFormLoad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panFormLoad.Name = "panFormLoad";
+            this.panFormLoad.Size = new System.Drawing.Size(1041, 718);
+            this.panFormLoad.TabIndex = 1;
+            this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
             // 
             // CategoryManagerHomePage
             // 

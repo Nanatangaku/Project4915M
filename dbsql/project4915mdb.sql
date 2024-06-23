@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1:3306
--- 產生時間： 2024-06-22 11:26:44
+-- 產生時間： 2024-06-23 16:09:06
 -- 伺服器版本： 8.0.37
 -- PHP 版本： 8.2.13
 
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
   PRIMARY KEY (`cart_id`),
   KEY `item_id` (`item_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `cart`
@@ -82,13 +82,23 @@ CREATE TABLE IF NOT EXISTS `delivery` (
   `despatch_date` date DEFAULT NULL,
   `recive_date` date DEFAULT NULL,
   PRIMARY KEY (`delivery_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `delivery`
 --
 
 TRUNCATE TABLE `delivery`;
+--
+-- 傾印資料表的資料 `delivery`
+--
+
+INSERT INTO `delivery` (`delivery_id`, `order_id`, `user_id`, `create_date`, `expected_delivery_date`, `despatch_date`, `recive_date`) VALUES
+(14, 37, 5, '2024-06-23', '2024-06-30', '2024-06-23', '2024-06-23'),
+(15, 38, 5, '2024-06-23', '2024-06-30', NULL, NULL),
+(16, 40, 5, '2024-06-23', '2024-07-23', NULL, NULL),
+(25, 49, 5, '2024-06-23', '2024-07-23', NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -177,6 +187,14 @@ CREATE TABLE IF NOT EXISTS `order_item` (
 --
 
 TRUNCATE TABLE `order_item`;
+--
+-- 傾印資料表的資料 `order_item`
+--
+
+INSERT INTO `order_item` (`order_id`, `item_id`, `quantity`) VALUES
+(38, 1, 500),
+(37, 1, 1000);
+
 -- --------------------------------------------------------
 
 --
@@ -195,13 +213,23 @@ CREATE TABLE IF NOT EXISTS `order_request` (
   KEY `order_status_id` (`order_status_id`),
   KEY `user_id` (`user_id`),
   KEY `delivery_id` (`delivery_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `order_request`
 --
 
 TRUNCATE TABLE `order_request`;
+--
+-- 傾印資料表的資料 `order_request`
+--
+
+INSERT INTO `order_request` (`order_id`, `user_id`, `payment`, `order_status_id`, `address`, `delivery_id`) VALUES
+(37, 5, 99000.00, 9, '1', 14),
+(38, 5, 49500.00, 1, '1', 15),
+(40, 5, 99000.00, 1, '1', 16),
+(49, 5, 99000.00, 1, '1', 25);
+
 -- --------------------------------------------------------
 
 --
@@ -279,8 +307,9 @@ DROP TABLE IF EXISTS `setoflevels`;
 CREATE TABLE IF NOT EXISTS `setoflevels` (
   `levelid` int NOT NULL AUTO_INCREMENT,
   `level_description` varchar(255) NOT NULL,
+  `level_num` int NOT NULL,
   PRIMARY KEY (`levelid`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- 資料表新增資料前，先清除舊資料 `setoflevels`
@@ -291,10 +320,12 @@ TRUNCATE TABLE `setoflevels`;
 -- 傾印資料表的資料 `setoflevels`
 --
 
-INSERT INTO `setoflevels` (`levelid`, `level_description`) VALUES
-(1, 'Normal'),
-(2, 'Low stock'),
-(3, 'Danger Stock');
+INSERT INTO `setoflevels` (`levelid`, `level_description`, `level_num`) VALUES
+(1, 'Normal', 8000),
+(2, 'Low stock', 3000),
+(3, 'Danger Stock', 1500),
+(11, 'Very very high stock', 99999),
+(12, 'All', 99999999);
 
 -- --------------------------------------------------------
 
@@ -490,7 +521,7 @@ TRUNCATE TABLE `warehouse_item`;
 --
 
 INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
-(1, 1, 4500),
+(1, 1, 9000),
 (2, 1, 4450),
 (3, 1, 6000),
 (4, 1, 840),

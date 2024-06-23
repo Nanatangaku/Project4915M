@@ -38,8 +38,6 @@
             this.txtstatus = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.txtcreatedate = new System.Windows.Forms.TextBox();
-            this.btnsave = new Group6_Project.CustomControls.RoundButton();
-            this.btndelete = new Group6_Project.CustomControls.RoundButton();
             this.txtshopid = new System.Windows.Forms.TextBox();
             this.txtboxcreatorid = new System.Windows.Forms.TextBox();
             this.txtboxorderid = new System.Windows.Forms.TextBox();
@@ -52,8 +50,11 @@
             this.dvgitem = new System.Windows.Forms.DataGridView();
             this.lblamounttext = new System.Windows.Forms.Label();
             this.lbltotalamount = new System.Windows.Forms.Label();
+            this.btnreorder = new Group6_Project.CustomControls.RoundButton();
             this.btndownloaddispatchpdf = new Group6_Project.CustomControls.RoundButton();
             this.btnreceive = new Group6_Project.CustomControls.RoundButton();
+            this.btnsave = new Group6_Project.CustomControls.RoundButton();
+            this.btndelete = new Group6_Project.CustomControls.RoundButton();
             this.gbgeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgitem)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +64,7 @@
             this.lblBack.AutoSize = true;
             this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBack.ForeColor = System.Drawing.Color.White;
-            this.lblBack.Location = new System.Drawing.Point(30, 18);
+            this.lblBack.Location = new System.Drawing.Point(31, 21);
             this.lblBack.Name = "lblBack";
             this.lblBack.Size = new System.Drawing.Size(75, 24);
             this.lblBack.TabIndex = 0;
@@ -147,46 +148,6 @@
             this.txtcreatedate.ReadOnly = true;
             this.txtcreatedate.Size = new System.Drawing.Size(210, 29);
             this.txtcreatedate.TabIndex = 19;
-            // 
-            // btnsave
-            // 
-            this.btnsave.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnsave.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnsave.BorderColor = System.Drawing.Color.Transparent;
-            this.btnsave.BorderRadius = 16;
-            this.btnsave.BorderSize = 2;
-            this.btnsave.FlatAppearance.BorderSize = 0;
-            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.ForeColor = System.Drawing.Color.White;
-            this.btnsave.Location = new System.Drawing.Point(773, 212);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(103, 42);
-            this.btnsave.TabIndex = 4;
-            this.btnsave.Text = "Save";
-            this.btnsave.TextColor = System.Drawing.Color.White;
-            this.btnsave.UseVisualStyleBackColor = false;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
-            // 
-            // btndelete
-            // 
-            this.btndelete.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btndelete.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btndelete.BorderColor = System.Drawing.Color.Transparent;
-            this.btndelete.BorderRadius = 16;
-            this.btndelete.BorderSize = 2;
-            this.btndelete.FlatAppearance.BorderSize = 0;
-            this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.ForeColor = System.Drawing.Color.White;
-            this.btndelete.Location = new System.Drawing.Point(638, 212);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(103, 42);
-            this.btndelete.TabIndex = 5;
-            this.btndelete.Text = "Delete";
-            this.btndelete.TextColor = System.Drawing.Color.White;
-            this.btndelete.UseVisualStyleBackColor = false;
-            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // txtshopid
             // 
@@ -313,6 +274,7 @@
             this.dvgitem.RowTemplate.Height = 24;
             this.dvgitem.Size = new System.Drawing.Size(975, 290);
             this.dvgitem.TabIndex = 0;
+            this.dvgitem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgitem_CellContentClick);
             // 
             // lblamounttext
             // 
@@ -335,6 +297,26 @@
             this.lbltotalamount.Name = "lbltotalamount";
             this.lbltotalamount.Size = new System.Drawing.Size(0, 24);
             this.lbltotalamount.TabIndex = 7;
+            // 
+            // btnreorder
+            // 
+            this.btnreorder.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnreorder.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnreorder.BorderColor = System.Drawing.Color.Transparent;
+            this.btnreorder.BorderRadius = 16;
+            this.btnreorder.BorderSize = 2;
+            this.btnreorder.FlatAppearance.BorderSize = 0;
+            this.btnreorder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreorder.ForeColor = System.Drawing.Color.White;
+            this.btnreorder.Location = new System.Drawing.Point(896, 649);
+            this.btnreorder.Name = "btnreorder";
+            this.btnreorder.Size = new System.Drawing.Size(103, 42);
+            this.btnreorder.TabIndex = 10;
+            this.btnreorder.Text = "Reorder";
+            this.btnreorder.TextColor = System.Drawing.Color.White;
+            this.btnreorder.UseVisualStyleBackColor = false;
+            this.btnreorder.Click += new System.EventHandler(this.btnreorder_Click);
             // 
             // btndownloaddispatchpdf
             // 
@@ -376,12 +358,53 @@
             this.btnreceive.UseVisualStyleBackColor = false;
             this.btnreceive.Click += new System.EventHandler(this.btnreceive_Click);
             // 
+            // btnsave
+            // 
+            this.btnsave.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnsave.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnsave.BorderColor = System.Drawing.Color.Transparent;
+            this.btnsave.BorderRadius = 16;
+            this.btnsave.BorderSize = 2;
+            this.btnsave.FlatAppearance.BorderSize = 0;
+            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.ForeColor = System.Drawing.Color.White;
+            this.btnsave.Location = new System.Drawing.Point(773, 212);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(103, 42);
+            this.btnsave.TabIndex = 4;
+            this.btnsave.Text = "Save";
+            this.btnsave.TextColor = System.Drawing.Color.White;
+            this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // btndelete
+            // 
+            this.btndelete.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btndelete.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btndelete.BorderColor = System.Drawing.Color.Transparent;
+            this.btndelete.BorderRadius = 16;
+            this.btndelete.BorderSize = 2;
+            this.btndelete.FlatAppearance.BorderSize = 0;
+            this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.ForeColor = System.Drawing.Color.White;
+            this.btndelete.Location = new System.Drawing.Point(638, 212);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(103, 42);
+            this.btndelete.TabIndex = 5;
+            this.btndelete.Text = "Delete";
+            this.btndelete.TextColor = System.Drawing.Color.White;
+            this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
+            // 
             // OrderDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1041, 718);
+            this.Controls.Add(this.btnreorder);
             this.Controls.Add(this.dvgitem);
             this.Controls.Add(this.btndownloaddispatchpdf);
             this.Controls.Add(this.btnreceive);
@@ -426,5 +449,6 @@
         private System.Windows.Forms.DateTimePicker dtpexpecteddate;
         private CustomControls.RoundButton btnreceive;
         private CustomControls.RoundButton btndownloaddispatchpdf;
+        private CustomControls.RoundButton btnreorder;
     }
 }

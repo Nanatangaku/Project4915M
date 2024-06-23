@@ -177,7 +177,7 @@ namespace Group6_Project
 
        private void create_level_cb()
         {
-            cbstatus.Items.Add("All");
+
             string sql = "select * from setoflevels order by level_num DESC";
             conn.Open();
             MySqlCommand cmd = new MySqlCommand(sql, conn);

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Google.Protobuf.Compiler;
 using MySql.Data.MySqlClient;
 
 namespace Group6_Project
@@ -202,6 +203,7 @@ namespace Group6_Project
                 btnsave.Visible = true;
                 btnreceive.Visible = false;
                 btndownloaddispatchpdf.Visible = false;
+                btnreorder.Visible = false;
             }
             else if(order_status == "despatched")
             {
@@ -209,6 +211,7 @@ namespace Group6_Project
                 btnsave.Visible = false;
                 btnreceive.Visible = false;
                 btndownloaddispatchpdf.Visible = false;
+                btnreorder.Visible = false;
             }
             else if (order_status == "delivering")
             {
@@ -216,6 +219,9 @@ namespace Group6_Project
                 btnsave.Visible = false;
                 btnreceive.Visible = true;
                 btndownloaddispatchpdf.Visible = false;
+                btnreorder.Visible = false;
+
+
             }
             else if(order_status == "Received")
             {
@@ -223,6 +229,7 @@ namespace Group6_Project
                 btnsave.Visible = false;
                 btnreceive.Visible = false;
                 btndownloaddispatchpdf.Visible = true;
+                btnreorder.Visible = true;
             }
         }
 
@@ -260,6 +267,127 @@ namespace Group6_Project
             dispatchnotes.FormBorderStyle = FormBorderStyle.None;
             panFormLoad.Controls.Add(dispatchnotes);
             dispatchnotes.Show();
+        }
+
+        private void btnreorder_Click(object sender, EventArgs e)
+        {
+            List<String> item_id = new List<string>();
+            List<String> quantity = new List<string>();
+            Boolean can_reorder = true;
+
+            string sql = "select item_id,quantity from order_item where order_id = " + order_id; 
+           
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            conn.Open();
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+         
+                item_id.Add(reader["item_id"].ToString());
+                quantity.Add(reader["quantity"].ToString());
+            }
+            conn.Close();
+            for(int i = 0;i <item_id.Count; i++)
+            {
+                string sql2 = "select quantity from warehouse_item where item_id = " + item_id[i];
+                MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
+                conn.Open();
+                MySqlDataReader reader2 = cmd2.ExecuteReader();
+                while (reader2.Read())
+                {
+                    int quantity_in_warehouse = Convert.ToInt32(reader2["quantity"]);
+                    if (quantity_in_warehouse < Convert.ToInt32(quantity[i]))
+                    {
+                        MessageBox.Show("Item " + item_id[i] + " is out of stock");
+                        conn.Close();
+                        can_reorder = false;
+                        return;
+                    }
+                }
+                conn.Close();
+            }
+            if(can_reorder == true)
+            {
+                string sql4 = "select payment,address from order_request where order_id = " + order_id;
+                MySqlCommand cmd3 = new MySqlCommand(sql4, conn);
+                conn.Open();
+                MySqlDataReader reader3 = cmd3.ExecuteReader();
+                string payment = "";
+                string address = "";
+                while (reader3.Read())
+                {
+                    payment = reader3["payment"].ToString();
+                    address = reader3["address"].ToString();
+                }
+                conn.Close();
+                string sql5 = "insert into order_request (payment,address,order_status_id,user_id) values (" + payment + ",'" + address + "',1 " + "," + user_id + ")";
+                MySqlCommand cmd4 = new MySqlCommand(sql5, conn);
+                conn.Open();
+                long id = 0;
+                long delivery_id = 0;
+                if (cmd4.ExecuteNonQuery() >= 1)
+                {
+                    id = cmd4.LastInsertedId;
+                    conn.Close();
+                    string sql6 = "insert into delivery (order_id,user_id,create_date,expected_delivery_date) values (" + id + "," + user_id + ",'" + DateTime.Now.ToString("yyyy-MM-dd") + "','" + DateTime.Now.AddMonths(1).ToString("yyyy-MM-dd") + "')";
+                    MySqlCommand cmd5 = new MySqlCommand(sql6, conn);
+                    conn.Open();
+
+                    if (cmd5.ExecuteNonQuery() >= 1)
+                    {
+                      delivery_id = cmd5.LastInsertedId;
+              
+                    }
+                    else
+                    {
+                        MessageBox.Show("Delivery not created");
+                    }
+                    conn.Close();
+                   // update the warehouse_item quantity
+                   for (int i = 0; i < item_id.Count; i++)
+                    {
+                        string sql7 = "update warehouse_item set quantity = quantity - " + quantity[i] + " where item_id = " + item_id[i];
+                        MySqlCommand cmd6 = new MySqlCommand(sql7, conn);
+                        conn.Open();
+                        if (cmd6.ExecuteNonQuery() >= 1)
+                        {
+                            conn.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Warehouse_item not updated");
+                            conn.Close();
+                        }
+                    }
+
+                    MessageBox.Show("Re-Order created");
+                }
+
+                //get the order_id by auto increment
+
+                conn.Close();
+                string sql8 = "update order_request set delivery_id = " + delivery_id + " where order_id = " + id;
+                MySqlCommand cmd7 = new MySqlCommand(sql8, conn);
+                conn.Open();
+                if (cmd7.ExecuteNonQuery() >= 1)
+                {
+                    conn.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Order_request not updated");
+                    conn.Close();
+                }
+
+
+            }
+
+           
+        }
+
+        private void dvgitem_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

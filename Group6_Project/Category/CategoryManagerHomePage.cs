@@ -159,16 +159,9 @@ namespace Group6_Project
         [Category("Event")]
         private void btnCategoryManager_Click(object sender, EventArgs e)
         {
-            panNav.Height = btnCategoryManager.Height;
-            panNav.Top = btnCategoryManager.Top;
-            panNav.Left = btnCategoryManager.Left;
-            btnCategoryManager.BackColor = Color.FromArgb(46, 51, 73);
-
-            this.panFormLoad.Controls.Clear();
-            loginPage login = new loginPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            login.FormBorderStyle = FormBorderStyle.None;
-            this.panFormLoad.Controls.Add(login);
-            login.Show();
+            this.Hide();
+            new loginPage().ShowDialog();
+            this.Close();
         }
         [Category("Event")]
         private void btnCategoryManager_Leave(object sender, EventArgs e)

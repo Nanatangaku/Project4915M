@@ -96,5 +96,10 @@ namespace Group6_Project
             setoflevel.Show();
 
         }
+
+        private void panFormLoad_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

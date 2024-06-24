@@ -109,5 +109,14 @@ namespace Group6_Project
         {
 
         }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            this.panFormLoad.Controls.Clear();
+            Report report = new Report(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            report.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(report);
+            report.Show();
+        }
     }
 }

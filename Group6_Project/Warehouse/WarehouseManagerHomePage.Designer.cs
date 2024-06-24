@@ -208,6 +208,7 @@ namespace Group6_Project
             this.panFormLoad.Name = "panFormLoad";
             this.panFormLoad.Size = new System.Drawing.Size(1041, 718);
             this.panFormLoad.TabIndex = 1;
+            this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
             // 
             // panel5
             // 

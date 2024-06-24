@@ -40,6 +40,7 @@ namespace Group6_Project
             this.btnClose = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panFormLoad = new System.Windows.Forms.Panel();
+            this.btnReport = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,6 +50,7 @@ namespace Group6_Project
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelMenu.Controls.Add(this.btnReport);
             this.panelMenu.Controls.Add(this.panNav);
             this.panelMenu.Controls.Add(this.btnCategoryManager);
             this.panelMenu.Controls.Add(this.btnSupplier);
@@ -196,6 +198,25 @@ namespace Group6_Project
             this.panFormLoad.TabIndex = 1;
             this.panFormLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.panFormLoad_Paint);
             // 
+            // btnReport
+            // 
+            this.btnReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnReport.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnReport.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.ForeColor = System.Drawing.Color.White;
+            this.btnReport.Image = global::Group6_Project.Properties.Resources.box;
+            this.btnReport.Location = new System.Drawing.Point(0, 284);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(277, 77);
+            this.btnReport.TabIndex = 8;
+            this.btnReport.Text = "   Report";
+            this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnReport.UseVisualStyleBackColor = false;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
             // AccountingManagerHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -229,6 +250,7 @@ namespace Group6_Project
         private System.Windows.Forms.Panel panNav;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnReport;
     }
 }
 

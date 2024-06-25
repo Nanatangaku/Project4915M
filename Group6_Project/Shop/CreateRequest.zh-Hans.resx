@@ -117,40 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnContinue.Text" xml:space="preserve">
+    <value>继续</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>CompletePayment</value>
+    <value>创建请求</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Complete Payment</value>
-  </data>
-  <data name="listBox1.Items" xml:space="preserve">
-    <value>$No.$			$Status$	$PaymentName$</value>
-  </data>
-  <data name="listBox1.Items1" xml:space="preserve">
-    <value>#202402152342		Completed	Item A</value>
-  </data>
-  <data name="listBox1.Items2" xml:space="preserve">
-    <value>#202402142159		Completed	Item A</value>
-  </data>
-  <data name="listBox1.Items3" xml:space="preserve">
-    <value>#202402092139		Completed	Item C</value>
-  </data>
-  <data name="listBox1.Items4" xml:space="preserve">
-    <value>#202402082118		Completed	Item B</value>
-  </data>
-  <data name="listBox1.Items5" xml:space="preserve">
-    <value>#202402012117		Completed	Item A</value>
-  </data>
-  <data name="listBox1.Items6" xml:space="preserve">
-    <value>#202401212125		Completed	Item D</value>
-  </data>
-  <data name="listBox1.Items7" xml:space="preserve">
-    <value>#202401072130		Completed	Item A</value>
-  </data>
-  <data name="listBox1.Items8" xml:space="preserve">
-    <value>#202401052149		Completed	Item B</value>
-  </data>
-  <data name="listBox1.Items9" xml:space="preserve">
-    <value>#202401010101		Completed	Item C</value>
+  <data name="lblselectitem.Text" xml:space="preserve">
+    <value>搜索物品</value>
   </data>
 </root>

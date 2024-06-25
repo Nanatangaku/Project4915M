@@ -117,4 +117,189 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>addnewlevel</value>
+  </data>
+  <data name="btnAdd.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="lblBack.Text" xml:space="preserve">
+    <value>← Back</value>
+  </data>
+  <data name="lbldescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lbllevelnum.Text" xml:space="preserve">
+    <value>Level Number:</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbldescription.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbldescription.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 18pt</value>
+  </data>
+  <data name="lbldescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 105</value>
+  </data>
+  <data name="lbldescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="lbldescription.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbldescription.Name" xml:space="preserve">
+    <value>lbldescription</value>
+  </data>
+  <data name="&gt;&gt;lbldescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbldescription.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbldescription.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbllevelnum.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbllevelnum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 18pt</value>
+  </data>
+  <data name="lbllevelnum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 184</value>
+  </data>
+  <data name="lbllevelnum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 24</value>
+  </data>
+  <data name="lbllevelnum.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbllevelnum.Name" xml:space="preserve">
+    <value>lbllevelnum</value>
+  </data>
+  <data name="&gt;&gt;lbllevelnum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbllevelnum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbllevelnum.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtboxdescription.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 18pt</value>
+  </data>
+  <data name="txtboxdescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 102</value>
+  </data>
+  <data name="txtboxdescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 36</value>
+  </data>
+  <data name="txtboxdescription.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtboxdescription.Name" xml:space="preserve">
+    <value>txtboxdescription</value>
+  </data>
+  <data name="&gt;&gt;txtboxdescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtboxdescription.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtboxdescription.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtboxlevelnum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 18pt</value>
+  </data>
+  <data name="txtboxlevelnum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 172</value>
+  </data>
+  <data name="txtboxlevelnum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 36</value>
+  </data>
+  <data name="txtboxlevelnum.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtboxlevelnum.Name" xml:space="preserve">
+    <value>txtboxlevelnum</value>
+  </data>
+  <data name="&gt;&gt;txtboxlevelnum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtboxlevelnum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtboxlevelnum.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnAdd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 18pt</value>
+  </data>
+  <data name="btnAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>509, 257</value>
+  </data>
+  <data name="btnAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 38</value>
+  </data>
+  <data name="btnAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.Name" xml:space="preserve">
+    <value>btnAdd</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblBack.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblBack.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="lblBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 32</value>
+  </data>
+  <data name="lblBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 24</value>
+  </data>
+  <data name="lblBack.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lblBack.Name" xml:space="preserve">
+    <value>lblBack</value>
+  </data>
+  <data name="&gt;&gt;lblBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBack.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblBack.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1025, 679</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>addnewlevel</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateRole));
             this.cancel = new Group6_Project.CustomControls.RoundButton();
             this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,14 +48,9 @@
             this.cancel.BorderRadius = 16;
             this.cancel.BorderSize = 2;
             this.cancel.FlatAppearance.BorderSize = 0;
-            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.ForeColor = System.Drawing.Color.White;
-            this.cancel.Location = new System.Drawing.Point(599, 307);
             this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(103, 42);
-            this.cancel.TabIndex = 27;
-            this.cancel.Text = "Cancel";
             this.cancel.TextColor = System.Drawing.Color.White;
             this.cancel.UseVisualStyleBackColor = false;
             this.cancel.Click += new System.EventHandler(this.cancel_Click);
@@ -67,28 +63,18 @@
             this.roundButton1.BorderRadius = 16;
             this.roundButton1.BorderSize = 2;
             this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.roundButton1, "roundButton1");
             this.roundButton1.ForeColor = System.Drawing.Color.White;
-            this.roundButton1.Location = new System.Drawing.Point(712, 307);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(103, 42);
-            this.roundButton1.TabIndex = 24;
-            this.roundButton1.Text = "Update";
             this.roundButton1.TextColor = System.Drawing.Color.White;
             this.roundButton1.UseVisualStyleBackColor = false;
             this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(190, 260);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(197, 24);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "New Role Description:";
             // 
             // roundTextBox2
             // 
@@ -97,43 +83,28 @@
             this.roundTextBox2.BorderFocusColor = System.Drawing.Color.MediumPurple;
             this.roundTextBox2.BorderRadius = 0;
             this.roundTextBox2.BorderSize = 2;
-            this.roundTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.roundTextBox2, "roundTextBox2");
             this.roundTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox2.Location = new System.Drawing.Point(427, 256);
-            this.roundTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox2.Multiline = false;
             this.roundTextBox2.Name = "roundTextBox2";
-            this.roundTextBox2.Padding = new System.Windows.Forms.Padding(10, 6, 10, 6);
             this.roundTextBox2.PasswordChar = false;
             this.roundTextBox2.PlaceholderColor = System.Drawing.Color.DimGray;
             this.roundTextBox2.PlaceholderText = "[ Description ]";
-            this.roundTextBox2.Size = new System.Drawing.Size(388, 33);
-            this.roundTextBox2.TabIndex = 25;
             this.roundTextBox2.Texts = "";
             this.roundTextBox2.UnderlinedStyle = false;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(471, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 25);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Update Role";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(233, 219);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 24);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "New Role Name:";
             // 
             // roundTextBox1
             // 
@@ -142,18 +113,13 @@
             this.roundTextBox1.BorderFocusColor = System.Drawing.Color.MediumPurple;
             this.roundTextBox1.BorderRadius = 0;
             this.roundTextBox1.BorderSize = 2;
-            this.roundTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.roundTextBox1, "roundTextBox1");
             this.roundTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox1.Location = new System.Drawing.Point(427, 215);
-            this.roundTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox1.Multiline = false;
             this.roundTextBox1.Name = "roundTextBox1";
-            this.roundTextBox1.Padding = new System.Windows.Forms.Padding(10, 6, 10, 6);
             this.roundTextBox1.PasswordChar = false;
             this.roundTextBox1.PlaceholderColor = System.Drawing.Color.DimGray;
             this.roundTextBox1.PlaceholderText = "[ Role Name ]";
-            this.roundTextBox1.Size = new System.Drawing.Size(388, 33);
-            this.roundTextBox1.TabIndex = 21;
             this.roundTextBox1.Texts = "";
             this.roundTextBox1.UnderlinedStyle = false;
             // 
@@ -167,21 +133,17 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.roundTextBox2);
-            this.panel1.Location = new System.Drawing.Point(0, 100);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1041, 541);
-            this.panel1.TabIndex = 28;
             // 
             // UpdateRole
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.ClientSize = new System.Drawing.Size(1041, 718);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UpdateRole";
-            this.Text = "UpdateRole";
             this.Load += new System.EventHandler(this.UpdateRole_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -117,7 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="cancel.Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>新角色名稱：</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>更新角色</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>新角色描述：</value>
+  </data>
+  <data name="roundButton1.Text" xml:space="preserve">
+    <value>更新</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Invoice</value>
+    <value>更新角色</value>
   </data>
 </root>

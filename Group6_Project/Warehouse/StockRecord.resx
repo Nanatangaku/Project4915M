@@ -117,4 +117,126 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblitemnamefilter.Text" xml:space="preserve">
+    <value>Search by item name:</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>StockRecord</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblitemnamefilter.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblitemnamefilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="lblitemnamefilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 67</value>
+  </data>
+  <data name="lblitemnamefilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 24</value>
+  </data>
+  <data name="lblitemnamefilter.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblitemnamefilter.Name" xml:space="preserve">
+    <value>lblitemnamefilter</value>
+  </data>
+  <data name="&gt;&gt;lblitemnamefilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblitemnamefilter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblitemnamefilter.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtboxnamefilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="txtboxnamefilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 65</value>
+  </data>
+  <data name="txtboxnamefilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 29</value>
+  </data>
+  <data name="txtboxnamefilter.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtboxnamefilter.Name" xml:space="preserve">
+    <value>txtboxnamefilter</value>
+  </data>
+  <data name="&gt;&gt;txtboxnamefilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtboxnamefilter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtboxnamefilter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbstatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="cbstatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>730, 63</value>
+  </data>
+  <data name="cbstatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 32</value>
+  </data>
+  <data name="cbstatus.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbstatus.Name" xml:space="preserve">
+    <value>cbstatus</value>
+  </data>
+  <data name="&gt;&gt;cbstatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbstatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbstatus.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dvgstockrecord.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 120</value>
+  </data>
+  <data name="dvgstockrecord.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="dvgstockrecord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>860, 525</value>
+  </data>
+  <data name="dvgstockrecord.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dvgstockrecord.Name" xml:space="preserve">
+    <value>dvgstockrecord</value>
+  </data>
+  <data name="&gt;&gt;dvgstockrecord.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dvgstockrecord.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dvgstockrecord.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1041, 718</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>StockRecord</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

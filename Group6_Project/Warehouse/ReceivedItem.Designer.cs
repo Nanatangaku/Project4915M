@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReceivedItem));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -50,58 +51,37 @@
             // 
             // lbluserid
             // 
-            this.lbluserid.AutoSize = true;
-            this.lbluserid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbluserid, "lbluserid");
             this.lbluserid.ForeColor = System.Drawing.Color.White;
-            this.lbluserid.Location = new System.Drawing.Point(68, 46);
             this.lbluserid.Name = "lbluserid";
-            this.lbluserid.Size = new System.Drawing.Size(76, 24);
-            this.lbluserid.TabIndex = 1;
-            this.lbluserid.Text = "User ID:";
             // 
             // lblrole
             // 
-            this.lblrole.AutoSize = true;
-            this.lblrole.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblrole, "lblrole");
             this.lblrole.ForeColor = System.Drawing.Color.White;
-            this.lblrole.Location = new System.Drawing.Point(446, 46);
             this.lblrole.Name = "lblrole";
-            this.lblrole.Size = new System.Drawing.Size(54, 24);
-            this.lblrole.TabIndex = 2;
-            this.lblrole.Text = "Role:";
             // 
             // txtboxuserid
             // 
             this.txtboxuserid.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxuserid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxuserid.Location = new System.Drawing.Point(162, 44);
+            resources.ApplyResources(this.txtboxuserid, "txtboxuserid");
             this.txtboxuserid.Name = "txtboxuserid";
             this.txtboxuserid.ReadOnly = true;
-            this.txtboxuserid.Size = new System.Drawing.Size(222, 29);
-            this.txtboxuserid.TabIndex = 3;
             // 
             // txtboxrole
             // 
             this.txtboxrole.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtboxrole.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxrole.Location = new System.Drawing.Point(506, 44);
+            resources.ApplyResources(this.txtboxrole, "txtboxrole");
             this.txtboxrole.Name = "txtboxrole";
             this.txtboxrole.ReadOnly = true;
-            this.txtboxrole.Size = new System.Drawing.Size(218, 29);
-            this.txtboxrole.TabIndex = 4;
             // 
             // btnadd
             // 
             this.btnadd.FlatAppearance.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.btnadd.FlatAppearance.BorderSize = 2;
-            this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnadd, "btnadd");
             this.btnadd.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnadd.Location = new System.Drawing.Point(485, 170);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(102, 34);
-            this.btnadd.TabIndex = 5;
-            this.btnadd.Text = "Add";
             this.btnadd.UseVisualStyleBackColor = true;
             this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
@@ -109,47 +89,29 @@
             // 
             this.btnclear.FlatAppearance.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.btnclear.FlatAppearance.BorderSize = 2;
-            this.btnclear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnclear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnclear, "btnclear");
             this.btnclear.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnclear.Location = new System.Drawing.Point(622, 170);
             this.btnclear.Name = "btnclear";
-            this.btnclear.Size = new System.Drawing.Size(102, 34);
-            this.btnclear.TabIndex = 7;
-            this.btnclear.Text = "Clear";
             this.btnclear.UseVisualStyleBackColor = true;
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // lblitem
             // 
-            this.lblitem.AutoSize = true;
-            this.lblitem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblitem, "lblitem");
             this.lblitem.ForeColor = System.Drawing.Color.White;
-            this.lblitem.Location = new System.Drawing.Point(94, 99);
             this.lblitem.Name = "lblitem";
-            this.lblitem.Size = new System.Drawing.Size(50, 24);
-            this.lblitem.TabIndex = 8;
-            this.lblitem.Text = "Item:";
             // 
             // lblquantity
             // 
-            this.lblquantity.AutoSize = true;
-            this.lblquantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblquantity, "lblquantity");
             this.lblquantity.ForeColor = System.Drawing.Color.White;
-            this.lblquantity.Location = new System.Drawing.Point(417, 102);
             this.lblquantity.Name = "lblquantity";
-            this.lblquantity.Size = new System.Drawing.Size(83, 24);
-            this.lblquantity.TabIndex = 9;
-            this.lblquantity.Text = "Quantity:";
             // 
             // txtboxquantity
             // 
             this.txtboxquantity.BackColor = System.Drawing.SystemColors.Window;
-            this.txtboxquantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxquantity.Location = new System.Drawing.Point(506, 99);
+            resources.ApplyResources(this.txtboxquantity, "txtboxquantity");
             this.txtboxquantity.Name = "txtboxquantity";
-            this.txtboxquantity.Size = new System.Drawing.Size(218, 29);
-            this.txtboxquantity.TabIndex = 10;
             // 
             // dvgpreadditem
             // 
@@ -173,7 +135,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dvgpreadditem.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dvgpreadditem.Location = new System.Drawing.Point(93, 275);
+            resources.ApplyResources(this.dvgpreadditem, "dvgpreadditem");
             this.dvgpreadditem.Name = "dvgpreadditem";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -184,32 +146,22 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dvgpreadditem.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dvgpreadditem.RowTemplate.Height = 24;
-            this.dvgpreadditem.Size = new System.Drawing.Size(873, 334);
-            this.dvgpreadditem.TabIndex = 11;
             this.dvgpreadditem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgpreadditem_CellContentClick);
             // 
             // cbitem
             // 
-            this.cbitem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.cbitem, "cbitem");
             this.cbitem.FormattingEnabled = true;
-            this.cbitem.Location = new System.Drawing.Point(162, 96);
             this.cbitem.Name = "cbitem";
-            this.cbitem.Size = new System.Drawing.Size(222, 32);
-            this.cbitem.TabIndex = 12;
             this.cbitem.SelectedIndexChanged += new System.EventHandler(this.cbitem_SelectedIndexChanged);
             // 
             // btnconfirm
             // 
             this.btnconfirm.FlatAppearance.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.btnconfirm.FlatAppearance.BorderSize = 2;
-            this.btnconfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnconfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnconfirm, "btnconfirm");
             this.btnconfirm.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnconfirm.Location = new System.Drawing.Point(821, 630);
             this.btnconfirm.Name = "btnconfirm";
-            this.btnconfirm.Size = new System.Drawing.Size(136, 42);
-            this.btnconfirm.TabIndex = 13;
-            this.btnconfirm.Text = "Confirm";
             this.btnconfirm.UseVisualStyleBackColor = true;
             this.btnconfirm.Click += new System.EventHandler(this.btnconfirm_Click);
             // 
@@ -225,27 +177,21 @@
             this.gbinput.Controls.Add(this.txtboxrole);
             this.gbinput.Controls.Add(this.btnclear);
             this.gbinput.Controls.Add(this.lblrole);
-            this.gbinput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.gbinput, "gbinput");
             this.gbinput.ForeColor = System.Drawing.Color.White;
-            this.gbinput.Location = new System.Drawing.Point(139, 30);
             this.gbinput.Name = "gbinput";
-            this.gbinput.Size = new System.Drawing.Size(784, 228);
-            this.gbinput.TabIndex = 14;
             this.gbinput.TabStop = false;
-            this.gbinput.Text = "Input";
             // 
             // ReceivedItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1041, 718);
             this.Controls.Add(this.dvgpreadditem);
             this.Controls.Add(this.gbinput);
             this.Controls.Add(this.btnconfirm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReceivedItem";
-            this.Text = "ReceivedItem";
             this.Load += new System.EventHandler(this.ReceivedItem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvgpreadditem)).EndInit();
             this.gbinput.ResumeLayout(false);

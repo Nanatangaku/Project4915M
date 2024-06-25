@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderDetail));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,6 +39,8 @@
             this.txtstatus = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.txtcreatedate = new System.Windows.Forms.TextBox();
+            this.btnsave = new Group6_Project.CustomControls.RoundButton();
+            this.btndelete = new Group6_Project.CustomControls.RoundButton();
             this.txtshopid = new System.Windows.Forms.TextBox();
             this.txtboxcreatorid = new System.Windows.Forms.TextBox();
             this.txtboxorderid = new System.Windows.Forms.TextBox();
@@ -53,33 +56,21 @@
             this.btnreorder = new Group6_Project.CustomControls.RoundButton();
             this.btndownloaddispatchpdf = new Group6_Project.CustomControls.RoundButton();
             this.btnreceive = new Group6_Project.CustomControls.RoundButton();
-            this.btnsave = new Group6_Project.CustomControls.RoundButton();
-            this.btndelete = new Group6_Project.CustomControls.RoundButton();
             this.gbgeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgitem)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBack
             // 
-            this.lblBack.AutoSize = true;
-            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblBack, "lblBack");
             this.lblBack.ForeColor = System.Drawing.Color.White;
-            this.lblBack.Location = new System.Drawing.Point(31, 21);
             this.lblBack.Name = "lblBack";
-            this.lblBack.Size = new System.Drawing.Size(75, 24);
-            this.lblBack.TabIndex = 0;
-            this.lblBack.Text = "← Back";
             this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
             // 
             // lblorder_id
             // 
-            this.lblorder_id.AutoSize = true;
-            this.lblorder_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblorder_id.Location = new System.Drawing.Point(154, 47);
+            resources.ApplyResources(this.lblorder_id, "lblorder_id");
             this.lblorder_id.Name = "lblorder_id";
-            this.lblorder_id.Size = new System.Drawing.Size(86, 24);
-            this.lblorder_id.TabIndex = 1;
-            this.lblorder_id.Text = "Order ID:";
             // 
             // gbgeneral
             // 
@@ -99,145 +90,120 @@
             this.gbgeneral.Controls.Add(this.lblshopid);
             this.gbgeneral.Controls.Add(this.lblcreatorid);
             this.gbgeneral.Controls.Add(this.lblorder_id);
-            this.gbgeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.gbgeneral, "gbgeneral");
             this.gbgeneral.ForeColor = System.Drawing.Color.White;
-            this.gbgeneral.Location = new System.Drawing.Point(35, 60);
             this.gbgeneral.Name = "gbgeneral";
-            this.gbgeneral.Size = new System.Drawing.Size(975, 272);
-            this.gbgeneral.TabIndex = 2;
             this.gbgeneral.TabStop = false;
-            this.gbgeneral.Text = "General";
             this.gbgeneral.Enter += new System.EventHandler(this.gbgeneral_Enter);
             // 
             // dtpexpecteddate
             // 
-            this.dtpexpecteddate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpexpecteddate.Location = new System.Drawing.Point(264, 216);
+            resources.ApplyResources(this.dtpexpecteddate, "dtpexpecteddate");
             this.dtpexpecteddate.Name = "dtpexpecteddate";
-            this.dtpexpecteddate.Size = new System.Drawing.Size(208, 29);
-            this.dtpexpecteddate.TabIndex = 23;
             this.dtpexpecteddate.ValueChanged += new System.EventHandler(this.dtpexpecteddate_ValueChanged);
             // 
             // txtstatus
             // 
             this.txtstatus.BackColor = System.Drawing.Color.DarkGray;
-            this.txtstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtstatus.Location = new System.Drawing.Point(666, 156);
+            resources.ApplyResources(this.txtstatus, "txtstatus");
             this.txtstatus.Name = "txtstatus";
             this.txtstatus.ReadOnly = true;
-            this.txtstatus.Size = new System.Drawing.Size(210, 29);
-            this.txtstatus.TabIndex = 21;
             // 
             // txtname
             // 
             this.txtname.BackColor = System.Drawing.Color.DarkGray;
-            this.txtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtname.Location = new System.Drawing.Point(666, 99);
+            resources.ApplyResources(this.txtname, "txtname");
             this.txtname.Name = "txtname";
             this.txtname.ReadOnly = true;
-            this.txtname.Size = new System.Drawing.Size(210, 29);
-            this.txtname.TabIndex = 20;
             this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
             // 
             // txtcreatedate
             // 
             this.txtcreatedate.BackColor = System.Drawing.Color.DarkGray;
-            this.txtcreatedate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcreatedate.Location = new System.Drawing.Point(666, 42);
+            resources.ApplyResources(this.txtcreatedate, "txtcreatedate");
             this.txtcreatedate.Name = "txtcreatedate";
             this.txtcreatedate.ReadOnly = true;
-            this.txtcreatedate.Size = new System.Drawing.Size(210, 29);
-            this.txtcreatedate.TabIndex = 19;
+            // 
+            // btnsave
+            // 
+            this.btnsave.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnsave.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnsave.BorderColor = System.Drawing.Color.Transparent;
+            this.btnsave.BorderRadius = 16;
+            this.btnsave.BorderSize = 2;
+            this.btnsave.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnsave, "btnsave");
+            this.btnsave.ForeColor = System.Drawing.Color.White;
+            this.btnsave.Name = "btnsave";
+            this.btnsave.TextColor = System.Drawing.Color.White;
+            this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // btndelete
+            // 
+            this.btndelete.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btndelete.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btndelete.BorderColor = System.Drawing.Color.Transparent;
+            this.btndelete.BorderRadius = 16;
+            this.btndelete.BorderSize = 2;
+            this.btndelete.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btndelete, "btndelete");
+            this.btndelete.ForeColor = System.Drawing.Color.White;
+            this.btndelete.Name = "btndelete";
+            this.btndelete.TextColor = System.Drawing.Color.White;
+            this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // txtshopid
             // 
             this.txtshopid.BackColor = System.Drawing.Color.DarkGray;
-            this.txtshopid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtshopid.Location = new System.Drawing.Point(264, 159);
+            resources.ApplyResources(this.txtshopid, "txtshopid");
             this.txtshopid.Name = "txtshopid";
             this.txtshopid.ReadOnly = true;
-            this.txtshopid.Size = new System.Drawing.Size(208, 29);
-            this.txtshopid.TabIndex = 18;
             // 
             // txtboxcreatorid
             // 
             this.txtboxcreatorid.BackColor = System.Drawing.Color.DarkGray;
-            this.txtboxcreatorid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxcreatorid.Location = new System.Drawing.Point(264, 102);
+            resources.ApplyResources(this.txtboxcreatorid, "txtboxcreatorid");
             this.txtboxcreatorid.Name = "txtboxcreatorid";
             this.txtboxcreatorid.ReadOnly = true;
-            this.txtboxcreatorid.Size = new System.Drawing.Size(208, 29);
-            this.txtboxcreatorid.TabIndex = 17;
             // 
             // txtboxorderid
             // 
             this.txtboxorderid.BackColor = System.Drawing.Color.DarkGray;
-            this.txtboxorderid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxorderid.Location = new System.Drawing.Point(264, 45);
+            resources.ApplyResources(this.txtboxorderid, "txtboxorderid");
             this.txtboxorderid.Name = "txtboxorderid";
             this.txtboxorderid.ReadOnly = true;
-            this.txtboxorderid.Size = new System.Drawing.Size(208, 29);
-            this.txtboxorderid.TabIndex = 16;
             // 
             // lblexpecteddeliverydate
             // 
-            this.lblexpecteddeliverydate.AutoSize = true;
-            this.lblexpecteddeliverydate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblexpecteddeliverydate.Location = new System.Drawing.Point(29, 218);
+            resources.ApplyResources(this.lblexpecteddeliverydate, "lblexpecteddeliverydate");
             this.lblexpecteddeliverydate.Name = "lblexpecteddeliverydate";
-            this.lblexpecteddeliverydate.Size = new System.Drawing.Size(211, 24);
-            this.lblexpecteddeliverydate.TabIndex = 15;
-            this.lblexpecteddeliverydate.Text = "Expected Delivery Date:";
             // 
             // lblstatus
             // 
-            this.lblstatus.AutoSize = true;
-            this.lblstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblstatus.Location = new System.Drawing.Point(568, 158);
+            resources.ApplyResources(this.lblstatus, "lblstatus");
             this.lblstatus.Name = "lblstatus";
-            this.lblstatus.Size = new System.Drawing.Size(65, 24);
-            this.lblstatus.TabIndex = 7;
-            this.lblstatus.Text = "Status:";
             // 
             // lblname
             // 
-            this.lblname.AutoSize = true;
-            this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblname.Location = new System.Drawing.Point(567, 101);
+            resources.ApplyResources(this.lblname, "lblname");
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(66, 24);
-            this.lblname.TabIndex = 6;
-            this.lblname.Text = "Name:";
             // 
             // lblcreatedate
             // 
-            this.lblcreatedate.AutoSize = true;
-            this.lblcreatedate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcreatedate.Location = new System.Drawing.Point(520, 44);
+            resources.ApplyResources(this.lblcreatedate, "lblcreatedate");
             this.lblcreatedate.Name = "lblcreatedate";
-            this.lblcreatedate.Size = new System.Drawing.Size(113, 24);
-            this.lblcreatedate.TabIndex = 5;
-            this.lblcreatedate.Text = "Create Date:";
             // 
             // lblshopid
             // 
-            this.lblshopid.AutoSize = true;
-            this.lblshopid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblshopid.Location = new System.Drawing.Point(158, 161);
+            resources.ApplyResources(this.lblshopid, "lblshopid");
             this.lblshopid.Name = "lblshopid";
-            this.lblshopid.Size = new System.Drawing.Size(82, 24);
-            this.lblshopid.TabIndex = 4;
-            this.lblshopid.Text = "Shop ID:";
             // 
             // lblcreatorid
             // 
-            this.lblcreatorid.AutoSize = true;
-            this.lblcreatorid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcreatorid.Location = new System.Drawing.Point(142, 104);
+            resources.ApplyResources(this.lblcreatorid, "lblcreatorid");
             this.lblcreatorid.Name = "lblcreatorid";
-            this.lblcreatorid.Size = new System.Drawing.Size(98, 24);
-            this.lblcreatorid.TabIndex = 3;
-            this.lblcreatorid.Text = "Creator ID:";
             // 
             // dvgitem
             // 
@@ -261,7 +227,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dvgitem.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dvgitem.Location = new System.Drawing.Point(35, 341);
+            resources.ApplyResources(this.dvgitem, "dvgitem");
             this.dvgitem.Name = "dvgitem";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Gainsboro;
@@ -272,31 +238,20 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dvgitem.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dvgitem.RowTemplate.Height = 24;
-            this.dvgitem.Size = new System.Drawing.Size(975, 290);
-            this.dvgitem.TabIndex = 0;
             this.dvgitem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgitem_CellContentClick);
             // 
             // lblamounttext
             // 
-            this.lblamounttext.AutoSize = true;
-            this.lblamounttext.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblamounttext, "lblamounttext");
             this.lblamounttext.ForeColor = System.Drawing.Color.White;
-            this.lblamounttext.Location = new System.Drawing.Point(30, 656);
             this.lblamounttext.Name = "lblamounttext";
-            this.lblamounttext.Size = new System.Drawing.Size(127, 24);
-            this.lblamounttext.TabIndex = 6;
-            this.lblamounttext.Text = "Total Amount:";
             this.lblamounttext.Click += new System.EventHandler(this.lblamounttext_Click);
             // 
             // lbltotalamount
             // 
-            this.lbltotalamount.AutoSize = true;
-            this.lbltotalamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbltotalamount, "lbltotalamount");
             this.lbltotalamount.ForeColor = System.Drawing.Color.White;
-            this.lbltotalamount.Location = new System.Drawing.Point(163, 657);
             this.lbltotalamount.Name = "lbltotalamount";
-            this.lbltotalamount.Size = new System.Drawing.Size(0, 24);
-            this.lbltotalamount.TabIndex = 7;
             // 
             // btnreorder
             // 
@@ -306,14 +261,9 @@
             this.btnreorder.BorderRadius = 16;
             this.btnreorder.BorderSize = 2;
             this.btnreorder.FlatAppearance.BorderSize = 0;
-            this.btnreorder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnreorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnreorder, "btnreorder");
             this.btnreorder.ForeColor = System.Drawing.Color.White;
-            this.btnreorder.Location = new System.Drawing.Point(896, 649);
             this.btnreorder.Name = "btnreorder";
-            this.btnreorder.Size = new System.Drawing.Size(103, 42);
-            this.btnreorder.TabIndex = 10;
-            this.btnreorder.Text = "Reorder";
             this.btnreorder.TextColor = System.Drawing.Color.White;
             this.btnreorder.UseVisualStyleBackColor = false;
             this.btnreorder.Click += new System.EventHandler(this.btnreorder_Click);
@@ -326,14 +276,9 @@
             this.btndownloaddispatchpdf.BorderRadius = 16;
             this.btndownloaddispatchpdf.BorderSize = 2;
             this.btndownloaddispatchpdf.FlatAppearance.BorderSize = 0;
-            this.btndownloaddispatchpdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndownloaddispatchpdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btndownloaddispatchpdf, "btndownloaddispatchpdf");
             this.btndownloaddispatchpdf.ForeColor = System.Drawing.Color.White;
-            this.btndownloaddispatchpdf.Location = new System.Drawing.Point(717, 648);
             this.btndownloaddispatchpdf.Name = "btndownloaddispatchpdf";
-            this.btndownloaddispatchpdf.Size = new System.Drawing.Size(145, 42);
-            this.btndownloaddispatchpdf.TabIndex = 9;
-            this.btndownloaddispatchpdf.Text = "Download Dispatch ";
             this.btndownloaddispatchpdf.TextColor = System.Drawing.Color.White;
             this.btndownloaddispatchpdf.UseVisualStyleBackColor = false;
             this.btndownloaddispatchpdf.Click += new System.EventHandler(this.btndownloaddispatchpdf_Click);
@@ -346,64 +291,18 @@
             this.btnreceive.BorderRadius = 16;
             this.btnreceive.BorderSize = 2;
             this.btnreceive.FlatAppearance.BorderSize = 0;
-            this.btnreceive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnreceive.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnreceive, "btnreceive");
             this.btnreceive.ForeColor = System.Drawing.Color.White;
-            this.btnreceive.Location = new System.Drawing.Point(896, 648);
             this.btnreceive.Name = "btnreceive";
-            this.btnreceive.Size = new System.Drawing.Size(103, 42);
-            this.btnreceive.TabIndex = 8;
-            this.btnreceive.Text = "Receive";
             this.btnreceive.TextColor = System.Drawing.Color.White;
             this.btnreceive.UseVisualStyleBackColor = false;
             this.btnreceive.Click += new System.EventHandler(this.btnreceive_Click);
             // 
-            // btnsave
-            // 
-            this.btnsave.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnsave.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnsave.BorderColor = System.Drawing.Color.Transparent;
-            this.btnsave.BorderRadius = 16;
-            this.btnsave.BorderSize = 2;
-            this.btnsave.FlatAppearance.BorderSize = 0;
-            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.ForeColor = System.Drawing.Color.White;
-            this.btnsave.Location = new System.Drawing.Point(773, 212);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(103, 42);
-            this.btnsave.TabIndex = 4;
-            this.btnsave.Text = "Save";
-            this.btnsave.TextColor = System.Drawing.Color.White;
-            this.btnsave.UseVisualStyleBackColor = false;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
-            // 
-            // btndelete
-            // 
-            this.btndelete.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btndelete.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btndelete.BorderColor = System.Drawing.Color.Transparent;
-            this.btndelete.BorderRadius = 16;
-            this.btndelete.BorderSize = 2;
-            this.btndelete.FlatAppearance.BorderSize = 0;
-            this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.ForeColor = System.Drawing.Color.White;
-            this.btndelete.Location = new System.Drawing.Point(638, 212);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(103, 42);
-            this.btndelete.TabIndex = 5;
-            this.btndelete.Text = "Delete";
-            this.btndelete.TextColor = System.Drawing.Color.White;
-            this.btndelete.UseVisualStyleBackColor = false;
-            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
-            // 
             // OrderDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1041, 718);
             this.Controls.Add(this.btnreorder);
             this.Controls.Add(this.dvgitem);
             this.Controls.Add(this.btndownloaddispatchpdf);
@@ -414,7 +313,6 @@
             this.Controls.Add(this.lblBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OrderDetail";
-            this.Text = "OrderDetail";
             this.Load += new System.EventHandler(this.OrderDetail_Load);
             this.gbgeneral.ResumeLayout(false);
             this.gbgeneral.PerformLayout();

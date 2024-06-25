@@ -117,4 +117,129 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="cborder_status.Items" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="cborder_status.Items1" xml:space="preserve">
+    <value>waiting to process</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Dispatch</value>
+  </data>
+  <data name="lblorder_id.Text" xml:space="preserve">
+    <value>Search By Order ID:</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Order_idfilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="Order_idfilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 100</value>
+  </data>
+  <data name="Order_idfilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 29</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Order_idfilter.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Order_idfilter.Name" xml:space="preserve">
+    <value>Order_idfilter</value>
+  </data>
+  <data name="&gt;&gt;Order_idfilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Order_idfilter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Order_idfilter.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblorder_id.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblorder_id.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="lblorder_id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 102</value>
+  </data>
+  <data name="lblorder_id.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 24</value>
+  </data>
+  <data name="lblorder_id.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblorder_id.Name" xml:space="preserve">
+    <value>lblorder_id</value>
+  </data>
+  <data name="&gt;&gt;lblorder_id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblorder_id.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblorder_id.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cborder_status.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="cborder_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>723, 98</value>
+  </data>
+  <data name="cborder_status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 28</value>
+  </data>
+  <data name="cborder_status.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cborder_status.Name" xml:space="preserve">
+    <value>cborder_status</value>
+  </data>
+  <data name="&gt;&gt;cborder_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cborder_status.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cborder_status.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dvgorder_request.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 153</value>
+  </data>
+  <data name="dvgorder_request.Size" type="System.Drawing.Size, System.Drawing">
+    <value>905, 513</value>
+  </data>
+  <data name="dvgorder_request.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dvgorder_request.Name" xml:space="preserve">
+    <value>dvgorder_request</value>
+  </data>
+  <data name="&gt;&gt;dvgorder_request.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dvgorder_request.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dvgorder_request.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1041, 718</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Dispatch</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

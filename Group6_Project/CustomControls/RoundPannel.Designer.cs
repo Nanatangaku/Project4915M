@@ -29,15 +29,15 @@ namespace Group6_Project
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoundPannel));
             this.SuspendLayout();
             // 
             // RoundPannel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Name = "RoundPannel";
-            this.Size = new System.Drawing.Size(150, 162);
             this.Load += new System.EventHandler(this.RoundPannel_Load);
             this.ResumeLayout(false);
 

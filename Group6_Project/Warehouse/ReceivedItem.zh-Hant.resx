@@ -117,4 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnadd.Text" xml:space="preserve">
+    <value>加</value>
+  </data>
+  <data name="btnclear.Text" xml:space="preserve">
+    <value>重設</value>
+  </data>
+  <data name="btnconfirm.Text" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="gbinput.Text" xml:space="preserve">
+    <value>輸入</value>
+  </data>
+  <data name="lblitem.Text" xml:space="preserve">
+    <value>物品：</value>
+  </data>
+  <data name="lblquantity.Text" xml:space="preserve">
+    <value>數量：</value>
+  </data>
+  <data name="lblrole.Text" xml:space="preserve">
+    <value>角色：</value>
+  </data>
+  <data name="lbluserid.Text" xml:space="preserve">
+    <value>使用者 ID：</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>收件者</value>
+  </data>
 </root>

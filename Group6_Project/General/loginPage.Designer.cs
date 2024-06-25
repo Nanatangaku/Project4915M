@@ -44,24 +44,15 @@ namespace Group6_Project
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(617, 55);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 121);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(600, 197);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 26);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Account Login";
             // 
             // panel1
             // 
@@ -69,24 +60,14 @@ namespace Group6_Project
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1317, 240);
-            this.panel1.TabIndex = 5;
             // 
             // btnClose
             // 
             this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(1273, 9);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(0);
+            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.Name = "btnClose";
-            this.btnClose.Padding = new System.Windows.Forms.Padding(3);
-            this.btnClose.Size = new System.Drawing.Size(35, 33);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -98,14 +79,9 @@ namespace Group6_Project
             this.rbtnForgotPassword.BorderRadius = 10;
             this.rbtnForgotPassword.BorderSize = 1;
             this.rbtnForgotPassword.FlatAppearance.BorderSize = 0;
-            this.rbtnForgotPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtnForgotPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.rbtnForgotPassword, "rbtnForgotPassword");
             this.rbtnForgotPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.rbtnForgotPassword.Location = new System.Drawing.Point(617, 514);
             this.rbtnForgotPassword.Name = "rbtnForgotPassword";
-            this.rbtnForgotPassword.Size = new System.Drawing.Size(132, 34);
-            this.rbtnForgotPassword.TabIndex = 13;
-            this.rbtnForgotPassword.Text = "Forgot Password?";
             this.rbtnForgotPassword.TextColor = System.Drawing.Color.DimGray;
             this.rbtnForgotPassword.UseVisualStyleBackColor = false;
             this.rbtnForgotPassword.Click += new System.EventHandler(this.rbtnForgotPassword_Click);
@@ -118,14 +94,9 @@ namespace Group6_Project
             this.roundButton1.BorderRadius = 23;
             this.roundButton1.BorderSize = 1;
             this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.roundButton1, "roundButton1");
             this.roundButton1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundButton1.Location = new System.Drawing.Point(626, 474);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(112, 34);
-            this.roundButton1.TabIndex = 12;
-            this.roundButton1.Text = "Login";
             this.roundButton1.TextColor = System.Drawing.Color.DimGray;
             this.roundButton1.UseVisualStyleBackColor = false;
             this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
@@ -137,18 +108,13 @@ namespace Group6_Project
             this.roundTextBox2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.roundTextBox2.BorderRadius = 0;
             this.roundTextBox2.BorderSize = 2;
-            this.roundTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.roundTextBox2, "roundTextBox2");
             this.roundTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox2.Location = new System.Drawing.Point(560, 414);
-            this.roundTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox2.Multiline = false;
             this.roundTextBox2.Name = "roundTextBox2";
-            this.roundTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.roundTextBox2.PasswordChar = true;
             this.roundTextBox2.PlaceholderColor = System.Drawing.Color.DimGray;
             this.roundTextBox2.PlaceholderText = "Password:";
-            this.roundTextBox2.Size = new System.Drawing.Size(250, 31);
-            this.roundTextBox2.TabIndex = 11;
             this.roundTextBox2.Texts = "";
             this.roundTextBox2.UnderlinedStyle = false;
             this.roundTextBox2._TextChanged += new System.EventHandler(this.roundTextBox2__TextChanged);
@@ -160,28 +126,22 @@ namespace Group6_Project
             this.roundTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.roundTextBox1.BorderRadius = 0;
             this.roundTextBox1.BorderSize = 2;
-            this.roundTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.roundTextBox1, "roundTextBox1");
             this.roundTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox1.Location = new System.Drawing.Point(560, 357);
-            this.roundTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox1.Multiline = false;
             this.roundTextBox1.Name = "roundTextBox1";
-            this.roundTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.roundTextBox1.PasswordChar = false;
             this.roundTextBox1.PlaceholderColor = System.Drawing.Color.DimGray;
             this.roundTextBox1.PlaceholderText = "User Name:";
-            this.roundTextBox1.Size = new System.Drawing.Size(250, 31);
-            this.roundTextBox1.TabIndex = 10;
             this.roundTextBox1.Texts = "";
             this.roundTextBox1.UnderlinedStyle = false;
             this.roundTextBox1._TextChanged += new System.EventHandler(this.roundTextBox1__TextChanged_1);
             // 
             // loginPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1317, 748);
             this.Controls.Add(this.rbtnForgotPassword);
             this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.roundTextBox2);
@@ -189,7 +149,6 @@ namespace Group6_Project
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "loginPage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.loginPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

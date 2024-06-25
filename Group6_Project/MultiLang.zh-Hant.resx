@@ -118,9 +118,91 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="_14" xml:space="preserve">
-    <value>會計
+    <value>會計部
    經理</value>
-    <comment>2</comment>
+    <comment>3</comment>
+  </data>
+  <data name="_38" xml:space="preserve">
+    <value>#202402152342 已完成訂單 A</value>
+    <comment>3</comment>
+  </data>
+  <data name="_39" xml:space="preserve">
+    <value>#202402142159 已完成的訂單 A</value>
+    <comment>3</comment>
+  </data>
+  <data name="_40" xml:space="preserve">
+    <value>#202402092139 已完成的訂單 C</value>
+    <comment>3</comment>
+  </data>
+  <data name="_41" xml:space="preserve">
+    <value>#202402082118 已完成訂單 B</value>
+    <comment>3</comment>
+  </data>
+  <data name="_42" xml:space="preserve">
+    <value>#202402012117 已完成訂單 A</value>
+    <comment>3</comment>
+  </data>
+  <data name="_43" xml:space="preserve">
+    <value>#202401212125 已完成的訂單 D</value>
+    <comment>3</comment>
+  </data>
+  <data name="_44" xml:space="preserve">
+    <value>#202401072130 已完成的訂單 A</value>
+    <comment>3</comment>
+  </data>
+  <data name="_45" xml:space="preserve">
+    <value>#202401052149 已完成的訂單 B</value>
+    <comment>3</comment>
+  </data>
+  <data name="_46" xml:space="preserve">
+    <value>#202401010101 已完成訂單 C</value>
+    <comment>3</comment>
+  </data>
+  <data name="_155" xml:space="preserve">
+    <value>倉庫名稱：</value>
+    <comment>3</comment>
+  </data>
+  <data name="_25" xml:space="preserve">
+    <value>品類經理
+登出</value>
+    <comment>3</comment>
+  </data>
+  <data name="_54" xml:space="preserve">
+    <value>搜索物品</value>
+    <comment>3</comment>
+  </data>
+  <data name="_182" xml:space="preserve">
+    <value>檢視訂單</value>
+    <comment>3</comment>
+  </data>
+  <data name="_91" xml:space="preserve">
+    <value>全部</value>
+    <comment>3</comment>
+  </data>
+  <data name="_89" xml:space="preserve">
+    <value>出貨</value>
+    <comment>3</comment>
+  </data>
+  <data name="_93" xml:space="preserve">
+    <value>出貨訂單詳情</value>
+    <comment>3</comment>
+  </data>
+  <data name="_156" xml:space="preserve">
+    <value>設定等級</value>
+    <comment>3</comment>
+  </data>
+  <data name="_167" xml:space="preserve">
+    <value>庫存記錄</value>
+    <comment>3</comment>
+  </data>
+  <data name="_191" xml:space="preserve">
+    <value>出貨</value>
+    <comment>3</comment>
+  </data>
+  <data name="_190" xml:space="preserve">
+    <value>倉庫經理
+登出</value>
+    <comment>3</comment>
   </data>
   <data name="_13" xml:space="preserve">
     <value>報告</value>
@@ -146,52 +228,8 @@
     <value>$No.$ $Status$ $PaymentName$</value>
     <comment>5</comment>
   </data>
-  <data name="_38" xml:space="preserve">
-    <value>#202402152342 已完成訂單 A</value>
-    <comment>2</comment>
-  </data>
-  <data name="_39" xml:space="preserve">
-    <value>#202402142159 已完成的訂單 A</value>
-    <comment>2</comment>
-  </data>
-  <data name="_40" xml:space="preserve">
-    <value>#202402092139 已完成的訂單C</value>
-    <comment>2</comment>
-  </data>
-  <data name="_41" xml:space="preserve">
-    <value>#202402082118 已完成訂單 B</value>
-    <comment>2</comment>
-  </data>
-  <data name="_42" xml:space="preserve">
-    <value>#202402012117 已完成訂單A</value>
-    <comment>2</comment>
-  </data>
-  <data name="_43" xml:space="preserve">
-    <value>#202401212125 已完成的訂單D</value>
-    <comment>2</comment>
-  </data>
-  <data name="_44" xml:space="preserve">
-    <value>#202401072130 已完成的訂單 A</value>
-    <comment>2</comment>
-  </data>
-  <data name="_45" xml:space="preserve">
-    <value>#202401052149 已完成的訂單B</value>
-    <comment>2</comment>
-  </data>
-  <data name="_46" xml:space="preserve">
-    <value>#202401010101 已完成訂單 C</value>
-    <comment>2</comment>
-  </data>
   <data name="_113" xml:space="preserve">
     <value>發票</value>
-    <comment>5</comment>
-  </data>
-  <data name="_138" xml:space="preserve">
-    <value>報告</value>
-    <comment>5</comment>
-  </data>
-  <data name="_139" xml:space="preserve">
-    <value>圖1</value>
     <comment>5</comment>
   </data>
   <data name="_56" xml:space="preserve">
@@ -326,10 +364,6 @@
     <value>取消</value>
     <comment>5</comment>
   </data>
-  <data name="_155" xml:space="preserve">
-    <value>主目錄名稱：</value>
-    <comment>5</comment>
-  </data>
   <data name="_181" xml:space="preserve">
     <value>更新倉庫資訊</value>
     <comment>5</comment>
@@ -340,11 +374,6 @@
   </data>
   <data name="_24" xml:space="preserve">
     <value>類別</value>
-    <comment>5</comment>
-  </data>
-  <data name="_25" xml:space="preserve">
-    <value>品類經理
-註銷</value>
     <comment>5</comment>
   </data>
   <data name="_27" xml:space="preserve">
@@ -452,9 +481,9 @@
     <comment>5</comment>
   </data>
   <data name="_76" xml:space="preserve">
-    <value>交貨
+    <value>送貨
    經理</value>
-    <comment>5</comment>
+    <comment>2</comment>
   </data>
   <data name="_77" xml:space="preserve">
     <value>交貨訂單</value>
@@ -618,10 +647,6 @@
     <value>繼續</value>
     <comment>5</comment>
   </data>
-  <data name="_54" xml:space="preserve">
-    <value>搜索物品</value>
-    <comment>2</comment>
-  </data>
   <data name="_98" xml:space="preserve">
     <value>調度備註</value>
     <comment>5</comment>
@@ -655,8 +680,8 @@
     <comment>5</comment>
   </data>
   <data name="_118" xml:space="preserve">
-    <value>救</value>
-    <comment>5</comment>
+    <value>保存</value>
+    <comment>2</comment>
   </data>
   <data name="_10" xml:space="preserve">
     <value>常規</value>
@@ -687,8 +712,8 @@
     <comment>5</comment>
   </data>
   <data name="_162" xml:space="preserve">
-    <value>退房</value>
-    <comment>5</comment>
+    <value>結算</value>
+    <comment>2</comment>
   </data>
   <data name="_164" xml:space="preserve">
     <value>次序</value>
@@ -696,15 +721,11 @@
   </data>
   <data name="_163" xml:space="preserve">
     <value>店長
-註銷</value>
-    <comment>5</comment>
+登出</value>
+    <comment>2</comment>
   </data>
   <data name="_161" xml:space="preserve">
     <value>查看訂單</value>
-    <comment>5</comment>
-  </data>
-  <data name="_182" xml:space="preserve">
-    <value>視圖順序</value>
     <comment>5</comment>
   </data>
   <data name="_184" xml:space="preserve">
@@ -712,12 +733,12 @@
     <comment>5</comment>
   </data>
   <data name="_185" xml:space="preserve">
-    <value>派出</value>
-    <comment>5</comment>
+    <value>已出貨</value>
+    <comment>2</comment>
   </data>
   <data name="_186" xml:space="preserve">
-    <value>提供</value>
-    <comment>5</comment>
+    <value>送貨中</value>
+    <comment>2</comment>
   </data>
   <data name="_187" xml:space="preserve">
     <value>完成訂單</value>
@@ -735,20 +756,12 @@
     <value>等級編號：</value>
     <comment>5</comment>
   </data>
-  <data name="_91" xml:space="preserve">
-    <value>都</value>
-    <comment>5</comment>
-  </data>
   <data name="_92" xml:space="preserve">
     <value>等待處理</value>
     <comment>5</comment>
   </data>
   <data name="_90" xml:space="preserve">
     <value>按訂單ID搜索：</value>
-    <comment>5</comment>
-  </data>
-  <data name="_89" xml:space="preserve">
-    <value>遣</value>
     <comment>5</comment>
   </data>
   <data name="_94" xml:space="preserve">
@@ -809,11 +822,11 @@
   </data>
   <data name="_22" xml:space="preserve">
     <value>加</value>
-    <comment>5</comment>
+    <comment>2</comment>
   </data>
   <data name="_134" xml:space="preserve">
-    <value>清楚</value>
-    <comment>5</comment>
+    <value>重設</value>
+    <comment>2</comment>
   </data>
   <data name="_1" xml:space="preserve">
     <value>確認</value>
@@ -824,8 +837,8 @@
     <comment>5</comment>
   </data>
   <data name="_135" xml:space="preserve">
-    <value>專案：</value>
-    <comment>5</comment>
+    <value>物品：</value>
+    <comment>2</comment>
   </data>
   <data name="_136" xml:space="preserve">
     <value>數量：</value>
@@ -843,10 +856,6 @@
     <value>添加新級別</value>
     <comment>5</comment>
   </data>
-  <data name="_167" xml:space="preserve">
-    <value>股票記錄</value>
-    <comment>5</comment>
-  </data>
   <data name="_168" xml:space="preserve">
     <value>依項目名稱搜尋：</value>
     <comment>5</comment>
@@ -855,38 +864,20 @@
     <value>用戶主頁</value>
     <comment>5</comment>
   </data>
-  <data name="_191" xml:space="preserve">
-    <value>遣
-</value>
-    <comment>5</comment>
-  </data>
   <data name="_192" xml:space="preserve">
-    <value>已收到的物品</value>
-    <comment>5</comment>
+    <value>收貨</value>
+    <comment>2</comment>
   </data>
   <data name="_188" xml:space="preserve">
-    <value>水平設置</value>
-    <comment>5</comment>
+    <value>等级設定</value>
+    <comment>2</comment>
   </data>
   <data name="_189" xml:space="preserve">
-    <value>股票</value>
-    <comment>5</comment>
-  </data>
-  <data name="_190" xml:space="preserve">
-    <value>倉庫經理
-註銷</value>
-    <comment>5</comment>
+    <value>庫存</value>
+    <comment>2</comment>
   </data>
   <data name="_17" xml:space="preserve">
     <value>OPSR系統</value>
     <comment>5</comment>
-  </data>
-  <data name="_93" xml:space="preserve">
-    <value>出貨訂單詳情</value>
-    <comment>3</comment>
-  </data>
-  <data name="_156" xml:space="preserve">
-    <value>設定等級</value>
-    <comment>3</comment>
   </data>
 </root>

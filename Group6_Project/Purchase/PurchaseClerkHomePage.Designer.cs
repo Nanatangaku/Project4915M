@@ -29,6 +29,7 @@ namespace Group6_Project
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PurchaseClerkHomePage));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panNav = new System.Windows.Forms.Panel();
             this.btnCategoryManager = new System.Windows.Forms.Button();
@@ -52,36 +53,24 @@ namespace Group6_Project
             this.panelMenu.Controls.Add(this.btnCategoryManager);
             this.panelMenu.Controls.Add(this.btnPurchaseOrder);
             this.panelMenu.Controls.Add(this.panel2);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panelMenu, "panelMenu");
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(277, 951);
-            this.panelMenu.TabIndex = 3;
             // 
             // panNav
             // 
             this.panNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(120)))), ((int)(((byte)(252)))));
-            this.panNav.Location = new System.Drawing.Point(0, 141);
+            resources.ApplyResources(this.panNav, "panNav");
             this.panNav.Name = "panNav";
-            this.panNav.Size = new System.Drawing.Size(7, 83);
-            this.panNav.TabIndex = 2;
             // 
             // btnCategoryManager
             // 
             this.btnCategoryManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
             this.btnCategoryManager.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCategoryManager.Dock = System.Windows.Forms.DockStyle.Bottom;
+            resources.ApplyResources(this.btnCategoryManager, "btnCategoryManager");
             this.btnCategoryManager.FlatAppearance.BorderSize = 0;
-            this.btnCategoryManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCategoryManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategoryManager.ForeColor = System.Drawing.Color.White;
             this.btnCategoryManager.Image = global::Group6_Project.Properties.Resources.user__1_;
-            this.btnCategoryManager.Location = new System.Drawing.Point(0, 868);
             this.btnCategoryManager.Name = "btnCategoryManager";
-            this.btnCategoryManager.Size = new System.Drawing.Size(277, 83);
-            this.btnCategoryManager.TabIndex = 7;
-            this.btnCategoryManager.Text = "    Purchase \r\n   Clerk";
-            this.btnCategoryManager.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCategoryManager.UseVisualStyleBackColor = false;
             this.btnCategoryManager.Click += new System.EventHandler(this.btnCategoryManager_Click);
             this.btnCategoryManager.Leave += new System.EventHandler(this.btnCategoryManager_Leave);
@@ -90,18 +79,11 @@ namespace Group6_Project
             // 
             this.btnPurchaseOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.btnPurchaseOrder.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnPurchaseOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            resources.ApplyResources(this.btnPurchaseOrder, "btnPurchaseOrder");
             this.btnPurchaseOrder.FlatAppearance.BorderSize = 0;
-            this.btnPurchaseOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPurchaseOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchaseOrder.ForeColor = System.Drawing.Color.White;
             this.btnPurchaseOrder.Image = global::Group6_Project.Properties.Resources.home2;
-            this.btnPurchaseOrder.Location = new System.Drawing.Point(0, 141);
             this.btnPurchaseOrder.Name = "btnPurchaseOrder";
-            this.btnPurchaseOrder.Size = new System.Drawing.Size(277, 83);
-            this.btnPurchaseOrder.TabIndex = 1;
-            this.btnPurchaseOrder.Text = "      Purchase Order    ";
-            this.btnPurchaseOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnPurchaseOrder.UseVisualStyleBackColor = false;
             this.btnPurchaseOrder.Click += new System.EventHandler(this.btnPurchaseOrder_Click);
             this.btnPurchaseOrder.Leave += new System.EventHandler(this.btnPurchaseOrder_Leave);
@@ -111,44 +93,28 @@ namespace Group6_Project
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(277, 141);
-            this.panel2.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(65, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "OPSR System";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Group6_Project.Properties.Resources.car_circle_bolt;
-            this.pictureBox1.Location = new System.Drawing.Point(105, 32);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 46);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // btnClose
             // 
             this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1272, 0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(45, 43);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "x";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -157,33 +123,24 @@ namespace Group6_Project
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
             this.panel5.Controls.Add(this.panFormLoad);
             this.panel5.Controls.Add(this.btnClose);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(277, 0);
+            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1317, 951);
-            this.panel5.TabIndex = 5;
             // 
             // panFormLoad
             // 
             this.panFormLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panFormLoad.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panFormLoad.Location = new System.Drawing.Point(0, 141);
+            resources.ApplyResources(this.panFormLoad, "panFormLoad");
             this.panFormLoad.Name = "panFormLoad";
-            this.panFormLoad.Size = new System.Drawing.Size(1317, 810);
-            this.panFormLoad.TabIndex = 1;
             // 
             // PurchaseClerkHomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1594, 951);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PurchaseClerkHomePage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "userHomePage";
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

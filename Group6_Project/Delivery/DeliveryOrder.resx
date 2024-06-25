@@ -117,4 +117,132 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="cbstatusfilter.Items" xml:space="preserve">
+    <value>Waiting to delivery</value>
+  </data>
+  <data name="cbstatusfilter.Items1" xml:space="preserve">
+    <value>Delivered</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>DeliveryOrder</value>
+  </data>
+  <data name="lblsearchdeliveryid.Text" xml:space="preserve">
+    <value>Search By delivery ID:</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblsearchdeliveryid.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblsearchdeliveryid.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="lblsearchdeliveryid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 82</value>
+  </data>
+  <data name="lblsearchdeliveryid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 24</value>
+  </data>
+  <data name="lblsearchdeliveryid.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblsearchdeliveryid.Name" xml:space="preserve">
+    <value>lblsearchdeliveryid</value>
+  </data>
+  <data name="&gt;&gt;lblsearchdeliveryid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblsearchdeliveryid.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblsearchdeliveryid.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtboxsearchbyid.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="txtboxsearchbyid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 78</value>
+  </data>
+  <data name="txtboxsearchbyid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 29</value>
+  </data>
+  <data name="txtboxsearchbyid.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtboxsearchbyid.Name" xml:space="preserve">
+    <value>txtboxsearchbyid</value>
+  </data>
+  <data name="&gt;&gt;txtboxsearchbyid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtboxsearchbyid.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtboxsearchbyid.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbstatusfilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="cbstatusfilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>769, 75</value>
+  </data>
+  <data name="cbstatusfilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 32</value>
+  </data>
+  <data name="cbstatusfilter.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbstatusfilter.Name" xml:space="preserve">
+    <value>cbstatusfilter</value>
+  </data>
+  <data name="&gt;&gt;cbstatusfilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbstatusfilter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbstatusfilter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dvgdeliveryorder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 126</value>
+  </data>
+  <data name="dvgdeliveryorder.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="dvgdeliveryorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>897, 539</value>
+  </data>
+  <data name="dvgdeliveryorder.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dvgdeliveryorder.Name" xml:space="preserve">
+    <value>dvgdeliveryorder</value>
+  </data>
+  <data name="&gt;&gt;dvgdeliveryorder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dvgdeliveryorder.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dvgdeliveryorder.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1041, 718</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DeliveryOrder</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

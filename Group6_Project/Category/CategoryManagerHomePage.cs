@@ -104,16 +104,7 @@ namespace Group6_Project
             btnSupplier.BackColor = Color.FromArgb(51, 51, 76);
         }
         [Category("Event")]
-        private void btnDepartment_Click(object sender, EventArgs e)
-        {
-        
-        }
-        [Category("Event")]
-        private void btnDepartment_Leave(object sender, EventArgs e)
-        {
-            btnDepartment.BackColor = Color.FromArgb(51, 51, 76);
-        }
-        [Category("Event")]
+
         private void btnRole_Click(object sender, EventArgs e)
         {
             panNav.Height = btnRole.Height;

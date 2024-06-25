@@ -117,4 +117,96 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnaddnew.Text" xml:space="preserve">
+    <value>Add new level</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>setoflevel</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dvglevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 87</value>
+  </data>
+  <data name="dvglevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>896, 328</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dvglevel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dvglevel.Name" xml:space="preserve">
+    <value>dvglevel</value>
+  </data>
+  <data name="&gt;&gt;dvglevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dvglevel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dvglevel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtfilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 18pt</value>
+  </data>
+  <data name="txtfilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 28</value>
+  </data>
+  <data name="txtfilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>651, 36</value>
+  </data>
+  <data name="txtfilter.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtfilter.Name" xml:space="preserve">
+    <value>txtfilter</value>
+  </data>
+  <data name="&gt;&gt;txtfilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtfilter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtfilter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnaddnew.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 18pt</value>
+  </data>
+  <data name="btnaddnew.Location" type="System.Drawing.Point, System.Drawing">
+    <value>782, 444</value>
+  </data>
+  <data name="btnaddnew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 38</value>
+  </data>
+  <data name="btnaddnew.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnaddnew.Name" xml:space="preserve">
+    <value>btnaddnew</value>
+  </data>
+  <data name="&gt;&gt;btnaddnew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnaddnew.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnaddnew.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1025, 679</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>setoflevel</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

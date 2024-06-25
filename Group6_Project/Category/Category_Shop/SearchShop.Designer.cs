@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchShop));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,7 +61,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(84, 83);
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Gainsboro;
@@ -70,20 +71,13 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(892, 437);
-            this.dataGridView1.TabIndex = 19;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(245, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 24);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Shop Name: ";
             // 
             // roundTextBox1
             // 
@@ -92,18 +86,13 @@
             this.roundTextBox1.BorderFocusColor = System.Drawing.Color.MediumPurple;
             this.roundTextBox1.BorderRadius = 0;
             this.roundTextBox1.BorderSize = 2;
-            this.roundTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.roundTextBox1, "roundTextBox1");
             this.roundTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox1.Location = new System.Drawing.Point(367, 33);
-            this.roundTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox1.Multiline = false;
             this.roundTextBox1.Name = "roundTextBox1";
-            this.roundTextBox1.Padding = new System.Windows.Forms.Padding(10, 6, 10, 6);
             this.roundTextBox1.PasswordChar = false;
             this.roundTextBox1.PlaceholderColor = System.Drawing.Color.DimGray;
             this.roundTextBox1.PlaceholderText = "[ Shop Name ]";
-            this.roundTextBox1.Size = new System.Drawing.Size(441, 33);
-            this.roundTextBox1.TabIndex = 16;
             this.roundTextBox1.Texts = "";
             this.roundTextBox1.UnderlinedStyle = false;
             this.roundTextBox1._TextChanged += new System.EventHandler(this.roundTextBox1__TextChanged);
@@ -114,21 +103,17 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.roundTextBox1);
-            this.panel1.Location = new System.Drawing.Point(0, 100);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1041, 541);
-            this.panel1.TabIndex = 20;
             // 
             // SearchShop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(100)))));
-            this.ClientSize = new System.Drawing.Size(1041, 718);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SearchShop";
-            this.Text = "SearchShop";
             this.Load += new System.EventHandler(this.SearchShop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

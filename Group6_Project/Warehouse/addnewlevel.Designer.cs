@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addnewlevel));
             this.lbldescription = new System.Windows.Forms.Label();
             this.lbllevelnum = new System.Windows.Forms.Label();
             this.txtboxdescription = new System.Windows.Forms.TextBox();
@@ -38,72 +39,46 @@
             // 
             // lbldescription
             // 
-            this.lbldescription.AutoSize = true;
-            this.lbldescription.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            resources.ApplyResources(this.lbldescription, "lbldescription");
             this.lbldescription.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbldescription.Location = new System.Drawing.Point(216, 105);
             this.lbldescription.Name = "lbldescription";
-            this.lbldescription.Size = new System.Drawing.Size(120, 24);
-            this.lbldescription.TabIndex = 0;
-            this.lbldescription.Text = "Description:";
             // 
             // lbllevelnum
             // 
-            this.lbllevelnum.AutoSize = true;
-            this.lbllevelnum.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            resources.ApplyResources(this.lbllevelnum, "lbllevelnum");
             this.lbllevelnum.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbllevelnum.Location = new System.Drawing.Point(189, 184);
             this.lbllevelnum.Name = "lbllevelnum";
-            this.lbllevelnum.Size = new System.Drawing.Size(147, 24);
-            this.lbllevelnum.TabIndex = 1;
-            this.lbllevelnum.Text = "Level Number:";
             // 
             // txtboxdescription
             // 
-            this.txtboxdescription.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtboxdescription.Location = new System.Drawing.Point(349, 102);
+            resources.ApplyResources(this.txtboxdescription, "txtboxdescription");
             this.txtboxdescription.Name = "txtboxdescription";
-            this.txtboxdescription.Size = new System.Drawing.Size(251, 36);
-            this.txtboxdescription.TabIndex = 2;
             // 
             // txtboxlevelnum
             // 
-            this.txtboxlevelnum.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtboxlevelnum.Location = new System.Drawing.Point(349, 172);
+            resources.ApplyResources(this.txtboxlevelnum, "txtboxlevelnum");
             this.txtboxlevelnum.Name = "txtboxlevelnum";
-            this.txtboxlevelnum.Size = new System.Drawing.Size(251, 36);
-            this.txtboxlevelnum.TabIndex = 3;
             // 
             // btnAdd
             // 
             this.btnAdd.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnAdd.Font = new System.Drawing.Font("PMingLiU", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAdd.Location = new System.Drawing.Point(509, 257);
+            resources.ApplyResources(this.btnAdd, "btnAdd");
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(91, 38);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblBack
             // 
-            this.lblBack.AutoSize = true;
-            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblBack, "lblBack");
             this.lblBack.ForeColor = System.Drawing.Color.White;
-            this.lblBack.Location = new System.Drawing.Point(86, 32);
             this.lblBack.Name = "lblBack";
-            this.lblBack.Size = new System.Drawing.Size(75, 24);
-            this.lblBack.TabIndex = 10;
-            this.lblBack.Text = "← Back";
             this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
             // 
             // addnewlevel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1025, 679);
             this.Controls.Add(this.lblBack);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtboxlevelnum);
@@ -111,7 +86,6 @@
             this.Controls.Add(this.lbllevelnum);
             this.Controls.Add(this.lbldescription);
             this.Name = "addnewlevel";
-            this.Text = "addnewlevel";
             this.Load += new System.EventHandler(this.addnewlevel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

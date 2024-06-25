@@ -117,6 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnConfirm.Text" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>CheckOut</value>
+  </data>
+  <data name="gbgeneral.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="lbladdress.Text" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lblcreatedate.Text" xml:space="preserve">
+    <value>Create Date:</value>
+  </data>
+  <data name="lblcreaterid.Text" xml:space="preserve">
+    <value>Create ID:</value>
+  </data>
+  <data name="lblexpectdate.Text" xml:space="preserve">
+    <value>Expect Date:</value>
+  </data>
+  <data name="lblName.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lblshopid.Text" xml:space="preserve">
+    <value>Shop ID:</value>
+  </data>
+  <data name="lblshopname.Text" xml:space="preserve">
+    <value>Shop Name:</value>
+  </data>
+  <data name="lbltotalprice.Text" xml:space="preserve">
+    <value>Total Price:</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="gbgeneral.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
@@ -143,9 +179,6 @@
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnConfirm.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
-  </data>
-  <data name="btnConfirm.Text" xml:space="preserve">
-    <value>Confirm</value>
   </data>
   <data name="&gt;&gt;btnConfirm.Name" xml:space="preserve">
     <value>btnConfirm</value>
@@ -206,9 +239,6 @@
   </data>
   <data name="lbltotalprice.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
-  </data>
-  <data name="lbltotalprice.Text" xml:space="preserve">
-    <value>Total Price:</value>
   </data>
   <data name="&gt;&gt;lbltotalprice.Name" xml:space="preserve">
     <value>lbltotalprice</value>
@@ -435,9 +465,6 @@
   <data name="lbladdress.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="lbladdress.Text" xml:space="preserve">
-    <value>Address:</value>
-  </data>
   <data name="&gt;&gt;lbladdress.Name" xml:space="preserve">
     <value>lbladdress</value>
   </data>
@@ -467,9 +494,6 @@
   </data>
   <data name="lblshopname.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
-  </data>
-  <data name="lblshopname.Text" xml:space="preserve">
-    <value>Shop Name:</value>
   </data>
   <data name="&gt;&gt;lblshopname.Name" xml:space="preserve">
     <value>lblshopname</value>
@@ -501,9 +525,6 @@
   <data name="lblexpectdate.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="lblexpectdate.Text" xml:space="preserve">
-    <value>Expect Date:</value>
-  </data>
   <data name="&gt;&gt;lblexpectdate.Name" xml:space="preserve">
     <value>lblexpectdate</value>
   </data>
@@ -533,9 +554,6 @@
   </data>
   <data name="lblshopid.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="lblshopid.Text" xml:space="preserve">
-    <value>Shop ID:</value>
   </data>
   <data name="&gt;&gt;lblshopid.Name" xml:space="preserve">
     <value>lblshopid</value>
@@ -567,9 +585,6 @@
   <data name="lblName.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="lblName.Text" xml:space="preserve">
-    <value>Name:</value>
-  </data>
   <data name="&gt;&gt;lblName.Name" xml:space="preserve">
     <value>lblName</value>
   </data>
@@ -600,9 +615,6 @@
   <data name="lblcreatedate.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="lblcreatedate.Text" xml:space="preserve">
-    <value>Create Date:</value>
-  </data>
   <data name="&gt;&gt;lblcreatedate.Name" xml:space="preserve">
     <value>lblcreatedate</value>
   </data>
@@ -632,9 +644,6 @@
   </data>
   <data name="lblcreaterid.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="lblcreaterid.Text" xml:space="preserve">
-    <value>Create ID:</value>
   </data>
   <data name="&gt;&gt;lblcreaterid.Name" xml:space="preserve">
     <value>lblcreaterid</value>
@@ -668,9 +677,6 @@
   </data>
   <data name="gbgeneral.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="gbgeneral.Text" xml:space="preserve">
-    <value>General</value>
   </data>
   <data name="&gt;&gt;gbgeneral.Name" xml:space="preserve">
     <value>gbgeneral</value>
@@ -711,9 +717,6 @@
   <data name="&gt;&gt;dvgcart.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 15</value>
   </data>
@@ -722,9 +725,6 @@
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>CheckOut</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>CheckOut</value>

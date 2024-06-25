@@ -29,6 +29,7 @@ namespace Group6_Project
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SupplierPage));
             this.rbtnCreateSupplier = new Group6_Project.CustomControls.RoundButton();
             this.rbtnSearchSupplier = new Group6_Project.CustomControls.RoundButton();
             this.SuspendLayout();
@@ -41,14 +42,9 @@ namespace Group6_Project
             this.rbtnCreateSupplier.BorderRadius = 22;
             this.rbtnCreateSupplier.BorderSize = 2;
             this.rbtnCreateSupplier.FlatAppearance.BorderSize = 0;
-            this.rbtnCreateSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtnCreateSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.rbtnCreateSupplier, "rbtnCreateSupplier");
             this.rbtnCreateSupplier.ForeColor = System.Drawing.Color.Black;
-            this.rbtnCreateSupplier.Location = new System.Drawing.Point(550, 266);
             this.rbtnCreateSupplier.Name = "rbtnCreateSupplier";
-            this.rbtnCreateSupplier.Size = new System.Drawing.Size(235, 150);
-            this.rbtnCreateSupplier.TabIndex = 11;
-            this.rbtnCreateSupplier.Text = "Create Supplier";
             this.rbtnCreateSupplier.TextColor = System.Drawing.Color.Black;
             this.rbtnCreateSupplier.UseVisualStyleBackColor = false;
             this.rbtnCreateSupplier.Click += new System.EventHandler(this.rbtnCreateSupplier_Click);
@@ -61,29 +57,22 @@ namespace Group6_Project
             this.rbtnSearchSupplier.BorderRadius = 22;
             this.rbtnSearchSupplier.BorderSize = 2;
             this.rbtnSearchSupplier.FlatAppearance.BorderSize = 0;
-            this.rbtnSearchSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtnSearchSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.rbtnSearchSupplier, "rbtnSearchSupplier");
             this.rbtnSearchSupplier.ForeColor = System.Drawing.Color.Black;
-            this.rbtnSearchSupplier.Location = new System.Drawing.Point(250, 266);
             this.rbtnSearchSupplier.Name = "rbtnSearchSupplier";
-            this.rbtnSearchSupplier.Size = new System.Drawing.Size(235, 150);
-            this.rbtnSearchSupplier.TabIndex = 10;
-            this.rbtnSearchSupplier.Text = "Search Supplier";
             this.rbtnSearchSupplier.TextColor = System.Drawing.Color.Black;
             this.rbtnSearchSupplier.UseVisualStyleBackColor = false;
             this.rbtnSearchSupplier.Click += new System.EventHandler(this.rbtnSearchSupplier_Click);
             // 
             // SupplierPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1041, 748);
             this.Controls.Add(this.rbtnSearchSupplier);
             this.Controls.Add(this.rbtnCreateSupplier);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SupplierPage";
-            this.Text = "PurchasePage";
             this.ResumeLayout(false);
 
         }

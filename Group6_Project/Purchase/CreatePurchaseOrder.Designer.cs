@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreatePurchaseOrder));
             this.label2 = new System.Windows.Forms.Label();
             this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,14 +37,9 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label2, "label2");
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(486, 302);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(351, 24);
-            this.label2.TabIndex = 51;
-            this.label2.Text = "Sucessed to create new Purchase Order";
             // 
             // roundButton1
             // 
@@ -53,26 +49,17 @@
             this.roundButton1.BorderRadius = 22;
             this.roundButton1.BorderSize = 2;
             this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.roundButton1, "roundButton1");
             this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(885, 238);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(72, 31);
-            this.roundButton1.TabIndex = 50;
-            this.roundButton1.Text = "Add";
             this.roundButton1.TextColor = System.Drawing.Color.Black;
             this.roundButton1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(211, 245);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(272, 24);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "New Purchase Order Number: ";
             // 
             // roundTextBox1
             // 
@@ -81,34 +68,27 @@
             this.roundTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.roundTextBox1.BorderRadius = 16;
             this.roundTextBox1.BorderSize = 2;
-            this.roundTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.roundTextBox1, "roundTextBox1");
             this.roundTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.roundTextBox1.Location = new System.Drawing.Point(490, 238);
-            this.roundTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.roundTextBox1.Multiline = false;
             this.roundTextBox1.Name = "roundTextBox1";
-            this.roundTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.roundTextBox1.PasswordChar = false;
             this.roundTextBox1.PlaceholderColor = System.Drawing.Color.Red;
             this.roundTextBox1.PlaceholderText = "";
-            this.roundTextBox1.Size = new System.Drawing.Size(388, 31);
-            this.roundTextBox1.TabIndex = 48;
             this.roundTextBox1.Texts = "";
             this.roundTextBox1.UnderlinedStyle = true;
             // 
             // CreatePurchaseOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1317, 810);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.roundTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CreatePurchaseOrder";
-            this.Text = "CreatePurchaseOrder";
             this.ResumeLayout(false);
             this.PerformLayout();
 

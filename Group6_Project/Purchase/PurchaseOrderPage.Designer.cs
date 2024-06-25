@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PurchaseOrderPage));
             this.roundButton1 = new Group6_Project.CustomControls.RoundButton();
             this.roundButton2 = new Group6_Project.CustomControls.RoundButton();
             this.roundButton3 = new Group6_Project.CustomControls.RoundButton();
@@ -41,14 +42,9 @@
             this.roundButton1.BorderRadius = 22;
             this.roundButton1.BorderSize = 2;
             this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.roundButton1, "roundButton1");
             this.roundButton1.ForeColor = System.Drawing.Color.Black;
-            this.roundButton1.Location = new System.Drawing.Point(380, 178);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(235, 150);
-            this.roundButton1.TabIndex = 6;
-            this.roundButton1.Text = "Search Purchase Order";
             this.roundButton1.TextColor = System.Drawing.Color.Black;
             this.roundButton1.UseVisualStyleBackColor = false;
             this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
@@ -61,14 +57,9 @@
             this.roundButton2.BorderRadius = 22;
             this.roundButton2.BorderSize = 2;
             this.roundButton2.FlatAppearance.BorderSize = 0;
-            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.roundButton2, "roundButton2");
             this.roundButton2.ForeColor = System.Drawing.Color.Black;
-            this.roundButton2.Location = new System.Drawing.Point(716, 178);
             this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(235, 150);
-            this.roundButton2.TabIndex = 7;
-            this.roundButton2.Text = "Create Purchase Order";
             this.roundButton2.TextColor = System.Drawing.Color.Black;
             this.roundButton2.UseVisualStyleBackColor = false;
             // 
@@ -80,29 +71,22 @@
             this.roundButton3.BorderRadius = 22;
             this.roundButton3.BorderSize = 2;
             this.roundButton3.FlatAppearance.BorderSize = 0;
-            this.roundButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.roundButton3, "roundButton3");
             this.roundButton3.ForeColor = System.Drawing.Color.Black;
-            this.roundButton3.Location = new System.Drawing.Point(524, 395);
             this.roundButton3.Name = "roundButton3";
-            this.roundButton3.Size = new System.Drawing.Size(235, 150);
-            this.roundButton3.TabIndex = 8;
-            this.roundButton3.Text = "Process Purchase Order";
             this.roundButton3.TextColor = System.Drawing.Color.Black;
             this.roundButton3.UseVisualStyleBackColor = false;
             // 
             // PurchaseOrderPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1317, 748);
             this.Controls.Add(this.roundButton3);
             this.Controls.Add(this.roundButton2);
             this.Controls.Add(this.roundButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PurchaseOrderPage";
-            this.Text = "PurchaseOrderPage";
             this.ResumeLayout(false);
 
         }

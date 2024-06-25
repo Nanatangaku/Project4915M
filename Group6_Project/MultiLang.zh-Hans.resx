@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_59" xml:space="preserve">
+    <value>取消</value>
+    <comment>3</comment>
+  </data>
+  <data name="_146" xml:space="preserve">
+    <value>查找</value>
+    <comment>3</comment>
+  </data>
+  <data name="_109" xml:space="preserve">
+    <value>清除</value>
+    <comment>3</comment>
+  </data>
+  <data name="_118" xml:space="preserve">
+    <value>保存</value>
+    <comment>3</comment>
+  </data>
+  <data name="_134" xml:space="preserve">
+    <value>清除</value>
+    <comment>3</comment>
+  </data>
+  <data name="_137" xml:space="preserve">
+    <value>输入</value>
+    <comment>3</comment>
+  </data>
+  <data name="_14" xml:space="preserve">
+    <value>会计
+   经理</value>
+    <comment>2</comment>
+  </data>
+  <data name="_13" xml:space="preserve">
+    <value>报告</value>
+    <comment>5</comment>
+  </data>
+  <data name="_15" xml:space="preserve">
+    <value>完成付款</value>
+    <comment>5</comment>
+  </data>
+  <data name="_16" xml:space="preserve">
+    <value>发票</value>
+    <comment>5</comment>
+  </data>
+  <data name="_35" xml:space="preserve">
+    <value>完成付款</value>
+    <comment>5</comment>
+  </data>
+  <data name="_36" xml:space="preserve">
+    <value>完成付款</value>
+    <comment>5</comment>
+  </data>
+  <data name="_37" xml:space="preserve">
+    <value>$No.$ $Status$ $PaymentName$</value>
+    <comment>5</comment>
+  </data>
+  <data name="_38" xml:space="preserve">
+    <value>#202402152342 已完成订单 A</value>
+    <comment>2</comment>
+  </data>
+  <data name="_39" xml:space="preserve">
+    <value>#202402142159 已完成的订单 A</value>
+    <comment>2</comment>
+  </data>
+  <data name="_40" xml:space="preserve">
+    <value>#202402092139 已完成的订单 C</value>
+    <comment>2</comment>
+  </data>
+  <data name="_41" xml:space="preserve">
+    <value>#202402082118 已完成订单 B</value>
+    <comment>2</comment>
+  </data>
+  <data name="_42" xml:space="preserve">
+    <value>#202402012117 已完成订单A</value>
+    <comment>2</comment>
+  </data>
+  <data name="_43" xml:space="preserve">
+    <value>#202401212125 已完成的订单 D</value>
+    <comment>2</comment>
+  </data>
+  <data name="_44" xml:space="preserve">
+    <value>#202401072130 已完成的订单A</value>
+    <comment>2</comment>
+  </data>
+  <data name="_45" xml:space="preserve">
+    <value>#202401052149 已完成的订单B</value>
+    <comment>2</comment>
+  </data>
+  <data name="_46" xml:space="preserve">
+    <value>#202401010101 已完成订单C</value>
+    <comment>2</comment>
+  </data>
+  <data name="_113" xml:space="preserve">
+    <value>发票</value>
+    <comment>5</comment>
+  </data>
+  <data name="_138" xml:space="preserve">
+    <value>报告</value>
+    <comment>5</comment>
+  </data>
+  <data name="_139" xml:space="preserve">
+    <value>图1</value>
+    <comment>5</comment>
+  </data>
+  <data name="_56" xml:space="preserve">
+    <value>创建角色</value>
+    <comment>5</comment>
+  </data>
+  <data name="_57" xml:space="preserve">
+    <value>新角色名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_60" xml:space="preserve">
+    <value>创建新角色</value>
+    <comment>5</comment>
+  </data>
+  <data name="_58" xml:space="preserve">
+    <value>新角色描述：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_148" xml:space="preserve">
+    <value>搜索角色</value>
+    <comment>5</comment>
+  </data>
+  <data name="_149" xml:space="preserve">
+    <value>角色名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_172" xml:space="preserve">
+    <value>更新角色</value>
+    <comment>5</comment>
+  </data>
+  <data name="_175" xml:space="preserve">
+    <value>新角色名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_174" xml:space="preserve">
+    <value>更新角色</value>
+    <comment>5</comment>
+  </data>
+  <data name="_173" xml:space="preserve">
+    <value>新角色描述：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_61" xml:space="preserve">
+    <value>创建商店</value>
+    <comment>5</comment>
+  </data>
+  <data name="_150" xml:space="preserve">
+    <value>搜索商店</value>
+    <comment>5</comment>
+  </data>
+  <data name="_151" xml:space="preserve">
+    <value>店铺名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_176" xml:space="preserve">
+    <value>更新商店</value>
+    <comment>5</comment>
+  </data>
+  <data name="_62" xml:space="preserve">
+    <value>新店铺名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_177" xml:space="preserve">
+    <value>更新店铺信息</value>
+    <comment>5</comment>
+  </data>
+  <data name="_63" xml:space="preserve">
+    <value>新店长 ID：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_64" xml:space="preserve">
+    <value>新店仓库 ID：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_65" xml:space="preserve">
+    <value>新店备注：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_67" xml:space="preserve">
+    <value>创建供应商</value>
+    <comment>5</comment>
+  </data>
+  <data name="_70" xml:space="preserve">
+    <value>创建新供应商</value>
+    <comment>5</comment>
+  </data>
+  <data name="_152" xml:space="preserve">
+    <value>搜索供应商</value>
+    <comment>5</comment>
+  </data>
+  <data name="_153" xml:space="preserve">
+    <value>供应商名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_178" xml:space="preserve">
+    <value>更新供应商</value>
+    <comment>5</comment>
+  </data>
+  <data name="_68" xml:space="preserve">
+    <value>新供应商名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_179" xml:space="preserve">
+    <value>更新供应商</value>
+    <comment>5</comment>
+  </data>
+  <data name="_69" xml:space="preserve">
+    <value>新供应商备注：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_71" xml:space="preserve">
+    <value>创建仓库</value>
+    <comment>5</comment>
+  </data>
+  <data name="_72" xml:space="preserve">
+    <value>新仓库名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_74" xml:space="preserve">
+    <value>创建新仓库</value>
+    <comment>5</comment>
+  </data>
+  <data name="_154" xml:space="preserve">
+    <value>搜索仓库</value>
+    <comment>5</comment>
+  </data>
+  <data name="_180" xml:space="preserve">
+    <value>更新仓库</value>
+    <comment>5</comment>
+  </data>
+  <data name="_155" xml:space="preserve">
+    <value>仓库名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_181" xml:space="preserve">
+    <value>更新仓库信息</value>
+    <comment>5</comment>
+  </data>
+  <data name="_73" xml:space="preserve">
+    <value>新仓库电话：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_24" xml:space="preserve">
+    <value>类别</value>
+    <comment>5</comment>
+  </data>
+  <data name="_25" xml:space="preserve">
+    <value>品类经理
+注销</value>
+    <comment>5</comment>
+  </data>
+  <data name="_27" xml:space="preserve">
+    <value>部门</value>
+    <comment>5</comment>
+  </data>
+  <data name="_26" xml:space="preserve">
+    <value>角色</value>
+    <comment>5</comment>
+  </data>
+  <data name="_30" xml:space="preserve">
+    <value>店</value>
+    <comment>5</comment>
+  </data>
+  <data name="_28" xml:space="preserve">
+    <value>供应商</value>
+    <comment>5</comment>
+  </data>
+  <data name="_29" xml:space="preserve">
+    <value>仓库</value>
+    <comment>5</comment>
+  </data>
+  <data name="_32" xml:space="preserve">
+    <value>类别页面</value>
+    <comment>5</comment>
+  </data>
+  <data name="_34" xml:space="preserve">
+    <value>创建类别</value>
+    <comment>5</comment>
+  </data>
+  <data name="_33" xml:space="preserve">
+    <value>搜索类别</value>
+    <comment>5</comment>
+  </data>
+  <data name="_47" xml:space="preserve">
+    <value>创建类别</value>
+    <comment>5</comment>
+  </data>
+  <data name="_48" xml:space="preserve">
+    <value>新类别名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_49" xml:space="preserve">
+    <value>新品类说明：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_140" xml:space="preserve">
+    <value>角色页面</value>
+    <comment>5</comment>
+  </data>
+  <data name="_141" xml:space="preserve">
+    <value>创建角色</value>
+    <comment>5</comment>
+  </data>
+  <data name="_142" xml:space="preserve">
+    <value>搜索角色</value>
+    <comment>5</comment>
+  </data>
+  <data name="_143" xml:space="preserve">
+    <value>搜索类别</value>
+    <comment>5</comment>
+  </data>
+  <data name="_144" xml:space="preserve">
+    <value>类别名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_165" xml:space="preserve">
+    <value>商店页面</value>
+    <comment>5</comment>
+  </data>
+  <data name="_66" xml:space="preserve">
+    <value>创建商店</value>
+    <comment>5</comment>
+  </data>
+  <data name="_166" xml:space="preserve">
+    <value>搜索商店</value>
+    <comment>5</comment>
+  </data>
+  <data name="_169" xml:space="preserve">
+    <value>购买页面</value>
+    <comment>5</comment>
+  </data>
+  <data name="_170" xml:space="preserve">
+    <value>创建供应商</value>
+    <comment>5</comment>
+  </data>
+  <data name="_171" xml:space="preserve">
+    <value>搜索供应商</value>
+    <comment>5</comment>
+  </data>
+  <data name="_193" xml:space="preserve">
+    <value>仓库页面</value>
+    <comment>5</comment>
+  </data>
+  <data name="_194" xml:space="preserve">
+    <value>创建仓库</value>
+    <comment>5</comment>
+  </data>
+  <data name="_195" xml:space="preserve">
+    <value>搜索仓库</value>
+    <comment>5</comment>
+  </data>
+  <data name="_75" xml:space="preserve">
+    <value>次序</value>
+    <comment>5</comment>
+  </data>
+  <data name="_76" xml:space="preserve">
+    <value>交货
+   经理</value>
+    <comment>5</comment>
+  </data>
+  <data name="_77" xml:space="preserve">
+    <value>交货订单</value>
+    <comment>5</comment>
+  </data>
+  <data name="_79" xml:space="preserve">
+    <value>等待交货</value>
+    <comment>5</comment>
+  </data>
+  <data name="_80" xml:space="preserve">
+    <value>交付</value>
+    <comment>5</comment>
+  </data>
+  <data name="_78" xml:space="preserve">
+    <value>按递送 ID 搜索：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_82" xml:space="preserve">
+    <value>交货确认</value>
+    <comment>5</comment>
+  </data>
+  <data name="_88" xml:space="preserve">
+    <value>项目清单</value>
+    <comment>5</comment>
+  </data>
+  <data name="_83" xml:space="preserve">
+    <value>订购信息</value>
+    <comment>5</comment>
+  </data>
+  <data name="_87" xml:space="preserve">
+    <value>送货 ID：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_84" xml:space="preserve">
+    <value>发货日期：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_110" xml:space="preserve">
+    <value>重置密码</value>
+    <comment>5</comment>
+  </data>
+  <data name="_111" xml:space="preserve">
+    <value>想再次尝试登录？</value>
+    <comment>5</comment>
+  </data>
+  <data name="_112" xml:space="preserve">
+    <value>验证帐户</value>
+    <comment>5</comment>
+  </data>
+  <data name="_114" xml:space="preserve">
+    <value>账户登录</value>
+    <comment>5</comment>
+  </data>
+  <data name="_115" xml:space="preserve">
+    <value>忘记密码？</value>
+    <comment>5</comment>
+  </data>
+  <data name="_116" xml:space="preserve">
+    <value>登录</value>
+    <comment>5</comment>
+  </data>
+  <data name="_158" xml:space="preserve">
+    <value>设置规则</value>
+    <comment>5</comment>
+  </data>
+  <data name="_160" xml:space="preserve">
+    <value>新规则：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_159" xml:space="preserve">
+    <value>成功创建新规则。</value>
+    <comment>5</comment>
+  </data>
+  <data name="_50" xml:space="preserve">
+    <value>创建采购订单</value>
+    <comment>5</comment>
+  </data>
+  <data name="_52" xml:space="preserve">
+    <value>新采购订单号：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_51" xml:space="preserve">
+    <value>成功创建新的采购订单</value>
+    <comment>5</comment>
+  </data>
+  <data name="_122" xml:space="preserve">
+    <value>购买
+   店员</value>
+    <comment>5</comment>
+  </data>
+  <data name="_123" xml:space="preserve">
+    <value>采购订单</value>
+    <comment>5</comment>
+  </data>
+  <data name="_124" xml:space="preserve">
+    <value>购买
+   经理</value>
+    <comment>5</comment>
+  </data>
+  <data name="_126" xml:space="preserve">
+    <value>采购订单</value>
+    <comment>5</comment>
+  </data>
+  <data name="_125" xml:space="preserve">
+    <value>设置角色</value>
+    <comment>5</comment>
+  </data>
+  <data name="_128" xml:space="preserve">
+    <value>搜索采购订单</value>
+    <comment>5</comment>
+  </data>
+  <data name="_129" xml:space="preserve">
+    <value>创建采购订单</value>
+    <comment>5</comment>
+  </data>
+  <data name="_130" xml:space="preserve">
+    <value>处理采购订单</value>
+    <comment>5</comment>
+  </data>
+  <data name="_145" xml:space="preserve">
+    <value>搜索PurchaseOrder</value>
+    <comment>5</comment>
+  </data>
+  <data name="_147" xml:space="preserve">
+    <value>采购订单号：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_11" xml:space="preserve">
+    <value>收款处</value>
+    <comment>5</comment>
+  </data>
+  <data name="_3" xml:space="preserve">
+    <value>地址：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_9" xml:space="preserve">
+    <value>创建 ID：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_5" xml:space="preserve">
+    <value>预计日期：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_4" xml:space="preserve">
+    <value>店铺名称：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_2" xml:space="preserve">
+    <value>总价：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_53" xml:space="preserve">
+    <value>创建请求</value>
+    <comment>5</comment>
+  </data>
+  <data name="_55" xml:space="preserve">
+    <value>继续</value>
+    <comment>5</comment>
+  </data>
+  <data name="_54" xml:space="preserve">
+    <value>搜索物品</value>
+    <comment>2</comment>
+  </data>
+  <data name="_98" xml:space="preserve">
+    <value>调度备注</value>
+    <comment>5</comment>
+  </data>
+  <data name="_102" xml:space="preserve">
+    <value>传奇汽车公司</value>
+    <comment>5</comment>
+  </data>
+  <data name="_101" xml:space="preserve">
+    <value>第 1 页，共 1 页</value>
+    <comment>5</comment>
+  </data>
+  <data name="_103" xml:space="preserve">
+    <value>收货日期：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_117" xml:space="preserve">
+    <value>订单明细</value>
+    <comment>5</comment>
+  </data>
+  <data name="_120" xml:space="preserve">
+    <value>下载 Dispatch</value>
+    <comment>5</comment>
+  </data>
+  <data name="_121" xml:space="preserve">
+    <value>收到</value>
+    <comment>5</comment>
+  </data>
+  <data name="_119" xml:space="preserve">
+    <value>重新安排</value>
+    <comment>5</comment>
+  </data>
+  <data name="_10" xml:space="preserve">
+    <value>常规</value>
+    <comment>5</comment>
+  </data>
+  <data name="_104" xml:space="preserve">
+    <value>总量：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_100" xml:space="preserve">
+    <value>创建者 ID：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_85" xml:space="preserve">
+    <value>预计交货日期：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_7" xml:space="preserve">
+    <value>名字：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_6" xml:space="preserve">
+    <value>店铺ID：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_99" xml:space="preserve">
+    <value>地位：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_162" xml:space="preserve">
+    <value>退房</value>
+    <comment>5</comment>
+  </data>
+  <data name="_164" xml:space="preserve">
+    <value>次序</value>
+    <comment>5</comment>
+  </data>
+  <data name="_163" xml:space="preserve">
+    <value>店长
+注销</value>
+    <comment>5</comment>
+  </data>
+  <data name="_161" xml:space="preserve">
+    <value>查看订单</value>
+    <comment>5</comment>
+  </data>
+  <data name="_182" xml:space="preserve">
+    <value>视图顺序</value>
+    <comment>5</comment>
+  </data>
+  <data name="_184" xml:space="preserve">
+    <value>等待处理</value>
+    <comment>5</comment>
+  </data>
+  <data name="_185" xml:space="preserve">
+    <value>派出</value>
+    <comment>5</comment>
+  </data>
+  <data name="_186" xml:space="preserve">
+    <value>提供</value>
+    <comment>5</comment>
+  </data>
+  <data name="_187" xml:space="preserve">
+    <value>完成订单</value>
+    <comment>5</comment>
+  </data>
+  <data name="_183" xml:space="preserve">
+    <value>按订单 ID 搜索：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_19" xml:space="preserve">
+    <value>添加新级别</value>
+    <comment>5</comment>
+  </data>
+  <data name="_21" xml:space="preserve">
+    <value>等级编号：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_91" xml:space="preserve">
+    <value>都</value>
+    <comment>5</comment>
+  </data>
+  <data name="_92" xml:space="preserve">
+    <value>等待处理</value>
+    <comment>5</comment>
+  </data>
+  <data name="_90" xml:space="preserve">
+    <value>按订单 ID 搜索：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_89" xml:space="preserve">
+    <value>遣</value>
+    <comment>5</comment>
+  </data>
+  <data name="_94" xml:space="preserve">
+    <value>订单明细</value>
+    <comment>5</comment>
+  </data>
+  <data name="_8" xml:space="preserve">
+    <value>发布日期：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_95" xml:space="preserve">
+    <value>预计日期：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_86" xml:space="preserve">
+    <value>订单编号：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_97" xml:space="preserve">
+    <value>订单状态：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_96" xml:space="preserve">
+    <value>付款：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_105" xml:space="preserve">
+    <value>编辑级别</value>
+    <comment>5</comment>
+  </data>
+  <data name="_108" xml:space="preserve">
+    <value>更新</value>
+    <comment>5</comment>
+  </data>
+  <data name="_106" xml:space="preserve">
+    <value>级别信息</value>
+    <comment>5</comment>
+  </data>
+  <data name="_23" xml:space="preserve">
+    <value>←返回</value>
+    <comment>5</comment>
+  </data>
+  <data name="_20" xml:space="preserve">
+    <value>描述：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_107" xml:space="preserve">
+    <value>等级编号：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_131" xml:space="preserve">
+    <value>收件人</value>
+    <comment>5</comment>
+  </data>
+  <data name="_22" xml:space="preserve">
+    <value>加</value>
+    <comment>5</comment>
+  </data>
+  <data name="_1" xml:space="preserve">
+    <value>确认</value>
+    <comment>5</comment>
+  </data>
+  <data name="_135" xml:space="preserve">
+    <value>项目：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_136" xml:space="preserve">
+    <value>数量：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_133" xml:space="preserve">
+    <value>角色：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_132" xml:space="preserve">
+    <value>用户 ID：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_157" xml:space="preserve">
+    <value>添加新级别</value>
+    <comment>5</comment>
+  </data>
+  <data name="_167" xml:space="preserve">
+    <value>股票记录</value>
+    <comment>5</comment>
+  </data>
+  <data name="_168" xml:space="preserve">
+    <value>按项目名称搜索：</value>
+    <comment>5</comment>
+  </data>
+  <data name="_12" xml:space="preserve">
+    <value>用户主页</value>
+    <comment>5</comment>
+  </data>
+  <data name="_191" xml:space="preserve">
+    <value>遣
+</value>
+    <comment>5</comment>
+  </data>
+  <data name="_192" xml:space="preserve">
+    <value>已收到的物品</value>
+    <comment>5</comment>
+  </data>
+  <data name="_188" xml:space="preserve">
+    <value>水平设置</value>
+    <comment>5</comment>
+  </data>
+  <data name="_189" xml:space="preserve">
+    <value>股票</value>
+    <comment>5</comment>
+  </data>
+  <data name="_190" xml:space="preserve">
+    <value>仓库经理
+注销</value>
+    <comment>5</comment>
+  </data>
+  <data name="_17" xml:space="preserve">
+    <value>OPSR系统</value>
+    <comment>5</comment>
+  </data>
+  <data name="_200" xml:space="preserve">
+    <value>确定</value>
+    <comment>3</comment>
+  </data>
+  <data name="_93" xml:space="preserve">
+    <value>出货订单详情</value>
+    <comment>3</comment>
+  </data>
+  <data name="_156" xml:space="preserve">
+    <value>设定等级</value>
+    <comment>3</comment>
+  </data>
+</root>

@@ -120,7 +120,7 @@ namespace Group6_Project
 
         private void btndelete_Click(object sender, EventArgs e)
         {
-            string sql = "delete from order_request where order_id = " + order_id;
+            string sql = "update order_request set order_status_id = 10 where order_id = " + order_id;
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
             if(cmd.ExecuteNonQuery() >= 1)
@@ -147,19 +147,7 @@ namespace Group6_Project
         
                 
             }
-            string sql3 = "delete from order_item where order_id = " + order_id;
-            MySqlCommand cmd3 = new MySqlCommand(sql3, conn);
-            conn.Open();
-            if (cmd3.ExecuteNonQuery() >= 1)
-            {
-                MessageBox.Show("Order_item deleted");
-                conn.Close();
-            }
-            else
-            {
-                MessageBox.Show("Order_item not deleted");
-                conn.Close();
-            }
+            
 
             this.panFormLoad.Controls.Clear();
             ViewOrder vieworder = new ViewOrder(user_id, panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };

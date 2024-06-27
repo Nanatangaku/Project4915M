@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- 主機： 127.0.0.1:3306
--- 產生時間： 2024-06-23 16:09:06
--- 伺服器版本： 8.0.37
--- PHP 版本： 8.2.13
+-- Host: 127.0.0.1:3306
+-- Generation Time: Jun 27, 2024 at 05:27 AM
+-- Server version: 8.2.0
+-- PHP Version: 8.2.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 資料庫： `project4915mdb`
+-- Database: `project4915mdb`
 --
 CREATE DATABASE IF NOT EXISTS `project4915mdb` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 USE `project4915mdb`;
@@ -26,7 +26,7 @@ USE `project4915mdb`;
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `cancel_order`
+-- Table structure for table `cancel_order`
 --
 
 DROP TABLE IF EXISTS `cancel_order`;
@@ -40,14 +40,14 @@ CREATE TABLE IF NOT EXISTS `cancel_order` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `cancel_order`
+-- Truncate table before insert `cancel_order`
 --
 
 TRUNCATE TABLE `cancel_order`;
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `cart`
+-- Table structure for table `cart`
 --
 
 DROP TABLE IF EXISTS `cart`;
@@ -59,17 +59,17 @@ CREATE TABLE IF NOT EXISTS `cart` (
   PRIMARY KEY (`cart_id`),
   KEY `item_id` (`item_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `cart`
+-- Truncate table before insert `cart`
 --
 
 TRUNCATE TABLE `cart`;
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `delivery`
+-- Table structure for table `delivery`
 --
 
 DROP TABLE IF EXISTS `delivery`;
@@ -82,27 +82,25 @@ CREATE TABLE IF NOT EXISTS `delivery` (
   `despatch_date` date DEFAULT NULL,
   `recive_date` date DEFAULT NULL,
   PRIMARY KEY (`delivery_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `delivery`
+-- Truncate table before insert `delivery`
 --
 
 TRUNCATE TABLE `delivery`;
 --
--- 傾印資料表的資料 `delivery`
+-- Dumping data for table `delivery`
 --
 
 INSERT INTO `delivery` (`delivery_id`, `order_id`, `user_id`, `create_date`, `expected_delivery_date`, `despatch_date`, `recive_date`) VALUES
 (14, 37, 5, '2024-06-23', '2024-06-30', '2024-06-23', '2024-06-23'),
-(15, 38, 5, '2024-06-23', '2024-06-30', NULL, NULL),
-(16, 40, 5, '2024-06-23', '2024-07-23', NULL, NULL),
-(25, 49, 5, '2024-06-23', '2024-07-23', NULL, NULL);
+(27, 51, 5, '2024-06-27', '2024-07-04', NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `department`
+-- Table structure for table `department`
 --
 
 DROP TABLE IF EXISTS `department`;
@@ -114,12 +112,12 @@ CREATE TABLE IF NOT EXISTS `department` (
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `department`
+-- Truncate table before insert `department`
 --
 
 TRUNCATE TABLE `department`;
 --
--- 傾印資料表的資料 `department`
+-- Dumping data for table `department`
 --
 
 INSERT INTO `department` (`dept_id`, `dept_name`, `description`) VALUES
@@ -134,7 +132,7 @@ INSERT INTO `department` (`dept_id`, `dept_name`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `item`
+-- Table structure for table `item`
 --
 
 DROP TABLE IF EXISTS `item`;
@@ -149,12 +147,12 @@ CREATE TABLE IF NOT EXISTS `item` (
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `item`
+-- Truncate table before insert `item`
 --
 
 TRUNCATE TABLE `item`;
 --
--- 傾印資料表的資料 `item`
+-- Dumping data for table `item`
 --
 
 INSERT INTO `item` (`item_id`, `item_Name`, `item_Category`, `price`, `supplier_id`) VALUES
@@ -170,7 +168,7 @@ INSERT INTO `item` (`item_id`, `item_Name`, `item_Category`, `price`, `supplier_
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `order_item`
+-- Table structure for table `order_item`
 --
 
 DROP TABLE IF EXISTS `order_item`;
@@ -183,22 +181,24 @@ CREATE TABLE IF NOT EXISTS `order_item` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `order_item`
+-- Truncate table before insert `order_item`
 --
 
 TRUNCATE TABLE `order_item`;
 --
--- 傾印資料表的資料 `order_item`
+-- Dumping data for table `order_item`
 --
 
 INSERT INTO `order_item` (`order_id`, `item_id`, `quantity`) VALUES
 (38, 1, 500),
-(37, 1, 1000);
+(37, 1, 1000),
+(50, 1, 1500),
+(51, 2, 450);
 
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `order_request`
+-- Table structure for table `order_request`
 --
 
 DROP TABLE IF EXISTS `order_request`;
@@ -213,27 +213,29 @@ CREATE TABLE IF NOT EXISTS `order_request` (
   KEY `order_status_id` (`order_status_id`),
   KEY `user_id` (`user_id`),
   KEY `delivery_id` (`delivery_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `order_request`
+-- Truncate table before insert `order_request`
 --
 
 TRUNCATE TABLE `order_request`;
 --
--- 傾印資料表的資料 `order_request`
+-- Dumping data for table `order_request`
 --
 
 INSERT INTO `order_request` (`order_id`, `user_id`, `payment`, `order_status_id`, `address`, `delivery_id`) VALUES
 (37, 5, 99000.00, 9, '1', 14),
-(38, 5, 49500.00, 1, '1', 15),
-(40, 5, 99000.00, 1, '1', 16),
-(49, 5, 99000.00, 1, '1', 25);
+(38, 5, 49500.00, 10, '1', 15),
+(40, 5, 99000.00, 10, '1', 16),
+(49, 5, 99000.00, 10, '1', 25),
+(50, 5, 148500.00, 10, '123123123', 26),
+(51, 5, 39600.00, 1, '123132312', 27);
 
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `order_status`
+-- Table structure for table `order_status`
 --
 
 DROP TABLE IF EXISTS `order_status`;
@@ -242,15 +244,15 @@ CREATE TABLE IF NOT EXISTS `order_status` (
   `status` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   PRIMARY KEY (`order_status_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `order_status`
+-- Truncate table before insert `order_status`
 --
 
 TRUNCATE TABLE `order_status`;
 --
--- 傾印資料表的資料 `order_status`
+-- Dumping data for table `order_status`
 --
 
 INSERT INTO `order_status` (`order_status_id`, `status`, `description`) VALUES
@@ -262,12 +264,13 @@ INSERT INTO `order_status` (`order_status_id`, `status`, `description`) VALUES
 (6, 'waiting to despatch', 'warehouse'),
 (7, 'despatched', 'warehouse'),
 (8, 'Cancel Order', 'Order is canceled'),
-(9, 'Received', 'Goods is Received');
+(9, 'Received', 'Goods is Received'),
+(10, 'delete', 'Order is Deleted');
 
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `role`
+-- Table structure for table `role`
 --
 
 DROP TABLE IF EXISTS `role`;
@@ -279,12 +282,12 @@ CREATE TABLE IF NOT EXISTS `role` (
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `role`
+-- Truncate table before insert `role`
 --
 
 TRUNCATE TABLE `role`;
 --
--- 傾印資料表的資料 `role`
+-- Dumping data for table `role`
 --
 
 INSERT INTO `role` (`role_id`, `role_name`, `role_description`) VALUES
@@ -300,7 +303,7 @@ INSERT INTO `role` (`role_id`, `role_name`, `role_description`) VALUES
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `setoflevels`
+-- Table structure for table `setoflevels`
 --
 
 DROP TABLE IF EXISTS `setoflevels`;
@@ -309,15 +312,15 @@ CREATE TABLE IF NOT EXISTS `setoflevels` (
   `level_description` varchar(255) NOT NULL,
   `level_num` int NOT NULL,
   PRIMARY KEY (`levelid`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `setoflevels`
+-- Truncate table before insert `setoflevels`
 --
 
 TRUNCATE TABLE `setoflevels`;
 --
--- 傾印資料表的資料 `setoflevels`
+-- Dumping data for table `setoflevels`
 --
 
 INSERT INTO `setoflevels` (`levelid`, `level_description`, `level_num`) VALUES
@@ -330,7 +333,7 @@ INSERT INTO `setoflevels` (`levelid`, `level_description`, `level_num`) VALUES
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `shop`
+-- Table structure for table `shop`
 --
 
 DROP TABLE IF EXISTS `shop`;
@@ -346,12 +349,12 @@ CREATE TABLE IF NOT EXISTS `shop` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `shop`
+-- Truncate table before insert `shop`
 --
 
 TRUNCATE TABLE `shop`;
 --
--- 傾印資料表的資料 `shop`
+-- Dumping data for table `shop`
 --
 
 INSERT INTO `shop` (`shop_id`, `warehouse_id`, `user_id`, `remarks`, `shopname`) VALUES
@@ -360,7 +363,7 @@ INSERT INTO `shop` (`shop_id`, `warehouse_id`, `user_id`, `remarks`, `shopname`)
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `shop_user`
+-- Table structure for table `shop_user`
 --
 
 DROP TABLE IF EXISTS `shop_user`;
@@ -372,14 +375,14 @@ CREATE TABLE IF NOT EXISTS `shop_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `shop_user`
+-- Truncate table before insert `shop_user`
 --
 
 TRUNCATE TABLE `shop_user`;
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `supplier`
+-- Table structure for table `supplier`
 --
 
 DROP TABLE IF EXISTS `supplier`;
@@ -391,12 +394,12 @@ CREATE TABLE IF NOT EXISTS `supplier` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `supplier`
+-- Truncate table before insert `supplier`
 --
 
 TRUNCATE TABLE `supplier`;
 --
--- 傾印資料表的資料 `supplier`
+-- Dumping data for table `supplier`
 --
 
 INSERT INTO `supplier` (`supplier_id`, `supplier_name`, `supplier_remark`) VALUES
@@ -405,7 +408,7 @@ INSERT INTO `supplier` (`supplier_id`, `supplier_name`, `supplier_remark`) VALUE
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `user`
+-- Table structure for table `user`
 --
 
 DROP TABLE IF EXISTS `user`;
@@ -424,12 +427,12 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `user`
+-- Truncate table before insert `user`
 --
 
 TRUNCATE TABLE `user`;
 --
--- 傾印資料表的資料 `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`user_id`, `first_name`, `last_name`, `role_id`, `user_name`, `password`, `phone`, `email`, `shop_id`) VALUES
@@ -446,7 +449,7 @@ INSERT INTO `user` (`user_id`, `first_name`, `last_name`, `role_id`, `user_name`
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `vehicle`
+-- Table structure for table `vehicle`
 --
 
 DROP TABLE IF EXISTS `vehicle`;
@@ -457,12 +460,12 @@ CREATE TABLE IF NOT EXISTS `vehicle` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `vehicle`
+-- Truncate table before insert `vehicle`
 --
 
 TRUNCATE TABLE `vehicle`;
 --
--- 傾印資料表的資料 `vehicle`
+-- Dumping data for table `vehicle`
 --
 
 INSERT INTO `vehicle` (`vehicle_id`, `type`) VALUES
@@ -473,7 +476,7 @@ INSERT INTO `vehicle` (`vehicle_id`, `type`) VALUES
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `warehouse`
+-- Table structure for table `warehouse`
 --
 
 DROP TABLE IF EXISTS `warehouse`;
@@ -485,12 +488,12 @@ CREATE TABLE IF NOT EXISTS `warehouse` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `warehouse`
+-- Truncate table before insert `warehouse`
 --
 
 TRUNCATE TABLE `warehouse`;
 --
--- 傾印資料表的資料 `warehouse`
+-- Dumping data for table `warehouse`
 --
 
 INSERT INTO `warehouse` (`warehouse_id`, `warehouse_name`, `phone`) VALUES
@@ -499,7 +502,7 @@ INSERT INTO `warehouse` (`warehouse_id`, `warehouse_name`, `phone`) VALUES
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `warehouse_item`
+-- Table structure for table `warehouse_item`
 --
 
 DROP TABLE IF EXISTS `warehouse_item`;
@@ -512,17 +515,17 @@ CREATE TABLE IF NOT EXISTS `warehouse_item` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 資料表新增資料前，先清除舊資料 `warehouse_item`
+-- Truncate table before insert `warehouse_item`
 --
 
 TRUNCATE TABLE `warehouse_item`;
 --
--- 傾印資料表的資料 `warehouse_item`
+-- Dumping data for table `warehouse_item`
 --
 
 INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
-(1, 1, 9000),
-(2, 1, 4450),
+(1, 1, 7500),
+(2, 1, 4000),
 (3, 1, 6000),
 (4, 1, 840),
 (5, 1, 2000),
@@ -530,23 +533,23 @@ INSERT INTO `warehouse_item` (`item_id`, `warehouse_id`, `quantity`) VALUES
 (8, 1, 2400);
 
 --
--- 已傾印資料表的限制式
+-- Constraints for dumped tables
 --
 
 --
--- 資料表的限制式 `item`
+-- Constraints for table `item`
 --
 ALTER TABLE `item`
   ADD CONSTRAINT `item_ibfk_1` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`supplier_id`);
 
 --
--- 資料表的限制式 `user`
+-- Constraints for table `user`
 --
 ALTER TABLE `user`
   ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role` (`role_id`);
 
 --
--- 資料表的限制式 `warehouse_item`
+-- Constraints for table `warehouse_item`
 --
 ALTER TABLE `warehouse_item`
   ADD CONSTRAINT `warehouse_item_ibfk_1` FOREIGN KEY (`item_id`) REFERENCES `item` (`item_id`),

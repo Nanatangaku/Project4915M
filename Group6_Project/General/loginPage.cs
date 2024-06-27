@@ -123,8 +123,8 @@ namespace Group6_Project
 
         private void rbtnForgotPassword_Click(object sender, EventArgs e)
         {
-            new ForgotPassword().ShowDialog();
             this.Hide();
+            new ForgotPassword().ShowDialog();
             this.Close();
         }
     }

@@ -153,5 +153,10 @@ namespace Group6_Project
             this.panformload.Controls.Add(checkOut);
             checkOut.Show();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

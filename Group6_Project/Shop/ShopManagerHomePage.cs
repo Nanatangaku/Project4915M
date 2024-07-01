@@ -118,6 +118,11 @@ namespace Group6_Project
         {
 
         }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
  }
 

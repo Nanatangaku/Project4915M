@@ -117,31 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnCheckout.Text" xml:space="preserve">
-    <value>Check Out</value>
-  </data>
-  <data name="btnClose.Text" xml:space="preserve">
-    <value>X</value>
-  </data>
-  <data name="btnOrder.Text" xml:space="preserve">
-    <value>Order   </value>
-  </data>
-  <data name="btnSmLogout.Text" xml:space="preserve">
-    <value>  Shop Manager
-Logout</value>
-  </data>
-  <data name="btnViewOrder.Text" xml:space="preserve">
-    <value>View Order</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>OPSR System</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>userHomePage</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panNav.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 129</value>
@@ -193,6 +168,9 @@ Logout</value>
   <data name="btnViewOrder.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
+  <data name="btnViewOrder.Text" xml:space="preserve">
+    <value>View Order</value>
+  </data>
   <data name="btnViewOrder.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextBeforeImage</value>
   </data>
@@ -232,6 +210,9 @@ Logout</value>
   <data name="btnCheckout.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
+  <data name="btnCheckout.Text" xml:space="preserve">
+    <value>Check Out</value>
+  </data>
   <data name="btnCheckout.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextBeforeImage</value>
   </data>
@@ -267,6 +248,10 @@ Logout</value>
   </data>
   <data name="btnSmLogout.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="btnSmLogout.Text" xml:space="preserve">
+    <value>  Shop Manager
+Logout</value>
   </data>
   <data name="btnSmLogout.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextBeforeImage</value>
@@ -307,6 +292,9 @@ Logout</value>
   <data name="btnOrder.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="btnOrder.Text" xml:space="preserve">
+    <value>Order   </value>
+  </data>
   <data name="btnOrder.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextBeforeImage</value>
   </data>
@@ -336,6 +324,9 @@ Logout</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>OPSR System</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -454,6 +445,9 @@ Logout</value>
   <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
   <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
     <value>btnClose</value>
   </data>
@@ -514,6 +508,9 @@ Logout</value>
   <data name="&gt;&gt;panFormLoad.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
@@ -525,6 +522,9 @@ Logout</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>userHomePage</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ShopManagerHomePage</value>

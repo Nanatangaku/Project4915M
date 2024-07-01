@@ -120,40 +120,46 @@ namespace Group6_Project
 
         private void btndelete_Click(object sender, EventArgs e)
         {
-            string sql = "update order_request set order_status_id = 10 where order_id = " + order_id;
+            string sql = "update order_request set order_status_id = 8 where order_id = " + order_id;
+            //create a list save the order item id and quantity, add to warehouse after update the order status to 8(cancel),
+            List<String> item_id = new List<string>();
+            List<String> quantity = new List<string>();
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
-            if(cmd.ExecuteNonQuery() >= 1)
+            if (cmd.ExecuteNonQuery() >= 1)
             {
-                MessageBox.Show("Order_request deleted");
-            }else
-                {
-                MessageBox.Show("Order_request not deleted");
+                MessageBox.Show("Order id " + order_id + " is Cancelled");
             }
             conn.Close();
-            string sql2 = "delete from delivery where delivery_id = " + delivery_id;
+            string sql2 = "select item_id,quantity from order_item where order_id = " + order_id;
             MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
             conn.Open();
-            if (cmd2.ExecuteNonQuery() >= 1)
+            MySqlDataReader reader = cmd2.ExecuteReader();
+            while (reader.Read())
             {
-             
-                MessageBox.Show("Delivery deleted");
-                conn.Close();
+                item_id.Add(reader["item_id"].ToString());
+                quantity.Add(reader["quantity"].ToString());
             }
-            else
-            {
-                MessageBox.Show("Delivery not deleted");
-                conn.Close();
-        
-                
-            }
-            
 
-            this.panFormLoad.Controls.Clear();
-            ViewOrder vieworder = new ViewOrder(user_id, panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            vieworder.FormBorderStyle = FormBorderStyle.None;
-            this.panFormLoad.Controls.Add(vieworder);
-            vieworder.Show();
+            conn.Close();
+      
+         
+            for (int i = 0; i < item_id.Count; i++)
+            {
+                string sql3 = "update warehouse_item set quantity = quantity + " + quantity[i] + " where item_id = " + item_id[i];
+                MySqlCommand cmd3 = new MySqlCommand(sql3, conn);
+                conn.Open();
+                if (cmd3.ExecuteNonQuery() >= 1)
+                {
+                    conn.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Warehouse_item not updated");
+                    conn.Close();
+                }
+            }
+            conn.Close();
 
         }
 
@@ -218,6 +224,13 @@ namespace Group6_Project
                 btnreceive.Visible = false;
                 btndownloaddispatchpdf.Visible = true;
                 btnreorder.Visible = true;
+            }else if(order_status == "Cancel Order")
+            {
+                btndelete.Visible = false;
+                btnsave.Visible = false;
+                btnreceive.Visible = false;
+                btndownloaddispatchpdf.Visible = false;
+                btnreorder.Visible = false;
             }
         }
 

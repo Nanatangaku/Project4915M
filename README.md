@@ -1,6 +1,6 @@
 # Project4915M
 
-Word Link = https://docs.google.com/document/d/1faDspjCCeaeD8Ye_lPRgJ4p5Vj7fpUlc/edit?usp=sharing&ouid=106626740466716207137&rtpof=true&sd=true </br>
+Word Link = https://docs.google.com/document/d/16vw-q7fC2T2_34BqifMCwdI4d9QSf7gO/edit?usp=sharing&ouid=106626740466716207137&rtpof=true&sd=true </br>
 
 //user </br>
 shop manager = 'ken_sm','123 </br>

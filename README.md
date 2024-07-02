@@ -1,6 +1,6 @@
 # Project4915M
 
-Word Link = https://vtcmca-my.sharepoint.com/:b:/g/personal/230243196_stu_vtc_edu_hk/ETkG0NBBdktBk91FtEqe9GUBmzFhBdGvMYIbvE87LSWC3w?e=w4ZnCB </br>
+Word Link = https://docs.google.com/document/d/1faDspjCCeaeD8Ye_lPRgJ4p5Vj7fpUlc/edit?usp=sharing&ouid=106626740466716207137&rtpof=true&sd=true </br>
 
 //user </br>
 shop manager = 'ken_sm','123 </br>

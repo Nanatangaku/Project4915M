@@ -94,27 +94,38 @@ namespace Group6_Project
 
                 conn.Close();
                 int pre_level = 0;
+                int next_level = 0;
                 string sql2 = "select level_num  from setoflevels order by level_num ASC";
                 conn.Open();
                 MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
                 MySqlDataReader reader2 = cmd2.ExecuteReader();
+                //i want the next number of level_num to be the upper bound
                 while (reader2.Read())
                 {
-                    if (reader2.GetInt32("level_num") == level_num)
+                    pre_level = next_level;
+                    next_level = reader2.GetInt32("level_num");
+
+                
+                    if (pre_level == level_num)
                     {
-                        string sql3 = "select warehouse.warehouse_id,warehouse.warehouse_name,item.item_id,item.item_name,warehouse_item.quantity from shop,warehouse,warehouse_item,item,setoflevels where item.item_id = warehouse_item.item_id and warehouse.warehouse_id = shop.warehouse_id and shop.shop_id = " + shop_id + " and warehouse_item.quantity between " + pre_level + " and " + level_num ;
-                        conn.Close();
-                        conn.Open();
-                        MySqlCommand cmd3 = new MySqlCommand(sql3, conn);
-                        MySqlDataReader reader3 = cmd3.ExecuteReader();
-                        DataTable dt = new DataTable();
-                        dt.Load(reader3);
-                        dvgstockrecord.DataSource = dt;
-                        conn.Close();
+
                         break;
                     }
-                    pre_level = reader2.GetInt32("level_num");
+ 
+
+
                 }
+                string sql3 = "select warehouse.warehouse_id,warehouse.warehouse_name,item.item_id,item.item_name,warehouse_item.quantity from shop,warehouse,warehouse_item,item,setoflevels where item.item_id = warehouse_item.item_id and warehouse.warehouse_id = shop.warehouse_id and shop.shop_id = " + shop_id + " and warehouse_item.quantity between " + pre_level + " and " + next_level;
+                conn.Close();
+                conn.Open();
+                MySqlCommand cmd3 = new MySqlCommand(sql3, conn);
+                MySqlDataReader reader3 = cmd3.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Load(reader3);
+                dvgstockrecord.DataSource = dt;
+                conn.Close();
+              
+
                 conn.Close();
             }
      

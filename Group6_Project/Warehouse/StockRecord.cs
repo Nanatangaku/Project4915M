@@ -102,11 +102,13 @@ namespace Group6_Project
                 //i want the next number of level_num to be the upper bound
                 while (reader2.Read())
                 {
+
+                    
                     pre_level = next_level;
                     next_level = reader2.GetInt32("level_num");
 
                 
-                    if (pre_level == level_num)
+                    if (next_level == level_num)
                     {
 
                         break;

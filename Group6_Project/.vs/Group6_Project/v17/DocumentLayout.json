@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\shop\\shopmanagerhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|c:\\users\\ku123\\desktop\\github file\\project4915m\\group6_project\\warehouse\\stockrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|solutionrelative:warehouse\\stockrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|c:\\users\\ku123\\desktop\\github file\\project4915m\\group6_project\\warehouse\\stockrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|solutionrelative:warehouse\\stockrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|c:\\users\\ku123\\desktop\\github file\\project4915m\\group6_project\\shop\\shopmanagerhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|solutionrelative:shop\\shopmanagerhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|solutionrelative:shop\\shopmanagerhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|c:\\users\\ku123\\desktop\\github file\\project4915m\\group6_project\\shop\\createrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\shop\\createrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC5D398B-64AF-4D59-84F1-D95DFC826AC7}|Group6_Project.csproj|solutionrelative:shop\\createrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -257,7 +265,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -277,7 +285,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "StockRecord.cs",
+              "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\StockRecord.cs",
+              "RelativeDocumentMoniker": "Warehouse\\StockRecord.cs",
+              "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\StockRecord.cs",
+              "RelativeToolTip": "Warehouse\\StockRecord.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAIwHAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:00:01.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StockRecord.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\StockRecord.cs",
+              "RelativeDocumentMoniker": "Warehouse\\StockRecord.cs",
+              "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\StockRecord.cs [Design]",
+              "RelativeToolTip": "Warehouse\\StockRecord.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:00:00.057Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CreateRequest.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\CreateRequest.cs",
               "RelativeDocumentMoniker": "Shop\\CreateRequest.cs",
@@ -285,12 +318,11 @@
               "RelativeToolTip": "Shop\\CreateRequest.cs",
               "ViewState": "AQIAADIAAAAAAAAAAAAwwJ4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T09:22:06.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T09:22:06.753Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DispatchNotes.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\DispatchNotes.cs",
               "RelativeDocumentMoniker": "Shop\\DispatchNotes.cs",
@@ -301,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\OrderDetail.cs",
               "RelativeDocumentMoniker": "Shop\\OrderDetail.cs",
@@ -313,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "OrderDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\OrderDetail.cs",
               "RelativeDocumentMoniker": "Shop\\OrderDetail.cs",
@@ -324,20 +356,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ShopManagerHomePage.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\ShopManagerHomePage.cs",
               "RelativeDocumentMoniker": "Shop\\ShopManagerHomePage.cs",
               "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\ShopManagerHomePage.cs",
               "RelativeToolTip": "Shop\\ShopManagerHomePage.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAYwG4AAAAJAAAA",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAuwG4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T11:07:35.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "AccountingManagerHomePage.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Accounting\\AccountingManagerHomePage.cs",
               "RelativeDocumentMoniker": "Accounting\\AccountingManagerHomePage.cs",
@@ -349,19 +381,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ShopManagerHomePage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\ShopManagerHomePage.cs",
               "RelativeDocumentMoniker": "Shop\\ShopManagerHomePage.cs",
               "ToolTip": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\ShopManagerHomePage.cs [Design]",
               "RelativeToolTip": "Shop\\ShopManagerHomePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T10:59:14.628Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-25T10:59:14.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CreateRequest.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\CreateRequest.cs",
               "RelativeDocumentMoniker": "Shop\\CreateRequest.cs",
@@ -372,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CheckOut.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\CheckOut.cs",
               "RelativeDocumentMoniker": "Shop\\CheckOut.cs",
@@ -383,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "CategoryManagerHomePage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Category\\CategoryManagerHomePage.cs",
               "RelativeDocumentMoniker": "Category\\CategoryManagerHomePage.cs",
@@ -394,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "CreateRequest.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\CreateRequest.Designer.cs",
               "RelativeDocumentMoniker": "Shop\\CreateRequest.Designer.cs",
@@ -406,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "DispatchNotes.zh-Hant.resx",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\DispatchNotes.zh-Hant.resx",
               "RelativeDocumentMoniker": "Shop\\DispatchNotes.zh-Hant.resx",
@@ -417,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "AccountingManagerHomePage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Accounting\\AccountingManagerHomePage.cs",
               "RelativeDocumentMoniker": "Accounting\\AccountingManagerHomePage.cs",
@@ -428,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "DeliveryManagerHomePage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Delivery\\DeliveryManagerHomePage.cs",
               "RelativeDocumentMoniker": "Delivery\\DeliveryManagerHomePage.cs",
@@ -439,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ReceivedItem.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\ReceivedItem.cs",
               "RelativeDocumentMoniker": "Warehouse\\ReceivedItem.cs",
@@ -450,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "ViewOrder.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\ViewOrder.cs",
               "RelativeDocumentMoniker": "Shop\\ViewOrder.cs",
@@ -461,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "SelectLanguage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\SelectLanguage.cs",
               "RelativeDocumentMoniker": "SelectLanguage.cs",
@@ -472,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "SelectLanguage.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\SelectLanguage.cs",
               "RelativeDocumentMoniker": "SelectLanguage.cs",
@@ -484,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Report.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Accounting\\Report.cs",
               "RelativeDocumentMoniker": "Accounting\\Report.cs",
@@ -495,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Report.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Accounting\\Report.cs",
               "RelativeDocumentMoniker": "Accounting\\Report.cs",
@@ -507,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "DeliveryOrder.resx",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Delivery\\DeliveryOrder.resx",
               "RelativeDocumentMoniker": "Delivery\\DeliveryOrder.resx",
@@ -518,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "WarehousePage.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Category\\WarehousePage.Designer.cs",
               "RelativeDocumentMoniker": "Category\\WarehousePage.Designer.cs",
@@ -530,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "CreateRole.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateRole.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateRole.cs",
@@ -541,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "CreateRole.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateRole.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateRole.cs",
@@ -552,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "CreateShop.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateShop.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateShop.cs",
@@ -563,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "RoundButton.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\CustomControls\\RoundButton.cs",
               "RelativeDocumentMoniker": "CustomControls\\RoundButton.cs",
@@ -574,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "CreateSupplier.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateSupplier.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateSupplier.cs",
@@ -585,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Dispatch.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\Dispatch.Designer.cs",
               "RelativeDocumentMoniker": "Warehouse\\Dispatch.Designer.cs",
@@ -597,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Dispatch_Detail.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\Dispatch_Detail.Designer.cs",
               "RelativeDocumentMoniker": "Warehouse\\Dispatch_Detail.Designer.cs",
@@ -609,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Dispatch.resx",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\Dispatch.resx",
               "RelativeDocumentMoniker": "Warehouse\\Dispatch.resx",
@@ -620,7 +651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "CreateShop.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateShop.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateShop.cs",
@@ -632,7 +663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "CreateSupplier.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateSupplier.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\user\\Desktop\\github\\Project4915M\\Group6_Project\\Category\\CreateSupplier.cs",
@@ -644,7 +675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "CategoryManagerHomePage.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Category\\CategoryManagerHomePage.Designer.cs",
               "RelativeDocumentMoniker": "Category\\CategoryManagerHomePage.Designer.cs",
@@ -656,7 +687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "ShopPage.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Category\\ShopPage.Designer.cs",
               "RelativeDocumentMoniker": "Category\\ShopPage.Designer.cs",
@@ -668,7 +699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "SearchPurchaseOrder.resx",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Purchase\\SearchPurchaseOrder.resx",
               "RelativeDocumentMoniker": "Purchase\\SearchPurchaseOrder.resx",
@@ -679,7 +710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "SearchPurchaseOrder.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Purchase\\SearchPurchaseOrder.Designer.cs",
               "RelativeDocumentMoniker": "Purchase\\SearchPurchaseOrder.Designer.cs",
@@ -691,7 +722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "CompletedInstructions.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\CompletedInstructions.cs",
               "RelativeDocumentMoniker": "Warehouse\\CompletedInstructions.cs",
@@ -702,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "CreateWarehouseStock.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\CreateWarehouseStock.cs",
               "RelativeDocumentMoniker": "Warehouse\\CreateWarehouseStock.cs",
@@ -713,7 +744,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "SearchWarehouseStock.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\SearchWarehouseStock.cs",
               "RelativeDocumentMoniker": "Warehouse\\SearchWarehouseStock.cs",
@@ -724,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "WarehouseClerkrHomePage.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Warehouse\\WarehouseClerkrHomePage.cs",
               "RelativeDocumentMoniker": "Warehouse\\WarehouseClerkrHomePage.cs",
@@ -735,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "ViewOrder.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\ViewOrder.Designer.cs",
               "RelativeDocumentMoniker": "Shop\\ViewOrder.Designer.cs",
@@ -747,7 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "ViewOrder.resx",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\ViewOrder.resx",
               "RelativeDocumentMoniker": "Shop\\ViewOrder.resx",
@@ -758,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "OrderDetail.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\OrderDetail.Designer.cs",
               "RelativeDocumentMoniker": "Shop\\OrderDetail.Designer.cs",
@@ -770,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "CheckOut.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Shop\\CheckOut.Designer.cs",
               "RelativeDocumentMoniker": "Shop\\CheckOut.Designer.cs",
@@ -782,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "Group6_Project",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\Group6_Project.csproj",
               "RelativeDocumentMoniker": "Group6_Project.csproj",
@@ -793,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "ScheulePage.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\ScheulePage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\ScheulePage.cs [Design]",
@@ -802,7 +833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "SearchRequest.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\SearchRequest.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\SearchRequest.cs [Design]",
@@ -811,7 +842,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "SearchPurchaseOrder.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\SearchPurchaseOrder.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\SearchPurchaseOrder.cs [Design]",
@@ -820,7 +851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "ShopPage.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\ShopPage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\ShopPage.cs [Design]",
@@ -829,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "ShopManagerHomePage.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\ShopManagerHomePage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\ShopManagerHomePage.cs [Design]",
@@ -838,7 +869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "CompletedInstructions.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\CompletedInstructions.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\CompletedInstructions.cs [Design]",
@@ -847,7 +878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "CompletedInstructions.cs",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\CompletedInstructions.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\CompletedInstructions.cs",
@@ -857,7 +888,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "GraphicsExtension.cs",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\GraphicsExtension.cs",
               "RelativeDocumentMoniker": "GraphicsExtension.cs",
@@ -869,7 +900,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "UserInformationPage.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\UserInformationPage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\UserInformationPage.cs [Design]",
@@ -878,7 +909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "CreateRequest.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\CreateRequest.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\CreateRequest.cs [Design]",
@@ -887,7 +918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "CreateScheule.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\CreateScheule.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\CreateScheule.cs [Design]",
@@ -896,7 +927,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "CreatePurchaseOrder.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\CreatePurchaseOrder.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\CreatePurchaseOrder.cs [Design]",
@@ -905,7 +936,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "CreateSupplier.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\CreateSupplier.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\CreateSupplier.cs [Design]",
@@ -914,7 +945,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "packages.config",
               "DocumentMoniker": "C:\\Users\\ku123\\Desktop\\github file\\Project4915M\\Group6_Project\\packages.config",
               "RelativeDocumentMoniker": "packages.config",
@@ -926,7 +957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "PurchaseClerkHomePage.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\PurchaseClerkHomePage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\PurchaseClerkHomePage.cs [Design]",
@@ -935,7 +966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "PurchaseManagerHomePage.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\PurchaseManagerHomePage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\PurchaseManagerHomePage.cs [Design]",
@@ -944,7 +975,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "RequestPage.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\RequestPage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\RequestPage.cs [Design]",
@@ -953,7 +984,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "DeliveryManagerHomePage.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\DeliveryManagerHomePage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\DeliveryManagerHomePage.cs [Design]",
@@ -962,7 +993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "PurchaseOrderPage.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\PurchaseOrderPage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\PurchaseOrderPage.cs [Design]",
@@ -971,7 +1002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "SearchStock.cs [Design]",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\SearchStock.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\SearchStock.cs [Design]",
@@ -980,7 +1011,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "DeliveryManagerHomePage.cs",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\DeliveryManagerHomePage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\DeliveryManagerHomePage.cs",
@@ -990,7 +1021,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "PurchaseClerkHomePage.cs",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\PurchaseClerkHomePage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\PurchaseClerkHomePage.cs",
@@ -1000,7 +1031,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "PurchaseManagerHomePage.cs",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\PurchaseManagerHomePage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\PurchaseManagerHomePage.cs",
@@ -1010,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "ShopManagerHomePage.cs",
               "DocumentMoniker": "D:\\github file\\Project4915M\\Group6_Project\\ShopManagerHomePage.cs",
               "ToolTip": "D:\\github file\\Project4915M\\Group6_Project\\ShopManagerHomePage.cs",

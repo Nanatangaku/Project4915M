@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 27, 2024 at 05:27 AM
+-- Generation Time: Jul 02, 2024 at 03:04 AM
 -- Server version: 8.2.0
 -- PHP Version: 8.2.13
 
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
   PRIMARY KEY (`cart_id`),
   KEY `item_id` (`item_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Truncate table before insert `cart`
@@ -312,7 +312,7 @@ CREATE TABLE IF NOT EXISTS `setoflevels` (
   `level_description` varchar(255) NOT NULL,
   `level_num` int NOT NULL,
   PRIMARY KEY (`levelid`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Truncate table before insert `setoflevels`
@@ -328,7 +328,8 @@ INSERT INTO `setoflevels` (`levelid`, `level_description`, `level_num`) VALUES
 (2, 'Low stock', 3000),
 (3, 'Danger Stock', 1500),
 (11, 'Very very high stock', 99999),
-(12, 'All', 99999999);
+(12, 'All', 99999999),
+(13, 'no stock', 0);
 
 -- --------------------------------------------------------
 

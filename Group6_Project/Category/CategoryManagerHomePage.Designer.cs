@@ -31,7 +31,6 @@ namespace Group6_Project
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CategoryManagerHomePage));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnCategory = new System.Windows.Forms.Button();
             this.panNav = new System.Windows.Forms.Panel();
             this.btnCategoryManager = new System.Windows.Forms.Button();
             this.btnRole = new System.Windows.Forms.Button();
@@ -53,7 +52,6 @@ namespace Group6_Project
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.btnCategory);
             this.panelMenu.Controls.Add(this.panNav);
             this.panelMenu.Controls.Add(this.btnCategoryManager);
             this.panelMenu.Controls.Add(this.btnRole);
@@ -63,19 +61,6 @@ namespace Group6_Project
             this.panelMenu.Controls.Add(this.panel2);
             resources.ApplyResources(this.panelMenu, "panelMenu");
             this.panelMenu.Name = "panelMenu";
-            // 
-            // btnCategory
-            // 
-            this.btnCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnCategory.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.btnCategory, "btnCategory");
-            this.btnCategory.FlatAppearance.BorderSize = 0;
-            this.btnCategory.ForeColor = System.Drawing.Color.White;
-            this.btnCategory.Image = global::Group6_Project.Properties.Resources.category;
-            this.btnCategory.Name = "btnCategory";
-            this.btnCategory.UseVisualStyleBackColor = false;
-            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
-            this.btnCategory.Leave += new System.EventHandler(this.btnCategory_Leave);
             // 
             // panNav
             // 
@@ -224,7 +209,6 @@ namespace Group6_Project
         private System.Windows.Forms.Panel panNav;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button btnClose;
     }
 }

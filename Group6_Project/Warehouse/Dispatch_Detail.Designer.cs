@@ -173,6 +173,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dvgItem.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dvgItem.RowTemplate.Height = 24;
+            this.dvgItem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgItem_CellContentClick);
             // 
             // lblabck
             // 

@@ -124,30 +124,8 @@ namespace Group6_Project
             btnRole.BackColor = Color.FromArgb(51, 51, 76);
         }
         [Category("Event")]
-        private void btnCategory_Click(object sender, EventArgs e)
-        {
-           
-            panNav.Height = btnCategory.Height;
-            panNav.Top = btnCategory.Top;
-            panNav.Left = btnCategory.Left;
-            btnCategory.BackColor = Color.FromArgb(46, 51, 73);
-
-            this.panFormLoad.Controls.Clear();
-            CategoryPage category = new CategoryPage(panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            category.FormBorderStyle = FormBorderStyle.None;
-            panFormLoad.Controls.Add(category);
-            category.Show();
-
-            Object a = Activator.CreateInstance(typeof(EventArgs));
-            EventArgs click = (EventArgs)a; 
-            
-        }
-        [Category("Event")]
-        private void btnCategory_Leave(object sender, EventArgs e)
-        {
-            btnCategory.BackColor = Color.FromArgb(51, 51, 76);
-        }
-        [Category("Event")]
+      
+       
         private void btnCategoryManager_Click(object sender, EventArgs e)
         {
             this.Hide();

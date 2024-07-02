@@ -39,10 +39,12 @@ namespace Group6_Project.Warehouse
         private void lblBack_Click(object sender, EventArgs e)
         {
             this.panFormLoad.Controls.Clear();
-            setoflevel setoflevel = new setoflevel(user_id, panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true }; 
-            setoflevel.TopLevel = false;
-            this.panFormLoad.Controls.Add(setoflevel);
-            setoflevel.Show();  
+            setoflevel setoflevel = new setoflevel(user_id, panFormLoad) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            setoflevel.FormBorderStyle = FormBorderStyle.None;
+            panFormLoad.Controls.Add(setoflevel);
+            setoflevel.Show();
+
+
 
         }
 

@@ -39,6 +39,10 @@ namespace Group6_Project
             btn.Name = "btndetail";
             btn.UseColumnTextForButtonValue = true;
 
+          
+            
+
+
             string sql = "select order_request.order_id,order_request.payment,order_status.status,delivery.create_date,delivery.expected_delivery_date from order_request,order_status,delivery where order_request.order_status_id = order_status.order_status_id and order_request.delivery_id = delivery.delivery_id";
             conn.Open();
             MySqlCommand cmd = new MySqlCommand(sql, conn);

@@ -117,36 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnDispatch.Text" xml:space="preserve">
-    <value>Dispatch</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Dispatch_Detail</value>
-  </data>
-  <data name="gbOrderdetail.Text" xml:space="preserve">
-    <value>Order Detail</value>
-  </data>
-  <data name="lblabck.Text" xml:space="preserve">
-    <value>← Back</value>
-  </data>
-  <data name="lblcreatedate.Text" xml:space="preserve">
-    <value>Create Date:</value>
-  </data>
-  <data name="lblexpecteddate.Text" xml:space="preserve">
-    <value>Expected Date:</value>
-  </data>
-  <data name="lblorder_id.Text" xml:space="preserve">
-    <value>Order ID:</value>
-  </data>
-  <data name="lblorder_status.Text" xml:space="preserve">
-    <value>Order Status:</value>
-  </data>
-  <data name="lblpayment.Text" xml:space="preserve">
-    <value>Payment:</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnDispatch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -164,6 +134,9 @@
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnDispatch.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="btnDispatch.Text" xml:space="preserve">
+    <value>Dispatch</value>
   </data>
   <data name="&gt;&gt;btnDispatch.Name" xml:space="preserve">
     <value>btnDispatch</value>
@@ -294,6 +267,9 @@
   <data name="lblexpecteddate.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="lblexpecteddate.Text" xml:space="preserve">
+    <value>Expected Date:</value>
+  </data>
   <data name="&gt;&gt;lblexpecteddate.Name" xml:space="preserve">
     <value>lblexpecteddate</value>
   </data>
@@ -317,6 +293,9 @@
   </data>
   <data name="lblcreatedate.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="lblcreatedate.Text" xml:space="preserve">
+    <value>Create Date:</value>
   </data>
   <data name="&gt;&gt;lblcreatedate.Name" xml:space="preserve">
     <value>lblcreatedate</value>
@@ -342,6 +321,9 @@
   <data name="lblpayment.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="lblpayment.Text" xml:space="preserve">
+    <value>Payment:</value>
+  </data>
   <data name="&gt;&gt;lblpayment.Name" xml:space="preserve">
     <value>lblpayment</value>
   </data>
@@ -365,6 +347,9 @@
   </data>
   <data name="lblorder_status.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="lblorder_status.Text" xml:space="preserve">
+    <value>Order Status:</value>
   </data>
   <data name="&gt;&gt;lblorder_status.Name" xml:space="preserve">
     <value>lblorder_status</value>
@@ -390,6 +375,9 @@
   <data name="lblorder_id.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="lblorder_id.Text" xml:space="preserve">
+    <value>Order ID:</value>
+  </data>
   <data name="&gt;&gt;lblorder_id.Name" xml:space="preserve">
     <value>lblorder_id</value>
   </data>
@@ -413,6 +401,9 @@
   </data>
   <data name="gbOrderdetail.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="gbOrderdetail.Text" xml:space="preserve">
+    <value>Order Detail</value>
   </data>
   <data name="&gt;&gt;gbOrderdetail.Name" xml:space="preserve">
     <value>gbOrderdetail</value>
@@ -462,6 +453,9 @@
   <data name="lblabck.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <data name="lblabck.Text" xml:space="preserve">
+    <value>← Back</value>
+  </data>
   <data name="&gt;&gt;lblabck.Name" xml:space="preserve">
     <value>lblabck</value>
   </data>
@@ -474,11 +468,17 @@
   <data name="&gt;&gt;lblabck.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1041, 718</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Dispatch_Detail</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Dispatch_Detail</value>

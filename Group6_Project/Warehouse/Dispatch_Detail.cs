@@ -40,6 +40,12 @@ namespace Group6_Project
             initialize_data_gbitem();
             OrderDetail_Load();
             btnDispatch_show();
+
+            DataGridViewCheckBoxColumn check = new DataGridViewCheckBoxColumn();
+            dvgItem.Columns.Add(check);
+            check.HeaderText = "Check";
+            check.Name = "check";
+            check.ValueType = typeof(bool);
         }
 
         private void initialize_data_gbitem()
@@ -58,6 +64,8 @@ namespace Group6_Project
         }
         private void OrderDetail_Load()
         {
+            
+
             string sql = "select item.item_name,item.item_category,item.price,order_item.quantity from item,order_item where item.item_id= order_item.item_id and order_id = " + order_id;
             MySqlDataAdapter da = new MySqlDataAdapter(sql, conn);
             DataTable dt = new DataTable();
@@ -119,6 +127,11 @@ namespace Group6_Project
             {
                 btnDispatch.Visible = false;
             }
+        }
+
+        private void dvgItem_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

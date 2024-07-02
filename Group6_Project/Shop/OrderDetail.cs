@@ -275,7 +275,7 @@ namespace Group6_Project
             List<String> item_id = new List<string>();
             List<String> quantity = new List<string>();
             Boolean can_reorder = true;
-
+            long id = 0;
             string sql = "select item_id,quantity from order_item where order_id = " + order_id; 
            
             MySqlCommand cmd = new MySqlCommand(sql, conn);
@@ -324,7 +324,7 @@ namespace Group6_Project
                 string sql5 = "insert into order_request (payment,address,order_status_id,user_id) values (" + payment + ",'" + address + "',1 " + "," + user_id + ")";
                 MySqlCommand cmd4 = new MySqlCommand(sql5, conn);
                 conn.Open();
-                long id = 0;
+                id = 0;
                 long delivery_id = 0;
                 if (cmd4.ExecuteNonQuery() >= 1)
                 {
@@ -379,9 +379,27 @@ namespace Group6_Project
                     MessageBox.Show("Order_request not updated");
                     conn.Close();
                 }
+                //insert into order_item 
+                for (int i = 0; i < item_id.Count; i++)
+                {
+                    string sql9 = "insert into order_item (order_id,item_id,quantity) values (" + id + "," + item_id[i] + "," + quantity[i] + ")";
+                    MySqlCommand cmd8 = new MySqlCommand(sql9, conn);
+                    conn.Open();
+                    if (cmd8.ExecuteNonQuery() >= 1)
+                    {
+                        conn.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Order_item not updated");
+                        conn.Close();
+                    }
+                }
 
 
             }
+
+           
 
            
         }

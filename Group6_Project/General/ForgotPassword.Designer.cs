@@ -34,6 +34,7 @@ namespace Group6_Project
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
+            this.roundTextBox1 = new Group6_Project.RoundTextBox();
             this.rbtnReturnLogin = new Group6_Project.CustomControls.RoundButton();
             this.rtxtPhone = new Group6_Project.RoundTextBox();
             this.rbtnVerify = new Group6_Project.CustomControls.RoundButton();
@@ -71,6 +72,23 @@ namespace Group6_Project
             this.btnClose.Name = "btnClose";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // roundTextBox1
+            // 
+            this.roundTextBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.roundTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.roundTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.roundTextBox1.BorderRadius = 0;
+            this.roundTextBox1.BorderSize = 2;
+            resources.ApplyResources(this.roundTextBox1, "roundTextBox1");
+            this.roundTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.roundTextBox1.Multiline = false;
+            this.roundTextBox1.Name = "roundTextBox1";
+            this.roundTextBox1.PasswordChar = false;
+            this.roundTextBox1.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.roundTextBox1.PlaceholderText = "New password:";
+            this.roundTextBox1.Texts = "";
+            this.roundTextBox1.UnderlinedStyle = false;
             // 
             // rbtnReturnLogin
             // 
@@ -158,6 +176,7 @@ namespace Group6_Project
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.roundTextBox1);
             this.Controls.Add(this.rbtnReturnLogin);
             this.Controls.Add(this.rtxtPhone);
             this.Controls.Add(this.rbtnVerify);
@@ -185,5 +204,6 @@ namespace Group6_Project
         private System.Windows.Forms.Button btnClose;
         private RoundTextBox rtxtPhone;
         private CustomControls.RoundButton rbtnReturnLogin;
+        private RoundTextBox roundTextBox1;
     }
 }

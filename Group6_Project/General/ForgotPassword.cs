@@ -58,10 +58,17 @@ namespace Group6_Project
             {
                 int user_id = 0;
                 user_id = (int)reader["user_id"];
+                conn.Close();
 
                 if (user_id != 0)
                 {
                     MessageBox.Show("Verify Successful!!!");
+                    string sql2 = "update user set password = " + roundTextBox1.Texts.ToString() + "  where user_name = " + username;
+                    MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
+                    conn.Open();
+                    MessageBox.Show(sql2.ToString());
+                    MySqlDataReader reader2 = cmd2.ExecuteReader();
+                   
                     this.Hide();
                     new loginPage().ShowDialog();
                     this.Close();
@@ -70,6 +77,7 @@ namespace Group6_Project
                     MessageBox.Show("Invalid Account Infromation");
                 }
                 conn.Close();
+               
             }
         }
 

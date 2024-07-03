@@ -1,7 +1,7 @@
 # Project4915M
 
 Word Link = https://docs.google.com/document/d/16vw-q7fC2T2_34BqifMCwdI4d9QSf7gO/edit?usp=sharing&ouid=106626740466716207137&rtpof=true&sd=true </br>
-Powerpoint = https://www.canva.com/design/DAGJ5UhMvFY/hJmU2imDBgI8yoB1_lHVjA/edit?utm_content=DAGJ5UhMvFY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton </br>
+Powerpoint = https://www.canva.com/design/DAGJ5UhMvFY/FlP78YAlec-VQH-KjKbhkA/view?utm_content=DAGJ5UhMvFY&utm_campaign=designshare&utm_medium=link&utm_source=editor </br>
 //user </br>
 shop manager = 'ken_sm','123 </br>
 warehouse manager = 'ken_wm','123' </br>

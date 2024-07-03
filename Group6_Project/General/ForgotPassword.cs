@@ -66,7 +66,7 @@ namespace Group6_Project
                     string sql2 = "update user set password = " + roundTextBox1.Texts.ToString() + "  where user_name = " + username;
                     MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
                     conn.Open();
-                    MessageBox.Show(sql2.ToString());
+                  
                     MySqlDataReader reader2 = cmd2.ExecuteReader();
                    
                     this.Hide();
@@ -77,7 +77,11 @@ namespace Group6_Project
                     MessageBox.Show("Invalid Account Infromation");
                 }
                 conn.Close();
-               
+
+            }
+            else
+            {
+                MessageBox.Show("Invaild inofrmation");
             }
         }
 

@@ -106,6 +106,7 @@ namespace Group6_Project
         {
             if (e.ColumnIndex == 0)
             {
+
                 int index = e.RowIndex;
                 DataGridViewRow selectedRow = dataGridView1.Rows[index];
                 var inputquantity = 0;
@@ -125,23 +126,30 @@ namespace Group6_Project
                     MessageBox.Show("Quantity cant be 0 or negative");
                     return;
                 }
-             
+                
                 var item_id = selectedRow.Cells[2].Value.ToString();
-                var sql = "insert into cart(user_id,item_id,quantity)Value(" + user_id + "," + item_id + "," + inputquantity + ");";
+                string sql = "select * from cart where item_id = " + item_id + " and user_id = " + user_id;
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
                 conn.Open();
-                try
+                //if item exist show item exist message else insert into cart
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
                 {
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Item added to cart");
-                    //remove the row from the datagridview
-                    dataGridView1.Rows.RemoveAt(index);
+                    MessageBox.Show("Item already exist in cart");
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
+                    conn.Close();
+                    dataGridView1.Rows.RemoveAt(index);
+                    sql = "insert into cart (user_id,item_id,quantity) values (" + user_id + "," + item_id + "," + inputquantity + ")";
+                    cmd = new MySqlCommand(sql, conn);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("Item added to cart");
                 }
                 conn.Close();
+
             }
         }
 

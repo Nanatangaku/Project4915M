@@ -62,7 +62,7 @@ namespace Group6_Project
 
         private void filldvg(DataGridView dataGridView)
         {
-            string sql = "select item.item_id,item.item_Name,item.item_Category, item.price  ,cart.quantity from cart,item where item.item_id = cart.item_id ";
+            string sql = "select item.item_id,item.item_Name,item.item_Category, item.price  ,cart.quantity from cart,item where item.item_id = cart.item_id  and user_id = " + user_id;
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             conn.Open();
             MySqlDataAdapter adp = new MySqlDataAdapter(cmd);

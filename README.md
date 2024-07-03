@@ -1,6 +1,6 @@
 # Project4915M
 
-Word Link = https://docs.google.com/document/d/16vw-q7fC2T2_34BqifMCwdI4d9QSf7gO/edit?usp=sharing&ouid=106626740466716207137&rtpof=true&sd=true </br>
+Word Link = https://docs.google.com/document/d/1swh0v042UPdVNKbYbnTnVMtelEKGYkIf/edit?usp=sharing&ouid=106626740466716207137&rtpof=true&sd=true </br>
 Powerpoint = https://www.canva.com/design/DAGJ5UhMvFY/FlP78YAlec-VQH-KjKbhkA/view?utm_content=DAGJ5UhMvFY&utm_campaign=designshare&utm_medium=link&utm_source=editor </br>
 //user </br>
 shop manager = 'ken_sm','123 </br>
